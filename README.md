@@ -12,7 +12,7 @@ index.html
 Read it online:
 
 ```text
-https://www.peecos.org/pios/master/
+https://www.peecos.org/pios/master
 ```
 
 ## What This Repository Contains
