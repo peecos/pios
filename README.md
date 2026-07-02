@@ -39,3 +39,19 @@ data migration, connector sync, or production use by itself.
 
 The older `peecos/pios-global` repository belongs to the pre-PIOS-2.0
 documentation era and should be treated as archived historical material.
+
+## License and Attribution
+
+The PIOS 2.0 framework documentation in this repository is licensed under
+Creative Commons Attribution 4.0 International (`CC BY 4.0`).
+
+Attribution should be given as:
+
+```text
+PIOS 2.0 by Valto Loikkanen / peecos
+```
+
+Copyright (c) 2026 Valto Loikkanen / peecos.
+
+The names `peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos or
+marks are not licensed under CC BY 4.0. See `TRADEMARKS.md`.
