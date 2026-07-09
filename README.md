@@ -1,6 +1,6 @@
 # PIOS 2.0
 
-PIOS is the Personal Intelligence Operating System framework: an open reference
+PIOS is the Personal Information Operating System framework: an open reference
 model for owner-controlled personal information infrastructure.
 
 The current master documentation is published as a standalone HTML document:

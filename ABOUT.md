@@ -4,7 +4,7 @@ This document covers everything *around* the PIOS framework — the organization
 
 ## The organization
 
-**peecos** ("Personal Ecosystem", [peecos.org](https://www.peecos.org)) is the open organization behind **PIOS**, the Personal Intelligence Operating System framework. PIOS is an open reference model for owner-controlled personal information infrastructure: preserved sources, canonical events, structured knowledge, retrieval surfaces, governance, and portable setup paths for agents and applications.
+**peecos** ("Personal Ecosystem", [peecos.org](https://www.peecos.org)) is the open organization behind **PIOS**, the Personal Information Operating System framework. PIOS is an open reference model for owner-controlled personal information infrastructure: preserved sources, canonical events, structured knowledge, retrieval surfaces, governance, and portable setup paths for agents and applications.
 
 The goal: build computing around the person's durable information and authority, and let AI, interfaces, and runtime services operate inside that foundation rather than above or outside it.
 
@@ -13,7 +13,7 @@ The organization maintains one framework and its surrounding assets:
 | Name | What it is |
 | --- | --- |
 | **peecos** | The open organization, website, and GitHub organization |
-| **PIOS** | Personal Intelligence Operating System — the open framework and master documentation (currently PIOS 2.0) |
+| **PIOS** | Personal Information Operating System — the open framework and master documentation (currently PIOS 2.0) |
 | **Core** | The implementation running the personal information core |
 | **Cotton** | The personal context blueprint: the organizing canon for how personal information is named, classified, and made understandable |
 | **Core Self** | A person's own running instance and private source of truth |
@@ -71,6 +71,7 @@ Names and marks (`peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos) 
 | [github.com/peecos/pios-core-aws-template](https://github.com/peecos/pios-core-aws-template) | Core Managed AWS self-setup template for one-owner Core infrastructure |
 | [github.com/peecos/pios-core-self-hosted](https://github.com/peecos/pios-core-self-hosted) | Core Self-Hosted VM template and release tooling |
 | [github.com/peecos/brand](https://github.com/peecos/brand) | Visual design guide: logo, typography, colors, component conventions |
+| [github.com/peecos/media](https://github.com/peecos/media) | Overview media: video, audio, and the architectural manifesto |
 | valto@valtoai.com | Contact |
 
 ## Boundary
