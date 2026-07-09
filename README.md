@@ -15,6 +15,10 @@ Read it online:
 https://www.peecos.org/pios/master
 ```
 
+Everything around the framework — the organization, naming rationale, the EIOS
+sibling framework, licensing, and project structure — is in
+[ABOUT.md](ABOUT.md).
+
 ## What This Repository Contains
 
 - the PIOS 2.0 master documentation;
