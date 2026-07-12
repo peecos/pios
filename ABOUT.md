@@ -74,6 +74,8 @@ Names and marks (`peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos) 
 | [github.com/peecos/media](https://github.com/peecos/media) | Overview media: video, audio, and the architectural manifesto |
 | valto@valtoai.com | Contact |
 
+The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals.
+
 ## Boundary
 
 The framework repositories are documentation and templates. They are not a hosted peecos account service, contain no owner data, and do not authorize any deployment, data migration, connector sync, or production use by themselves.
@@ -83,7 +85,7 @@ The framework repositories are documentation and templates. They are not a hoste
 | Item | Status |
 | --- | --- |
 | PIOS 2.0 master documentation | **Published** ([peecos.org/pios/master](https://www.peecos.org/pios/master)) |
-| Core Managed AWS template | Published (template path) |
-| Core Self-Hosted VM template | Published (template path) |
+| Core Managed AWS template | Published source/template path; implementation readiness is governed separately |
+| Core Self-Hosted VM template | Published source/template path; public release/support status is governed separately |
 | pios-global reference wiki | Archived (pre-2.0 era) |
 | EIOS sibling framework | Independent since 2026-07-08 ([entitycore.org](https://entitycore.org)) |

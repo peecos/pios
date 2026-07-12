@@ -24,7 +24,17 @@ sibling framework, licensing, and project structure — is in
 - the PIOS 2.0 master documentation;
 - the Core, Cotton, History, event-log, retrieval, governance, AWS, and
   self-hosted architecture model;
+- the Core distribution, portability, and compatibility contract;
 - links to the public implementation template repositories.
+
+## Core Compatibility
+
+- [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md)
+- [Core Distribution and Compatibility Roadmap v0.1](docs/core-distribution-roadmap-v0.1.md)
+
+These documents define the public compatibility target. They distinguish
+published source/templates from proof artifacts, release candidates,
+experimental providers, and supported providers.
 
 ## Implementation Repositories
 

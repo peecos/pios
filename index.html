@@ -1225,6 +1225,7 @@ events, conversations, documents, and later corrections.</code></pre>
           <div class="callout">
             <p><strong>Transferable Core artifacts:</strong> a reproducible Core Managed deployment should be understood as three versioned artifacts, not one opaque image. The <strong>Core Template</strong> is the parameterized infrastructure shape. The <strong>full Core Export Bundle</strong> is the owner's complete exportable data payload. The <strong>Provisioning Manifest</strong> binds a specific template version, owner, account, region, security posture, and optional bundle hydration into one rebuildable Core instance. Structure is golden and repeatable; data is owner payload; the manifest binds them.</p>
           </div>
+          <p><strong>Compatibility contract:</strong> deployment independence requires a stable external Core API, provider-independent canonical references such as <code>core://events/&lt;event_id&gt;</code>, explicit Core/API/export-format versions, capability discovery, and a validated export/import path. Provider object paths, cloud identifiers, indexes, and queues belong in implementation adapters or provenance, not in canonical meaning. The normative requirements and implementation goals are published in the <a href="https://github.com/peecos/pios/blob/main/docs/core-distribution-and-compatibility-spec-v0.1.md">Core Distribution and Compatibility Specification v0.1</a> and its <a href="https://github.com/peecos/pios/blob/main/docs/core-distribution-roadmap-v0.1.md">roadmap</a>.</p>
         </section>
 
         <section id="inbound">
@@ -1413,7 +1414,7 @@ events, conversations, documents, and later corrections.</code></pre>
   completed/
   failed/</code></pre>
           <pre><code>processing_id: process_123
-original_ref: pios://originals/audio/voice-note-001
+original_ref: core://originals/audio/voice-note-001
 event_id: event_123
 requested_steps:
   - transcribe
@@ -1468,7 +1469,7 @@ resolution:
 
           <h3>8.1 Minimal Stable Envelope</h3>
           <p>The event schema should begin with a small stable envelope and allow metadata to evolve. The minimal required envelope should carry enough identity, version, time, actor, event type, idempotency, and logical reference information to interpret the event later. Source references, purpose, context, axes, and metadata enrich the event when known, but they should not block capture when unavailable.</p>
-          <p>The conceptual event envelope is storage-agnostic. It should use logical Core references such as <code>pios://events/&lt;event_id&gt;</code> and <code>pios://originals/&lt;source-object&gt;</code>. Physical keys, bucket names, S3 headers, filesystem paths, database row IDs, and cloud-provider write conditions belong to the storage adapter, writer manifest, or implementation-specific metadata, not to the conceptual minimum.</p>
+          <p>The conceptual event envelope is storage-agnostic. It should use logical Core references such as <code>core://events/&lt;event_id&gt;</code> and <code>core://originals/&lt;source-object&gt;</code>. Physical keys, bucket names, S3 headers, filesystem paths, database row IDs, and cloud-provider write conditions belong to the storage adapter, writer manifest, or implementation-specific provenance, not to the conceptual minimum.</p>
           <pre><code>{
 	  "schema_version": "event_envelope_v1",
 	  "event_id": "01973f61-example-uuidv7",
@@ -1480,8 +1481,8 @@ resolution:
 	  "event_type": "email_received",
 	  "actor": "connector:gmail",
 	  "source": "gmail",
-	  "event_ref": "pios://events/01973f61-example-uuidv7",
-	  "original_ref": "pios://originals/gmail/personal-account/message-123/version-001",
+	  "event_ref": "core://events/01973f61-example-uuidv7",
+	  "original_ref": "core://originals/gmail/personal-account/message-123/version-001",
   "purpose": {
     "intent": "preserve_communication",
     "desired_outcome": "make_source_retrievable_and_contextual"
@@ -1551,7 +1552,7 @@ resolution:
 	              </tr>
 	              <tr>
 	                <td><code>idempotency_key</code></td>
-	                <td>Stable deduplication key derived from source-native id when available, otherwise source id, checksum, source time, and original object key.</td>
+	                <td>Stable deduplication key derived from a source-native id when available; otherwise source, checksum, normalized source time, and a logical <code>core://</code> original reference.</td>
 	              </tr>
 	              <tr>
 	                <td><code>s3_write_condition</code></td>
