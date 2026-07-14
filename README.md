@@ -35,8 +35,11 @@ sibling framework, licensing, and project structure — is in
 
 These documents define the public compatibility target and the separately
 gated path from a private owner Core to a future multi-tenant hosted service.
-They distinguish published source/templates from proof artifacts, release
-candidates, experimental providers, and supported providers.
+Prifina intends to make that hosted option available soon. Until Prifina
+announces service availability, the framework and templates do not provide
+hosted accounts or production API credentials. These documents distinguish
+published source/templates from proof artifacts, release candidates,
+experimental providers, and supported providers.
 
 ## Implementation Repositories
 

@@ -120,9 +120,11 @@ public provider support, production cutover, or sensitive-data transfer.
 
 ## Hosted Service Fork
 
-A future multi-tenant hosted Core service is a separate product path, not an
-automatic extension of the AWS reference or public templates. Its evidence
-gate, required separation from the private owner Core, delivery stages, and
+A future multi-tenant hosted Core service is a separate Prifina product path,
+not an automatic extension of the AWS reference or public templates. Prifina
+intends to make the hosted option available soon; until its service announcement
+there are no hosted accounts or production API credentials. Its evidence gate,
+required separation from the private owner Core, delivery stages, and
 account/service capabilities are defined in the [Core Hosted Service Fork Path
 v0.1](core-hosted-service-fork-path-v0.1.md). It becomes suitable for a
 separate ratified decision only after private operational, portability, and

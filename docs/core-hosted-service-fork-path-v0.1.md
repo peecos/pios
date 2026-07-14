@@ -3,6 +3,12 @@
 Status: planned future product path. It is not an active service, launch plan,
 or authorization to accept tenant data.
 
+Planned operator: **Prifina**. Prifina intends to make a hosted Core option
+available soon. The launch date, regions, plans, eligibility, account-creation
+process, and API access will be announced by Prifina. Until then, neither PIOS
+nor its public templates provide hosted accounts, tenant onboarding, or
+production API credentials.
+
 ## Purpose
 
 PIOS defines portable Core contracts and public implementation templates. A
@@ -15,9 +21,9 @@ governed, portable master for real normal work. The hosted-service path forks
 only after that path has supplied enough operational evidence to make a
 responsible product decision.
 
-This document does not select an operator, legal entity, brand, pricing model,
-or launch date. Those require a separate owner/operator decision when the
-trigger is met.
+This document identifies Prifina as the planned operator, but does not set a
+launch date, legal-service terms, pricing model, or availability claim. Those
+require Prifina's separate service decision when the trigger is met.
 
 ## The Fork Decision
 
@@ -47,10 +53,10 @@ following are true:
    case and a viable operator/support model have been assessed. Curiosity,
    public-template availability, or a deployable AWS stack alone are not a
    reason to create a tenant service.
-6. **An accountable operator ratifies the fork.** The decision names the
-   operator, intended customer, jurisdictions, data categories, commercial
-   posture, initial service boundary, funding/cost authority, and named owners
-   for security, support, and incidents.
+6. **Prifina ratifies the service decision.** The decision names the intended
+   customer, jurisdictions, data categories, commercial posture, initial
+   service boundary, funding/cost authority, and named owners for security,
+   support, and incidents.
 
 Until all six conditions are met and ratified, work remains on the private
 Core, framework, and self-setup templates. No prospective tenant is promised
@@ -82,11 +88,11 @@ convenience.
 
 ### Stage 0: Product and Operating-Model Decision
 
-Create the ratified fork decision and threat model. Define the initial owner
-profile, supported regions, prohibited data/classes, support hours, service
-objectives, commercial hypothesis, and explicit non-goals. Confirm that the
-hosted service is an independent product surface, while PIOS remains the open
-framework.
+Prifina creates the ratified service decision and threat model. Define the
+initial owner profile, supported regions, prohibited data/classes, support
+hours, service objectives, commercial hypothesis, and explicit non-goals.
+Confirm that the hosted service is an independent Prifina product surface,
+while PIOS remains the open framework.
 
 ### Stage 1: Hosted Foundation, No External Tenants
 
@@ -152,4 +158,7 @@ This path does not block private Core operation, portable distribution, or
 self-hosted work. It gives them a clear downstream purpose: prove the contract
 and operational discipline before exposing that contract as a service for other
 owners. The current Core Distribution Roadmap remains the governing path for
-those prerequisites.
+those prerequisites. Once service availability is announced, Prifina's service
+terms, privacy notice, support policy, and status communications govern the
+hosted offering; the PIOS repository continues to govern the framework and
+compatibility contract.
