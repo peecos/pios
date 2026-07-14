@@ -117,3 +117,14 @@ export, or distribution conformance.
 
 Do not treat this roadmap as approval for broad migration, connector sync,
 public provider support, production cutover, or sensitive-data transfer.
+
+## Hosted Service Fork
+
+A future multi-tenant hosted Core service is a separate product path, not an
+automatic extension of the AWS reference or public templates. Its evidence
+gate, required separation from the private owner Core, delivery stages, and
+account/service capabilities are defined in the [Core Hosted Service Fork Path
+v0.1](core-hosted-service-fork-path-v0.1.md). It becomes suitable for a
+separate ratified decision only after private operational, portability, and
+client-contract evidence is materially complete; it does not block the current
+Goals A-E work.

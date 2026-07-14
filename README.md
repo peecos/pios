@@ -31,10 +31,12 @@ sibling framework, licensing, and project structure — is in
 
 - [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md)
 - [Core Distribution and Compatibility Roadmap v0.1](docs/core-distribution-roadmap-v0.1.md)
+- [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md)
 
-These documents define the public compatibility target. They distinguish
-published source/templates from proof artifacts, release candidates,
-experimental providers, and supported providers.
+These documents define the public compatibility target and the separately
+gated path from a private owner Core to a future multi-tenant hosted service.
+They distinguish published source/templates from proof artifacts, release
+candidates, experimental providers, and supported providers.
 
 ## Implementation Repositories
 

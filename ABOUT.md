@@ -74,11 +74,11 @@ Names and marks (`peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos) 
 | [github.com/peecos/media](https://github.com/peecos/media) | Overview media: video, audio, and the architectural manifesto |
 | valto@valtoai.com | Contact |
 
-The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals.
+The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals. A possible hosted multi-tenant service is governed separately by the [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md); it is not supplied by the templates.
 
 ## Boundary
 
-The framework repositories are documentation and templates. They are not a hosted peecos account service, contain no owner data, and do not authorize any deployment, data migration, connector sync, or production use by themselves.
+The framework repositories are documentation and templates. They are not a hosted peecos account service, contain no owner data, and do not authorize any deployment, data migration, connector sync, or production use by themselves. Any future hosted service requires a separately ratified product, security, support, and operations path.
 
 ## Status
 
