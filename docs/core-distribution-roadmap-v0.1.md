@@ -17,19 +17,19 @@ Complete or evidenced now:
 - Core Template, Core Export Bundle, and Provisioning Manifest are defined;
 - AWS export, checksums, local restore, selected retrieval, and limited
   destination hydration mechanics proofs exist;
-- self-hosted local hydration and derived-projection rebuild mechanics proofs
-  exist, but they used pre-`core://` S3-style references and therefore do not
-  yet demonstrate provider-independent canonical references.
+- a private reference proof has produced a current bundle with canonical
+  `core://` references, explicit provider provenance, managed hydration, and
+  self-hosted conformance evidence. It remains a private proof artifact, not a
+  public distribution or compatibility claim.
 
 Next deliverables:
 
-- replace canonical AWS-style references with `core://` references while
-  retaining physical references only in adapter/provenance fields;
 - publish the export manifest schema and import-report schema;
-- add explicit `core_version`, API-version, and export-format-version fields;
-- add a fixture-based cross-profile export/import conformance test.
-- prevent a new current-pilot bundle from claiming Goal A portability evidence
-  until the canonical-reference migration is present.
+- publish generic fixture bundles and a fixture-based cross-profile
+  export/import conformance test that third parties can reproduce;
+- publish the public version and reference rules used by the private proof;
+- repeat the evidence against release-candidate managed and self-hosted
+  artifacts rather than an owner-specific pilot.
 
 Done when: a clean self-hosted and managed destination both preserve stable ids,
 references, counts, checksums, and selected retrieval evidence from the same
@@ -52,9 +52,10 @@ by changing only endpoint and credentials.
 
 Current proof progress: the AWS reference now exposes a machine-readable
 OpenAPI proof profile and IAM-authorized capability discovery for two
-proof-only write routes. This is an implementation starting point, not Level 2
-compatibility evidence: the mandatory v1 API surface and cross-profile
-conformance client remain incomplete.
+proof-only write routes. Private reference deployment and live discovery proof
+exist. This is an implementation starting point, not Level 2 compatibility
+evidence: the mandatory v1 API surface and cross-profile conformance client
+remain incomplete.
 
 ## Goal C: Installable, Verifiable Distribution
 
@@ -110,10 +111,12 @@ no source re-download of historical information.
 
 ## Current Focus and Boundaries
 
-The current immediate work is Goal A and Goal B contract hardening. The AWS
-write-through parallel-run remains separately gated by its owner decision
-record. It is useful operational evidence but is not a substitute for API,
-export, or distribution conformance.
+The current immediate work is public Goal A/B contract hardening and
+reproducible conformance fixtures. A private, owner-ratified write-through
+parallel-run may provide implementation learning about bounded scope,
+idempotency, verification, and reconciliation, but it is not a substitute for
+API, export, or distribution conformance and does not change any compatibility
+level claim.
 
 Do not treat this roadmap as approval for broad migration, connector sync,
 public provider support, production cutover, or sensitive-data transfer.

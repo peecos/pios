@@ -166,6 +166,29 @@ Operationally compatible deployments support a governed cutover sequence:
 6. Put the source flow into read-only mode, apply a final delta, and complete
    owner-approved cutover or rollback.
 
+When a governed shadow/write-through period is used, its conformance evidence
+must state the canonical side for each flow and enforce a bounded scope. At
+minimum, it must:
+
+- publish to the canonical side first and treat the destination as a shadow
+  copy until a later owner-approved cutover;
+- use a fixed flow allowlist plus explicit sensitivity and asset exclusions;
+- enforce a maximum count, time window, or both before sending another shadow
+  write;
+- integrate the shadow path into the normal producer workflow rather than rely
+  on an optional sidecar command or operator memory;
+- record every accepted write, replay result, and required destination artifact
+  verification;
+- reconcile against an independent producer ledger, not only the shadow
+  wrapper's own records; and
+- distinguish the producer-publication time used for coverage reconciliation
+  from the destination-acceptance time used for destination write limits.
+
+Any failed reconciliation, unresolved retry, duplicate, missing verification,
+or limit block must stop the governed period pending review. A successful
+shadow period is evidence for a later cutover decision; it is not cutover by
+itself.
+
 Incremental export and final-delta behavior are a later v1.1 deliverable. Until
 then, an implementation must not claim operational migration compatibility.
 
