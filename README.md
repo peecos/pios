@@ -59,6 +59,17 @@ data migration, connector sync, or production use by itself.
 The older `peecos/pios-global` repository belongs to the pre-PIOS-2.0
 documentation era and should be treated as archived historical material.
 
+## Open by Design
+
+This is open work. You are welcome to read it, share it, adapt it, translate
+it, build independent implementations from it, and fork it. The framework
+documentation uses Creative Commons Attribution 4.0 International, so reuse is
+welcome with attribution. Names, logos, and claims of official endorsement are
+handled separately only to prevent confusion.
+
+See [OPENNESS.md](OPENNESS.md) for a plain-language guide, attribution example,
+and the boundary for independent implementations and official identity.
+
 ## License and Attribution
 
 The PIOS 2.0 framework documentation in this repository is licensed under
