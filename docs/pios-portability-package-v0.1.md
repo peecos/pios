@@ -16,7 +16,8 @@ exists.
 
 | Term | Meaning |
 | --- | --- |
-| Full Core Export Bundle | A validated package exported from an existing Core; it represents selected Core state at export time. |
+| Full Core Export Bundle | The complete exportable Core payload at a stated export time: canonical originals, events, knowledge, glossary, system definitions, provenance, integrity records, and rebuild instructions for the declared Core. |
+| Scoped Core Bundle | An export of a selected Core subset for sharing, testing, recovery, or transfer. It is not a Full Core Export Bundle and cannot imply complete-Core coverage. |
 | PIOS Portability Package | An import/reconstruction package assembled from a Core export or independently from owner-controlled sources. |
 | Provisioning Manifest | The current PIOS artifact binding a template/profile, security posture, and optional bundle hydration into a runnable Core. |
 
@@ -44,7 +45,7 @@ versions, prohibited secret material, or unresolved ownership boundaries.
 | Raw | Preserved takeouts/files plus source descriptors | parked/analyzed source material only |
 | Mapped | Raw material plus candidate entities/events/mappings | governed mapping review required |
 | Partial | Explicitly scoped subset of sources or domains | may not imply whole-Core completeness |
-| Core-exported | A full or scoped Core Export Bundle | governed compatibility/import path |
+| Core-exported | A Full Core Export Bundle or a scoped Core Bundle | governed compatibility/import path, preserving the bundle's declared scope |
 
 Unknown extension fields are preserved verbatim where their enclosing canonical
 record is supported. Derived indexes, embeddings, graph exports, and caches are
