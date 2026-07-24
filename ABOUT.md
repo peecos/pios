@@ -62,6 +62,18 @@ Recommended attribution: **PIOS 2.0 by Valto Loikkanen / peecos**.
 
 Names and marks (`peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos) may be used for accurate reference but not to imply endorsement — see [TRADEMARKS.md](TRADEMARKS.md).
 
+## Open participation
+
+peecos connects independently developed work around PIOS; it does not absorb
+it. People may build applications, agents, skills, connectors, Core
+implementations, hosting services, research, or compatibility bridges in their
+own repositories and under their own licenses and business models.
+
+The [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
+sets the public participation baseline. A listing may be self-declared,
+reviewed, experimental, or supported, but listing never implies endorsement,
+security review, hosted availability, or support beyond the exact stated scope.
+
 ## Project structure
 
 | Where | What |

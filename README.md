@@ -41,6 +41,19 @@ hosted accounts or production API credentials. These documents distinguish
 published source/templates from proof artifacts, release candidates,
 experimental providers, and supported providers.
 
+## Draft Extension Contracts
+
+These draft companion specifications extend PIOS 2.0 without changing the
+current Core compatibility or deployment claims:
+
+- [Integration Interoperability and Governance v0.1](docs/integration-interoperability-and-governance-v0.1.md)
+- [Cognitive Memory, Source Discovery, and Derived Representations v0.1](docs/cognitive-memory-source-discovery-and-derived-representations-v0.1.md)
+- [PIOS Portability Package v0.1](docs/pios-portability-package-v0.1.md)
+- [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
+
+They are design contracts, not authorization for app networking, personal-data
+intake, generic API credentials, collection, migration, or hosted accounts.
+
 ## Implementation Repositories
 
 - AWS template path:
