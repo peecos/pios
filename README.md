@@ -83,6 +83,9 @@ handled separately only to prevent confusion.
 See [OPENNESS.md](OPENNESS.md) for a plain-language guide, attribution example,
 and the boundary for independent implementations and official identity.
 
+Want to help? See [peecos.org/get-involved](https://www.peecos.org/get-involved)
+and [CONTRIBUTING.md](https://github.com/peecos/.github/blob/main/CONTRIBUTING.md).
+
 ## License and Attribution
 
 The PIOS 2.0 framework documentation in this repository is licensed under

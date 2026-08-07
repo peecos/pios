@@ -1,12 +1,16 @@
 # Names and Marks
 
-The documentation license covers copyrightable documentation content. It does
-not grant rights to use project names, organization names, logos, or marks as
-brands.
+The content license (CC BY 4.0 or Apache-2.0, depending on the repository)
+covers the copyrightable material itself — text, code, templates. It's
+separate from the names and logos that identify the project.
 
-The names `peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos or
-marks may be used for accurate reference to the project, documentation, or
-compatible implementations. They may not be used to imply endorsement,
-official status, or ownership by another person or organization without
-separate permission.
+Use `peecos`, `PIOS`, `PIOS Core`, `Cotton`, and the associated logos freely
+to talk about, reference, or describe compatibility with the project — that's
+exactly what they're for. The one thing to avoid is using them in a way that
+suggests your project *is* peecos, or is officially endorsed by it, when it
+isn't. If you're building something independent and want to say it's "based
+on PIOS" or "PIOS-compatible," say so — just keep it clear that it's your own
+project.
+
+Questions about a specific use — [valto@valtoai.com](mailto:valto@valtoai.com).
 

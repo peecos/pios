@@ -51,16 +51,16 @@ EIOS's names extend PIOS metaphors into entity scale: Core became **Keel** (the 
 
 ## Licensing
 
-**© 2026 Valto Loikkanen / peecos.** PIOS, Core, Cotton, and the peecos organization assets are created and authored by Valto Loikkanen.
+**© 2026 Valto Loikkanen / peecos.** PIOS, Core, Cotton, and the peecos organization assets are created and authored by Valto Loikkanen, and made open on purpose — use them, share them, build on them.
 
 | Artifact | License |
 | --- | --- |
 | Framework documentation (this repository) | [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) — see [LICENSE.md](LICENSE.md) and [NOTICE](NOTICE) |
 | Public implementation templates (`pios-core-aws-template`, `pios-core-self-hosted`) | Apache License 2.0 |
 
-Recommended attribution: **PIOS 2.0 by Valto Loikkanen / peecos**.
+A simple credit is appreciated: **PIOS 2.0 by Valto Loikkanen / peecos**.
 
-Names and marks (`peecos`, `PIOS`, `PIOS Core`, `Cotton`, and associated logos) may be used for accurate reference but not to imply endorsement — see [TRADEMARKS.md](TRADEMARKS.md).
+The `peecos`, `PIOS`, `PIOS Core`, `Cotton` names and logos are yours to use for talking about or building on the project — see [TRADEMARKS.md](TRADEMARKS.md) for the one boundary (not implying official status you don't have).
 
 ## Open participation
 
@@ -68,6 +68,11 @@ peecos connects independently developed work around PIOS; it does not absorb
 it. People may build applications, agents, skills, connectors, Core
 implementations, hosting services, research, or compatibility bridges in their
 own repositories and under their own licenses and business models.
+
+**Want to get involved?** See [peecos.org/get-involved](https://www.peecos.org/get-involved)
+for ways to contribute, propose a project, or plug in — and
+[CONTRIBUTING.md](https://github.com/peecos/.github/blob/main/CONTRIBUTING.md)
+for repository-level contribution guidelines.
 
 The [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
 sets the public participation baseline. A listing may be self-declared,
