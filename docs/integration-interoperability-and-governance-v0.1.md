@@ -254,9 +254,95 @@ The runtime may be replaced without replacing the definition or owner-governed
 memory. Runtime-local caches, prompts, and service memory do not become
 canonical merely because an agent used them.
 
-## 16. Required future evidence
+## 16. PIOS Interoperability API Profiles
+
+PIOS interoperability is organized as provider-neutral profiles under the
+existing Core Service Interface. The profiles compose existing authority; they
+do not create a second API standard or replace `/.well-known/core`, Core
+Compatibility Levels, or the export format.
+
+| Profile | Boundary |
+| --- | --- |
+| Core API profile | References the mandatory versioned Core API for supported capture, retrieval, event, knowledge, and other Core operations. |
+| Integration and authorization profile | Defines manifests, agreements, grants, scopes, policy evaluation, revocation, and audit. |
+| Agent Tool profile | Exposes named, typed, policy-checked tools over operations already permitted by a grant. |
+| Provider Gateway profile | Normalizes a bounded external-provider capability while retaining provider, request, licence, freshness, and processing provenance. |
+| Portability profile | References the Core package, export/import, validation, and operationalization contracts. |
+
+The capability document advertises which profile names and versions an
+implementation supports. Advertisement is not an authorization grant. A client
+must degrade safely when an optional profile is unavailable.
+
+## 17. Provider-result lifecycle
+
+An external-provider response has an explicit Core lifecycle:
+
+| State | Meaning |
+| --- | --- |
+| Transient response | Used for the current request only; it is not Core state and has no canonical `core://` identity. |
+| Retained source evidence | Preserved through the inbound path with provider, request, licence/terms, freshness, integrity, and provenance facts. |
+| Canonical event or object | Created only through the applicable event, proposal, confirmation, and authority rules. |
+| Derived projection | A summary, normalized result, index, graph, vector, or other rebuildable representation linked to retained evidence and processing version. |
+
+Provider URLs, account identifiers, cache keys, and physical storage references
+remain provenance or implementation metadata. A normalized provider response
+does not become canonical merely because an adapter returned it.
+
+## 18. Context Receipt
+
+When authorized personal context is returned to an application, agent runtime,
+model, provider, or other recipient, Core should retain a Context Receipt or an
+equivalent event/audit pair. It binds:
+
+- owner and requesting integration/runtime;
+- Authorization Grant and manifest version;
+- purpose, recipient, model/provider, and processing boundary;
+- requested classes and returned canonical references/versions;
+- withheld classes or policy reasons;
+- transformations, summaries, redactions, and processing profile versions;
+- context-package digest and byte count where retained or transferred;
+- retention/expiry and external-copy rule; and
+- creation time, result, write-back reference, and revocation relationship.
+
+The receipt records what Core disclosed and under which authority. It does not
+prove that an external recipient complied after delivery, and it should not
+duplicate raw sensitive context into routine audit records.
+
+## 19. Same-publisher and local-substrate profiles
+
+Applications from one publisher may share a library, app group, cache, staging
+store, or projection as an implementation choice. Each application and runtime
+still has a distinct identity, manifest version, grants, technical scopes,
+audit attribution, and independently revocable access. Direct access to a
+shared database is not the interoperability contract.
+
+Reserve **Local Core** for a local deployment that implements a declared Core
+compatibility contract and has explicitly named canonical authority. A local
+cache, projection, inbox staging store, or app-group database is not a second
+Core and must not create an ambiguous canonical writer. Any later offline sync
+profile must define canonical-side, conflict, idempotency, correction,
+revocation, deletion, and cutover behavior before writable operation.
+
+## 20. Context compilation and model execution
+
+Context and Meaning are governed information products, not permissions. A
+context-compilation or model-execution request must identify the requesting
+integration/runtime, purpose, grant, requested data classes, sensitivity
+ceiling, freshness, recipient/model/provider, processing region, retention,
+training and deletion terms, external-copy behavior, and required output
+references.
+
+Model routing is optional and provider-neutral. Cost and latency policy may
+choose among otherwise authorized providers, but routing cannot broaden the
+candidate context, recipient boundary, or permitted write-back. Caller-supplied
+Role or Mode values remain input claims until confirmed through the applicable
+Core lifecycle.
+
+## 21. Required future evidence
 
 Before this contract becomes normative, PIOS needs schema validation, an
 allowed-operation and denied-operation fixture, revocation evidence, audit
-readback, data-minimization evidence, hostile-content fixtures, and proof that
-a manifest or retrieved instruction cannot bypass runtime enforcement.
+readback, data-minimization evidence, hostile-content fixtures, Context Receipt
+fixtures, provider-result lifecycle fixtures, profile-discovery tests, and
+proof that a manifest or retrieved instruction cannot bypass runtime
+enforcement.

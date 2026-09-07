@@ -568,6 +568,14 @@ Outer Circle
             <b>Principle 15</b>
             <div><strong>Retrieve summary-first.</strong> Good retrieval does not start by reading everything. Agents should choose the right navigation layer first: index, summary, History period, concept page, person page, project page, graph neighborhood, event record, or original source depending on the question.</div>
           </div>
+          <div class="principle">
+            <b>Principle 16</b>
+            <div><strong>Apps own experiences; the owner's Core preserves information continuity.</strong> Focused applications are a natural PIOS pattern, not a requirement. An application may provide a narrow, excellent experience while relying on defined Core interfaces rather than owning the person's durable information foundation.</div>
+          </div>
+          <div class="principle">
+            <b>Principle 17</b>
+            <div><strong>Capture once, represent many.</strong> One preserved source may produce transcripts, events, notes, knowledge, Meaning, context packets, indexes, graphs, vectors, and other projections. Every representation keeps explicit source/version provenance, lifecycle status, and authority; producing one representation never silently promotes another into canonical truth.</div>
+          </div>
         </section>
 
         <section id="cotton">
@@ -2661,6 +2669,10 @@ summary:
   main_topics:
     - personal_ai
     - product_strategy</code></pre>
+
+          <h3>12.8 Role and Mode Lifecycle</h3>
+          <p>A Role type, a Role instance, and a Role's temporary relevance to one event or session are different claims. Role and Mode context should identify whether it is proposed, inferred, owner-confirmed, inherited, expired, or superseded; preserve evidence, scope, confidence, and time bounds; and allow multiple concurrent contexts without turning a caller-supplied label into owner-confirmed truth.</p>
+          <p>Modes are normally ephemeral operating context. A persistent Mode tag, preference, or rule requires explicit confirmation and versioned evidence rather than repeated observation alone.</p>
         </section>
 
         <section id="functional-flow">
@@ -3566,6 +3578,7 @@ decay_policy: reduce_confidence_without_recent_evidence</code></pre>
           </ul>
 
           <p>Interpretations should include confidence, evidence, time window, and decay. The system should reflect who the person is now, not only who they were when old data was captured.</p>
+          <p>The epistemic sequence remains explicit: events are evidence of what happened; observed patterns summarize recurrence; proposed Meaning interprets significance; owner-confirmed Meaning records accepted significance; and Learning records a revisable lesson that may be recalled later. Frequency is not importance, and recurrence is not preference. No stage silently promotes itself into the next.</p>
         </section>
 
         <section id="retrieval">
@@ -3738,6 +3751,7 @@ decay_policy: reduce_confidence_without_recent_evidence</code></pre>
             </tbody>
           </table>
           <p>Every meaningful context assembly should create a retrieval log or equivalent trace that records active filters, cue interpretation, policy version, selected item IDs, selected tiers, rationale, token budget, and whether semantic/vector search was used. Deep recall beyond the recent operating window should be triggered by explicit time intent, selected entities, selected context, or recent-retrieval failure, and the reason should be logged.</p>
+          <p>Deterministic selection is the default reproducible mode. A model-assisted context compilation mode may summarize, rank, or select within an already authorized candidate set, but it must identify the model/profile, preserve source coverage and omissions, label the result as a projection, and never treat Context or Meaning as authorization. When context leaves Core for an application, agent runtime, model, or provider, the integration contract should retain a Context Receipt describing the purpose, grant, recipient, references or versions returned, transformations, withheld classes, retention, and result/write-back relationship.</p>
 
           <h3>16.4 Vector Retrieval as a Projection</h3>
           <p>Vector retrieval should be added as a projection when structural navigation is no longer sufficient. It should not replace the knowledge structure, the event log, or preserved sources.</p>

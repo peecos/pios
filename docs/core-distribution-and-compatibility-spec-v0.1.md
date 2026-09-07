@@ -51,6 +51,15 @@ An implementation may retain a physical storage reference in provenance, for
 example an S3 URI or a local object path, but a client must not require it to
 interpret or migrate canonical content.
 
+The name **Local Core** is reserved for a local deployment that implements a
+declared Core compatibility contract and has explicitly named canonical
+authority. A client cache, app-group database, offline projection, local inbox
+staging area, or synchronized working copy is not a Local Core merely because
+it contains personal information. If more than one compatible Core deployment
+can accept writes, the operating profile must name the canonical side and
+define reconciliation, conflict, correction, revocation, deletion, and
+owner-approved cutover behavior.
+
 ## 3. Version Model
 
 Every release and export declares three independent versions:

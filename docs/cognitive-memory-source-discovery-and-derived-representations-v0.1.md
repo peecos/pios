@@ -136,6 +136,10 @@ Meaning records explain why information matters to the owner. Learning records
 describe an evidence-linked lesson, strategy, correction, preference, warning,
 or working method that may help later. Their types remain glossary-extensible.
 
+A Meaning profile or service may answer governed personal-semantic questions
+over these objects. It is an interface over Core knowledge and evidence, not a
+new authoritative layer, data zone, or permission source.
+
 Recall conditions may make confirmed Meaning or Learning relevant to a later
 task. Adaptation remains a separate governed action: a confirmed learning does
 not silently rewrite an agent definition, workflow, preference, or policy.
@@ -179,11 +183,53 @@ state, authentication need, terms/robots notes, and the discovering actor and
 time. It remains a candidate record until the separate review, registration,
 backfill, and incremental-collection transitions are authorized.
 
-## 10. Required future evidence
+## 10. Context compilation profiles
+
+Context compilation answers: what may this authorized caller know for this
+purpose now? It has two distinguishable modes:
+
+- **deterministic selection** uses explicit filters, canonical references,
+  time bounds, confirmed tags, declared ranking rules, and reproducible packing;
+- **model-assisted compilation** summarizes, ranks, or selects within an
+  already authorized candidate set and records model identity/version,
+  confidence, source coverage, omissions, and a non-authoritative projection
+  status.
+
+A request identifies integration/runtime identity, purpose, Authorization
+Grant, requested data classes, sensitivity ceiling, freshness, recipient and
+processing boundary, retention, and output-reference requirements. Context and
+Meaning never imply authorization. Outward disclosure uses the Context Receipt
+defined by the integration-governance companion.
+
+## 11. Role, Mode, and epistemic lifecycle
+
+Role type, Role instance, and temporary relevance to one event or session are
+separate claims. Role and Mode records should retain source, evidence,
+confidence, scope, status, applicable time range, expiry or review time, and
+supersession. Multiple Roles and Modes may be relevant concurrently.
+
+Modes normally describe ephemeral operating context. Repeated or inferred Mode
+use does not become a persistent preference, rule, or owner fact without
+explicit confirmation and versioned evidence.
+
+PIOS preserves the following distinctions:
+
+```text
+Event → observed pattern → proposed Meaning → owner-confirmed Meaning → Learning
+```
+
+Each arrow is a governed interpretation or confirmation step, not automatic
+promotion. Frequency is not importance, and recurrence is not preference. A
+Learning may later be recalled as context, but changing behavior remains a
+separate adaptation decision.
+
+## 12. Required future evidence
 
 Before a representation profile is supported, prove source linkage, versioning,
 retrieval provenance, revocation/deletion behavior, and fail-closed handling
 for an excluded or guarded source. Before Cognitive Memory changes behavior,
 prove owner-confirmation and rollback behavior. Publish harmless fixtures for
 Meaning, Learning, source-local graph snapshots, source discovery, and
-representation-registry lifecycle before declaring interoperable schemas.
+representation-registry lifecycle before declaring interoperable schemas. Add
+deterministic and model-assisted context fixtures, Role/Mode expiry cases, and
+Context Receipt linkage before claiming those profiles interoperable.
