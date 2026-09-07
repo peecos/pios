@@ -50,6 +50,11 @@ Done when: the same conformance client can capture, retrieve, export, and
 discover capabilities against the managed reference and a self-hosted reference
 by changing only endpoint and credentials.
 
+The client configuration should converge on the Core Connection Profile
+described by the hosting and boundary principles. Repointing remains localized,
+but security-sensitive credentials, device trust, and owner authorization may
+require explicit re-establishment at the destination.
+
 Current proof progress: the AWS reference now exposes a machine-readable
 OpenAPI proof profile and IAM-authorized capability discovery for two
 proof-only write routes. Private reference deployment and live discovery proof
@@ -111,12 +116,13 @@ no source re-download of historical information.
 
 ## Current Focus and Boundaries
 
-The current immediate work is public Goal A/B contract hardening and
-reproducible conformance fixtures. A private, owner-ratified write-through
-parallel-run may provide implementation learning about bounded scope,
-idempotency, verification, and reconciliation, but it is not a substitute for
-API, export, or distribution conformance and does not change any compatibility
-level claim.
+Implementation work has advanced beyond the roadmap state captured when this
+document was first published, including a signed data-empty self-hosted Starter
+path and later private Solo operating evidence. Current release, provider, and
+owner-operation status belongs in the implementation repositories and their
+evidence. This framework roadmap continues to govern public compatibility
+claims: implementation progress is not a substitute for API, export,
+cross-profile, or operational-migration conformance.
 
 Do not treat this roadmap as approval for broad migration, connector sync,
 public provider support, production cutover, or sensitive-data transfer.

@@ -7,6 +7,13 @@ compatible. It applies to Core Managed, Core Self-Hosted, and future provider
 or managed-service implementations. It does not authorize a deployment, data
 migration, connector sync, or production use.
 
+The deployment-independent boundary model is defined in [Hosting, Core
+Boundaries, and Portability Principles
+v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md). A provider
+runtime may implement a Core capability without becoming canonical Core state,
+and an application or operator service does not become part of Core merely by
+running beside it.
+
 ## 1. Goal
 
 The infrastructure may change while the Core interface and canonical
@@ -122,6 +129,13 @@ Deployment-specific configuration provided to clients is limited to values such
 as `CORE_BASE_URL`, API version, owner context, and credentials. Provider
 configuration remains inside the deployment.
 
+A client may collect these values in a **Core Connection Profile**. The profile
+is a client-side abstraction over this connectivity contract, not a second
+protocol and not an authorization grant. It should keep endpoint, protocol/API
+version, capability discovery, private owner context, authentication method,
+and credential reference localized. Public discovery must not expose private
+owner identity unless the deployment's access boundary explicitly permits it.
+
 ## 5. Portable Canonical Package
 
 A full Core Export Bundle is a normal product capability, not an emergency-only
@@ -191,6 +205,20 @@ itself.
 
 Incremental export and final-delta behavior are a later v1.1 deliverable. Until
 then, an implementation must not claim operational migration compatibility.
+
+Portability claims cover three distinct dimensions:
+
+1. **State portability:** canonical state, identifiers, provenance, integrity,
+   extensions, and reconstruction instructions can move.
+2. **Operational portability:** a compatible destination can operate that state
+   with equivalent required behavior, authority semantics, recovery, and
+   auditability.
+3. **Ecosystem portability:** applications and supporting services can reconnect
+   without provider-internal dependencies or application redesign.
+
+Ecosystem portability may require new credentials, device enrollment, trust
+verification, or owner authorization. Those security boundaries must not be
+weakened merely to make migration appear automatic.
 
 ## 7. Compatibility Levels
 

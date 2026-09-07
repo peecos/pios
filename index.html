@@ -370,7 +370,7 @@
       <div class="nav-group">Technical Setups</div>
       <ol>
         <li><a href="#implementation-profiles">Implementation Profiles</a></li>
-        <li><a href="#aws-managed">Core Managed AWS</a></li>
+        <li><a href="#aws-managed">AWS One-Owner Core Reference</a></li>
         <li><a href="#self-hosted">Core Self-Hosted</a></li>
         <li><a href="#portability">Portability and Governance</a></li>
         <li><a href="#naming-map">Naming and Terminology Map</a></li>
@@ -386,7 +386,7 @@
           <p class="subtitle">A unified master document for the Personal Information Operating System framework, the Cotton Context Blueprint, the Core implementation, and the agent-operated personal information architecture.</p>
           <div class="meta">
             <span class="pill">Generated: 2026-06-08</span>
-            <span class="pill">Updated: 2026-07-02</span>
+            <span class="pill">Updated: 2026-09-07</span>
             <span class="pill">Source: PIOS 2.0 working discussions, Cotton, AWS, History, OKF comparison notes, LLM Wiki assessment, and related architecture reviews</span>
             <span class="pill">Status: Working master draft</span>
             <span class="pill">Theme: Light</span>
@@ -4101,7 +4101,7 @@ Orchestrator Agent
           <p>The general PIOS/Core model is implementation-independent. The same information model, event spine, glossary, context dimensions, retrieval patterns, and agent governance should apply across managed and self-hosted deployments. The deployment-specific differences are service choices, operations, cost model, and responsibility boundaries.</p>
 
           <div class="callout">
-            <p><strong>Current implementation priority:</strong> start with Core Managed on AWS as the first optimized service path. Keep the architecture portable by treating AWS services as one implementation profile rather than as dependencies of PIOS itself.</p>
+            <p><strong>Implementation status boundary:</strong> the public self-hosted distribution, the private Solo operating path, and the one-owner AWS pilot/template provide different kinds of implementation evidence. None of them alone defines PIOS or establishes a multi-tenant hosted service. Current release and operating status belongs in the relevant implementation repository; this master defines the shared architecture.</p>
           </div>
 
           <h3>18.1 Capability Map</h3>
@@ -4109,7 +4109,7 @@ Orchestrator Agent
             <thead>
               <tr>
                 <th>Capability</th>
-                <th>Core Managed AWS</th>
+                <th>AWS reference profile</th>
                 <th>Core Self-Hosted</th>
               </tr>
             </thead>
@@ -4166,11 +4166,25 @@ derived/    (core-derived zone)
 system/     (core-system zone)</code></pre>
 
           <p>Names may vary by deployment, owner boundary, service-internal tenant, account, or namespace, but the conceptual zones should remain stable for exportability and agent reasoning. In AWS, these should normally be prefixes inside the owner's physical bucket, not separate buckets.</p>
+
+          <h3>18.3 Core Boundaries Across Hosting Models</h3>
+          <p>A Core remains the same logical kind of system across deployment profiles when it implements the same versioned Core contract and preserves equivalent owner-state, authority, interface, and portability semantics. PIOS defines that contract; Core implementations realize it through deployment-specific mechanisms.</p>
+          <p>Physical location does not determine the logical boundary. A replaceable worker or model service may execute a Core capability outside the machine holding canonical state, while an application colocated on that machine may remain outside Core. Implementations should distinguish:</p>
+          <ul>
+            <li><strong>Normative Core capabilities:</strong> behavior required by a declared compatibility profile.</li>
+            <li><strong>Canonical Core state:</strong> portable owner state and definitions governed by Core.</li>
+            <li><strong>Core capability executors:</strong> replaceable runtimes that perform bounded Core work.</li>
+            <li><strong>Core interfaces and adapters:</strong> APIs, protocols, connectors, and transports over Core behavior.</li>
+            <li><strong>Supporting applications and services:</strong> application-specific capabilities that use Core.</li>
+            <li><strong>Operator control planes:</strong> provisioning, billing, fleet administration, support, and service operations.</li>
+            <li><strong>External execution resources:</strong> models and specialist processors that provide replaceable execution capacity.</li>
+          </ul>
+          <p>Core hosting, supporting-service provision, model selection, and infrastructure operation should remain independently selectable where reasonably possible. The full architecture principles are defined in <a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a>.</p>
         </section>
 
         <section id="aws-managed">
-          <h2>19. Core Managed AWS Implementation</h2>
-          <p>Core Managed is the AWS-hosted Personal Information Management as a Service implementation of PIOS. It uses AWS-native managed services where they reduce operational work, but it must preserve the same Core information model and portability requirements.</p>
+          <h2>19. AWS One-Owner Core Reference</h2>
+          <p>The current AWS reference is a provider-native, one-owner pilot/template for implementing a Core with AWS managed services. It is implementation evidence and a self-setup path, not by itself a live multi-tenant account service. Any future Core Managed service may reuse proven contracts and components, but it requires its own tenant architecture, operator control plane, security and operations evidence, and separately ratified service launch.</p>
           <div class="callout">
             <p><strong>Hosted availability:</strong> Prifina intends to make a hosted Core option available soon. It is not yet an account service: hosted sign-up, production API credentials, regions, plans, and service terms will be announced by Prifina. The required evidence gate and service path are defined in the <a href="https://github.com/peecos/pios/blob/main/docs/core-hosted-service-fork-path-v0.1.md">Core Hosted Service Fork Path v0.1</a>.</p>
           </div>
@@ -4247,6 +4261,7 @@ system/     (core-system zone)</code></pre>
           <p>Core Managed can share AWS infrastructure, but it must not collapse different people's information into one undifferentiated SaaS data space. Each owner needs an explicit logical Core with clear boundaries around originals, events, knowledge, derived projections, and system definitions.</p>
           <p>Per-owner data boundaries are explicit because ownership, export, deletion, and takeover matter. A person must be able to understand what is theirs, export it, delete it, migrate it, or take over operation of it without depending on hidden cross-owner coupling.</p>
           <p>The managed service is fiduciary infrastructure for the owner. It may operate shared systems, but it should behave as a steward of owner-held information rather than as the conceptual owner of the data.</p>
+          <p>Shared processing does not mean shared Core context. Every work unit must bind one Core and owner context, applicable authority, allowed reads and writes, guidance and skills, and temporary-context lifetime. Shared code or stateless workers are acceptable; shared mutable owner context is not.</p>
           <div class="callout">
             <p><strong>Preferred owner-isolated AWS layout:</strong> Core Managed should start from one physical S3 bucket per owner, with the five Core data zones represented as top-level prefixes. This keeps the owner boundary clear without creating unnecessary bucket sprawl for individual owners. Multi-bucket-per-owner layouts can remain available for exceptional sovereignty, regulatory, or operational cases.</p>
           </div>
@@ -4451,7 +4466,7 @@ system/     (core-system zone)</code></pre>
           <h2>20. Core Self-Hosted Implementation</h2>
           <p>Core Self-Hosted implements the same PIOS/Core model on a portable VM or server stack. It exists so a complete Core can run outside the managed AWS service without changing the underlying information architecture.</p>
           <p>In the self-hosted profile, the equivalent of a Core Template is a versioned, data-empty image-root or install composition: for example a VM image, install script, container composition, or configuration bundle that creates the same storage zones, services, backup rules, access controls, and processing structure before any owner data is hydrated. The image-root should be built from an allowlist, validated by a hygiene gate, and packaged only when it is provably free of owner data, deployment identifiers, and key material.</p>
-          <p><strong>Current implementation stance:</strong> build AWS Core Managed first as the concrete reference implementation, but maintain a Core Self-Hosted implementation contract in parallel. The self-hosted contract should capture the portability requirements that AWS work must keep satisfying: five Core Data Zones, atomic no-overwrite event writes, retained originals, provider-neutral Core Bundles, local restore, History rendering, generated indexes, key custody, backup/restore, and owner takeover. Self-hosted validation should progress in stages: local bundle hydration, booted VM proof, protected-ingestion parity, hardened key provider, repeatability, and only then broader migrated owner data.</p>
+          <p><strong>Implementation stance:</strong> Core Self-Hosted and provider-native Core implementations are reciprocal architecture tests. The public self-hosted path now includes a signed data-empty ARM64 Starter release path and later private Solo operating evidence, while public compatibility and provider-support claims remain limited to their separately published evidence. Each implementation should preserve the requirements the other keeps visible: five Core Data Zones, atomic no-overwrite event writes, retained originals, provider-neutral Core Bundles, local restore, History rendering, generated indexes, key custody, backup/restore, and owner takeover.</p>
           <p>Transition patterns must stay profile-agnostic. AWS-specific controls such as S3 Object Lock, KMS crypto-shred, and a governed large-object multipart role should map to self-hosted equivalents rather than becoming PIOS requirements. A self-hosted Core needs its own documented large-file ingest path, immutability or append-only mechanism, key custody and erasure path, remediation/tombstone lifecycle, and restore proof before it handles broad migrated owner data.</p>
 
           <h3>20.1 Self-Hosted Template and First Boot</h3>
@@ -4610,6 +4625,14 @@ Derived outputs and knowledge updates written</div>
 
           <h3>21.1 Portability Requirement</h3>
           <p>A complete Core must be exportable, recoverable, and runnable outside the infrastructure provider currently hosting it. The export should not merely be a folder of owner files. It should be a reconstructable personal information core.</p>
+
+          <p>Portability has three related dimensions:</p>
+          <ul>
+            <li><strong>State portability:</strong> canonical owner state can move with stable logical identifiers, provenance, integrity evidence, unknown extensions, and reconstruction instructions.</li>
+            <li><strong>Operational portability:</strong> a compatible destination can operate that state with equivalent required behavior, authority semantics, recovery, and auditability.</li>
+            <li><strong>Ecosystem portability:</strong> applications and supporting services can reconnect without depending on the former host's internal storage, queues, databases, or model provider.</li>
+          </ul>
+          <p>Ecosystem portability does not require copying security-sensitive trust. A destination may require new credentials, device enrollment, owner approval, or integration authorization. The design target is localized, standardized reconnection rather than application redesign or weakened trust boundaries.</p>
 
           <p>A Core export should include:</p>
           <ul>
@@ -4984,6 +5007,11 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
                 <td>Independent projects, accurate capability claims, catalog states, and public participation.</td>
                 <td>Listing is discoverability, not endorsement, approval, support, or a compatibility claim beyond the stated evidence.</td>
               </tr>
+              <tr>
+                <td><a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a></td>
+                <td>Deployment-independent Core boundaries, execution taxonomy, hosting profiles, intelligence placement, and state/operational/ecosystem portability.</td>
+                <td>Infrastructure, operators, applications, supporting services, and models remain replaceable; current implementation evidence does not create hosted-service availability or compatibility claims by itself.</td>
+              </tr>
             </tbody>
           </table>
         </section>
@@ -5193,14 +5221,13 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
             <li>Use that migration to validate taxonomy values, context dimensions, glossary seeding, reference templates, storage recommendations, and agent behavior before locking implementation details.</li>
           </ul>
 
-          <h3>23.2 Immediate Priority - Core Managed AWS</h3>
+          <h3>23.2 Implementation Evidence Across Profiles</h3>
           <ul>
-            <li>Start implementation from the AWS-native Core Managed path.</li>
-            <li>Create one owner-isolated S3 bucket with prefixes for the five Core data zones, then implement the minimal event envelope.</li>
-            <li>Build minimal inbox ingestion: upload, preserve original, create event, record source reference, and preserve source-original timestamps separately from Core primary-record timestamps.</li>
-            <li>Implement the source promotion lifecycle: parked, analyzed, mapped, enriched, and History-included.</li>
-            <li>Build the full Core Export Bundle and Provisioning Manifest tooling needed for rebuild, transfer, and takeover: export manifest, checksums, import/hydration, destination KMS re-encryption, parity validation, and clear authorization gates.</li>
-            <li>Measure real costs and processing bottlenecks before adding optional services.</li>
+            <li>Use provider-native and self-hosted implementations as reciprocal tests of the same Core contract rather than treating either topology as the definition of PIOS.</li>
+            <li>Keep current release, deployment, provider-support, and owner-operation status in implementation repositories and evidence records rather than freezing it into this framework roadmap.</li>
+            <li>Advance public compatibility claims only through published schemas, fixtures, conformance tests, and evidence for the exact claimed scope.</li>
+            <li>Preserve the separation between the one-owner AWS pilot/template, Core Self-Hosted and Solo operation, and any future multi-tenant Core Managed service.</li>
+            <li>Measure real costs, processing bottlenecks, and operational needs before adding optional infrastructure or promoting implementation conveniences into framework requirements.</li>
           </ul>
 
           <h3>23.3 General Framework Extraction</h3>
@@ -5211,13 +5238,13 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
             <li>Use AWS implementation learnings to improve the general framework without making AWS a dependency.</li>
           </ul>
 
-          <h3>23.4 Core Self-Hosted Follow-Up</h3>
+          <h3>23.4 Core Self-Hosted Continuation</h3>
           <ul>
-            <li>Maintain the Core Self-Hosted implementation contract while AWS remains the reference build, so AWS-specific services do not become accidental PIOS requirements.</li>
-            <li>Package the same information model on Ubuntu, Garage, Python, DuckDB, WireGuard, and Restic.</li>
+            <li>Maintain the Core Self-Hosted implementation as a first-class portability and owner-operation path so provider-specific services do not become accidental PIOS requirements.</li>
+            <li>Keep implementation technologies replaceable. Ubuntu, Garage, Python, DuckDB, WireGuard, and Restic are reference choices rather than normative PIOS dependencies.</li>
             <li>Define the self-hosted Core Template as a versioned data-empty image-root, VM image, install script, container composition, or configuration bundle that can create an empty Core Self-Hosted structure before bundle hydration and pass a hygiene gate before distribution.</li>
             <li>Define self-hosted equivalents for large-file ingest, append-only or immutable originals/events, remediation tombstones, erasure/key custody, and restore proofs before broad migrated owner data is hydrated.</li>
-            <li>Treat local bundle hydration as the first reconstruction proof; the next self-hosted milestones are a booted VM proof, protected-ingestion parity, hardened key provider, repeatability across a second VM, and only then full self-hosted product hardening.</li>
+            <li>Describe completed Starter, provider-proof, and private Solo milestones in current implementation evidence. Do not turn private owner operation into a public support claim without the applicable release and conformance record.</li>
             <li>Document operational responsibilities clearly: updates, backups, keys, monitoring, and recovery.</li>
           </ul>
 

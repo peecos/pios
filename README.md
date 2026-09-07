@@ -32,9 +32,11 @@ sibling framework, licensing, and project structure — is in
 - [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md)
 - [Core Distribution and Compatibility Roadmap v0.1](docs/core-distribution-roadmap-v0.1.md)
 - [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md)
+- [Hosting, Core Boundaries, and Portability Principles v0.1](docs/hosting-core-boundaries-and-portability-principles-v0.1.md)
 
-These documents define the public compatibility target and the separately
-gated path from a private owner Core to a future multi-tenant hosted service.
+These documents define the public compatibility target, deployment-independent
+Core boundaries, and the separately gated path from a private owner Core to a
+future multi-tenant hosted service.
 Prifina intends to make that hosted option available soon. Until Prifina
 announces service availability, the framework and templates do not provide
 hosted accounts or production API credentials. These documents distinguish

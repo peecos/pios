@@ -16,6 +16,13 @@ future multi-tenant hosted Core service may use those contracts, but it is a
 separate product and operating model. It must not emerge implicitly from the
 single-owner AWS reference or from publication of the templates.
 
+The current AWS reference is a one-owner pilot/template path. It is not the
+initial production tenant, service control plane, or evidence that a
+multi-tenant data plane exists. The deployment-independent distinction among
+Core state, Core capability executors, supporting services, and operator
+control planes is defined in [Hosting, Core Boundaries, and Portability
+Principles v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md).
+
 The current priority is Valto's private owner Core: establish it as a durable,
 governed, portable master for real normal work. The hosted-service path forks
 only after that path has supplied enough operational evidence to make a
@@ -79,6 +86,17 @@ The fork decision must choose and document:
 - tenancy, quota, metering, and commercial boundaries;
 - export, deletion, suspension, and account-closure behavior;
 - the compatibility level and provider-support status that may be claimed.
+
+Shared code, stateless workers, model routing, and processing infrastructure
+may be used where justified. Every work unit must nevertheless be bound to one
+Core and one owner context, with explicit authority, allowed inputs and outputs,
+temporary-context lifetime, and cleanup behavior. Shared mutable owner context
+is not an acceptable consequence of shared infrastructure.
+
+Tenant provisioning, billing, fleet administration, support, abuse prevention,
+and service-health operations belong to the operator control plane. They may be
+necessary for the hosted product without becoming PIOS capabilities or portable
+owner Core state.
 
 No tenant data, credentials, identity pools, audit streams, billing records, or
 support tools may share Valto's private pilot environment merely for

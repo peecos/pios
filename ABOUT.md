@@ -91,7 +91,7 @@ security review, hosted availability, or support beyond the exact stated scope.
 | [github.com/peecos/media](https://github.com/peecos/media) | Overview media: video, audio, and the architectural manifesto |
 | valto@valtoai.com | Contact |
 
-The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals. A possible hosted multi-tenant service is governed separately by the [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md). Prifina intends to make that hosted option available soon; it is not supplied by the templates.
+The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The [Hosting, Core Boundaries, and Portability Principles v0.1](docs/hosting-core-boundaries-and-portability-principles-v0.1.md) separates normative Core capabilities and state from replaceable runtimes, supporting services, operator control planes, and provider infrastructure. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals. A possible hosted multi-tenant service is governed separately by the [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md). Prifina intends to make that hosted option available soon; it is not supplied by the templates.
 
 ## Boundary
 
@@ -103,6 +103,6 @@ The framework repositories are documentation and templates. They are not a hoste
 | --- | --- |
 | PIOS 2.0 master documentation | **Published** ([peecos.org/pios/master](https://www.peecos.org/pios/master)) |
 | Core Managed AWS template | Published source/template path; implementation readiness is governed separately |
-| Core Self-Hosted VM template | Published source/template path; public release/support status is governed separately |
+| Core Self-Hosted VM template | Signed data-empty ARM64 Starter v0.1.0 published; provider support and owner-operation status remain separately governed |
 | pios-global reference wiki | Archived (pre-2.0 era) |
 | EIOS sibling framework | Independent since 2026-07-08 ([entitycore.org](https://entitycore.org)) |

@@ -18,6 +18,13 @@ agent-definition governance, privacy/access rules, and Core Compatibility
 contract. It does not replace the mandatory Core API, `/.well-known/core`, or
 Core Compatibility Levels 1–5.
 
+The hosting-boundary taxonomy is defined in [Hosting, Core Boundaries, and
+Portability Principles
+v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md). Integrations
+must distinguish a normative Core capability, its replaceable executor, a Core
+interface or adapter, an application/supporting service, an operator control
+plane, and an external model or processing resource.
+
 ## 2. Terms
 
 | Term | Meaning |
@@ -33,6 +40,12 @@ Core Compatibility Levels 1–5.
 An external **application** is not a PIOS **App View**. App Views are Core
 surfaces; an application is an independently operated capability that may
 integrate with Core.
+
+Application-specific intelligence does not become Core intelligence because it
+runs near Core, uses Core context, or shares a model provider. If an external
+processor implements a normative Core capability, its durable inputs,
+authority, outputs, provenance, and failure semantics remain Core-scoped even
+when execution is physically external.
 
 ## 3. Integration Definition and manifest
 
