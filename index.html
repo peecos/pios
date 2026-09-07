@@ -4183,7 +4183,7 @@ system/     (core-system zone)</code></pre>
         </section>
 
         <section id="aws-managed">
-          <h2>19. AWS One-Owner Core Reference</h2>
+          <h2>19. AWS One-Owner Core Reference and Future Managed Service</h2>
           <p>The current AWS reference is a provider-native, one-owner pilot/template for implementing a Core with AWS managed services. It is implementation evidence and a self-setup path, not by itself a live multi-tenant account service. Any future Core Managed service may reuse proven contracts and components, but it requires its own tenant architecture, operator control plane, security and operations evidence, and separately ratified service launch.</p>
           <div class="callout">
             <p><strong>Hosted availability:</strong> Prifina intends to make a hosted Core option available soon. It is not yet an account service: hosted sign-up, production API credentials, regions, plans, and service terms will be announced by Prifina. The required evidence gate and service path are defined in the <a href="https://github.com/peecos/pios/blob/main/docs/core-hosted-service-fork-path-v0.1.md">Core Hosted Service Fork Path v0.1</a>.</p>
@@ -4202,7 +4202,7 @@ system/     (core-system zone)</code></pre>
               <tr>
                 <td>Amazon S3</td>
                 <td>Foundation storage for originals, events, knowledge, derived outputs, and system definitions.</td>
-                <td>Always used in Core Managed.</td>
+                <td>Used by the current AWS reference. A future hosted service may choose a different isolated storage layout while preserving the Core contract.</td>
               </tr>
               <tr>
                 <td>AWS Lambda</td>
@@ -4257,8 +4257,8 @@ system/     (core-system zone)</code></pre>
             </tbody>
           </table>
 
-          <h3>19.2 Core Managed Owner Isolation</h3>
-          <p>Core Managed can share AWS infrastructure, but it must not collapse different people's information into one undifferentiated SaaS data space. Each owner needs an explicit logical Core with clear boundaries around originals, events, knowledge, derived projections, and system definitions.</p>
+          <h3>19.2 Future Managed-Service Owner Isolation</h3>
+          <p>This subsection describes the architecture required for a future multi-tenant Core Managed service; it does not describe a capability already provided by the current one-owner AWS reference. A managed service can share AWS infrastructure, but it must not collapse different people's information into one undifferentiated SaaS data space. Each owner needs an explicit logical Core with clear boundaries around originals, events, knowledge, derived projections, and system definitions.</p>
           <p>Per-owner data boundaries are explicit because ownership, export, deletion, and takeover matter. A person must be able to understand what is theirs, export it, delete it, migrate it, or take over operation of it without depending on hidden cross-owner coupling.</p>
           <p>The managed service is fiduciary infrastructure for the owner. It may operate shared systems, but it should behave as a steward of owner-held information rather than as the conceptual owner of the data.</p>
           <p>Shared processing does not mean shared Core context. Every work unit must bind one Core and owner context, applicable authority, allowed reads and writes, guidance and skills, and temporary-context lifetime. Shared code or stateless workers are acceptable; shared mutable owner context is not.</p>

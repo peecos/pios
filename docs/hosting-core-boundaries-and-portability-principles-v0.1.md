@@ -134,11 +134,13 @@ behavior, supporting services, and custom Core modifications. An owner remains
 free to colocate or modify software, but modifications may affect compatibility
 claims and future portability.
 
-### 7.2 Managed Single-Owner Core
+### 7.2 Provider-Managed Single-Owner Deployment
 
 A provider-native deployment may operate one owner's Core in a dedicated or
 owner-controlled cloud environment. The current AWS reference is a one-owner
-pilot/template path. It is not by itself a multi-tenant hosted account service.
+pilot/template path. This is an operating arrangement, not a third Core
+compatibility profile, and it is not by itself a multi-tenant hosted account
+service.
 
 ### 7.3 Multi-Tenant Core Host
 
@@ -270,4 +272,3 @@ Applications, services, operators, infrastructure, models, and implementation
 technology may change. The owner's canonical state and authority remain bound
 to their Core, and the Core remains intelligible through the same logical,
 versioned, portable contract.
-

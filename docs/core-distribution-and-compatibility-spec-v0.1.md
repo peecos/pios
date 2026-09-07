@@ -99,7 +99,6 @@ The capability document declares at least:
   "core_version": "0.1.0",
   "api_versions": ["v1"],
   "export_format_version": "1.0",
-  "owner_id": "owner_example",
   "capabilities": {
     "capture": true,
     "events": true,
@@ -133,8 +132,10 @@ A client may collect these values in a **Core Connection Profile**. The profile
 is a client-side abstraction over this connectivity contract, not a second
 protocol and not an authorization grant. It should keep endpoint, protocol/API
 version, capability discovery, private owner context, authentication method,
-and credential reference localized. Public discovery must not expose private
-owner identity unless the deployment's access boundary explicitly permits it.
+and credential reference localized. The public capability document describes
+the deployment and supported contract; it does not include an owner identifier.
+An authenticated owner-specific capability response may include owner context
+when the deployment's access boundary explicitly permits it.
 
 ## 5. Portable Canonical Package
 
