@@ -67,14 +67,104 @@ Import/Operationalization Report covering:
 No import silently promotes raw material into History, owner profile truth,
 personal meaning, public/shared content, or a Full Core Export Bundle.
 
-## 6. Conformance fixtures
+Definitions for applications, agents, skills, connectors, and schedules may be
+carried as portable descriptions. Import does not install, activate, connect,
+or grant authority to them. Credentials, device trust, source connections, and
+operational schedules require separate destination validation and owner
+authorization.
+
+## 6. Composition roles
+
+- The **owner** defines purpose, scope, exclusions, sensitivity boundaries,
+  destination intent, and acceptable external processing.
+- An **agent or migration tool** may inventory, map, package, validate, explain
+  uncertainty, and prepare review material within its authority.
+- The **receiving implementation** verifies and operationalizes accepted
+  content, rebuilds allowed projections, and reports what became operational.
+
+The agent performs preparation work; it does not infer unlimited authority from
+filesystem, account, or source access.
+
+## 7. Validation stages
+
+A package validator should report separately:
+
+1. **Container validation:** safe paths, readable structure, required manifest,
+   declared files, counts, and byte limits.
+2. **Schema validation:** recognized versions, required identifiers, field
+   types, references, and extension handling.
+3. **Integrity validation:** digest and signature verification where applicable.
+4. **Semantic validation:** coherent provenance, scope, chronology, ownership,
+   and references without silent normalization.
+5. **Capability validation:** destination support, required conversions,
+   unsupported optional content, and owner-review points.
+
+Technical validity does not constitute owner approval to transfer or import.
+
+## 8. Partial, merge, and conflict handling
+
+A package may target an empty Core, an existing Core belonging to the same
+owner, a recovery environment, or an isolated review environment. Partial
+packages declare selection criteria, exclusions, time boundaries, unresolved or
+external references, and intended use.
+
+Merge import must not silently overwrite canonical state. Conflicts may be
+preserved side by side, represented as a new version, mapped to an existing
+object, proposed for owner review, or retained as unresolved source material.
+The Import/Operationalization Report records every resolution and loss.
+
+## 9. Large-package and recovery profiles
+
+The logical package may be one archive or multiple signed parts. Large-package
+profiles may use segmented archives, resumable transfer, content-addressed
+chunks, separate media volumes, manifest-first inspection, and incremental
+validation without changing canonical package meaning.
+
+A recovery package uses the same validation and import boundary while placing
+additional emphasis on completeness, encryption, independent storage, key
+separation, periodic creation, and tested restore behavior.
+
+## 10. Security, third-party information, and uncertainty
+
+Portability packages may be an owner's most sensitive aggregate artifact. The
+package declares encryption and key-handling expectations, sensitivity,
+external-processing boundaries, temporary retention, and required deletion.
+Secret values and non-exportable credentials remain excluded.
+
+Personal information may concern other people or organizations. Composition and
+import must support exclusions, restricted sections, minimization, ownership or
+authority review, and destination-side policy checks.
+
+Unknown formats, ambiguous identities, missing timestamps, partial extraction,
+possible duplicates, unsupported application state, and uncertain inferences
+are recorded explicitly. Uncertainty is preserved rather than silently
+discarded or converted into canonical truth.
+
+## 11. Agent-guided portability skill
+
+A separate, portable skill may guide an owner through selecting purpose,
+sources, exclusions, preparation depth, destination, and continuing
+connections. It may compose and validate packages, but the package
+specification—not a particular agent runtime—defines validity.
+
+The skill should generate a reviewable package summary, source-mapping report,
+unresolved-item report, and proposed operationalization plan. Any cost estimate,
+provider recommendation, converter marketplace, or managed processing offer is
+optional ecosystem functionality rather than part of package validity.
+
+## 12. Conformance fixtures
 
 The first fixtures must be synthetic and include raw-only, mapped, partial,
 unknown-extension, conflicting-source, invalid-ownership, and prohibited-secret
 cases. The same fixture set should later validate source-composed-package and
 Core-export-bundle paths across the managed and self-hosted profiles.
 
-## 7. Non-goals
+Fixture coverage should also include path traversal, malformed manifests,
+digest mismatch, unsupported required capabilities, merge conflicts, segmented
+packages, interrupted import, rollback, and the rule that imported definitions
+remain inactive until separately authorized.
+
+## 13. Non-goals
 
 File extensions, managed migration quotes, conversion marketplaces, service
 pricing, connector recommendations, and provider-specific storage are optional

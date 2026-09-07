@@ -67,18 +67,27 @@ remain incomplete.
 Outcome: public artifacts can be installed and verified without overclaiming
 provider support.
 
+Complete or evidenced now:
+
+- signed PIOS Starter `v0.1.0` release package for ARM64 QEMU/qcow2;
+- published checksums, signature, public-key fingerprint, release notes, package
+  manifest, and verification instructions;
+- data-empty image hygiene and local ARM64 QEMU validation; and
+- a provider-readiness matrix that keeps experimental proof separate from
+  supported-provider claims.
+
 Next deliverables:
 
-- publish signed release metadata, checksums, SBOM/dependency record, and
-  release notes;
-- publish a data-empty VM release candidate and its verification guide;
+- publish a complete SBOM or equivalent dependency record for future releases;
 - create a Docker Compose package and idempotent Linux installer from the same
   self-hosted runtime definition;
-- publish a provider-support matrix using the status terms in the specification.
+- publish an `x86_64` artifact when that architecture has equivalent evidence;
+- repeat provider proofs with public release artifacts and conformance checks
+  before promoting any provider to supported status.
 
-Done when: a user can verify a signed release, install a data-empty Core on the
-supported generic VM path, run first-boot health checks, and prove no owner data
-or secrets were bundled.
+The ARM64 QEMU release path satisfies the initial signed, data-empty artifact
+milestone. Goal C remains open for broader installation forms, architecture
+coverage, dependency inventory, and supported-provider evidence.
 
 ## Goal D: Provider Coverage Without Lock-In
 

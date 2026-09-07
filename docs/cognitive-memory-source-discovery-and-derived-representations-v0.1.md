@@ -114,9 +114,76 @@ S3 Vectors or any equivalent is an implementation-profile choice. It belongs in
 an AWS or other provider profile after this technology-neutral record and
 contract are proven.
 
-## 6. Required future evidence
+## 6. Meaning and Learning record contracts
+
+A future schema should require the following common fields without fixing every
+Cotton vocabulary value permanently:
+
+```text
+id and object_type
+subject_refs and evidence_refs
+statement
+originator and model/profile where relevant
+confidence
+context and applicable scope
+created_at
+status
+supersedes or revision relationship
+review_after where applicable
+```
+
+Meaning records explain why information matters to the owner. Learning records
+describe an evidence-linked lesson, strategy, correction, preference, warning,
+or working method that may help later. Their types remain glossary-extensible.
+
+Recall conditions may make confirmed Meaning or Learning relevant to a later
+task. Adaptation remains a separate governed action: a confirmed learning does
+not silently rewrite an agent definition, workflow, preference, or policy.
+
+## 7. Source-local graph snapshots
+
+When graph extraction is useful, PIOS should preserve an immutable graph
+snapshot for a specific source version before attempting global entity
+resolution. The snapshot records:
+
+- snapshot id, source reference, and source version;
+- extraction profile, model/version, time, and status;
+- source-local nodes and relationships;
+- confidence and evidence references, including page, paragraph, timestamp, or
+  media-region references where available;
+- proposed canonical matches separately from confirmed resolutions.
+
+A changed source or extraction profile creates a new snapshot. The original
+snapshot remains evidence of what that source and extraction produced. Global
+graphs are evolving projections and must not erase source-local ambiguity.
+
+## 8. Derived-representation registry and lifecycle
+
+Each retained derived representation should be discoverable through a registry
+record containing its canonical subject, source version, representation type,
+model and model version, output format or dimensions, creation time, sensitivity
+and authorization basis, lifecycle status, replacement relationship, and
+provider-specific physical reference.
+
+Representation identity must separate incompatible models, dimensions,
+modalities, and semantic spaces. Creation of a new model output does not
+silently overwrite the only historical representation. Representations may be
+active, deprecated, superseded, rebuildable, or deleted according to source and
+consent lifecycle.
+
+## 9. Source Discovery record
+
+A discovery result should retain the submitted URL or subject, discovered
+candidate type and location, confidence, expected update frequency, security
+state, authentication need, terms/robots notes, and the discovering actor and
+time. It remains a candidate record until the separate review, registration,
+backfill, and incremental-collection transitions are authorized.
+
+## 10. Required future evidence
 
 Before a representation profile is supported, prove source linkage, versioning,
 retrieval provenance, revocation/deletion behavior, and fail-closed handling
 for an excluded or guarded source. Before Cognitive Memory changes behavior,
-prove owner-confirmation and rollback behavior.
+prove owner-confirmation and rollback behavior. Publish harmless fixtures for
+Meaning, Learning, source-local graph snapshots, source discovery, and
+representation-registry lifecycle before declaring interoperable schemas.

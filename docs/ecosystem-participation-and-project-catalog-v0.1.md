@@ -19,7 +19,24 @@ Core or hosted service, contribute documentation/testing, or publish a
 compatibility bridge. Ideas are invitations, not assigned work or exclusive
 roadmap items.
 
-## 3. Project catalog
+## 3. Compatibility bridges
+
+An existing project may add a deliberately limited PIOS path without replacing
+its current architecture:
+
+| Bridge | Declared behavior |
+| --- | --- |
+| Capture Bridge | Sends selected originals, events, or checkpoints into Core. |
+| Context Bridge | Reads a bounded set of authorized Core context. |
+| Sync Bridge | Exchanges a declared information set in both directions with conflict and retry semantics. |
+| Archive Bridge | Preserves completed, historical, or important information in Core. |
+| Agent Bridge | Exposes an application or service through a bounded PIOS-compatible agent or protocol adapter. |
+
+Bridge names are plain-language capability descriptions, not Core Compatibility
+Levels. A project states data direction, information classes, authority,
+retention, and evidence for the exact bridge it claims.
+
+## 4. Project catalog
 
 A catalog entry should point outward and contain:
 
@@ -38,7 +55,20 @@ Integration capability declarations describe actual behavior such as Core
 context read, Core capture write, checkpoint proposal, controlled sync, or
 Core-native backend. They are not Core Compatibility Levels.
 
-## 4. Claim states
+## 5. Project proposal and README baseline
+
+A lightweight proposal should identify the problem, intended users, possible
+PIOS relationship, project type, related work, open questions, first experiment,
+maintainers, and current state. Ideas are invitations, not assigned work or
+exclusive roadmap commitments.
+
+An independent project's README should identify its maintainers, repository,
+license, hosting model, supported PIOS capabilities, data directions, privacy
+boundary, evidence status, and known limits. It should state that the project is
+independently developed unless explicit authorization permits an official or
+endorsed claim.
+
+## 6. Claim states
 
 | State | Meaning |
 | --- | --- |
@@ -50,7 +80,20 @@ Core-native backend. They are not Core Compatibility Levels.
 Listing never implies endorsement, security review, hosted availability,
 compatibility beyond the stated capability, or commercial support.
 
-## 5. Licensing and names
+## 7. Practical forkability and independent operation
+
+Open licensing alone is insufficient when nobody outside the original project
+can understand or continue the work. The public commons should progressively
+include specifications, schemas, fixtures, validators, build and deployment
+instructions, compatibility evidence, decision rationale, and enough source to
+support an independent implementation.
+
+peecos is a discovery and coordination surface, not a permission layer. Absence
+from its catalog does not make an independent implementation invalid. Hosted
+providers and compatible ecosystems may differ and compete without acquiring
+exclusive rights to PIOS.
+
+## 8. Licensing and names
 
 PIOS framework documentation is available under Creative Commons Attribution
 4.0. Public implementation templates use their repository's permissive
@@ -59,7 +102,7 @@ an independent project may accurately describe derivation or compatibility but
 must not claim to be the official peecos/PIOS initiative or officially endorsed
 without explicit authorization.
 
-## 6. Public participation baseline
+## 9. Public participation baseline
 
 Public peecos materials should invite people to build, bring, test, and share
 work while accurately describing current maturity. PIOS aims to earn, not

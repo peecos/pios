@@ -178,8 +178,85 @@ file intake are separate profiles and decisions. Passing synthetic evidence
 does not grant any of the latter capabilities or convert a synthetic grant into
 a personal-data grant.
 
-## 11. Required future evidence
+## 11. Identity and account separation
+
+An implementation must not collapse these identities into one implicit user
+record:
+
+- Core owner identity;
+- ecosystem or hosted-service account;
+- application identity;
+- agent or workflow identity;
+- device identity;
+- operator identity;
+- external processor or model-provider identity.
+
+Each operation records the identities relevant to its authority and provenance.
+Changing a Core host may require credentials or device trust to be established
+again, but it must not silently replace stable owner, integration, or canonical
+record identity with a provider account identifier.
+
+## 12. Personal Terms exposure
+
+Personal Terms and technical scopes are cumulative, not interchangeable. A
+useful exposure model has four distinct surfaces:
+
+1. a minimal public baseline suitable for pre-connection compatibility checks;
+2. authenticated evaluation of an Integration Manifest;
+3. owner review and approval of the integration-specific result; and
+4. authorized retrieval of the resulting Agreement Record.
+
+PIOS does not require an owner's complete policy, identity, or private terms to
+be publicly discoverable.
+
+## 13. Personal events and security audit
+
+PIOS distinguishes the owner's meaningful event history from high-volume
+security and access telemetry.
+
+- The **personal event stream** records durable changes such as an integration
+  registration, agreement replacement, permission change, checkpoint, or
+  significant completed action.
+- The **security/access audit stream** records attempted reads and writes,
+  denials, authentication results, runtime identity, grant use, and operational
+  anomalies.
+
+Routine access logs should not overwhelm the personal event stream. Significant
+incidents or owner-relevant summaries may be promoted into it with provenance.
+
+## 14. Data minimization and untrusted content
+
+An integration receives the minimum information needed for its approved
+purpose. Minimization applies before application access, model access, external
+processing, logging, and third-party export. Prefer filtered records, excerpts,
+bounded context packets, redacted results, aggregates, and expiring references
+over broad personal-history disclosure.
+
+Email, web content, documents, messages, metadata, imported files, and model
+outputs are untrusted data. Their contents cannot expand permissions, alter
+policy, select additional tools, or authorize external actions. Implementations
+separate system instructions from retrieved content, validate files and URLs,
+restrict tool chaining, enforce policy outside the model, and require stronger
+confirmation for sensitive or external actions.
+
+## 15. Agent definition, runtime, memory, and activity
+
+PIOS treats four related concepts separately:
+
+| Concept | Meaning |
+| --- | --- |
+| Agent Definition | Portable role, purpose, skills, limits, model preferences, and operating instructions. |
+| Agent Runtime | The process, machine, provider, or service executing the agent. |
+| Agent Memory | Owner-governed information retained in Core for authorized future use. |
+| Agent Activity | Events and audit records showing what the agent attempted and produced. |
+
+The runtime may be replaced without replacing the definition or owner-governed
+memory. Runtime-local caches, prompts, and service memory do not become
+canonical merely because an agent used them.
+
+## 16. Required future evidence
 
 Before this contract becomes normative, PIOS needs schema validation, an
 allowed-operation and denied-operation fixture, revocation evidence, audit
-readback, and proof that a manifest cannot bypass runtime enforcement.
+readback, data-minimization evidence, hostile-content fixtures, and proof that
+a manifest or retrieved instruction cannot bypass runtime enforcement.
