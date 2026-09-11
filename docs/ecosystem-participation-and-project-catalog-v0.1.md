@@ -19,6 +19,19 @@ Core or hosted service, contribute documentation/testing, or publish a
 compatibility bridge. Ideas are invitations, not assigned work or exclusive
 roadmap items.
 
+A project may implement PIOS or use PIOS; those are different architectural
+roles. PIOS-native services and interfaces can be independently maintained
+without becoming independent consumer applications. Conversely, an application
+from the same publisher does not become part of PIOS merely through branding.
+The [hosting and boundary principles](hosting-core-boundaries-and-portability-principles-v0.1.md)
+separate Core membership, PIOS system membership, and deployment location.
+
+Corebox is a PIOS-native, PIOS-dependent hub/gateway client, not the typical
+independent consumer example. A notes application, LifeStory, or a
+general-purpose assistant should remain usefully independent while integrating
+with PIOS. These are product-role distinctions, not release-readiness or
+endorsement claims.
+
 ## 3. Compatibility bridges
 
 An existing project may add a deliberately limited PIOS path without replacing
@@ -44,6 +57,7 @@ A catalog entry should point outward and contain:
 project name and URL
 repository and maintainers
 project type and hosting model
+architectural role: Core implementation, PIOS-native service/interface, independent consumer, or operator/provider service
 license
 integration capability declaration
 claim/review status
@@ -54,6 +68,11 @@ known limits and last-reviewed date
 Integration capability declarations describe actual behavior such as Core
 context read, Core capture write, checkpoint proposal, controlled sync, or
 Core-native backend. They are not Core Compatibility Levels.
+
+Architectural role is separate from review status and physical placement. A
+PIOS-native role does not establish canonical authority, official publisher
+status, endorsement, or compatibility. A capability label such as Core-native
+backend alone does not establish that role.
 
 ## 5. Project proposal and README baseline
 

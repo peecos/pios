@@ -16,6 +16,13 @@ creating a second Core or an opaque model-memory layer:
 3. Derived Representations: source-linked projections for graph, text, and
    multimodal processing.
 
+These are PIOS information-system functions, not automatically external
+application work. Follow the [hosting and boundary principles](hosting-core-boundaries-and-portability-principles-v0.1.md):
+Core contract membership, PIOS system membership, and physical placement are
+separate. Native knowledge processing, context compilation, and retrieval
+normally run with Core in the Solo VM for the selected profile. Replaceable
+agents, models, or index engines do not by themselves change that membership.
+
 ## 2. Cognitive Memory
 
 ### 2.1 Object families
@@ -98,6 +105,14 @@ Possible types include text chunks, extracted metadata, graph snapshots, OCR,
 semantic vectors, visual vectors, region vectors, summaries, and retrieval
 indexes. Provider paths, embedding payloads, service identifiers, and vector
 store keys are implementation metadata, never canonical meaning.
+
+The representation may be governed in Core's Derived zone while remaining
+rebuildable and non-authoritative. Its executor may run inside the Solo VM or
+in an explicitly declared external processing resource. Neither rebuildability
+nor non-authoritative status requires a separate machine. An independent
+application's private projection remains a different role and must not be
+presented as the PIOS retrieval implementation merely because it cites Core
+sources.
 
 ## 5. Optional future profiles
 

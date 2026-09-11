@@ -14,6 +14,13 @@ runtime may implement a Core capability without becoming canonical Core state,
 and an application or operator service does not become part of Core merely by
 running beside it.
 
+Core contract membership, PIOS system membership, and physical placement are
+distinct. A complete PIOS distribution includes Core and selected PIOS-native
+services and interfaces; not all of those components are mandatory Core
+capabilities. Being outside the Core contract does not require being outside
+PIOS or its Solo VM. This clarification does not add a compatibility level or
+upgrade the evidence status of any implementation.
+
 ## 1. Goal
 
 The infrastructure may change while the Core interface and canonical
@@ -37,6 +44,19 @@ A compatible deployment must preserve these boundaries:
   optional derived export content.
 - Clients use the Core API and discovered capabilities, never direct S3,
   DynamoDB, Blob Storage, Cloud Storage, local storage, or provider queues.
+
+Rebuildability is a state and recovery property, not a reason to externalize
+PIOS retrieval. An executor and index serving a declared Core search capability
+are part of that implementation even if replaceable or physically remote. An
+independent application's private index is a consumer-side implementation,
+not a replacement for the claimed Core capability.
+
+Corebox is a PIOS-native hub/gateway and a Core client, not a typical
+independent application. Its backend may be packaged inside the Solo VM while
+its device interface runs elsewhere. Neither its presence nor its absence
+establishes Core compatibility, and its receiver state is not automatically
+canonical Core state. Independent consumers such as notes applications or
+LifeStory should retain useful operation without PIOS.
 
 Examples:
 
@@ -174,6 +194,12 @@ A compatible destination must verify manifest compatibility and checksums,
 preserve logical identifiers, import canonical records, restore provenance and
 pointer state, rebuild required projections, and produce an import report.
 
+The state bundle is not the runnable distribution. A complete PIOS recovery
+claim also identifies the versioned native-service composition and proves the
+promised processing, retrieval, and interface behavior after reconstruction.
+Report byte restoration, Core contract conformance, and complete PIOS service
+recovery separately; success at one does not prove the others.
+
 Migration does not require historical data to be fetched again from original
 sources. Source reconnection is only needed for future synchronization or
 source-side actions.
@@ -260,6 +286,15 @@ A public release must identify its version, supported architecture, supported
 API and export versions, provider status, minimum requirements, known limits,
 release notes, migration notes, checksums, SBOM or equivalent dependency record,
 and signature or attestation verification instructions.
+
+It should distinguish declared Core capabilities, bundled PIOS-native
+supporting services and interfaces, optional integrations, and required external
+resources. For Solo VM packaging, Core and selected native services belong
+inside the VM as far as practical. Record any justified split native executor
+and its reconstruction path instead of silently depending on a general agent
+machine for advertised PIOS behavior. Independent consumers normally remain
+outside the Solo package. Optional native services do not become mandatory
+Core capabilities merely by being bundled.
 
 ## 9. Initial Distribution Order
 

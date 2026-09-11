@@ -6,7 +6,9 @@ This document covers everything *around* the PIOS framework — the organization
 
 **peecos** ("Personal Ecosystem", [peecos.org](https://www.peecos.org)) is the open organization behind **PIOS**, the Personal Information Operating System framework. PIOS is an open reference model for owner-controlled personal information infrastructure: preserved sources, canonical events, structured knowledge, retrieval surfaces, governance, and portable setup paths for agents and applications.
 
-The goal: build computing around the person's durable information and authority, and let AI, interfaces, and runtime services operate inside that foundation rather than above or outside it.
+The goal: build computing around the person's durable information and authority. PIOS is the operating system that preserves, organizes, interprets, retrieves, and governs that information, not merely a storage foundation for unrelated computation.
+
+Core contract membership, membership in the complete PIOS system, and physical placement are separate. PIOS-native services and interfaces can be outside the narrower Core contract while remaining part of PIOS and its Solo VM. Solo normally packages Core and selected native services together as far as practical; independent applications and assistants that use PIOS normally run outside it. See the [master's boundary model](index.html#system-core-and-deployment-boundaries).
 
 The organization maintains one framework and its surrounding assets:
 
@@ -18,6 +20,8 @@ The organization maintains one framework and its surrounding assets:
 | **Cotton** | The personal context blueprint: the organizing canon for how personal information is named, classified, and made understandable |
 | **Core Self** | A person's own running instance and private source of truth |
 | **Core Managed / Core Self-Hosted** | The two deployment profiles: managed service, or a portable VM/server package |
+| **PIOS Solo** | A complete single-owner PIOS operating environment, normally packaging Core and selected native services together in its VM |
+| **Corebox** | The PIOS-native owner hub/gateway application for Solo or hosted PIOS; part of PIOS but a client of Core |
 
 ## Origin
 
@@ -27,9 +31,15 @@ The older `peecos/pios-global` repository belongs to the pre-PIOS-2.0 documentat
 
 ## Why the names
 
-- **Core** is the durable center: one personal information core that preserves originals, records events, maintains living knowledge, and serves derived views. Everything else — agents, apps, interfaces — operates on top of it.
+- **Core** is the durable center: one personal information core that preserves originals, records events, maintains living knowledge, and serves derived views through declared capabilities and their executors. Native PIOS services and interfaces complete the operating environment; independent applications use its governed interfaces. Replaceable execution does not mean non-PIOS execution.
 - **Cotton** is the personal fiber: the soft, human material of a life — words, meanings, habits, relationships — organized into a usable structure. Cotton defines how personal information is named, grouped, interpreted, and made understandable to both the owner and their agents.
 - **Core Self** names the instance because its owner is the person: it is the person's own private source of truth.
+
+Corebox is PIOS-dependent by product purpose, unlike independently useful notes
+applications, LifeStory, or general-purpose assistants. Its device interface
+runs on owner devices; its PIOS-specific backend can live inside Solo without
+making its receiver state canonical Core. Core itself remains operable without
+the particular Corebox implementation. See [Corebox and independent applications](index.html#corebox-and-independent-applications).
 
 ## Sibling framework: EIOS
 
@@ -91,7 +101,7 @@ security review, hosted availability, or support beyond the exact stated scope.
 | [github.com/peecos/media](https://github.com/peecos/media) | Overview media: video, audio, and the architectural manifesto |
 | valto@valtoai.com | Contact |
 
-The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The [Hosting, Core Boundaries, and Portability Principles v0.1](docs/hosting-core-boundaries-and-portability-principles-v0.1.md) separates normative Core capabilities and state from replaceable runtimes, supporting services, operator control planes, and provider infrastructure. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals. A possible hosted multi-tenant service is governed separately by the [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md). Prifina intends to make that hosted option available soon; it is not supplied by the templates.
+The [Core Distribution and Compatibility Specification v0.1](docs/core-distribution-and-compatibility-spec-v0.1.md) defines what a compatible Core deployment, portable export, and public support claim mean. The [Hosting, Core Boundaries, and Portability Principles v0.1](docs/hosting-core-boundaries-and-portability-principles-v0.1.md) distinguishes Core capabilities, state and executors; PIOS-native supporting services and interfaces; independent consumers; and operator/provider machinery. It separates these logical roles from physical placement. The associated [roadmap](docs/core-distribution-roadmap-v0.1.md) distinguishes current evidence from future delivery goals. A possible hosted multi-tenant service is governed separately by the [Core Hosted Service Fork Path v0.1](docs/core-hosted-service-fork-path-v0.1.md). Prifina intends to make that hosted option available soon; it is not supplied by the templates.
 
 ## Boundary
 

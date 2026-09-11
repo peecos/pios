@@ -3,6 +3,11 @@
 PIOS is the Personal Information Operating System framework: an open reference
 model for owner-controlled personal information infrastructure.
 
+It is an operating system for personal information, not just storage. A running
+PIOS system includes its Core, native processing and retrieval services, and
+owner interfaces. **Outside Core does not automatically mean outside PIOS or
+outside the PIOS Solo VM.**
+
 The current master documentation is published as a standalone HTML document:
 
 ```text
@@ -37,6 +42,20 @@ sibling framework, licensing, and project structure — is in
 These documents define the public compatibility target, deployment-independent
 Core boundaries, and the separately gated path from a private owner Core to a
 future multi-tenant hosted service.
+
+The [master's boundary model](index.html#system-core-and-deployment-boundaries)
+separates Core contract membership, PIOS system membership, and physical
+placement. Solo normally packages Core and selected PIOS-native services
+together in its VM as far as practical. Independent applications and assistants
+that use PIOS normally run outside it; native device interfaces and declared
+external resources have explicit deployment roles.
+
+[Corebox](index.html#corebox-and-independent-applications) is a PIOS-native,
+PIOS-dependent owner hub/gateway, still a client of Core. Notes applications
+and LifeStory instead should remain independently useful while integrating
+with PIOS. Native membership, VM placement, canonical-state authority, and
+compatibility claims are not interchangeable.
+
 Prifina intends to make that hosted option available soon. Until Prifina
 announces service availability, the framework and templates do not provide
 hosted accounts or production API credentials. These documents distinguish

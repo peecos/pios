@@ -7,11 +7,13 @@ deployment.
 
 ## 1. Purpose and boundary
 
-PIOS Core is the durable owner-controlled information foundation. An external
-application, agent, source connector, AI service, or protocol adapter can only
-operate around that foundation through explicit, continuously evaluated
-authority. A manifest is a declaration of requested behavior; it is not proof
-of behavior and it creates no authority by itself.
+PIOS Core is the durable owner-controlled information and authority foundation,
+including declared capabilities and their execution, inside the complete PIOS
+operating system. A PIOS-native service or client, independent application or
+agent, source connector, AI service, or protocol adapter operates through
+explicit, continuously evaluated authority. A manifest is a declaration of
+requested behavior; it is not proof of behavior and it creates no authority by
+itself. Being native to PIOS or sharing its VM never bypasses this governance.
 
 This specification extends the PIOS 2.0 master's Core Service Interface,
 agent-definition governance, privacy/access rules, and Core Compatibility
@@ -22,8 +24,11 @@ The hosting-boundary taxonomy is defined in [Hosting, Core Boundaries, and
 Portability Principles
 v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md). Integrations
 must distinguish a normative Core capability, its replaceable executor, a Core
-interface or adapter, an application/supporting service, an operator control
-plane, and an external model or processing resource.
+interface or adapter, PIOS-native supporting services and interfaces,
+independent consumers, an operator control plane, and external model or
+processing resources. Record Core contract membership, PIOS system membership,
+and physical placement separately. Outside Core does not automatically mean
+outside PIOS or outside its Solo VM.
 
 ## 2. Terms
 
@@ -37,15 +42,25 @@ plane, and an external model or processing resource.
 | Technical Scope | A mechanism-level permission presented to a client, token, or runtime. It cannot exceed an Authorization Grant. |
 | Runtime Policy | The current contextual rule evaluation applied when an operation is attempted. |
 
-An external **application** is not a PIOS **App View**. App Views are Core
-surfaces; an application is an independently operated capability that may
-integrate with Core.
+An independent **application** is not a PIOS **App View**. App Views are Core
+surfaces; independent applications such as notes or LifeStory should remain
+useful without PIOS while integrating through Core interfaces. **Corebox** is
+a different case: a PIOS-native, PIOS-dependent owner hub/gateway, still a Core
+client rather than canonical Core state or a required Core runtime. Its device
+UI runs on owner devices; its PIOS-specific backend normally belongs inside
+the Solo VM. Native status and independent deployment are not synonyms.
 
 Application-specific intelligence does not become Core intelligence because it
 runs near Core, uses Core context, or shares a model provider. If an external
 processor implements a normative Core capability, its durable inputs,
 authority, outputs, provenance, and failure semantics remain Core-scoped even
 when execution is physically external.
+
+PIOS-native processing, indexing, retrieval, and orchestration normally belong
+in the Solo service package. Their runtime identities, grants, policy checks,
+and audit remain explicit, including when a hosted service shares executors
+across separately isolated owner Cores. Logical integration boundaries apply
+even without a network or VM boundary.
 
 ## 3. Integration Definition and manifest
 
@@ -154,6 +169,10 @@ Each declaration must identify the supported data classes, direction, and
 governance boundary. It is self-declared unless associated conformance evidence
 states otherwise.
 
+These names describe integration behavior, not PIOS system membership or
+physical placement. In particular, `core_native_backend` alone does not prove
+that the declaring application is a PIOS-native system component.
+
 ## 9. Conversation checkpoints
 
 A conversation checkpoint is a source-linked event and knowledge proposal,
@@ -167,6 +186,11 @@ become canonical knowledge, personal meaning, a standing rule, or a behavioral
 change without the appropriate existing PIOS proposal and approval path.
 
 ## 10. Synthetic example: Corebox boundary
+
+Corebox is used here to show that even a PIOS-native hub/gateway needs an
+explicit grant. It is not an example of an independently useful non-PIOS app.
+Colocating its receiver with Core does not grant authority or make its receiver
+database canonical; it must still use the governed Core interface.
 
 An integration manifest may declare a `core_capture_write` capability for a
 synthetic fixture profile. That declaration alone authorizes nothing. A valid
@@ -253,6 +277,12 @@ PIOS treats four related concepts separately:
 The runtime may be replaced without replacing the definition or owner-governed
 memory. Runtime-local caches, prompts, and service memory do not become
 canonical merely because an agent used them.
+
+Separately classify whether the agent implements PIOS or consumes it. A native
+intake, knowledge-maintenance, or retrieval agent can be packaged inside Solo;
+an independent assistant normally runs outside. Being replaceable, possessing
+portable definitions, or retaining Core-governed memory alone does not decide
+that classification.
 
 ## 16. PIOS Interoperability API Profiles
 

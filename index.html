@@ -386,7 +386,7 @@
           <p class="subtitle">A unified master document for the Personal Information Operating System framework, the Cotton Context Blueprint, the Core implementation, and the agent-operated personal information architecture.</p>
           <div class="meta">
             <span class="pill">Generated: 2026-06-08</span>
-            <span class="pill">Updated: 2026-09-07</span>
+            <span class="pill">Updated: 2026-09-11</span>
             <span class="pill">Source: PIOS 2.0 working discussions, Cotton, AWS, History, OKF comparison notes, LLM Wiki assessment, and related architecture reviews</span>
             <span class="pill">Status: Working master draft</span>
             <span class="pill">Theme: Light</span>
@@ -400,6 +400,8 @@
           <div class="callout">
             <p><strong>Foundational statement:</strong> PIOS is the open framework. Core is the usable implementation. A person's Core is their durable personal information foundation: not a brain, not a memory app, not a social profile, but the place where everything about them can be preserved and made usable by them and their trusted agents.</p>
           </div>
+
+          <p><strong>PIOS is an operating system for personal information, not just storage.</strong> A running PIOS system combines its Core with the native services and interfaces that capture, organize, interpret, retrieve, govern, and make information useful. It can be understood as a governed harness for personal information. A complete self-hosted system can be packaged in a VM or golden image; its logical Core boundary is not the boundary of everything that belongs in that package.</p>
 
           <p>The architecture is built around a single information core. All incoming files, messages, app records, documents, notes, conversations, events, sensor readings, agent outputs, and operational definitions enter as raw preserved items first. Their information value is then extracted into events, metadata, glossary terms, context, knowledge notes, and derived projections.</p>
 
@@ -416,7 +418,7 @@
         <section id="product-model">
           <h2>2. Product Model</h2>
           <p>The core distribution stack and connected functional subsystems are:</p>
-          <p>The first six rows below describe framework and distribution layers. Circle and the Dynamic Scheduling Model are cross-cutting functional subsystems: they operate through the layers above rather than replacing or sitting beside Core as separate stores of truth.</p>
+          <p>The table distinguishes framework, Core, distribution, and interface roles. Circle and the Dynamic Scheduling Model are cross-cutting functional subsystems: they operate through these layers rather than replacing Core as separate stores of truth. Product names such as Core Self-Hosted may describe a complete distribution; they must not be read as excluding PIOS-native services outside the narrower Core contract.</p>
 
           <table>
             <thead>
@@ -435,7 +437,7 @@
               <tr>
                 <td>Implementation</td>
                 <td><strong>Core</strong></td>
-                <td>The packaged implementation and product built according to PIOS. Core runs the personal information core.</td>
+                <td>The implementation and product built according to PIOS. The logical Core provides governed information, authority, and declared capabilities with their executors; a Core distribution may package additional PIOS-native services and interfaces.</td>
               </tr>
               <tr>
                 <td>Context blueprint</td>
@@ -455,7 +457,17 @@
               <tr>
                 <td>Portable distribution</td>
                 <td><strong>Core Self-Hosted</strong></td>
-                <td>A VM/server package that can run on AWS, Azure, Google Cloud, Hetzner, UpCloud, a company server, or a personal machine.</td>
+                <td>A portable VM/server distribution that can run on AWS, Azure, Google Cloud, Hetzner, UpCloud, a company server, or a personal machine, including the services needed to operate its declared PIOS profile.</td>
+              </tr>
+              <tr>
+                <td>Single-owner operating environment</td>
+                <td><strong>PIOS Solo</strong></td>
+                <td>A complete owner-operated PIOS system. In its VM packaging model, Core and selected PIOS-native services run together as far as practical; native device interfaces and explicitly selected external dependencies may run elsewhere.</td>
+              </tr>
+              <tr>
+                <td>PIOS-native owner interface</td>
+                <td><strong>Corebox</strong></td>
+                <td>A dedicated PIOS hub/gateway application for Solo or hosted PIOS. Part of PIOS, but a client of Core rather than canonical Core state or a required Core runtime.</td>
               </tr>
               <tr>
                 <td>Relationship and collaboration layer</td>
@@ -503,6 +515,39 @@ Outer Circle
 
           <p>Privacy is structural. Core Self is private by default. Inner Circle is trusted private sharing. Extended Circle is limited sharing. Outer Circle is public or intentionally exposed. AI agents can be treated as members of the owner's inner circle when they have delegated trusted access to Core Self.</p>
           <p>Agent trust scope and agent profile home are separate concepts. A trusted agent may operate with Inner Circle access, while its profile, permissions, runtime files, and governance records still belong to My System.</p>
+
+          <h3 id="system-core-and-deployment-boundaries">2.4 Core, PIOS System, and Deployment Boundaries</h3>
+          <p><strong>Outside PIOS Core does not automatically mean outside PIOS or outside the PIOS Solo VM.</strong> Architectural descriptions must answer three separate questions:</p>
+          <table>
+            <thead>
+              <tr><th>Boundary</th><th>Question</th><th>Consequence</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Core contract</td>
+                <td>Does this implement declared Core behavior or govern Core state?</td>
+                <td>Core includes capabilities and their execution, not only authoritative storage. Its compatibility requirements remain explicit and versioned.</td>
+              </tr>
+              <tr>
+                <td>PIOS system</td>
+                <td>Does this implement PIOS itself, or an independent product that uses PIOS?</td>
+                <td>PIOS includes Core, PIOS-native supporting services, and PIOS-native interfaces. An independent consumer is not part of PIOS merely through integration.</td>
+              </tr>
+              <tr>
+                <td>Physical deployment</td>
+                <td>Where does the selected profile run each component?</td>
+                <td>A native service can be outside the Core contract and inside the Solo VM. A device client or remote executor can be part of PIOS while running elsewhere.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>State treatment is a separate concern: authoritative records, rebuildable Derived representations, transient runtime state, and secrets have different lifecycle and recovery rules. <strong>Rebuildable does not mean outside PIOS; replaceable does not mean an independent application.</strong> Classify a component by the behavior it implements, not merely by calling it an agent, connector, worker, index, or application.</p>
+          <p>For Solo VM packaging, keep Core and selected PIOS-native processing, orchestration, knowledge maintenance, indexing, retrieval, projections, and gateways inside the VM as far as practical. Independent applications and assistants that use PIOS normally run outside it. Native device interfaces, selected model services, source systems, independent recovery storage, and justified split processing have explicit deployment roles. Owners may choose another topology, but a split native service remains part of the PIOS implementation and needs a documented authority, dependency, and reconstruction path.</p>
+          <p>This distinguishes an intended complete PIOS package from a Core-only storage host that silently depends on a general agent machine for its operating-system behavior. It does not require installing every optional feature, add a new Core Compatibility Level, or make VM colocation an authorization grant. Detailed rules are in <a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a>.</p>
+
+          <h3 id="corebox-and-independent-applications">2.5 Corebox and Independently Useful Applications</h3>
+          <p>Corebox is a <strong>PIOS-native, PIOS-dependent owner hub/gateway</strong>. Its product purpose is to operate PIOS, whether Solo or hosted. Local-first capture, offline staging, and disconnected use support that purpose; they do not make it a typical independent application that merely integrates with PIOS.</p>
+          <p>Corebox is outside the narrower Core contract but part of PIOS. Its device binaries run on owner devices; its PIOS-specific backend or receiver normally belongs inside the Solo VM through a bounded Core interface. Core must remain operable without the particular Corebox UI or implementation, and another authorized interface may replace it. Receiver databases, device caches, and synchronized folders do not become canonical Core state by being PIOS-native or colocated. Unregistered originals still need a governed canonicalization path, not an automatic move to another VM.</p>
+          <p>A notes application, LifeStory, or a general-purpose assistant has a different product role: it should remain meaningfully useful without PIOS, even when deeply designed to integrate with Solo or hosted PIOS. Its independent workflows and private processing normally remain outside Solo. Product purpose and implemented contract decide the distinction, not publisher identity or the fact that underlying software can run standalone.</p>
         </section>
 
         <section id="principles">
@@ -534,7 +579,7 @@ Outer Circle
           </div>
           <div class="principle">
             <b>Principle 7</b>
-            <div><strong>Derived data is rebuildable.</strong> Summaries, embeddings, graph exports, thumbnails, Parquet projections, and indexes must not become the only copy of truth.</div>
+            <div><strong>Derived data is rebuildable.</strong> Summaries, embeddings, graph exports, thumbnails, Parquet projections, and indexes must not become the only copy of truth. Rebuildability does not exclude them from Core's Derived zone, the PIOS system, or its VM.</div>
           </div>
           <div class="principle">
             <b>Principle 8</b>
@@ -570,7 +615,7 @@ Outer Circle
           </div>
           <div class="principle">
             <b>Principle 16</b>
-            <div><strong>Apps own experiences; the owner's Core preserves information continuity.</strong> Focused applications are a natural PIOS pattern, not a requirement. An application may provide a narrow, excellent experience while relying on defined Core interfaces rather than owning the person's durable information foundation.</div>
+            <div><strong>Apps own experiences; the owner's Core preserves information continuity.</strong> Corebox is a PIOS-native hub/gateway and a Core client. Independent applications such as notes or LifeStory should remain useful without PIOS while integrating through defined Core interfaces. Neither kind of client becomes the canonical personal information foundation.</div>
           </div>
           <div class="principle">
             <b>Principle 17</b>
@@ -990,7 +1035,7 @@ Outer Circle
 
         <section id="architecture">
           <h2>5. Architecture Overview</h2>
-          <p>PIOS is best understood as a layered architecture around a durable object-storage core and an event-first information model.</p>
+          <p>PIOS is a layered personal information operating system with a durable storage foundation and an event-first information model. The intake, organization, knowledge processing, orchestration, and retrieval below are operating-system behavior, not an unrelated application layer added to a storage-only PIOS. This is a functional flow, not a map of required machine boundaries.</p>
 
           <div class="diagram">External sources, direct uploads, apps, agents, sensors, conversations
         |
@@ -1042,7 +1087,7 @@ Retrieval routing for agents, APIs, apps, Circle, and owner workflows</div>
               </tr>
               <tr>
                 <td><strong>Derived</strong></td>
-                <td>Rebuildable outputs: extracted text, summaries, aggregates, Parquet files, embeddings, graph exports, thumbnails.</td>
+                <td>Rebuildable outputs: extracted text, summaries, aggregates, Parquet files, search indexes, embeddings, graph exports, thumbnails.</td>
                 <td>Rebuildable</td>
               </tr>
               <tr>
@@ -1053,6 +1098,7 @@ Retrieval routing for agents, APIs, apps, Circle, and owner workflows</div>
             </tbody>
           </table>
           <p>The System zone is more load-bearing during transition than a normal configuration folder. It holds the source definitions, disposition records, processing manifests, migration manifests, event registries, schema versions, review checklists, approval records, source rules, connector state, agent definitions, and parity/decommission evidence that let Core explain how information moved from an old system into the new one. Agent/runtime records should live as system artifacts unless they are deliberately promoted into knowledge as stable concepts, policies, or owner-facing explanations.</p>
+          <p>The five zones include both authoritative records and rebuildable representations. Zone membership does not make every output canonical truth; conversely, a rebuildable index implementing PIOS retrieval is not thereby external to PIOS.</p>
 
           <h3>5.2 Conceptual Model Versus Physical Storage</h3>
           <p>The conceptual architecture and physical storage format do not need to be identical.</p>
@@ -1250,6 +1296,7 @@ events, conversations, documents, and later corrections.</code></pre>
 
           <h3>7.2 Core Service Interface</h3>
           <p>Core should be usable as a service without requiring the owner or a connected application to design schemas first. The external interface should expose a few simple capabilities while keeping the internal information architecture consistent.</p>
+          <p>The native workers, indexes, and routing that implement these capabilities belong to the PIOS implementation. They are not automatically independent consumers just because they use replaceable engines or agents. A client's own application-specific index is a different role; a Core reference in its results does not make that private index the Core retrieval service.</p>
           <table>
             <thead>
               <tr>
@@ -3377,6 +3424,7 @@ An observed pattern of walking in the evening approximately five times per week.
 
           <h3>14.4 Knowledge Compilation Layer</h3>
           <p>The <strong>Knowledge Compilation Layer</strong> is the process and structure by which Core turns preserved source material into maintainable, navigable knowledge. It is not the same as ingestion and not the same as retrieval. It is the ongoing agent-assisted work of creating and maintaining source notes, concept notes, entity notes, summaries, backlinks, indexes, contradictions, synthesis notes, and maintenance flags.</p>
+          <p>This is PIOS-native information processing. Its agents and rebuildable outputs do not require a separate non-PIOS machine; Solo normally packages the selected native services with Core. The <a href="#system-core-and-deployment-boundaries">system and deployment boundaries</a> remain distinct from each output's authority and promotion status.</p>
 
           <div class="diagram">Originals
   preserved raw source material
@@ -3774,6 +3822,7 @@ decay_policy: reduce_confidence_without_recent_evidence</code></pre>
         <section id="agents">
           <h2>17. Agent Architecture</h2>
           <p>Agents are not external tools bolted onto the data store. In the Core Self model, trusted AI agents are part of the person's inner circle and operate from Core as their source of context and truth. Cotton adds an important rule: agents themselves are information and must be documented, governed, versioned, and retrievable like other important system entities.</p>
+          <p>Distinguish <strong>PIOS-native agents</strong> implementing intake, organization, knowledge maintenance, retrieval, or system orchestration from <strong>independent assistants</strong> that use PIOS for their own tasks. The former normally run within the Solo service package; the latter normally run outside it. Shared runtimes and replaceable model resources do not erase this distinction. Trust-circle membership describes access, not product membership or physical placement, and neither native status nor colocation grants unrestricted authority.</p>
 
           <h3>17.1 Agents as First-Class Information</h3>
           <p>Each persistent agent should have an explicit profile that is human-visible, agent-readable, and operationally connected to the files and runtime settings that define the agent. The profile should include purpose, role, responsibilities, skills, permissions, memory scope, source access, operating instructions, current state, and evolution history.</p>
@@ -4181,19 +4230,21 @@ system/     (core-system zone)</code></pre>
 
           <p>Names may vary by deployment, owner boundary, service-internal tenant, account, or namespace, but the conceptual zones should remain stable for exportability and agent reasoning. In AWS, these should normally be prefixes inside the owner's physical bucket, not separate buckets.</p>
 
-          <h3>18.3 Core Boundaries Across Hosting Models</h3>
+          <h3>18.3 Core and PIOS System Boundaries Across Hosting Models</h3>
           <p>A Core remains the same logical kind of system across deployment profiles when it implements the same versioned Core contract and preserves equivalent owner-state, authority, interface, and portability semantics. PIOS defines that contract; Core implementations realize it through deployment-specific mechanisms.</p>
-          <p>Physical location does not determine the logical boundary. A replaceable worker or model service may execute a Core capability outside the machine holding canonical state, while an application colocated on that machine may remain outside Core. Implementations should distinguish:</p>
+          <p>Core contract membership, PIOS system membership, and physical placement must be stated separately. A replaceable worker may execute a Core capability outside the machine holding canonical state; a PIOS-native gateway may run inside that machine while remaining outside the Core contract; and a colocated independent application may remain outside PIOS. Implementations should distinguish:</p>
           <ul>
             <li><strong>Normative Core capabilities:</strong> behavior required by a declared compatibility profile.</li>
             <li><strong>Canonical Core state:</strong> portable owner state and definitions governed by Core.</li>
             <li><strong>Core capability executors:</strong> replaceable runtimes that perform bounded Core work.</li>
             <li><strong>Core interfaces and adapters:</strong> APIs, protocols, connectors, and transports over Core behavior.</li>
-            <li><strong>Supporting applications and services:</strong> application-specific capabilities that use Core.</li>
+            <li><strong>PIOS-native supporting services:</strong> parts of the PIOS operating environment beyond the narrower declared Core contract, including PIOS-specific gateways and system surfaces.</li>
+            <li><strong>PIOS-native interfaces:</strong> dedicated PIOS clients such as Corebox, without making their binaries or local state Core runtime dependencies.</li>
+            <li><strong>Independent applications, agents, and services:</strong> independently useful capabilities that consume Core interfaces for their own product purposes.</li>
             <li><strong>Operator control planes:</strong> provisioning, billing, fleet administration, support, and service operations.</li>
             <li><strong>External execution resources:</strong> models and specialist processors that provide replaceable execution capacity.</li>
           </ul>
-          <p>Core hosting, supporting-service provision, model selection, and infrastructure operation should remain independently selectable where reasonably possible. The full architecture principles are defined in <a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a>.</p>
+          <p>Solo VM packaging keeps Core and selected PIOS-native services together as far as practical; physical separation is not implied by being outside the Core contract. Hosted deployments may distribute or share native execution while preserving each owner's logical Core. Hosting, service provision, models, and infrastructure remain independently selectable where practical. The full architecture principles are defined in <a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a>.</p>
         </section>
 
         <section id="aws-managed">
@@ -4274,6 +4325,7 @@ system/     (core-system zone)</code></pre>
           <h3>19.2 Future Managed-Service Owner Isolation</h3>
           <p>This subsection describes the architecture required for a future multi-tenant Core Managed service; it does not describe a capability already provided by the current one-owner AWS reference. A managed service can share AWS infrastructure, but it must not collapse different people's information into one undifferentiated SaaS data space. Each owner needs an explicit logical Core with clear boundaries around originals, events, knowledge, derived projections, and system definitions.</p>
           <p>Per-owner data boundaries are explicit because ownership, export, deletion, and takeover matter. A person must be able to understand what is theirs, export it, delete it, migrate it, or take over operation of it without depending on hidden cross-owner coupling.</p>
+          <p>Shared native workers can implement PIOS/Core capabilities for multiple isolated owner Cores without being inside any one owner's VM. They are PIOS capability execution, not merely independent applications using PIOS. Tenant administration, billing, and fleet operations remain a distinct operator control plane. This hosted arrangement does not require moving native services out of a single-owner Solo VM.</p>
           <p>The managed service is fiduciary infrastructure for the owner. It may operate shared systems, but it should behave as a steward of owner-held information rather than as the conceptual owner of the data.</p>
           <p>Shared processing does not mean shared Core context. Every work unit must bind one Core and owner context, applicable authority, allowed reads and writes, guidance and skills, and temporary-context lifetime. Shared code or stateless workers are acceptable; shared mutable owner context is not.</p>
           <div class="callout">
@@ -4480,6 +4532,8 @@ system/     (core-system zone)</code></pre>
           <h2>20. Core Self-Hosted Implementation</h2>
           <p>Core Self-Hosted implements the same PIOS/Core model on a portable VM or server stack. It exists so a complete Core can run outside the managed AWS service without changing the underlying information architecture.</p>
           <p>In the self-hosted profile, the equivalent of a Core Template is a versioned, data-empty image-root or install composition: for example a VM image, install script, container composition, or configuration bundle that creates the same storage zones, services, backup rules, access controls, and processing structure before any owner data is hydrated. The image-root should be built from an allowlist, validated by a hygiene gate, and packaged only when it is provably free of owner data, deployment identifiers, and key material.</p>
+          <p><strong>Complete Solo packaging:</strong> the PIOS Solo VM should contain Core and the selected PIOS-native services needed to operate the declared profile, including native processing, indexing, retrieval, orchestration, knowledge maintenance, projections, and PIOS-specific gateways. A golden image is a reusable operating-system composition, not only a storage image. This does not require every optional service, model, or feature, and does not claim that a current Starter artifact already implements the complete target.</p>
+          <p>An external Agent/Services VM normally hosts independent applications and assistants that use PIOS. Corebox device interfaces stay on owner devices, while their PIOS-specific backend can remain inside Solo without becoming canonical Core state. Required external resources and justified split native services must be declared with authority, dependencies, and recovery or replacement instructions. A split native service remains part of PIOS; another machine does not turn it into an independent consumer.</p>
           <p><strong>Implementation stance:</strong> Core Self-Hosted and provider-native Core implementations are reciprocal architecture tests. The public self-hosted path now includes a signed data-empty ARM64 Starter release path and later private Solo operating evidence, while public compatibility and provider-support claims remain limited to their separately published evidence. Each implementation should preserve the requirements the other keeps visible: five Core Data Zones, atomic no-overwrite event writes, retained originals, provider-neutral Core Bundles, local restore, History rendering, generated indexes, key custody, backup/restore, and owner takeover.</p>
           <p>Transition patterns must stay profile-agnostic. AWS-specific controls such as S3 Object Lock, KMS crypto-shred, and a governed large-object multipart role should map to self-hosted equivalents rather than becoming PIOS requirements. A self-hosted Core needs its own documented large-file ingest path, immutability or append-only mechanism, key custody and erasure path, remediation/tombstone lifecycle, and restore proof before it handles broad migrated owner data.</p>
 
@@ -4677,7 +4731,7 @@ Derived outputs and knowledge updates written</div>
               <tr>
                 <td>Core Template</td>
                 <td>Parameterized infrastructure structure, such as CDK source and a synthesized CloudFormation template for an empty Core.</td>
-                <td>The template carries the golden structure only: storage zones, keys, policies, roles, indexes, audit logging, and guardrails. Owner/account-specific values stay parameterized.</td>
+                <td>The template carries the golden structure only: storage zones, key-provider configuration, policies, roles, native services, processing and retrieval structure, indexes, audit logging, and guardrails. Owner/account-specific values stay parameterized; secret key material is not template content.</td>
               </tr>
               <tr>
                 <td>Full Core Export Bundle</td>
@@ -4695,6 +4749,7 @@ Derived outputs and knowledge updates written</div>
           <p>A Provisioning Manifest should include, at minimum, the Core instance identity, AWS account and region, owner id and slug, bucket suffix or equivalent namespace, template version, retention policy, retention write buffer, Object Lock mode, KMS posture, protected prefixes, human principal references, expected stack outputs, data-bundle reference, and explicit authorization gates. Authorization fields should default to false: preflight, bootstrap, deploy, hydrate, and cross-account transfer must be separately approved. In Core Self-Hosted, the same manifest pattern should bind host paths, service ports, key-provider references, backup profile, optional bundle reference, and first-boot authorization gates.</p>
 
           <p>The rebuild model has three common scenarios. A new empty Core deploys the Core Template with a completed manifest and stops before data hydration. A disaster-recovery rebuild recreates the empty structure, restores a full Core Export Bundle or backup, writes protected objects through the compliant write path, and rebuilds indexes and derived projections. A cross-account, cross-region, or takeover transfer exports a full Core Export Bundle from the source, deploys a new empty destination Core, hydrates the bundle with destination KMS keys, rebuilds projections, validates parity, and decommissions the source only after owner sign-off through the deletion and crypto-shred governance path in §21.6.</p>
+          <p>A full Core Export Bundle describes exportable Core state, not by itself a runnable PIOS VM. Complete PIOS recovery also needs the versioned service composition and configuration for the selected native capabilities, including any declared remote executors. Prove that promised retrieval, knowledge processing, and native gateways work after reconstruction; exact source-byte restoration alone proves a narrower result. Rebuildable indexes may be regenerated without ceasing to be part of the PIOS implementation. This clarification does not upgrade any implementation's compatibility or migration-readiness claim.</p>
 
           <p>Parity validation should be explicit. At minimum, destination object counts and checksums should match the export manifest, protected objects should have the intended destination encryption and retention posture, provenance links should resolve from knowledge to events to originals, owner boundaries should show no cross-owner leakage, and selected retrieval paths should produce the expected evidence chain.</p>
 
@@ -4955,6 +5010,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
 
           <h3>21.11 Code, Runtime, and Knowledge Location Split</h3>
           <p>Core should separate durable information from runnable software and machine-local runtime state. This keeps the personal information architecture portable while allowing implementations to use normal software engineering practices.</p>
+          <p>This is a separation of state roles, authority, and software lifecycle, not a mandate for different machines. PIOS-native executables and their runtime state may live in the Solo VM outside the canonical data tree. Keeping a source repository, cache, or receiver database separate from canonical information does not make the service external to PIOS. Apply the <a href="#system-core-and-deployment-boundaries">three-boundary model</a> before assigning physical placement.</p>
           <table>
             <thead>
               <tr>
@@ -4977,7 +5033,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
               <tr>
                 <td>Machine-local runtime state</td>
                 <td>Dependencies, caches, queues, databases, build artifacts, containers, logs, local indexes, and service state.</td>
-                <td>Keep local unless deliberately retained as source evidence, operational audit, or rebuildable projection.</td>
+                <td>Manage under explicit runtime retention and reconstruction rules. Runtime-local may mean inside the Solo VM; retain as source evidence, operational audit, or a governed Derived projection only through the appropriate lifecycle.</td>
               </tr>
               <tr>
                 <td>Secrets and credentials</td>
@@ -5025,7 +5081,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
               </tr>
               <tr>
                 <td><a href="docs/hosting-core-boundaries-and-portability-principles-v0.1.md">Hosting, Core Boundaries, and Portability Principles v0.1</a></td>
-                <td>Deployment-independent Core boundaries, execution taxonomy, hosting profiles, intelligence placement, and state/operational/ecosystem portability.</td>
+                <td>Distinct Core, PIOS system, and deployment boundaries; native services and Corebox versus independent consumers; Solo packaging, shared hosted execution, and portability.</td>
                 <td>Infrastructure, operators, applications, supporting services, and models remain replaceable; current implementation evidence does not create hosted-service availability or compatibility claims by itself.</td>
               </tr>
             </tbody>
@@ -5240,6 +5296,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
           <h3>23.2 Implementation Evidence Across Profiles</h3>
           <ul>
             <li>Use provider-native and self-hosted implementations as reciprocal tests of the same Core contract rather than treating either topology as the definition of PIOS.</li>
+            <li>Record Core contract membership, PIOS system membership, and physical placement separately for each component. Do not externalize native processing merely because its executor or output is replaceable.</li>
             <li>Keep current release, deployment, provider-support, and owner-operation status in implementation repositories and evidence records rather than freezing it into this framework roadmap.</li>
             <li>Advance public compatibility claims only through published schemas, fixtures, conformance tests, and evidence for the exact claimed scope.</li>
             <li>Preserve the separation between the one-owner AWS pilot/template, Core Self-Hosted and Solo operation, and any future multi-tenant Core Managed service.</li>
@@ -5259,6 +5316,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
             <li>Maintain the Core Self-Hosted implementation as a first-class portability and owner-operation path so provider-specific services do not become accidental PIOS requirements.</li>
             <li>Keep implementation technologies replaceable. Ubuntu, Garage, Python, DuckDB, WireGuard, and Restic are reference choices rather than normative PIOS dependencies.</li>
             <li>Define the self-hosted Core Template as a versioned data-empty image-root, VM image, install script, container composition, or configuration bundle that can create an empty Core Self-Hosted structure before bundle hydration and pass a hygiene gate before distribution.</li>
+            <li>Package Core and the selected PIOS-native services together in the Solo VM as far as practical. Document native device interfaces, external resources, and any justified split executors; prove reconstruction of the declared operating capabilities rather than only restoration of stored bytes.</li>
             <li>Define self-hosted equivalents for large-file ingest, append-only or immutable originals/events, remediation tombstones, erasure/key custody, and restore proofs before broad migrated owner data is hydrated.</li>
             <li>Describe completed Starter, provider-proof, and private Solo milestones in current implementation evidence. Do not turn private owner operation into a public support claim without the applicable release and conformance record.</li>
             <li>Document operational responsibilities clearly: updates, backups, keys, monitoring, and recovery.</li>
@@ -5278,7 +5336,7 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
           </ul>
 
           <div class="callout warning">
-            <p><strong>Governing implementation rule:</strong> begin with durable storage, minimal event truth, and simple retrieval. Add specialized systems only when actual captured data, real retrieval patterns, and demonstrated performance needs explain precisely why they are required.</p>
+            <p><strong>Governing implementation rule:</strong> begin with durable storage, minimal event truth, and simple retrieval. This is a delivery sequence, not a definition of PIOS as storage alone. Add specialized systems only when actual captured data, real retrieval patterns, and demonstrated performance needs explain precisely why they are required.</p>
           </div>
         </section>
       </article>

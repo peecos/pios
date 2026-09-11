@@ -19,9 +19,10 @@ single-owner AWS reference or from publication of the templates.
 The current AWS reference is a one-owner pilot/template path. It is not the
 initial production tenant, service control plane, or evidence that a
 multi-tenant data plane exists. The deployment-independent distinction among
-Core state, Core capability executors, supporting services, and operator
-control planes is defined in [Hosting, Core Boundaries, and Portability
-Principles v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md).
+Core state, Core capability executors, PIOS-native services and interfaces,
+independent consumers, and operator control planes is defined in [Hosting,
+Core Boundaries, and Portability Principles
+v0.1](hosting-core-boundaries-and-portability-principles-v0.1.md).
 
 The current priority is Valto's private owner Core: establish it as a durable,
 governed, portable master for real normal work. The hosted-service path forks
@@ -92,6 +93,20 @@ may be used where justified. Every work unit must nevertheless be bound to one
 Core and one owner context, with explicit authority, allowed inputs and outputs,
 temporary-context lifetime, and cleanup behavior. Shared mutable owner context
 is not an acceptable consequence of shared infrastructure.
+
+When these workers implement native ingestion, knowledge processing, indexing,
+retrieval, or orchestration, they implement PIOS rather than merely use it.
+They may be physically outside each owner's Core environment while remaining
+part of the hosted PIOS implementation. Their code need not be copied into each
+owner's data export, but takeover must identify a compatible service composition
+and reconstruction path. Shared hosted execution does not imply that a Solo VM
+should externalize its native services: Solo normally packages them together
+with Core as far as practical.
+
+Corebox is a PIOS-native hub/gateway client of either Solo or hosted PIOS.
+Independent applications such as notes or LifeStory have a separate product
+purpose and should remain useful without PIOS. These product roles do not
+change with the hosting model, and neither grants broader access to a tenant.
 
 Tenant provisioning, billing, fleet administration, support, abuse prevention,
 and service-health operations belong to the operator control plane. They may be

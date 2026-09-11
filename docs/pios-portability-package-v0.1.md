@@ -12,6 +12,12 @@ Core. A PIOS Portability Package adds a prior entry path: an owner or agent can
 assemble a self-describing package from owner-controlled sources before a Core
 exists.
 
+The [hosting and boundary principles](hosting-core-boundaries-and-portability-principles-v0.1.md)
+distinguish the Core contract, the complete PIOS system, and physical
+deployment. PIOS is an information operating system, not only the state being
+transferred. Rebuildable processing and retrieval components may belong to the
+PIOS system and its Solo VM without being authoritative payload records.
+
 ## 2. Terms and hard boundary
 
 | Term | Meaning |
@@ -20,11 +26,18 @@ exists.
 | Scoped Core Bundle | An export of a selected Core subset for sharing, testing, recovery, or transfer. It is not a Full Core Export Bundle and cannot imply complete-Core coverage. |
 | PIOS Portability Package | An import/reconstruction package assembled from a Core export or independently from owner-controlled sources. |
 | Provisioning Manifest | The current PIOS artifact binding a template/profile, security posture, and optional bundle hydration into a runnable Core. |
+| PIOS service composition | The versioned runtime/install definition for Core and the selected PIOS-native services, with required external dependencies and reconstruction instructions. It is not owner data or a new state-bundle format. |
 
 A source-composed PIOS Portability Package is not evidence of an existing Core
 state. It cannot become a Full Core Export Bundle merely because it was imported
 or renamed. Only governed import, validation, canonical event/provenance
 creation, and a subsequent Core export can produce a Full Core Export Bundle.
+
+Neither a Full Core Export Bundle nor a source-composed package is by itself a
+runnable PIOS VM. A data-empty golden image or equivalent install composition
+supplies the operating services; the bundle supplies governed owner state;
+the Provisioning Manifest binds the destination and authorization gates.
+Corebox device clients and independent applications reconnect separately.
 
 ## 3. Package requirements
 
@@ -51,6 +64,11 @@ Unknown extension fields are preserved verbatim where their enclosing canonical
 record is supported. Derived indexes, embeddings, graph exports, and caches are
 rebuildable by default and must be declared when included.
 
+Rebuildable does not mean external to PIOS. An index implementing PIOS retrieval
+may live in Core's Derived zone and be rebuilt inside the Solo VM. Omitting its
+payload from an export does not permit omitting the instructions and supported
+execution needed to reconstruct a promised capability.
+
 ## 5. Import and operationalization
 
 Import validates container structure, schema/version, checksums, encryption
@@ -72,6 +90,14 @@ carried as portable descriptions. Import does not install, activate, connect,
 or grant authority to them. Credentials, device trust, source connections, and
 operational schedules require separate destination validation and owner
 authorization.
+
+For complete PIOS recovery, the report also distinguishes installed,
+reconstructed, authorized, operational, and unavailable native services.
+Validate the selected processing, retrieval, and PIOS-specific gateway behavior,
+including any explicitly remote executors, rather than equating exact-byte
+restore with recovery of the whole operating system. Corebox receiver state,
+unregistered storage, and independent application caches do not become canonical
+Core records merely because a service is part of PIOS or shares its VM.
 
 ## 6. Composition roles
 

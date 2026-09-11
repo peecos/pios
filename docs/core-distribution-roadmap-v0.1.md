@@ -7,6 +7,12 @@ or write-through.
 The governing contract is [Core Distribution and Compatibility Specification
 v0.1](core-distribution-and-compatibility-spec-v0.1.md).
 
+Apply the [hosting and boundary principles](hosting-core-boundaries-and-portability-principles-v0.1.md)
+throughout: a complete PIOS distribution includes Core and selected PIOS-native
+services and interfaces. The narrower Core compatibility contract, PIOS system
+membership, and physical placement are separate. The packaging clarification
+below changes no completed milestone, compatibility level, or provider status.
+
 ## Goal A: Canonical Portability
 
 Outcome: a full Core Export Bundle can be validated, restored, and hydrated
@@ -81,6 +87,12 @@ Next deliverables:
 - publish a complete SBOM or equivalent dependency record for future releases;
 - create a Docker Compose package and idempotent Linux installer from the same
   self-hosted runtime definition;
+- make the selected PIOS-native service composition explicit, including
+  ingestion, processing, orchestration, knowledge maintenance, indexing,
+  retrieval, projections, and gateways required by that distribution;
+- package Core and those native services inside the Solo VM as far as practical,
+  declare device interfaces and external resources separately, and verify
+  service reconstruction rather than only image boot or byte restoration;
 - publish an `x86_64` artifact when that architecture has equivalent evidence;
 - repeat provider proofs with public release artifacts and conformance checks
   before promoting any provider to supported status.
@@ -88,6 +100,12 @@ Next deliverables:
 The ARM64 QEMU release path satisfies the initial signed, data-empty artifact
 milestone. Goal C remains open for broader installation forms, architecture
 coverage, dependency inventory, and supported-provider evidence.
+
+The complete composition is a target, not a claim about today's Starter image.
+It does not require every optional PIOS capability. A general Agent/Services VM
+normally hosts independent consumers, not unrecorded PIOS runtime dependencies.
+Corebox device clients remain outside the VM while belonging to PIOS; their
+native backend may be inside without becoming canonical Core state.
 
 ## Goal D: Provider Coverage Without Lock-In
 
