@@ -14,6 +14,8 @@
 - Bound the CRD method at `8f24ab01b2bf30409b364df5fd6b77b7bf89c29d`.
 - Completed the bounded pilot source reading and restricted implementation trace.
 - Classified seven pilot Capability MLEs and one communication-only element.
+- Corrected the rule boundary during CRD validation: rule establishment and rule application are separate, producing eight pilot Capability MLEs.
+- Verified the website's current source mechanism and recorded a separate publication plan; no route or live page was claimed.
 
 ## In progress
 
@@ -26,7 +28,8 @@
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
 - Pull request/review: creation blocked by unavailable authenticated GitHub API access; branch is ready for review.
-- Website route: not yet created.
+- Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
+- Website route: proposed `/pios/capabilities`; not yet created.
 - Live publication: not started.
 
 ## Next action

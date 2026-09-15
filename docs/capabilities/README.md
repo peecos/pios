@@ -10,5 +10,6 @@ Start with:
 - [Work status](work-status.md)
 - [Capability inventory](capability-inventory.md)
 - [Source and publication policy](source-context/source-and-publication-context.md)
+- [Website publication plan](website-publication.md)
 
 The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules.
