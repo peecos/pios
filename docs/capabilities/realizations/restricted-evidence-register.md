@@ -9,5 +9,9 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-C` | allocate retained content to a context | requirements and declared structure | assessed; reachability and availability unknown |
 | `RAS-01-D` | assemble governed retrieval context | requirements and partial static implementation trace | assessed; completeness and availability unknown |
 | `RAS-01-E` | consolidate conversation history | requirements and declared structure | assessed; producer, tests, and availability unknown |
+| `RAS-01-F` | maintain personal glossary terms and organizing labels | requirements assessment | assessed; public realization not confirmed |
+| `RAS-01-G` | detect candidate glossary terms | requirements assessment | assessed; static implementation review continues privately |
+| `RAS-01-H` | govern and apply AI-assisted labels | requirements assessment | assessed; implementation reachability not publicly claimed |
+| `RAS-01-I` | apply contextual classification | requirements assessment | assessed; implementation reachability not publicly claimed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

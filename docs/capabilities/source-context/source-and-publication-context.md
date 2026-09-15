@@ -17,6 +17,8 @@
 - Historical pillars are not the current five Core zones.
 - A proposal is a governed decision object; a notification or Update is a possible presentation of it.
 - A schema declaration is not evidence of a reachable, tested, deployed, or available capability.
+- Personal glossary terms, owner-confirmed organizing labels, AI-assisted labels, Roles, and Modes carry different authority and meaning; shared UI presentation does not merge them.
+- Cotton governs contextual organization but is not itself a database schema, fixed taxonomy, or app-specific feature catalogue.
 
 ## Restricted-evidence policy
 

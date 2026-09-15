@@ -12,5 +12,11 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Decide a governed proposal | directly aligned | proposed | not established | eligible governance capability | durable decision record | implementation-dependent |
 | Establish a standing rule | directly aligned | proposed | not established | eligible governance capability | durable authority state | implementation-dependent |
 | Apply a standing rule | aligned subject to authority and audit | proposed | not established | eligible execution capability | execution evidence/event | implementation-dependent |
+| Maintain a personal glossary term | directly aligned | proposed | not established | eligible knowledge/system capability | glossary knowledge/system definition | implementation-dependent |
+| Manage an organizing label | directly aligned | proposed | not established | eligible Cotton/taxonomy capability | governed taxonomy state | implementation-dependent |
+| Detect a candidate glossary term | directly aligned with proposal boundary | proposed | not established | eligible enrichment capability | proposed/derived candidate | implementation-dependent |
+| Manage AI-assisted label vocabulary | directly aligned | proposed | not established | eligible Cotton/system capability | owner-scoped soft-semantics definition | implementation-dependent |
+| Apply an AI-assisted label | directly aligned | proposed | not established | eligible enrichment capability | non-authoritative derived metadata | implementation-dependent |
+| Apply contextual classification | directly aligned | proposed | not established | eligible Cotton/context capability | contextual metadata and lifecycle evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

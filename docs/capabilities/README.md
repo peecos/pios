@@ -10,6 +10,7 @@ Start with:
 - [Work status](work-status.md)
 - [Capability inventory](capability-inventory.md)
 - [Source and publication policy](source-context/source-and-publication-context.md)
+- [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 
-The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules.
+The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 has begun with personal glossary, organizing-label, assisted-label, naming-detection, and contextual-classification capabilities.

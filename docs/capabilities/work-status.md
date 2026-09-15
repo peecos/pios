@@ -19,9 +19,15 @@
 
 ## In progress
 
-- Begin the knowledge-and-context tranche: notes, profile, naming, glossary, labels, and context organization.
+- Continue knowledge-and-context tranche A2: notes, manual profile, observed profile, and profile evidence/lifecycle.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
+
+## Phase 2 progress
+
+- Tranche A1 completed: public historical and current PIOS glossary, naming, assisted-label, and context-tag material classified.
+- Six additional draft Capability MLEs registered, bringing the inventory to fourteen.
+- Restricted source assessment remains separately recorded; no private excerpts or implementation details entered the public branch.
 
 ## Publication state
 
@@ -34,4 +40,4 @@
 
 ## Next action
 
-Open the PIOS review request when authenticated GitHub contribution access is available; meanwhile continue the next bounded evidence tranche without changing website or Solo files.
+Extract tranche A2 across Notes and Profile, including the distinction among owner-authored profile content, evidence-backed profile knowledge, observed patterns, and app/view groupings.

@@ -6,3 +6,6 @@
 | U02 | What receipt-retention period is required for retrieval at different risk levels? | Current PIOS establishes provenance and context receipts but not one universal duration. | later governance profile |
 | U03 | Which pilot capabilities have publicly verifiable operational realizations? | The assessed application evidence is restricted and static evidence does not prove deployment. | realization claims only |
 | U04 | Which standing-rule non-match decisions require durable logging? | Risk and volume can differ; admitted sources do not establish a universal rule. | later execution profile |
+| U05 | Is active-session context selection one capability or several scope-specific capabilities? | The sources distinguish active context from attaching context to durable objects, but the full interaction contract has not yet been extracted. | A2/context continuation |
+| U06 | What universal contract governs assigning an owner-confirmed organizing label to an object? | Vocabulary management and assignment are independently meaningful; this pass covered only vocabulary management. | later knowledge/context pass |
+| U07 | Which assisted-label vocabulary changes require direct owner confirmation versus a standing rule? | Source generations differ in how much direct user creation or AI curation they allow. | governance profile |

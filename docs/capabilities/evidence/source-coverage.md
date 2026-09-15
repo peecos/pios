@@ -7,4 +7,11 @@
 | Restricted application source `RAS-01` | complete document and file inventory retained privately | pilot specifications and rationale assessed | bounded storage and retrieval paths traced privately | public details withheld; remainder Phase 2 |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
+## Phase 2 tranche coverage
+
+| Tranche | Public historical material | Current PIOS material | Restricted material | Status |
+|---|---|---|---|---|
+| A1 — glossary, naming, labels, context attachment | `glossary-naming.md`, `automated-naming.md`, `ai-assisted-labels.md`, `context-tags.md` | Cotton §§4.1–4.5; Personal Glossary §9; Taxonomy §§10.2 and 10.4; Context §12.8; Cognitive Memory §§2, 7, 10–11 | four directly relevant specifications assessed; implementation details remain private | statement and boundary pass complete; six CRDs drafted |
+| A2 — notes and profiles | matching historical pages identified | Knowledge §14 and profile/context guidance identified | profile and note-linking specifications partially read | next bounded pass |
+
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.
