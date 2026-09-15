@@ -1,0 +1,13 @@
+# Restricted realization evidence register
+
+This public register records only disclosure-safe status. Detailed source identity, revision, excerpts, paths, and implementation findings remain in the owner-approved restricted evidence location.
+
+| Evidence ID | Capability | Evidence type | Public disposition |
+|---|---|---|---|
+| `RAS-01-A` | retain governed content | requirements and static implementation trace | assessed; details withheld; no tested/deployed claim |
+| `RAS-01-B` | derive content from a retained source | requirements and static implementation trace | assessed; disagreement retained privately; no tested/deployed claim |
+| `RAS-01-C` | allocate retained content to a context | requirements and declared structure | assessed; reachability and availability unknown |
+| `RAS-01-D` | assemble governed retrieval context | requirements and partial static implementation trace | assessed; completeness and availability unknown |
+| `RAS-01-E` | consolidate conversation history | requirements and declared structure | assessed; producer, tests, and availability unknown |
+
+These entries are not public realization confirmations and must not be used to claim compatibility or availability.

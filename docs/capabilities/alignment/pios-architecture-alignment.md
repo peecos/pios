@@ -1,0 +1,16 @@
+# PIOS architecture alignment
+
+Architecture alignment, adoption, realization evidence, and availability are independent dimensions.
+
+| Capability | Alignment | Adoption | Core contract | PIOS system | State treatment | Deployment role |
+|---|---|---|---|---|---|---|
+| Retain governed content | compatible | proposed library entry | not established | eligible | source/original state | implementation-dependent |
+| Derive content from a retained source | compatible with provenance constraints | proposed | not established | eligible processing capability | derived/compiled state | implementation-dependent |
+| Allocate retained content to a context | compatible | proposed | not established | eligible governance capability | durable authorization state | implementation-dependent |
+| Assemble governed retrieval context | directly aligned | proposed | not established | eligible processing/retrieval capability | derived or ephemeral package plus receipt | implementation-dependent |
+| Consolidate conversation history | compatible | proposed | not established | eligible processing capability | derived representation | implementation-dependent |
+| Decide a governed proposal | directly aligned | proposed | not established | eligible governance capability | durable decision record | implementation-dependent |
+| Establish a standing rule | directly aligned | proposed | not established | eligible governance capability | durable authority state | implementation-dependent |
+| Apply a standing rule | aligned subject to authority and audit | proposed | not established | eligible execution capability | execution evidence/event | implementation-dependent |
+
+No row claims compatibility-level adoption, implementation, deployment, or availability.
