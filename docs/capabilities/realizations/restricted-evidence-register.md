@@ -16,5 +16,8 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-J` | maintain deliberate knowledge notes | requirements and realization-pattern assessment | assessed; code reachability not yet claimed |
 | `RAS-01-K` | maintain owner-authored profile knowledge | requirements assessment | assessed; implementation reachability unknown |
 | `RAS-01-L` | maintain and resolve evidence-backed profile assertions | requirements assessment | assessed; implementation reachability unknown |
+| `RAS-01-M` | apply action-intent labels | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-N` | invoke governed actions and run background operations | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-O` | configure execution policy | requirements assessment | assessed; implementation reachability pending |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

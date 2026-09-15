@@ -12,3 +12,5 @@ This register records conceptual reuse, not proof that one shared software compo
 | Context receipt | data/operations MLE | governed retrieval | later context compilation and disclosure capabilities | conceptually approved | Retention period remains unresolved. |
 | Version/revision relation | data/information MLE | knowledge notes | glossary terms, profile assertions, governed system definitions | conceptually approved | Exact storage representation is not fixed. |
 | Evidence link | data/information MLE | profile assertions | proposals, term candidates, consolidations, derived content | conceptually approved | Evidence does not by itself grant authority. |
+| Execution run record | data/operations MLE | governed action invocation | background operations, workflows, results, standing-rule applications | conceptually approved | Each domain capability defines its own success semantics. |
+| Action declaration | API/system MLE | governed action invocation | execution policy, skills, workflows, capability discovery | conceptually approved | A declaration is not proof of availability. |

@@ -22,5 +22,9 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain owner-authored profile knowledge | directly aligned | proposed | not established | eligible Knowledge/Myself capability | owner-authored living Knowledge | implementation-dependent |
 | Maintain an evidence-backed profile assertion | directly aligned | proposed | not established | eligible Knowledge capability | sourced profile projection | implementation-dependent |
 | Resolve a disputed profile assertion | directly aligned | proposed | not established | eligible governance/Knowledge capability | versioned profile decision and evidence | implementation-dependent |
+| Apply an action-intent label | directly aligned | proposed | not established | eligible Cotton/execution capability | governed intent metadata | implementation-dependent |
+| Invoke a governed action | directly aligned | proposed | not established | eligible execution capability | run state, events, and outputs | implementation-dependent |
+| Run a background operation | directly aligned | proposed | not established | eligible processing/orchestration capability | operational run state plus durable result/event | implementation-dependent |
+| Configure execution policy | directly aligned | proposed | not established | eligible System/governance capability | versioned system policy | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

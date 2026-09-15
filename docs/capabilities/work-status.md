@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Begin actions-and-execution tranche B after completing the A2 evidence/code disposition.
+- Continue actions-and-execution tranche B2: plans, projects, routines, tasks, reminders, workflow packages/runs, and results.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -32,6 +32,8 @@
 - Four additional draft Capability MLEs registered, bringing the inventory to eighteen.
 - Restricted application documentation coverage is now 12 of 26 documents at bounded substantive depth.
 - The A2 implementation trace is pending because required blobs were unavailable from the existing partial source checkout and on-demand retrieval failed; no substitute source was used.
+- Tranche B1 statement and boundary pass completed for action intent, governed invocation, background operations, and execution policy.
+- Four additional draft Capability MLEs registered, bringing the inventory to twenty-two.
 
 ## Publication state
 
@@ -44,4 +46,4 @@
 
 ## Next action
 
-Resume the A2 implementation trace when the exact pinned blobs are available, while beginning the document-only portion of tranche B without substituting a different source revision.
+Apply the individual MLE test to the B2 execution objects before drafting; keep workflow packages, runs, tools, skills, views, and domain outcomes distinct.

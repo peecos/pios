@@ -37,3 +37,15 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | K-M12 | Resolve a disputed profile assertion | passes | separate CRD | A dispute has a distinct actor, decision, versioned result, and failure state. |
 | K-M13 | Profile app | fails | source context and audience projection | It groups independently meaningful knowledge, goal, review, and navigation capabilities. |
 | K-M14 | Attach a capability row to a note | fails as currently evidenced | realization pattern | The source describes a database/hook composition pattern rather than one stable user outcome. |
+
+## Phase 2 actions-and-execution tranche B1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| B-M01 | Apply an action-intent label | passes | separate CRD | It records intended handling and succeeds without executing that handling. |
+| B-M02 | Invoke a governed action | passes | separate CRD | It mediates one declared executable operation under authority and audit. |
+| B-M03 | Run a background operation | passes | separate CRD | Asynchronous handoff, progress, cancellation/failure, and terminal result form an independent outcome. |
+| B-M04 | Configure execution policy | passes | separate CRD | Changing allowable actions and confirmation posture is independently meaningful from performing an action. |
+| B-M05 | Action Tag + Action | both pass | keep separate | Combining intent with execution would make a label silently executable. |
+| B-M06 | Skills and Actions screen | fails | audience projection | A visibility/configuration surface groups multiple capabilities and artifacts. |
+| B-M07 | Execution Model | fails | source context | It is a domain model containing multiple independently meaningful capabilities and object lifecycles. |
