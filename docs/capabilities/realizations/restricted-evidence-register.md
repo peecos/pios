@@ -22,5 +22,6 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-P` | plans, plan activation, projects, routines, and routine runs | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-Q` | tasks, task collections, and reminders | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-R` | workflow packages, installed workflows, workflow runs, and results | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-S` | owner attention items and update lifecycle | requirements assessment | assessed; implementation reachability pending |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

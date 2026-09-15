@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 15, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, and C1 drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Begin events, updates, operational records, and portability tranche C1.
+- Continue tranche C2 with import admission, event-type governance, operational records, export, and portability.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -40,6 +40,9 @@
 - Tranche B2b statement and boundary pass completed for Work Starters, contextual work ordering, workflow packages, installed workflows, workflow runs, and results.
 - Six additional draft Capability MLEs registered, bringing the inventory to thirty-six.
 - The actions-and-execution tranche is complete at requirements level; its restricted implementation trace remains pending and is not represented as tested or deployed behavior.
+- Tranche C1 statement and boundary pass completed for canonical events, owner attention, completed-work publication, daily History, higher-period aggregation, and time-indexed navigation.
+- Six additional draft Capability MLEs registered, bringing the inventory to forty-two.
+- Restricted Updates requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
 
 ## Publication state
 
@@ -52,4 +55,4 @@
 
 ## Next action
 
-Start C1 with Updates, event records, completed-work publication, and History entry/aggregation boundaries before drafting.
+Continue C2 by testing source admission, event registry governance, operational evidence, export package creation, and restore/import compatibility independently.

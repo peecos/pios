@@ -20,3 +20,6 @@ This register records conceptual reuse, not proof that one shared software compo
 | Work-source context link | data/information MLE | Work Starters | tasks, projects, plans, routine runs, results | conceptually approved | A projection never replaces the canonical source object. |
 | Immutable execution snapshot | data/operations MLE | workflow runs | routine runs, background operations, governed actions | conceptually approved | Snapshot scope is capability- and risk-specific. |
 | Result provenance bundle | data/information MLE | execution results | projects, routine runs, workflow runs, completed-work updates, History | conceptually approved | Result qualification remains distinct from generic retention. |
+| Canonical event envelope | data/information MLE | event recording | work completion, processing, updates, History, governance, imports | conceptually approved | Event-family requirements extend the minimal stable envelope. |
+| Owner-attention state | data/operations MLE | owner attention items | reminders, decisions, incidents, workflow outcomes, completed work | conceptually approved | Read/pin/dismiss state does not alter source truth. |
+| History period link | data/information MLE | History aggregation | daily compilation, higher summaries, time-first retrieval | conceptually approved | Parent and child periods retain drill-down provenance. |

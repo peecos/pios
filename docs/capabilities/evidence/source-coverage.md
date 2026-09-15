@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | Current PIOS | master and companion set identified | pilot-relevant architecture read; whole-system context reviewed | not applicable | pilot alignment complete |
 | PIOS Global | selected commit and corpus identified | three pilot documents read | not applicable | pilot complete; remainder Phase 2 |
-| Restricted application source `RAS-01` | complete document and file inventory retained privately | 13 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2 and B2 execution-object code traces pending | public details withheld; 13 documents remain unassessed |
+| Restricted application source `RAS-01` | complete document and file inventory retained privately | 14 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, and C1 code traces pending | public details withheld; 12 documents remain unassessed |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
 ## Phase 2 tranche coverage
@@ -16,5 +16,6 @@
 | B1 — action intent and governed execution | `action-tags.md` and `execution-model.md` read | Taxonomy §10.3, Functional Flow §13, Agent Architecture §17, processing/governance sections read | five action/execution specifications assessed; code trace pending | statement and boundary pass complete; four CRDs drafted |
 | B2a — plans, projects, routines, tasks, task collections, reminders | `planning-app.md`, `projects-app.md`, `routines-app.md`, `goals-app.md`, `execution-model.md`, and related execution pages read | Functional Flow §13 and Agent Architecture §17 read | execution-model, capability-app, ally-reference, and results requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; eight CRDs drafted; code-traced realization evidence pending |
 | B2b — Work Starters, contextual ordering, workflows, and results | `results-app.md` and related execution material read | Functional Flow §§13.3–13.10 and Agent Architecture §17.2 read | results and execution requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; six CRDs drafted; code-traced realization evidence pending |
+| C1 — events, Updates, completed work, and History | `updates-pillar.md`, `unified-timeline.md`, `timeline-insights.md`, and `hierarchical-summary.md` read | Event Model §8, Functional Flow §13.2, Knowledge and retrieval relationships read | Updates requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; six CRDs drafted; code-traced realization evidence pending |
 
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.

@@ -85,3 +85,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | B-M31 | Workflow run + result | both pass | keep separate | Execution may fail or yield several outputs; a retained result is a separately qualified provenance-bearing outcome. |
 | B-M32 | Result object + Results view | only result object passes | CRD for result preservation; view is projection | The view combines discovery, installation, runs, outputs, and review rather than one outcome. |
 | B-M33 | Routine + workflow package | both pass with relationship unresolved | keep separate | A Routine is owner-facing reusable execution structure; a Workflow Package is a distributable declared process contract. |
+
+## Phase 2 events-and-History tranche C1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| C-M01 | Record a canonical event | passes | separate CRD | One occurrence can be durably and idempotently appended independently of any owner-facing projection. |
+| C-M02 | Manage an owner attention item | passes | separate CRD | Attention state, response, pin/read/dismiss lifecycle, and source linkage are independently meaningful. |
+| C-M03 | Publish a completed-work record | passes | separate CRD | Meaningful completion creates a coherent event/update/detail/manifest/evidence outcome beyond generic attention management. |
+| C-M04 | Compile daily owner History | passes | separate CRD | Daily compilation uniquely selects and narrates structured and fallback evidence for an owner-defined day. |
+| C-M05 | Aggregate an owner History period | passes | separate CRD | Higher-level composition has different inputs, abstraction, closure, and gap semantics from daily compilation. |
+| C-M06 | Navigate time-indexed owner History | passes | separate CRD | Traversal and retrieval produce relevant historical context without creating or changing source records. |
+| C-M07 | Event + Update | both pass | keep separate | The event is canonical occurrence truth; the Update is a resolvable attention projection. |
+| C-M08 | Generic Update + completed-work publication | both pass | keep separate | Generic attention can surface decisions or warnings, while completed-work publication requires a provenance-linked evidence bundle. |
+| C-M09 | Daily + higher-period summary | both pass | keep separate | Daily may inspect source evidence; higher levels compose from closed lower-level summaries. |
+| C-M10 | Unified Timeline / History view | fails as one capability | source context and audience projection | It combines navigation, filtering, summaries, updates, events, and source drill-down. |
+| C-M11 | Notification delivery | fails as standalone Capability MLE | Communication MLE owned by the attention source | Delivery loses purpose without the update, reminder, incident, or decision it communicates. |
