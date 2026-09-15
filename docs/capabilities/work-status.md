@@ -30,6 +30,8 @@
 - Restricted source assessment remains separately recorded; no private excerpts or implementation details entered the public branch.
 - Tranche A2 statement and boundary pass completed for deliberate notes, owner-authored profile knowledge, evidence-backed profile assertions, and dispute resolution.
 - Four additional draft Capability MLEs registered, bringing the inventory to eighteen.
+- Restricted application documentation coverage is now 12 of 26 documents at bounded substantive depth.
+- The A2 implementation trace is pending because required blobs were unavailable from the existing partial source checkout and on-demand retrieval failed; no substitute source was used.
 
 ## Publication state
 
@@ -42,4 +44,4 @@
 
 ## Next action
 
-Trace the relevant A2 implementation paths privately, then begin tranche B with action declarations, background execution, execution policy, and capability-app composition.
+Resume the A2 implementation trace when the exact pinned blobs are available, while beginning the document-only portion of tranche B without substituting a different source revision.
