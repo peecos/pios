@@ -49,3 +49,22 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | B-M05 | Action Tag + Action | both pass | keep separate | Combining intent with execution would make a label silently executable. |
 | B-M06 | Skills and Actions screen | fails | audience projection | A visibility/configuration surface groups multiple capabilities and artifacts. |
 | B-M07 | Execution Model | fails | source context | It is a domain model containing multiple independently meaningful capabilities and object lifecycles. |
+
+## Phase 2 actions-and-execution tranche B2a
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| B-M08 | Maintain an execution plan | passes | separate CRD | A plan has an independent proposal, review, revision, and retained source-design outcome. |
+| B-M09 | Activate an execution plan | passes | separate CRD | Activation creates a derived execution object and provenance receipt without performing that object's work. |
+| B-M10 | Manage a one-off project | passes | separate CRD | A bounded effort has independent context, progress, responsibility, resolution, and failure semantics. |
+| B-M11 | Maintain a reusable routine | passes | separate CRD | The reusable definition has a lifecycle independent from any concrete occurrence. |
+| B-M12 | Run a routine instance | passes | separate CRD | One occurrence has its own actor, input snapshot, execution state, outputs, and terminal result. |
+| B-M13 | Manage an actionable task | passes | separate CRD | One action can be captured, assigned, advanced, completed, or reopened independently of a project or list. |
+| B-M14 | Organize a task collection | passes | separate CRD | Ordered grouping has a meaningful result while member tasks retain independent identity and state. |
+| B-M15 | Schedule a contextual reminder | passes | separate CRD | A trigger, recurrence, snooze, and enabled lifecycle can succeed or fail without changing the reminded object's state. |
+| B-M16 | Plan + activation | both pass | keep separate | Combining them would blur proposed design with the governed transition into execution. |
+| B-M17 | Project + task | both pass | keep separate | A project can exist before all tasks are known, and tasks can exist without a project. |
+| B-M18 | Routine + routine run | both pass | keep separate | Definition changes and execution outcomes have different actors, lifecycles, and histories. |
+| B-M19 | Task + task collection | both pass | keep separate | Membership and ordering do not replace the task's actionable state. |
+| B-M20 | Task + reminder | both pass | keep separate | A reminder resurfaces attention; it does not complete or otherwise execute the task. |
+| B-M21 | Planning, Projects, Routines, To-dos, or Results app | fails | audience projection | Each view groups several independently meaningful objects, transitions, and operations. |

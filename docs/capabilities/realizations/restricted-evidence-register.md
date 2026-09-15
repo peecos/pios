@@ -19,5 +19,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-M` | apply action-intent labels | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-N` | invoke governed actions and run background operations | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-O` | configure execution policy | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-P` | plans, plan activation, projects, routines, and routine runs | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-Q` | tasks, task collections, and reminders | requirements assessment | assessed; implementation reachability pending |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

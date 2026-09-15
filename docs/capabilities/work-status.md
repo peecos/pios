@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue actions-and-execution tranche B2: plans, projects, routines, tasks, reminders, workflow packages/runs, and results.
+- Continue actions-and-execution tranche B2b: Work Starters, dynamic scheduling, workflow packages/installations/runs, and results.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -34,6 +34,9 @@
 - The A2 implementation trace is pending because required blobs were unavailable from the existing partial source checkout and on-demand retrieval failed; no substitute source was used.
 - Tranche B1 statement and boundary pass completed for action intent, governed invocation, background operations, and execution policy.
 - Four additional draft Capability MLEs registered, bringing the inventory to twenty-two.
+- Tranche B2a statement and boundary pass completed for plans, activation, projects, routines and routine runs, tasks, task collections, and reminders.
+- Eight additional draft Capability MLEs registered, bringing the inventory to thirty.
+- Restricted requirements evidence is assessed for B2a; source-code reachability remains pending because the relevant blobs are unavailable from the pinned partial checkout.
 
 ## Publication state
 
@@ -46,4 +49,4 @@
 
 ## Next action
 
-Apply the individual MLE test to the B2 execution objects before drafting; keep workflow packages, runs, tools, skills, views, and domain outcomes distinct.
+Complete B2b by testing Work Starters, dynamic scheduling, workflow packages, installed workflows, workflow runs, and provenance-bearing results independently; keep tools, skills, views, and domain outcomes distinct.

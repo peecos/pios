@@ -26,5 +26,13 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Invoke a governed action | directly aligned | proposed | not established | eligible execution capability | run state, events, and outputs | implementation-dependent |
 | Run a background operation | directly aligned | proposed | not established | eligible processing/orchestration capability | operational run state plus durable result/event | implementation-dependent |
 | Configure execution policy | directly aligned | proposed | not established | eligible System/governance capability | versioned system policy | implementation-dependent |
+| Maintain an execution plan | directly aligned | proposed | not established | eligible Cotton/planning capability | governed source-design state | implementation-dependent |
+| Activate an execution plan | directly aligned | proposed | not established | eligible execution-transition capability | activation event and provenance links | implementation-dependent |
+| Manage a one-off project | directly aligned | proposed | not established | eligible Cotton/execution capability | canonical one-off work state | implementation-dependent |
+| Maintain a reusable routine | directly aligned | proposed | not established | eligible Cotton/execution capability | versioned reusable execution definition | implementation-dependent |
+| Run a routine instance | directly aligned | proposed | not established | eligible execution capability | run state, events, and outputs | implementation-dependent |
+| Manage an actionable task | directly aligned | proposed | not established | eligible Cotton/execution capability | canonical actionable work state | implementation-dependent |
+| Organize a task collection | directly aligned | proposed | not established | eligible Cotton/organization capability | ordered membership and context | implementation-dependent |
+| Schedule a contextual reminder | compatible | proposed | not established | eligible attention/execution capability | trigger, recurrence, and lifecycle state | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
