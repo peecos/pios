@@ -48,7 +48,7 @@
 
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
-- Pull request/review: creation blocked by unavailable authenticated GitHub API access; branch is ready for review.
+- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open and awaiting review.
 - Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
 - Website route: proposed `/pios/capabilities`; not yet created.
 - Live publication: not started.
