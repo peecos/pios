@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 15, 2026
-**Current phase:** Phase 1 pilot drafting and validation
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -17,17 +17,18 @@
 
 ## In progress
 
-- Complete the public-safe pilot CRDs, provenance, boundary log, alignment matrix, and inventory.
-- Run repository documentation and link checks.
-- Inspect the current website branch and select a conflict-safe publication path.
+- Begin the knowledge-and-context tranche: notes, profile, naming, glossary, labels, and context organization.
+- Continue restricted evidence assessment without copying private material into this repository.
+- Hold website implementation until the initial documentation milestone has review clearance.
 
 ## Publication state
 
-- GitHub commit: not yet created.
-- Pull request/review: not yet created.
+- GitHub branch: `docs/capability-library-pilot`, pushed.
+- Initial documentation commit: `7409865`.
+- Pull request/review: creation blocked by unavailable authenticated GitHub API access; branch is ready for review.
 - Website route: not yet created.
 - Live publication: not started.
 
 ## Next action
 
-Finish and validate the public-safe pilot milestone, then create a scoped documentation commit containing only `docs/capabilities/`.
+Open the PIOS review request when authenticated GitHub contribution access is available; meanwhile continue the next bounded evidence tranche without changing website or Solo files.
