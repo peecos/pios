@@ -34,5 +34,11 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Manage an actionable task | directly aligned | proposed | not established | eligible Cotton/execution capability | canonical actionable work state | implementation-dependent |
 | Organize a task collection | directly aligned | proposed | not established | eligible Cotton/organization capability | ordered membership and context | implementation-dependent |
 | Schedule a contextual reminder | compatible | proposed | not established | eligible attention/execution capability | trigger, recurrence, and lifecycle state | implementation-dependent |
+| Prepare a context-rich Work Starter | directly aligned | proposed | not established | eligible Cotton/planning capability | derived ready-to-start representation linked to canonical work | implementation-dependent |
+| Order ready work for the current context | directly aligned | proposed | not established | eligible Cotton/scheduling capability | ephemeral or derived ordering plus rationale | implementation-dependent |
+| Maintain a versioned workflow package | directly aligned | proposed | not established | eligible agent/execution definition capability | governed versioned system definition | implementation-dependent |
+| Manage an installed workflow | directly aligned | proposed | not established | eligible owner-scoped execution capability | durable installation and configuration state | implementation-dependent |
+| Run a governed workflow | directly aligned | proposed | not established | eligible orchestration/execution capability | run snapshots, events, logs, and outputs | implementation-dependent |
+| Preserve an execution result | directly aligned | proposed | not established | eligible execution/History capability | retained result and provenance links | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

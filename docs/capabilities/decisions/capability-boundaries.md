@@ -68,3 +68,20 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | B-M19 | Task + task collection | both pass | keep separate | Membership and ordering do not replace the task's actionable state. |
 | B-M20 | Task + reminder | both pass | keep separate | A reminder resurfaces attention; it does not complete or otherwise execute the task. |
 | B-M21 | Planning, Projects, Routines, To-dos, or Results app | fails | audience projection | Each view groups several independently meaningful objects, transitions, and operations. |
+
+## Phase 2 actions-and-execution tranche B2b
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| B-M22 | Prepare a context-rich Work Starter | passes | separate CRD | It produces a ready-to-start contextual entry point without selecting or executing the work. |
+| B-M23 | Order ready work for the current context | passes | separate CRD | It produces an explainable time-bounded ordering and can be rerun as context changes. |
+| B-M24 | Maintain a versioned workflow package | passes | separate CRD | A distributable process contract has independent authorship, version, safety, and deprecation outcomes. |
+| B-M25 | Manage an installed workflow | passes | separate CRD | Owner-scoped installation, configuration, enablement, and version policy exist independently of package authorship and runs. |
+| B-M26 | Run a governed workflow | passes | separate CRD | One triggered execution has its own snapshots, steps, authority, terminal state, and evidence. |
+| B-M27 | Preserve an execution result | passes | separate CRD | Registering produced value with execution provenance is meaningful independently of doing the work. |
+| B-M28 | Work Starter + contextual ordering | both pass | keep separate | Preparation makes work ready; ordering selects among already eligible work for a particular context. |
+| B-M29 | Workflow package + installed workflow | both pass | keep separate | A distributable definition and an owner's configured instance have different actors, authority, and lifecycle. |
+| B-M30 | Installed workflow + workflow run | both pass | keep separate | Configuration may exist without a run, and each run has independent input, state, output, and failure semantics. |
+| B-M31 | Workflow run + result | both pass | keep separate | Execution may fail or yield several outputs; a retained result is a separately qualified provenance-bearing outcome. |
+| B-M32 | Result object + Results view | only result object passes | CRD for result preservation; view is projection | The view combines discovery, installation, runs, outputs, and review rather than one outcome. |
+| B-M33 | Routine + workflow package | both pass with relationship unresolved | keep separate | A Routine is owner-facing reusable execution structure; a Workflow Package is a distributable declared process contract. |

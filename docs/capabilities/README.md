@@ -13,4 +13,4 @@ Start with:
 - [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 
-The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context capabilities plus action intent, governed execution, plans, plan activation, projects, routines and their runs, tasks and task collections, reminders, and execution policy.
+The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context capabilities plus action intent, governed execution, plans, projects, routines, tasks, reminders, Work Starters, contextual ordering, workflow packages and runs, results, and execution policy.
