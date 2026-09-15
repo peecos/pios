@@ -19,3 +19,5 @@
 The pilot produced eight draft Capability MLEs. They are reusable hypotheses supported by public historical design and current PIOS alignment; no public operational realization is yet confirmed. Restricted evidence affects the internal assessment but does not serve as undisclosed public proof.
 
 Phase 2 may proceed by bounded domain tranche without requesting approval for each ordinary draft.
+
+The same checks were applied to Phase 2 tranches A1 and A2 before inventory registration. App/view groupings and database composition patterns were not promoted to Capability MLEs.

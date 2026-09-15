@@ -18,5 +18,9 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Manage AI-assisted label vocabulary | directly aligned | proposed | not established | eligible Cotton/system capability | owner-scoped soft-semantics definition | implementation-dependent |
 | Apply an AI-assisted label | directly aligned | proposed | not established | eligible enrichment capability | non-authoritative derived metadata | implementation-dependent |
 | Apply contextual classification | directly aligned | proposed | not established | eligible Cotton/context capability | contextual metadata and lifecycle evidence | implementation-dependent |
+| Maintain a deliberate knowledge note | directly aligned | proposed | not established | eligible Knowledge capability | living Knowledge state with revision history | implementation-dependent |
+| Maintain owner-authored profile knowledge | directly aligned | proposed | not established | eligible Knowledge/Myself capability | owner-authored living Knowledge | implementation-dependent |
+| Maintain an evidence-backed profile assertion | directly aligned | proposed | not established | eligible Knowledge capability | sourced profile projection | implementation-dependent |
+| Resolve a disputed profile assertion | directly aligned | proposed | not established | eligible governance/Knowledge capability | versioned profile decision and evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

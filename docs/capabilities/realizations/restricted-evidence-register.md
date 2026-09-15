@@ -13,5 +13,8 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-G` | detect candidate glossary terms | requirements assessment | assessed; static implementation review continues privately |
 | `RAS-01-H` | govern and apply AI-assisted labels | requirements assessment | assessed; implementation reachability not publicly claimed |
 | `RAS-01-I` | apply contextual classification | requirements assessment | assessed; implementation reachability not publicly claimed |
+| `RAS-01-J` | maintain deliberate knowledge notes | requirements and realization-pattern assessment | assessed; code reachability not yet claimed |
+| `RAS-01-K` | maintain owner-authored profile knowledge | requirements assessment | assessed; implementation reachability unknown |
+| `RAS-01-L` | maintain and resolve evidence-backed profile assertions | requirements assessment | assessed; implementation reachability unknown |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

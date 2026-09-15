@@ -26,3 +26,14 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | K-M06 | Apply contextual classification | passes | separate CRD | Attaching a Role or Mode to an object has independent contextual and historical meaning. |
 | K-M07 | Glossary application | fails as one capability | split into K-M01 through K-M03 | The app/view grouping combines independently meaningful abilities. |
 | K-M08 | AI-assisted labeling | fails as one capability | split into K-M04 and K-M05 | Vocabulary governance and individual assignment can succeed or fail independently. |
+
+## Phase 2 knowledge-and-context tranche A2
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| K-M09 | Maintain a deliberate knowledge note | passes | separate CRD | Durable owner-chosen knowledge capture has its own lifecycle and outcome. |
+| K-M10 | Maintain owner-authored profile knowledge | passes | separate CRD | The owner can revise self-description independently of observed/evidence-backed assertions. |
+| K-M11 | Maintain an evidence-backed profile assertion | passes | separate CRD | A sourced assertion has independent provenance, confidence, validity, and lifecycle. |
+| K-M12 | Resolve a disputed profile assertion | passes | separate CRD | A dispute has a distinct actor, decision, versioned result, and failure state. |
+| K-M13 | Profile app | fails | source context and audience projection | It groups independently meaningful knowledge, goal, review, and navigation capabilities. |
+| K-M14 | Attach a capability row to a note | fails as currently evidenced | realization pattern | The source describes a database/hook composition pattern rather than one stable user outcome. |

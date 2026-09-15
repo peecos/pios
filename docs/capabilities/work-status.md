@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue knowledge-and-context tranche A2: notes, manual profile, observed profile, and profile evidence/lifecycle.
+- Begin actions-and-execution tranche B after completing the A2 evidence/code disposition.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -28,6 +28,8 @@
 - Tranche A1 completed: public historical and current PIOS glossary, naming, assisted-label, and context-tag material classified.
 - Six additional draft Capability MLEs registered, bringing the inventory to fourteen.
 - Restricted source assessment remains separately recorded; no private excerpts or implementation details entered the public branch.
+- Tranche A2 statement and boundary pass completed for deliberate notes, owner-authored profile knowledge, evidence-backed profile assertions, and dispute resolution.
+- Four additional draft Capability MLEs registered, bringing the inventory to eighteen.
 
 ## Publication state
 
@@ -40,4 +42,4 @@
 
 ## Next action
 
-Extract tranche A2 across Notes and Profile, including the distinction among owner-authored profile content, evidence-backed profile knowledge, observed patterns, and app/view groupings.
+Trace the relevant A2 implementation paths privately, then begin tranche B with action declarations, background execution, execution policy, and capability-app composition.
