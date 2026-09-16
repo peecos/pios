@@ -32,5 +32,10 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-Z` | onboarding journey, environment preparation, and first entry | requirements and partial static implementation trace | assessed; documented end-to-end journey not confirmed; no tested/deployed claim |
 | `RAS-01-AA` | personal AI identity and interaction preferences | requirements and partial static implementation trace | assessed; some interface state is not shown to be durably governed; no tested/deployed claim |
 | `RAS-01-AB` | first-use orientation | static implementation trace | bounded explanatory surface identified; not evidence of the broader onboarding journey or production availability |
+| `RAS-01-AC` | owner Role definition and hierarchy | requirements and static implementation trace | create, revise, archive, and relationship paths assessed; no tested/deployed claim |
+| `RAS-01-AD` | owner operating Mode definition | requirements and static implementation trace | create, revise, and archive paths assessed; some related attachment/activation paths remain incomplete |
+| `RAS-01-AE` | active personal context | requirements and partial static implementation trace | selected Role/Mode filtering state assessed; complete Core-backed lifecycle not confirmed |
+| `RAS-01-AF` | Role outward intent | requirements and partial static implementation trace | intent control assessed; access enforcement and publication are not established |
+| `RAS-01-AG` | Role-scoped outward representation | requirements assessment | assessed; relevant implementation reachability not confirmed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

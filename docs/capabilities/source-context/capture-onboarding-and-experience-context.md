@@ -22,11 +22,15 @@ This reference preserves cross-cutting context for the D1 tranches. It does not 
 - Contact-channel verification proves only the declared assurance result; it is not automatically proof of person identity, account recovery authority, or Core permission.
 - Initial environment preparation keeps explicit answers, defaults, inferred values, and omissions distinguishable and revisable.
 - A first-use orientation is a Communication MLE and experience realization. Showing or completing it does not prove that identity creation, environment preparation, or first-entry authorization occurred.
+- Role definitions, Mode definitions, active-context snapshots, and durable object classifications are separate states with separate lifecycles.
+- Roles and Modes organize, filter, prioritize, and support retrieval; they do not grant access.
+- A Role's outward intent, an outward representation, audience access, and publication are separate governance outcomes.
+- Home panels, menus, layout systems, gestures, badges, and context pickers are audience and realization patterns over capabilities rather than capabilities by themselves.
 
 ## Evidence maturity
 
-Current and historical architecture sources support the D1 reusable definitions. Some supporting current-framework wording remains in the verified owner-approved clarification working set and is not represented as already published. Restricted capture, onboarding, welcome, interface, identity, and preference requirements have been assessed without publishing source details. Static review found bounded interface behavior but did not confirm the documented end-to-end onboarding journey. Tests, deployment, and production behavior remain unknown.
+Current and historical architecture sources support the D1 reusable definitions. Some supporting current-framework wording remains in the verified owner-approved clarification working set and is not represented as already published. Restricted capture, onboarding, welcome, interface, identity, preference, Role, and Mode requirements have been assessed without publishing source details. Static review found bounded interface and context-management behavior but did not confirm the documented end-to-end onboarding journey or complete Core-backed active-context lifecycle. Tests, deployment, and production behavior remain unknown.
 
 ## Sequencing context
 
-D1a covers governed capture submission and pending-capture reconciliation. D1b1 covers guided journey state, personal-AI identity and interaction preferences, contact verification, initial-environment preparation, and first-entry authorization. D1b2 next evaluates owner Role and Mode definitions, active context, outward-role intent, and remaining experience surfaces independently.
+D1a covers governed capture submission and pending-capture reconciliation. D1b1 covers guided journey state, personal-AI identity and interaction preferences, contact verification, initial-environment preparation, and first-entry authorization. D1b2 covers owner Role and Mode definitions, active context, outward-role intent, outward representation preparation, and remaining interface concepts.

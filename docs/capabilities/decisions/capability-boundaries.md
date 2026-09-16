@@ -176,3 +176,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | D-M16 | Download onboarding data | fails independently in this tranche | specialization of portability | Onboarding scope specializes portable bundle composition rather than defining a second export capability. |
 | D-M17 | Personal AI identity + interaction preferences | both pass | keep separate | Presentation identity can remain stable while communication behavior changes, and either may be revised independently. |
 | D-M18 | Journey + environment preparation + first-entry authorization | all pass | keep separate | Progress coordination, configuration readiness, and access authorization have different actors, evidence, failure modes, and outcomes. |
+
+## Phase 2 capture-and-experience tranche D1b2
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| D-M19 | Maintain an owner context Role | passes | separate CRD | Role definition, hierarchy, provenance, and lifecycle produce a durable owner-context outcome independently from activation or object tagging. |
+| D-M20 | Maintain an owner operating Mode | passes | separate CRD | A reusable Mode definition can be created, revised, archived, or restored independently from whether it is currently active. |
+| D-M21 | Set active personal context | passes | separate CRD | A temporary multi-dimensional context snapshot has its own source, timing, supersession, and inheritance outcome. |
+| D-M22 | Configure a Role's outward intent | passes | separate CRD | An owner can declare or withdraw a Role's representation intent without publishing content or granting access. |
+| D-M23 | Prepare a Role-scoped outward representation | passes | separate CRD | Creating a separate traceable outward object is meaningful before access or publication and protects the private source from implicit exposure. |
+| D-M24 | Role definition + Mode definition | both pass | keep separate | Roles describe owner capacities and may form type/instance hierarchies; Modes describe situational operating context and are normally more transient. |
+| D-M25 | Active context + contextual classification | both pass | keep separate | Active context is a temporary snapshot; contextual classification records a durable relationship to a particular object. |
+| D-M26 | Role outward intent + outward representation | both pass | keep separate | Intent can exist with no prepared content, and a prepared representation remains unpublished and inaccessible until later governance permits use. |
+| D-M27 | Outward representation + publication/access | passes only for preparation here | keep later exposure capabilities separate | Preparation does not establish visibility, discovery, access control, rights, delivery, or publication. |
+| D-M28 | Role management screen or context picker | fails as generic capability | audience projection and realization pattern | Controls compose definition maintenance, active-context selection, and contextual classification. |
+| D-M29 | Home, app navigation, layout, gestures, badges, and onboarding slides | fail as generic capabilities | audience/communication/realization patterns | These surfaces present or invoke several capabilities but do not produce independent domain outcomes. |

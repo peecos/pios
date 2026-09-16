@@ -73,5 +73,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Verify an onboarding contact channel | compatible subject to assurance profile | proposed | not established | eligible onboarding/account-lifecycle capability where offered | verification evidence and bounded status | implementation-dependent |
 | Prepare an initial owner environment | compatible | proposed | not established | eligible onboarding/context capability | preparation package, proposed/confirmed configuration, and report | implementation-dependent |
 | Authorize first entry | compatible | proposed | not established | eligible owner-interface/account-lifecycle capability where offered | protected credential reference and entry event | implementation-dependent |
+| Maintain an owner context Role | directly aligned | proposed | not established | eligible Cotton/context capability | versioned Role definition and relationships | implementation-dependent |
+| Maintain an owner operating Mode | directly aligned | proposed | not established | eligible Cotton/context capability | versioned Mode definition | implementation-dependent |
+| Set active personal context | directly aligned | proposed | not established | eligible Cotton/context capability | temporary context snapshot and lifecycle evidence | implementation-dependent |
+| Configure a Role's outward intent | directly aligned with exposure separation | proposed | not established | eligible governance/context capability | versioned intent and framing state | implementation-dependent |
+| Prepare a Role-scoped outward representation | directly aligned with exposure separation | proposed | not established | eligible knowledge/sharing-preparation capability | separate outward object or bundle with provenance | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

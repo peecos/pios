@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, D1a, and D1b1 drafted
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, and D1 drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue tranche D1 with owner Role and Mode definitions, active context, outward-role intent, and remaining experience context.
+- Audit and classify the five restricted documents not yet counted at bounded substantive depth, then continue the next domain tranche.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -60,6 +60,11 @@
 - Six additional draft Capability MLEs registered, bringing the inventory to sixty-nine.
 - Restricted documentation coverage is now 20 of 26 after substantive welcome/orientation and interface-standard assessment.
 - Static code review found a bounded post-auth first-use orientation and selected AI-profile controls, but did not confirm the documented end-to-end onboarding journey, reply verification, prepared environment, or first-entry invitation. No app execution, tests, deployment, or production behavior are claimed.
+- Tranche D1b2 statement and boundary pass completed for owner Role definitions, operating Modes, active personal context, Role outward intent, and Role-scoped outward representations.
+- Five additional draft Capability MLEs registered, bringing the inventory to seventy-four.
+- Restricted documentation coverage is now 21 of 26 after substantive extended-Role assessment.
+- Static code review supports bounded Role/Mode CRUD and active-filter behavior; complete Core-backed context lifecycle, outward access enforcement, tests, deployment, and production availability remain unconfirmed.
+- The capture, onboarding, roles, and experience tranche is complete at requirements level; remaining UI layout and navigation concepts were classified as audience or realization patterns.
 
 ## Publication state
 
@@ -72,4 +77,4 @@
 
 ## Next action
 
-Continue D1b2 by testing owner Role and Mode definitions, active context, outward-role intent, and remaining experience surfaces as independent candidate outcomes.
+Perform a disposition audit of the five restricted documents not yet counted at bounded substantive depth, then select the next bounded domain tranche without delaying completed CRDs.
