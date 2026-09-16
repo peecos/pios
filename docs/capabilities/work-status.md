@@ -87,6 +87,10 @@
 - Four additional draft Capability MLEs registered, bringing the inventory to ninety-two.
 - Person identity, contact profile, contact point, verification result, relationship context, and time-scoped with-whom context remain distinct objects and outcomes.
 - Static review supports bounded contact-profile and contact-point management. Verification, primary-point selection, and richer relationship-origin, trust, consent, and shared-history behavior remain incomplete or unconfirmed.
+- Tranche E6 statement and boundary pass completed for canonical agent definitions, definition-to-runtime synchronization, runtime-role assignment, outward identity selection, and owner-representative conversation.
+- Five additional draft Capability MLEs registered, bringing the inventory to ninety-seven.
+- Agent definition, runtime, memory, activity, personal-AI identity, runtime role, and outward identity remain distinct. Historical Director/Manager/Worker labels are retained as an implementation vocabulary rather than mandatory PIOS roles.
+- AI Twin is classified as a composed product realization over several reusable capabilities rather than one indivisible CRD. No complete restricted application realization was identified.
 
 ## Publication state
 
@@ -99,4 +103,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing agent profiles, delegated roles, AI Twins, and outward identity while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing agent delegation/orchestration and conversation/Circle continuity while implementation traces are expanded where they materially change realization status.

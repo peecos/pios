@@ -263,3 +263,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | I-M08 | Relationship origin | fails independently at current evidence depth | shared information/provenance MLE | Origin date, place, introduction and story support relationship context but no separate recurring interaction contract is established. |
 | I-M09 | With-whom event context + durable relationship context | both pass through existing capabilities | keep separate | Event participation is time-scoped contextual classification; durable relationship meaning has its own lifecycle and authority. |
 | I-M10 | Contacts application, filters, avatar and list | fail as generic capabilities | audience projections and realization patterns | They present or edit contact, contact-point, Role and label capabilities without owning independent domain outcomes. |
+
+## Phase 2 agents-and-outward-identity tranche E6
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| J-M01 | Maintain an agent definition | passes | separate CRD | A persistent agent's governed purpose, responsibilities, skills, limits, permissions, memory/source scopes, instructions, state, and versions form an independent durable outcome. |
+| J-M02 | Synchronize an agent definition to runtime | passes | separate CRD | Applying and verifying one canonical version across runtime targets has independent source, target, transformation, failure, intentional-difference, and rollback states. |
+| J-M03 | Assign an agent runtime role | passes | separate CRD | A bounded functional role has its own assigner, scope, duration, responsibility and terminal state without changing persistent identity. |
+| J-M04 | Select an agent's outward identity | passes | separate CRD | Identity presentation and disclosure for an external action are independently governed before the action executes. |
+| J-M05 | Conduct an owner-representative conversation | passes | separate CRD | One external conversational interaction has a distinct participant, identity, knowledge scope, policy, response/refusal, escalation, and evidence outcome. |
+| J-M06 | Agent identity + runtime role | both pass | keep separate | One identity may occupy several roles over time, and the same role can be assigned to different agents without redefining either. |
+| J-M07 | Agent definition + runtime synchronization | both pass | keep separate | A canonical definition can change without being deployed, and synchronization can fail or intentionally diverge without changing source truth. |
+| J-M08 | Outward identity + external action | both pass | keep separate | Selecting who appears to act and what is disclosed does not itself authorize or deliver the external effect. |
+| J-M09 | Personal-AI identity + outward identity | both pass | keep separate | A persistent private presentation identity can remain stable while each outward action uses a different represented party or disclosure posture. |
+| J-M10 | AI Twin | fails as one generic Capability MLE | composed product realization | It bundles agent definition, identity, dedicated knowledge allocation, access, publication/sharing, retrieval, conversation, and governance capabilities. |
+| J-M11 | Director/manager/worker hierarchy | fails as universal fixed taxonomy | implementation profile | Runtime-role assignment is reusable; named hierarchy levels are one orchestration vocabulary rather than mandatory PIOS roles. |

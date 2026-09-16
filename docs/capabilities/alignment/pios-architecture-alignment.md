@@ -96,5 +96,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain a contact point | directly aligned | proposed | not established | eligible My World/relationship capability | typed contact coordinate and lifecycle state | implementation-dependent |
 | Verify control of a contact point | compatible subject to assurance profile | proposed | not established | eligible identity/contact verification capability | bounded verification evidence and status | implementation-dependent |
 | Maintain personal relationship context | directly aligned | proposed | not established | eligible My World/Circle relationship capability | relationship scope, consent, trust, provenance and lifecycle | implementation-dependent |
+| Maintain an agent definition | directly aligned | proposed | not established | eligible My System agent-governance capability | canonical versioned agent definition | implementation-dependent |
+| Synchronize an agent definition to runtime | directly aligned | proposed | not established | eligible System/deployment coordination capability | per-target synchronization and verification state | implementation-dependent |
+| Assign an agent runtime role | directly aligned | proposed | not established | eligible agent-orchestration capability | time- and scope-bounded runtime-role assignment | implementation-dependent |
+| Select an agent's outward identity | aligned with owner authority and external-action governance | proposed | not established | eligible identity/governance capability | bounded identity and disclosure decision | implementation-dependent |
+| Conduct an owner-representative conversation | compatible with strict governance | proposed | not established | eligible Circle/outward-agent capability | conversation events, response provenance and escalation state | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
