@@ -46,5 +46,13 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Compile daily owner History | directly aligned | proposed | not established | eligible History/knowledge capability | curated daily summary with provenance | implementation-dependent |
 | Aggregate an owner History period | directly aligned | proposed | not established | eligible History/knowledge capability | derived closed-period summary | implementation-dependent |
 | Navigate time-indexed owner History | directly aligned | proposed | not established | eligible History/retrieval capability | derived retrieval path over canonical and retained records | implementation-dependent |
+| Register a connected source | directly aligned | proposed | not established | eligible inbound/source capability | durable source definition and sync state | implementation-dependent |
+| Manage an import session | directly aligned | proposed | not established | eligible inbound/operations capability | bounded intake state and item dispositions | implementation-dependent |
+| Govern source promotion | directly aligned | proposed | not established | eligible inbound/governance capability | staged source disposition and authority evidence | implementation-dependent |
+| Screen an ingestion batch | directly aligned | proposed | not established | eligible transition-verification capability | technical-screen evidence record | implementation-dependent |
+| Assess ingestion readiness | directly aligned | proposed | not established | eligible transition-governance capability | checklist readiness and unresolved conditions | implementation-dependent |
+| Authorize an ingestion batch | directly aligned | proposed | not established | eligible owner-governance capability | bounded approval/denial record | implementation-dependent |
+| Govern an event-type registry | directly aligned | proposed | not established | eligible event-governance capability | versioned event-type definitions | implementation-dependent |
+| Inspect an operational run record | directly aligned | proposed | not established | eligible operations/inspection capability | read projection over run evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

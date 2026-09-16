@@ -101,3 +101,21 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | C-M09 | Daily + higher-period summary | both pass | keep separate | Daily may inspect source evidence; higher levels compose from closed lower-level summaries. |
 | C-M10 | Unified Timeline / History view | fails as one capability | source context and audience projection | It combines navigation, filtering, summaries, updates, events, and source drill-down. |
 | C-M11 | Notification delivery | fails as standalone Capability MLE | Communication MLE owned by the attention source | Delivery loses purpose without the update, reminder, incident, or decision it communicates. |
+
+## Phase 2 operations-and-portability tranche C2a
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| C-M12 | Register a connected source | passes | separate CRD | Source identity, access, consent, sync, event mapping, and change behavior form an independently governed lifecycle. |
+| C-M13 | Manage an import session | passes | separate CRD | One bounded intake event has its own manifest, progress, items, errors, and outcome independently from the source. |
+| C-M14 | Govern source promotion | passes | separate CRD | Moving material among parked, analyzed, mapped, enriched, and History-included states changes eligibility and authority without performing every processing step. |
+| C-M15 | Screen an ingestion batch | passes | separate CRD | A technical reviewer can produce an evidence-based pass/fail result without authorizing upload. |
+| C-M16 | Assess ingestion readiness | passes | separate CRD | Checklist closure produces an independent readiness result while preserving unresolved owner decisions. |
+| C-M17 | Authorize an ingestion batch | passes | separate CRD | The owner can grant or deny authority for an exact manifest and boundary without performing the ingestion. |
+| C-M18 | Govern an event-type registry | passes | separate CRD | Adding or revising an event type changes allowed semantics, emitters, schemas, and projection obligations independently from recording any event. |
+| C-M19 | Inspect an operational run record | passes | separate CRD | An owner or operator can retrieve one run's state, evidence, outputs, errors, and authority trail without changing canonical state. |
+| C-M20 | Source + import session | both pass | keep separate | A source persists across zero or many bounded intake sessions. |
+| C-M21 | Import session + source promotion | both pass | keep separate | Intake scope and progress can complete while later mapping, enrichment, or History inclusion remains pending. |
+| C-M22 | Technical screen + checklist + owner approval | all pass | keep separate | Each gate has a distinct actor, evidence standard, result, and expressly limited authority. |
+| C-M23 | Event registry + event recording | both pass | keep separate | Registry governance defines allowed event semantics; recording appends one conforming occurrence. |
+| C-M24 | System app | fails | audience projection | It groups independent inspection, governance, run, import, export, and health capabilities. |

@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
-**Updated:** September 15, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, and C1 drafted
+**Updated:** September 16, 2026
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, and C2a drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue tranche C2 with import admission, event-type governance, operational records, export, and portability.
+- Continue tranche C2b with export bundles, integrity verification, restore/import compatibility, recovery, parity, and source decommissioning.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -43,6 +43,9 @@
 - Tranche C1 statement and boundary pass completed for canonical events, owner attention, completed-work publication, daily History, higher-period aggregation, and time-indexed navigation.
 - Six additional draft Capability MLEs registered, bringing the inventory to forty-two.
 - Restricted Updates requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Tranche C2a statement and boundary pass completed for source registration, import sessions, source promotion, three separate ingestion gates, event-type governance, and operational-run inspection.
+- Eight additional draft Capability MLEs registered, bringing the inventory to fifty.
+- Restricted System application requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
 
 ## Publication state
 
@@ -55,4 +58,4 @@
 
 ## Next action
 
-Continue C2 by testing source admission, event registry governance, operational evidence, export package creation, and restore/import compatibility independently.
+Continue C2b by testing export creation, integrity verification, restore execution, destination parity, recovery, and source decommissioning independently.
