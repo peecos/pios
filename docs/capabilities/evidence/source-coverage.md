@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | Current PIOS | master and companion set identified | pilot-relevant architecture read; whole-system context reviewed | not applicable | pilot alignment complete |
 | PIOS Global | selected commit and corpus identified | three pilot documents read | not applicable | pilot complete; remainder Phase 2 |
-| Restricted application source `RAS-01` | complete document and file inventory retained privately | 21 of 26 documents have at least bounded substantive assessment | bounded storage, retrieval, onboarding/orientation, authentication, identity/preference, Role/Mode, and active-context paths traced privately; other tranche code traces remain pending | public details withheld; 5 documents remain unassessed |
+| Restricted application source `RAS-01` | complete document and file inventory retained privately | all 26 documents have a bounded substantive assessment and explicit disposition | bounded storage, retrieval, onboarding/orientation, authentication, identity/preference, Role/Mode, active-context, and selected system paths traced privately; many code paths remain untraced | public details withheld; document corpus complete, realization coverage incomplete |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
 ## Phase 2 tranche coverage
@@ -23,5 +23,8 @@
 | D1a — governed capture and pending reconciliation | `chrome-extension.md` read | Product Model/Core app capture responsibility, device-cache treatment, and Inbound Flow read | capture-interface and onboarding requirements assessed; capture code reachability not confirmed | statement and boundary pass complete; two CRDs drafted; onboarding drafting and realization evidence pending |
 | D1b1 — onboarding journey, personal AI identity/preferences, initial environment, first entry | `onboarding.md`, `area-onboarding.md`, `ally.md`, and applicable experience pages read | agent definition, owner authority, metadata flexibility, context lifecycle, and interface boundaries read | onboarding, welcome, and interface requirements assessed; actual orientation, authentication, caller/state, and selected AI-profile paths traced privately | statement and boundary pass complete; six CRDs drafted; documented end-to-end onboarding realization not confirmed |
 | D1b2 — Roles, Modes, active context, outward intent and representation | `roles-modes.md`, `context-tags.md`, `home-panel.md`, `app-navigation.md`, and `outward-identity-modes.md` read | Context §§12.1–12.8, context-tag lifecycle, exposure axes, and owner-authority boundaries read | extended-Role requirements and Role/Mode/context-selection paths assessed; outward-representation implementation not confirmed | statement and boundary pass complete; five CRDs drafted; interface-only concepts classified as projections |
+| E1 — observed-pattern detection and lifecycle | `observed-patterns.md` read with related pattern/proposal/profile context | epistemic sequence, Knowledge/Profile relationships, History inputs, and derived-state principles read | full application master and companion assessed; pattern structures and disabled/planned system surfaces reviewed | statement and boundary pass complete; two CRDs drafted; active realization not confirmed |
+
+The complete restricted document disposition is recorded in [Restricted corpus disposition](restricted-corpus-disposition.md).
 
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.

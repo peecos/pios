@@ -192,3 +192,16 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | D-M27 | Outward representation + publication/access | passes only for preparation here | keep later exposure capabilities separate | Preparation does not establish visibility, discovery, access control, rights, delivery, or publication. |
 | D-M28 | Role management screen or context picker | fails as generic capability | audience projection and realization pattern | Controls compose definition maintenance, active-context selection, and contextual classification. |
 | D-M29 | Home, app navigation, layout, gestures, badges, and onboarding slides | fail as generic capabilities | audience/communication/realization patterns | These surfaces present or invoke several capabilities but do not produce independent domain outcomes. |
+
+## Phase 2 patterns-and-learning tranche E1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| E-M01 | Detect an observed pattern | passes | separate CRD | Multi-evidence recurrence analysis can create or decline one emerging non-authoritative pattern with a determinate outcome. |
+| E-M02 | Evaluate an observed pattern lifecycle | passes | separate CRD | A recurring evaluator can independently update status, strength, eligibility, and snapshots for an existing pattern. |
+| E-M03 | Record one pattern-evidence row | fails as capability | shared data/information MLE | The record has purpose only inside detection/evaluation and does not deliver an independently meaningful owner outcome. |
+| E-M04 | Maintain pattern-segment vocabulary | passes in generic form already represented | reuse `manage-organizing-label` | Pattern segments specialize owner-governed organizational vocabulary rather than requiring a second generic vocabulary capability. |
+| E-M05 | Generate and decide a proposal from a stable pattern | passes in generic form already represented | reuse `decide-governed-proposal` | Pattern eligibility supplies evidence and rationale; proposal lifecycle and decision remain governed by the existing capability. |
+| E-M06 | Detect + lifecycle-evaluate a pattern | both pass | keep separate | Initial creation and later recurring reassessment have different starting states, timing, and results. |
+| E-M07 | Patterns inspector | fails as generic capability | audience projection | It presents pattern, evidence, status, and proposal history without owning their source lifecycles. |
+| E-M08 | Pattern refresh action declaration | fails as realization proof | declared/disabled realization metadata | A declared disabled action is not evidence of a reachable recurring job or available capability. |

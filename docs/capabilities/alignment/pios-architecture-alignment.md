@@ -78,5 +78,7 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Set active personal context | directly aligned | proposed | not established | eligible Cotton/context capability | temporary context snapshot and lifecycle evidence | implementation-dependent |
 | Configure a Role's outward intent | directly aligned with exposure separation | proposed | not established | eligible governance/context capability | versioned intent and framing state | implementation-dependent |
 | Prepare a Role-scoped outward representation | directly aligned with exposure separation | proposed | not established | eligible knowledge/sharing-preparation capability | separate outward object or bundle with provenance | implementation-dependent |
+| Detect an observed pattern | directly aligned | proposed | not established | eligible interpretation/knowledge capability | derived non-authoritative pattern and evidence links | implementation-dependent |
+| Evaluate an observed pattern lifecycle | directly aligned | proposed | not established | eligible interpretation/knowledge-maintenance capability | derived status, strength, eligibility, and snapshots | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

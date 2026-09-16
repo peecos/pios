@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, and D1 drafted
+**Current phase:** Phase 2 corpus expansion and Phase 3 drafting; restricted document corpus fully dispositioned
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Audit and classify the five restricted documents not yet counted at bounded substantive depth, then continue the next domain tranche.
+- Continue historical-corpus classification and the next bounded capability-gap tranche.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -65,6 +65,12 @@
 - Restricted documentation coverage is now 21 of 26 after substantive extended-Role assessment.
 - Static code review supports bounded Role/Mode CRUD and active-filter behavior; complete Core-backed context lifecycle, outward access enforcement, tests, deployment, and production availability remain unconfirmed.
 - The capture, onboarding, roles, and experience tranche is complete at requirements level; remaining UI layout and navigation concepts were classified as audience or realization patterns.
+- Corrected the stale restricted-document count by auditing the evidence record document by document.
+- Completed bounded substantive assessment and disposition for all 26 restricted documents; added a publication-safe anonymous disposition matrix and retained the exact filename mapping privately.
+- Completed full bounded reading of the restricted application-wide master and companion rationale. Their schema and developer checklist remain requirement/realization-pattern evidence, not current PIOS authority or passing-test evidence.
+- Tranche E1 statement and boundary pass completed for observed-pattern detection and lifecycle evaluation.
+- Two additional draft Capability MLEs registered, bringing the inventory to seventy-six.
+- Static review found declared structures and disabled/planned pattern surfaces but did not establish a reachable active detection or refresh job.
 
 ## Publication state
 
@@ -77,4 +83,4 @@
 
 ## Next action
 
-Perform a disposition audit of the five restricted documents not yet counted at bounded substantive depth, then select the next bounded domain tranche without delaying completed CRDs.
+Continue with the direction-and-success tranche covering goals, targets, metrics, and their relationship to plans, projects, tasks, and profile knowledge while historical-corpus classification continues.
