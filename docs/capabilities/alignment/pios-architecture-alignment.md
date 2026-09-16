@@ -59,5 +59,11 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Restore Core state from a bundle | directly aligned | proposed | not established | eligible recovery/import capability | destination canonical state plus operationalization report | implementation-dependent |
 | Validate restored Core parity | directly aligned | proposed | not established | eligible compatibility/verification capability | parity evidence by state and behavior dimension | implementation-dependent |
 | Maintain a recoverable Core backup | directly aligned | proposed | not established | eligible recovery capability | protected backup sets and restore-test evidence | implementation-dependent |
+| Govern a Core cutover | directly aligned | proposed | not established | eligible transition/governance capability | canonical-side and cutover evidence | implementation-dependent |
+| Roll back a Core cutover | directly aligned | proposed | not established | eligible transition/recovery capability | rollback state and reconciliation evidence | implementation-dependent |
+| Decommission a source Core | directly aligned | proposed | not established | eligible operations/governance capability | retirement, revocation, and retained-evidence state | implementation-dependent |
+| Register an owner-data erasure request | directly aligned | proposed | not established | eligible owner-governance capability | erasure request, tombstone, and suppression state | implementation-dependent |
+| Execute governed data erasure | directly aligned | proposed | not established | eligible remediation capability | deletion/expiry/crypto-shred dispositions and audit evidence | implementation-dependent |
+| Reauthorize a destination connector | directly aligned | proposed | not established | eligible source/connectivity capability | destination credential reference, consent, scope, and status | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

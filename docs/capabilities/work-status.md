@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2a, and C2b1 drafted
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, and C2 drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue tranche C2b2 with governed cutover, rollback, source decommissioning, deletion/tombstoning, and connector reauthorization.
+- Begin tranche D1 with capture interfaces, onboarding, owner roles, and experience context.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -49,6 +49,9 @@
 - Tranche C2b1 statement and boundary pass completed for portable bundle composition, package validation, Core-state restore, destination parity, and recoverable backups.
 - Five additional draft Capability MLEs registered, bringing the inventory to fifty-five.
 - Restricted export/portability requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Tranche C2b2 statement and boundary pass completed for governed cutover, rollback, source decommissioning, erasure request/execution, and destination connector reauthorization.
+- Six additional draft Capability MLEs registered, bringing the inventory to sixty-one.
+- The events, operations, and portability tranche is complete at requirements level; operational realization evidence remains pending.
 
 ## Publication state
 
@@ -61,4 +64,4 @@
 
 ## Next action
 
-Continue C2b2 by testing cutover, rollback, source decommissioning, deletion/tombstoning, and connector reauthorization independently.
+Begin D1 by testing capture entry points, onboarding state, owner-role context, and experience surfaces independently before drafting.

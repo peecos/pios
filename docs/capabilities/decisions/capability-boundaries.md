@@ -133,3 +133,18 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | C-M31 | Package validation + restore | both pass | keep separate | Technical validity does not authorize or perform destination state changes. |
 | C-M32 | Restore + parity validation | both pass | keep separate | Restored bytes may exist while required protections, provenance links, retrieval, or service behavior remain unproven. |
 | C-M33 | Export bundle + backup | both pass | keep separate | Portability export serves owner transfer/takeover; backup serves protected recovery and may use different retention and custody. |
+
+## Phase 2 operations-and-portability tranche C2b2
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| C-M34 | Govern a Core cutover | passes | separate CRD | Canonical-side transfer has its own bounded scope, authority, final-delta, and completion decision. |
+| C-M35 | Roll back a Core cutover | passes | separate CRD | Reverting an attempted transition has an independent actor, trigger, state restoration, and evidence outcome. |
+| C-M36 | Decommission a source Core | passes | separate CRD | Retirement occurs after successful transition and has distinct retention, deletion, revocation, and closure evidence. |
+| C-M37 | Register an owner-data erasure request | passes | separate CRD | The request immediately records intent and may suppress exposure even when physical deletion is delayed. |
+| C-M38 | Execute governed data erasure | passes | separate CRD | Physical or cryptographic erasure and derived cleanup have independent authority, timing, proof, and failure semantics. |
+| C-M39 | Reauthorize a destination connector | passes | separate CRD | Re-establishing source credentials and future-sync authority is meaningful independently from restoring connector descriptions. |
+| C-M40 | Cutover + rollback | both pass | keep separate | One establishes destination canonical authority; the other restores or preserves the prior canonical path after a failed or reversed transition. |
+| C-M41 | Cutover + decommissioning | both pass | keep separate | Cutover can complete while source retention and retirement remain intentionally deferred. |
+| C-M42 | Erasure request + erasure execution | both pass | keep separate | Request and exposure suppression may succeed while retention prevents immediate physical deletion. |
+| C-M43 | Restore + connector reauthorization | both pass | keep separate | Portable descriptions may be restored without importing credentials, device trust, or future-sync authority. |

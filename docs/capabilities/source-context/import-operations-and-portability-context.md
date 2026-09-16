@@ -25,4 +25,4 @@ Historical and current architecture sources support reusable capability definiti
 
 ## Sequencing context
 
-C2a covers source registration, import sessions, source promotion, ingestion gates, event-type governance, and operational-run inspection. C2b will separately assess export creation, export verification, restore/import compatibility, recovery, parity, and decommissioning boundaries.
+C2a covers source registration, import sessions, source promotion, ingestion gates, event-type governance, and operational-run inspection. C2b covers export creation, package validation, restore, parity, backup, cutover, rollback, source decommissioning, erasure, and destination connector reauthorization.

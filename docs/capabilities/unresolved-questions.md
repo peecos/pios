@@ -29,3 +29,7 @@
 | U25 | What merge and rollback semantics apply when a bundle is restored into an existing non-empty Core? | Conflicts must not silently overwrite state, but object-family-specific resolution is not complete. | restore profile |
 | U26 | What minimum behavior suite proves complete PIOS recovery for each implementation profile? | Current PIOS separates state restore, Core conformance, and service recovery but does not freeze one universal suite. | parity profile |
 | U27 | What recovery-point, recovery-time, retention, and restore-test cadence applies to each deployment profile? | Backup and restore testing are required, while service-level objectives remain implementation-specific. | recovery profile |
+| U28 | What stabilization period and evidence are required before source decommissioning? | Cutover and parity gates are defined, but one universal observation window is not. | cutover profile |
+| U29 | How are destination-only writes reconciled during rollback? | The compatibility specification requires reconciliation but leaves object-family conflict rules open. | rollback profile |
+| U30 | What minimal tombstone metadata may remain after erasure across different legal and retention regimes? | Auditability and deletion must coexist, but the universally permissible residue is not defined. | erasure profile |
+| U31 | Which connector classes can be reauthorized without renewed interactive owner consent? | Credentials and authority cannot be imported, while provider consent mechanisms differ. | connector profile |
