@@ -11,7 +11,7 @@
 - **Meaningful outcome:** The journey records a verified, failed, expired, revoked, or still-unverified channel-control result at a declared assurance level.
 - **Boundaries — includes:** channel identity, challenge or thread binding, response evidence, validity window, automation/bounce rejection, attempt state, manual-review evidence, and assurance level.
 - **Boundaries — excludes:** proof of a person's legal identity, general account authentication, owner authorization for Core actions, first-entry credentials, and long-term account recovery.
-- **Terms and concepts:** `verified contact channel` means evidence of channel control under a stated method; it does not by itself prove who the person is.
+- **Terms and concepts:** `verified contact channel` means evidence of channel control under a stated method; it specializes [Verify control of a contact point](verify-contact-point-control.md) by binding the result to an onboarding journey and does not by itself prove who the person is.
 
 ## Interaction Contract MLEs
 ### Verify control of an onboarding channel

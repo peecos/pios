@@ -42,5 +42,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AJ` | measurement definitions and metric observations | requirements, declared structure, and partial static implementation trace | definition management assessed; observation structure found; reachable observation writer, tests, deployment, and production behavior not confirmed |
 | `RAS-01-AK` | outward sharing, publication, access, discovery, and usage rights | bounded negative static search | searched public-asset and exposure-model identifiers were not found; no implementation, test, deployment, or production claim |
 | `RAS-01-AL` | structured reviews and reflective assessments | requirements and partial static implementation trace | manually dispatched weekly review-note generation assessed; scheduled trigger, complete structured review semantics, tests, deployment, and production behavior not confirmed |
+| `RAS-01-AM` | human contact profiles and contact points | static implementation trace | owner-scoped profile and contact-point management paths assessed; verification, tests, deployment, and production behavior not confirmed |
+| `RAS-01-AN` | personal relationship context | requirements, declared structure, and partial static implementation trace | free-text relationship labeling assessed; richer origin, trust, consent, shared-history, and lifecycle behavior not confirmed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

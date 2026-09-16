@@ -248,3 +248,18 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | H-M05 | Review note or review screen | fails as generic capability | output/audience projection | A note or screen can present a review but does not own its evidence, decisions, and follow-up lifecycle. |
 | H-M06 | Carry forward unresolved work | passes through existing capabilities | reuse composition | A review references existing tasks, Work Starters, attention items, goals, or projects rather than creating a second work identity. |
 | H-M07 | Apply review recommendations | passes through existing governed capabilities | reuse composition | Recommendations may trigger proposals or updates to goals, targets, projects, tasks, knowledge, or policy only through their own authority paths. |
+
+## Phase 2 people-and-relationships tranche E5
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| I-M01 | Maintain a human contact profile | passes | separate CRD | Another person's owner-held profile has a distinct subject, authority, provenance, lifecycle, and knowledge outcome. |
+| I-M02 | Maintain a contact point | passes | separate CRD | A typed coordinate can be created, corrected, prioritized, invalidated, or removed independently from the wider profile and relationship. |
+| I-M03 | Verify control of a contact point | passes | separate reusable CRD | Verification has its own actor, challenge/evidence state, assurance, expiry, and result and is reused by contact and onboarding contexts. |
+| I-M04 | Maintain personal relationship context | passes | separate CRD | Relationship meaning, scope, trust, consent, origin, validity, and history change independently from participant identity and contact coordinates. |
+| I-M05 | Person identity + contact profile | both pass | keep separate | A named person can exist in the glossary/world model without a maintained relationship profile, and profile knowledge can reference the identity without replacing it. |
+| I-M06 | Contact profile + contact point | both pass | keep separate | One profile may have zero or many changing contact points; coordinates can be invalidated without retiring the person profile. |
+| I-M07 | Contact point + control verification | both pass | keep separate | A value can be stored while unverified, and verification can expire or be revoked without deleting the value. |
+| I-M08 | Relationship origin | fails independently at current evidence depth | shared information/provenance MLE | Origin date, place, introduction and story support relationship context but no separate recurring interaction contract is established. |
+| I-M09 | With-whom event context + durable relationship context | both pass through existing capabilities | keep separate | Event participation is time-scoped contextual classification; durable relationship meaning has its own lifecycle and authority. |
+| I-M10 | Contacts application, filters, avatar and list | fail as generic capabilities | audience projections and realization patterns | They present or edit contact, contact-point, Role and label capabilities without owning independent domain outcomes. |

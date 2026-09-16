@@ -92,5 +92,9 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Govern outward usage rights | directly aligned | proposed | not established | eligible governance/rights capability | versioned human and machine use conditions | implementation-dependent |
 | Conduct a structured review | directly aligned | proposed | not established | eligible Cotton/Knowledge review capability | review scope, evidence, decisions, updates and carry-forward state | implementation-dependent |
 | Record a reflective assessment | directly aligned | proposed | not established | eligible Knowledge interpretation capability | versioned interpretation with evidence, uncertainty and recommendations | implementation-dependent |
+| Maintain a human contact profile | directly aligned | proposed | not established | eligible My World/Knowledge capability | source-linked person profile and lifecycle state | implementation-dependent |
+| Maintain a contact point | directly aligned | proposed | not established | eligible My World/relationship capability | typed contact coordinate and lifecycle state | implementation-dependent |
+| Verify control of a contact point | compatible subject to assurance profile | proposed | not established | eligible identity/contact verification capability | bounded verification evidence and status | implementation-dependent |
+| Maintain personal relationship context | directly aligned | proposed | not established | eligible My World/Circle relationship capability | relationship scope, consent, trust, provenance and lifecycle | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

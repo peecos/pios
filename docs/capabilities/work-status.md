@@ -83,6 +83,10 @@
 - Two additional draft Capability MLEs registered, bringing the inventory to eighty-eight.
 - Daily, weekly, monthly, yearly, and event-triggered reviews are profiles of one review capability; neutral summaries and interpretive reflections remain distinct.
 - Static review found a manually dispatched weekly-review workflow that creates a review note and workflow output, but did not establish its documented schedule, complete structured-review state, passing tests, deployment, or production behavior.
+- Tranche E5 statement and boundary pass completed for human contact profiles, contact points, contact-point control verification, and personal relationship context.
+- Four additional draft Capability MLEs registered, bringing the inventory to ninety-two.
+- Person identity, contact profile, contact point, verification result, relationship context, and time-scoped with-whom context remain distinct objects and outcomes.
+- Static review supports bounded contact-profile and contact-point management. Verification, primary-point selection, and richer relationship-origin, trust, consent, and shared-history behavior remain incomplete or unconfirmed.
 
 ## Publication state
 
@@ -95,4 +99,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing relationship/contact and outward-identity concepts while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing agent profiles, delegated roles, AI Twins, and outward identity while implementation traces are expanded where they materially change realization status.
