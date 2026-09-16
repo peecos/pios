@@ -33,3 +33,5 @@
 | U29 | How are destination-only writes reconciled during rollback? | The compatibility specification requires reconciliation but leaves object-family conflict rules open. | rollback profile |
 | U30 | What minimal tombstone metadata may remain after erasure across different legal and retention regimes? | Auditability and deletion must coexist, but the universally permissible residue is not defined. | erasure profile |
 | U31 | Which connector classes can be reauthorized without renewed interactive owner consent? | Credentials and authority cannot be imported, while provider consent mechanisms differ. | connector profile |
+| U32 | Which payload-size, media-class, encryption, and offline-packaging profiles apply to governed captures? | The capability requires integrity and safe handoff, while device and transport constraints are implementation-specific. | capture profile |
+| U33 | What retry, retention, conflict, and storage-pressure policy protects pending captures that may be the only copy? | Current PIOS establishes non-discard and explicit-disposition rules but not one universal device policy. | pending-capture profile |

@@ -10,7 +10,8 @@ Start with:
 - [Work status](work-status.md)
 - [Capability inventory](capability-inventory.md)
 - [Source and publication policy](source-context/source-and-publication-context.md)
+- [Capture, onboarding, and experience context](source-context/capture-onboarding-and-experience-context.md)
 - [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 
-The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; source/import governance; operational inspection; portability and recovery; cutover, decommissioning, erasure, and connector reauthorization.
+The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; source/import governance; operational inspection; portability and recovery; cutover, decommissioning, erasure, connector reauthorization; and governed capture with pending-work reconciliation.

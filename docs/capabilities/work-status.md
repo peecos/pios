@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, and C2 drafted
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, and D1a drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Begin tranche D1 with capture interfaces, onboarding, owner roles, and experience context.
+- Continue tranche D1 with onboarding, owner roles, first-run preparation, first entry, and experience context.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -52,6 +52,10 @@
 - Tranche C2b2 statement and boundary pass completed for governed cutover, rollback, source decommissioning, erasure request/execution, and destination connector reauthorization.
 - Six additional draft Capability MLEs registered, bringing the inventory to sixty-one.
 - The events, operations, and portability tranche is complete at requirements level; operational realization evidence remains pending.
+- Tranche D1a statement and boundary pass completed for governed content capture and pending-capture reconciliation.
+- Two additional draft Capability MLEs registered, bringing the inventory to sixty-three.
+- A browser extension remains an application-specific realization and audience surface rather than a generic capability; capture-time action intent and processing instructions retain their separate governance boundaries.
+- Restricted capture and onboarding requirements have been substantively assessed, bringing restricted document coverage to 18 of 26; capture code reachability and all tested/deployed behavior remain unconfirmed.
 
 ## Publication state
 
@@ -64,4 +68,4 @@
 
 ## Next action
 
-Begin D1 by testing capture entry points, onboarding state, owner-role context, and experience surfaces independently before drafting.
+Continue D1b by testing onboarding journey, identity and verification, adaptive personalization, first-run preparation, and first entry as independent candidate outcomes before drafting.

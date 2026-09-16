@@ -65,5 +65,7 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Register an owner-data erasure request | directly aligned | proposed | not established | eligible owner-governance capability | erasure request, tombstone, and suppression state | implementation-dependent |
 | Execute governed data erasure | directly aligned | proposed | not established | eligible remediation capability | deletion/expiry/crypto-shred dispositions and audit evidence | implementation-dependent |
 | Reauthorize a destination connector | directly aligned | proposed | not established | eligible source/connectivity capability | destination credential reference, consent, scope, and status | implementation-dependent |
+| Submit a governed content capture | directly aligned | proposed | not established | eligible inbound/capture capability | pending submission, source context, and intake receipt | implementation-dependent |
+| Reconcile a pending capture | directly aligned | proposed | not established | eligible inbound/device-continuity capability | pending payload, acceptance evidence, and reconciliation disposition | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

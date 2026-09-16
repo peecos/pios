@@ -28,5 +28,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-V` | export-bundle composition and package validation | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-W` | bundle restore | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-X` | destination connector reauthorization | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-Y` | governed capture submission and pending reconciliation | requirements assessment | assessed; implementation reachability pending; no tested/deployed claim |
+| `RAS-01-Z` | onboarding and first-entry experience | requirements preparation | substantively assessed for the next boundary pass; no capability or realization claim yet |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

@@ -148,3 +148,14 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | C-M41 | Cutover + decommissioning | both pass | keep separate | Cutover can complete while source retention and retirement remain intentionally deferred. |
 | C-M42 | Erasure request + erasure execution | both pass | keep separate | Request and exposure suppression may succeed while retention prevents immediate physical deletion. |
 | C-M43 | Restore + connector reauthorization | both pass | keep separate | Portable descriptions may be restored without importing credentials, device trust, or future-sync authority. |
+
+## Phase 2 capture-and-experience tranche D1a
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| D-M01 | Submit a governed content capture | passes | separate CRD | Submission has an independent actor, payload, source context, acceptance request, and receipt. |
+| D-M02 | Reconcile a pending capture | passes | separate CRD | Pending work has a separate lifecycle and can end accepted, retryable, failed, preserved, or authorized-discarded. |
+| D-M03 | Web clipping extension | fails as generic capability | realization and audience projection | Browser scraping, authentication, tag UI, and API transport implement capture and adjacent capabilities. |
+| D-M04 | Capture + action-intent labeling | both pass | keep separate | Content can be captured without a handling label, and a label can be applied after capture. |
+| D-M05 | Capture + processing instruction | both pass | keep separate | Intake does not itself authorize or perform the requested processing action. |
+| D-M06 | Submit + reconcile pending capture | both pass | keep separate | Submission may complete before durable acceptance, and reconciliation may resume after device or network interruption. |

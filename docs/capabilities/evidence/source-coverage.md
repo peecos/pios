@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | Current PIOS | master and companion set identified | pilot-relevant architecture read; whole-system context reviewed | not applicable | pilot alignment complete |
 | PIOS Global | selected commit and corpus identified | three pilot documents read | not applicable | pilot complete; remainder Phase 2 |
-| Restricted application source `RAS-01` | complete document and file inventory retained privately | 16 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, C1, and C2 code traces pending | public details withheld; 10 documents remain unassessed |
+| Restricted application source `RAS-01` | complete document and file inventory retained privately | 18 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, C1, C2, and D1 code traces pending | public details withheld; 8 documents remain unassessed |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
 ## Phase 2 tranche coverage
@@ -20,5 +20,6 @@
 | C2a — sources, imports, ingestion gates, event registry, operational inspection | `sources-model.md`, `import-model.md`, `area-imports.md`, and `system-app.md` read | Inbound Flow §7, Event Model §8.4, Portability §§21.5 and 21.8 read | System application requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; eight CRDs drafted; code-traced realization evidence pending |
 | C2b1 — export, package validation, restore, parity, backup | `export-portability.md` read | Portability §§21.1–21.3 and companion portability/compatibility specifications read | export/portability requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; five CRDs drafted; code-traced realization evidence pending |
 | C2b2 — cutover, rollback, decommissioning, erasure, connector reauthorization | portability and transition material reviewed | Portability §§21.1 and 21.6 plus companion portability/compatibility specifications read | connector reauthorization requirement assessed; implementation evidence unavailable | statement and boundary pass complete; six CRDs drafted; operational evidence pending |
+| D1a — governed capture and pending reconciliation | `chrome-extension.md` read | Product Model/Core app capture responsibility, device-cache treatment, and Inbound Flow read | capture-interface and onboarding requirements assessed; capture code reachability not confirmed | statement and boundary pass complete; two CRDs drafted; onboarding drafting and realization evidence pending |
 
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.
