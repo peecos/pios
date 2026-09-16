@@ -46,5 +46,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AN` | personal relationship context | requirements, declared structure, and partial static implementation trace | free-text relationship labeling assessed; richer origin, trust, consent, shared-history, and lifecycle behavior not confirmed |
 | `RAS-01-AO` | agent definitions, runtime roles, and definition synchronization | bounded negative static search | no named canonical agent-profile or runtime-target model identified; no implementation, test, deployment, or production claim |
 | `RAS-01-AP` | outward agent identity and owner-representative conversation | requirements and bounded negative/partial static assessment | personal-AI presentation and Role intent surfaces exist, but outward identity enforcement and AI-representative conversation were not identified |
+| `RAS-01-AQ` | collaboration channels, discussion threads, and attributed messages | requirements and partial static implementation trace | channel-like chat filters and owner-to-assistant message flow were identified; linked-thread lifecycle, participant/agent attribution, tests, deployment, and production behavior were not confirmed |
+| `RAS-01-AR` | task-scoped execution workspace | bounded negative static search | no named execution-workspace model or lifecycle was identified; no implementation, test, deployment, or production claim |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

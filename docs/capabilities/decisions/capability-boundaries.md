@@ -279,3 +279,18 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | J-M09 | Personal-AI identity + outward identity | both pass | keep separate | A persistent private presentation identity can remain stable while each outward action uses a different represented party or disclosure posture. |
 | J-M10 | AI Twin | fails as one generic Capability MLE | composed product realization | It bundles agent definition, identity, dedicated knowledge allocation, access, publication/sharing, retrieval, conversation, and governance capabilities. |
 | J-M11 | Director/manager/worker hierarchy | fails as universal fixed taxonomy | implementation profile | Runtime-role assignment is reusable; named hierarchy levels are one orchestration vocabulary rather than mandatory PIOS roles. |
+
+## Phase 2 collaboration-and-execution-workspace tranche E7
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| L-M01 | Maintain a collaboration channel | passes | separate CRD | A durable top-level conversation container has independently meaningful identity, audience, purpose, ordering, visibility and lifecycle outcomes. |
+| L-M02 | Maintain a work-linked discussion thread | passes | separate CRD | A focused discussion has its own root reference, participants, state, summary and resolution lifecycle without owning the linked subject. |
+| L-M03 | Record an attributed collaboration message | passes | separate CRD | One attributable communication has an independent sender, context, content, references, trust state, trigger eligibility and acceptance outcome. |
+| L-M04 | Manage a task-scoped execution workspace | passes | separate CRD | A bounded runtime area has its own provisioning, isolation, temporary-state, output-disposition, cleanup and failure lifecycle. |
+| L-M05 | Collaboration channel + discussion thread | both pass | keep separate | A channel can exist with zero or many threads, while a focused thread can move or be linked without redefining its containing channel. |
+| L-M06 | Discussion thread + collaboration message | both pass | keep separate | A thread persists across many messages and lifecycle transitions; a message remains one attributable communication that can also exist without a work-linked thread. |
+| L-M07 | Delegation or assignment | passes through existing work-object capabilities | reuse composition | Responsibility and assignee state belong to the applicable task, project, workflow, background operation or runtime-role contract rather than a second generic delegation object. |
+| L-M08 | Multi-agent orchestration | fails as one generic Capability MLE | composed workflow/profile | Planning, assignment, role binding, execution, monitoring, communication, handoff, result preservation and escalation have separate actors and outcomes. |
+| L-M09 | Execution handoff | fails independently at current evidence depth | shared transition and existing-capability reuse | Durable source/target/status/provenance fields support transitions among work and background-operation contracts, but no additional universal outcome is established. |
+| L-M10 | Circle application | fails as one generic capability | audience projection and composed realization | Circle combines channel, thread, message, attention, agent, work-reference and navigation capabilities through one replaceable harness. |

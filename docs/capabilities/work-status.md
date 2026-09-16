@@ -91,6 +91,10 @@
 - Five additional draft Capability MLEs registered, bringing the inventory to ninety-seven.
 - Agent definition, runtime, memory, activity, personal-AI identity, runtime role, and outward identity remain distinct. Historical Director/Manager/Worker labels are retained as an implementation vocabulary rather than mandatory PIOS roles.
 - AI Twin is classified as a composed product realization over several reusable capabilities rather than one indivisible CRD. No complete restricted application realization was identified.
+- Tranche E7 statement and boundary pass completed for collaboration channels, work-linked discussion threads, attributed collaboration messages, and task-scoped execution workspaces.
+- Four additional draft Capability MLEs registered, bringing the inventory to 101.
+- Channel, thread, message, work object, attention item, and execution workspace remain distinct. Circle is classified as a replaceable composed harness rather than one indivisible capability.
+- Static review supports bounded channel-like filters and an owner-to-assistant message flow. It does not establish the richer linked-thread lifecycle, multi-agent attribution, execution-workspace model, passing tests, deployment, or production behavior.
 
 ## Publication state
 
@@ -103,4 +107,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing agent delegation/orchestration and conversation/Circle continuity while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing chat/memory continuity and personal-interface concepts while implementation traces are expanded where they materially change realization status.

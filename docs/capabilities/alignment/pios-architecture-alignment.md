@@ -101,5 +101,9 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Assign an agent runtime role | directly aligned | proposed | not established | eligible agent-orchestration capability | time- and scope-bounded runtime-role assignment | implementation-dependent |
 | Select an agent's outward identity | aligned with owner authority and external-action governance | proposed | not established | eligible identity/governance capability | bounded identity and disclosure decision | implementation-dependent |
 | Conduct an owner-representative conversation | compatible with strict governance | proposed | not established | eligible Circle/outward-agent capability | conversation events, response provenance and escalation state | implementation-dependent |
+| Maintain a collaboration channel | directly aligned | proposed | not established | eligible Circle/collaboration capability | durable channel identity, participation, visibility and lifecycle state | implementation-dependent |
+| Maintain a work-linked discussion thread | directly aligned | proposed | not established | eligible Circle/collaboration capability | durable thread, root references, participants and resolution state | implementation-dependent |
+| Record an attributed collaboration message | directly aligned | proposed | not established | eligible communication capability | durable communication envelope, identity, trust and reference state | implementation-dependent |
+| Manage a task-scoped execution workspace | directly aligned | proposed | not established | eligible execution/runtime capability | temporary or operational state plus output-disposition evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
