@@ -99,6 +99,10 @@
 - Two additional draft Capability MLEs registered, bringing the inventory to 103.
 - Persistent personal memory remains a cross-capability architecture outcome. Ally/PIOS/Home panels, app navigation and execution tracking remain audience projections over existing capabilities.
 - Static review supports a bounded owner-linked conversation history, filter-linked views, session markers, recent-context assembly and read-only inspection. Complete provenance, imported-history governance, access-path lifecycle, passing tests, deployment, and production behavior remain unconfirmed.
+- Tranche F2 statement and boundary pass completed for authorized device-local caching, selected offline content, and personal reading queues.
+- Three additional draft Capability MLEs registered, bringing the inventory to 106.
+- Recent cache, selected offline content and pending work remain separate. Reader, feed, archive, typography, topic views and PDF export are projections or compositions over reusable capabilities.
+- Static review supports a bounded Reader path but exposes material differences from the historical design: admission is not confirmed through the declared reading-intent label, read completion is inferred from another state, saved state is browser-local, and durable topic membership is not established. No complete device-cache or offline realization was confirmed.
 
 ## Publication state
 
@@ -111,4 +115,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing cross-device/offline continuity and remaining discovery or reading-surface concepts while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing cost/resource governance and remaining source-discovery or knowledge-environment concepts while implementation traces are expanded where they materially change realization status.

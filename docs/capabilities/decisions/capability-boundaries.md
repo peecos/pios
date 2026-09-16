@@ -309,3 +309,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | N-M08 | Ally Panel, PIOS Panel, Home Panel and app navigation | fail as generic capabilities | audience projections and realization patterns | They arrange access to independently meaningful capabilities but do not own additional domain outcomes. |
 | N-M09 | Execution Tracking Surface | passes through existing capabilities | audience projection | Operational-run inspection, work-object state, background-operation state, artifacts and results already provide the underlying outcomes. |
 | N-M10 | Owner access path + domain authorization | both pass | keep separate | Registering or reaching an interface does not grant permission for every action exposed through it. |
+
+## Phase 2 device-continuity-and-reading tranche F2
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| Q-M01 | Maintain an authorized device-local content cache | passes | separate CRD | Cache eligibility, version validation, freshness, reuse, refresh, eviction and failure create an independent non-canonical availability outcome. |
+| Q-M02 | Maintain selected content for offline access | passes | separate CRD | Owner selection, offline authorization window, retained version, expiry, revocation, reconnection and removal remain meaningful without opportunistic caching. |
+| Q-M03 | Manage a personal reading queue | passes | separate CRD | Source-linked admission and unread, read, saved, archived or removed state create a coherent owner outcome independent of source storage and rendering. |
+| Q-M04 | Recent cache + selected offline content | both pass | keep separate | A cache may be automatically evicted under freshness policy, while selected offline content is deliberately retained under a separate authorization and retention window. |
+| Q-M05 | Device-local content + pending capture/edit | both pass through separate capabilities | keep separate | Accepted copies can be re-fetched from Core; pending work may be the only copy and uses reconciliation rather than cache eviction. |
+| Q-M06 | Shared App Group or local database | fails as a capability | implementation mechanism and trust boundary | Shared storage supports cache or offline realization but cannot itself express per-app authorization or canonical truth. |
+| Q-M07 | Reader application | fails as one generic capability | audience projection and composed realization | It combines queue state, source retrieval, presentation preferences, classification, summary display, derivation and export actions. |
+| Q-M08 | Save-for-later and mark-read controls | fail independently at this evidence depth | interaction transitions inside reading-queue management | The source establishes lifecycle state changes within one reading purpose, not portable standalone capabilities with broader consumers. |
+| Q-M09 | AI-organized reading topics | passes through existing capabilities | reuse contextual classification and assisted labels | Topic generation organizes queue items but does not require a new reading-specific classification capability. |
+| Q-M10 | Generate or save a reading PDF | passes through existing capabilities | reuse derivation and retention | The output is a derived representation of retained content followed by ordinary governed retention. |
+| Q-M11 | Reader layout and settings | fail as generic capabilities | audience and realization patterns | Typography, colors, scrolling, feed layout and app navigation affect presentation without owning the reading-state outcome. |

@@ -107,5 +107,8 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Manage a task-scoped execution workspace | directly aligned | proposed | not established | eligible execution/runtime capability | temporary or operational state plus output-disposition evidence | implementation-dependent |
 | Maintain personal conversation history | directly aligned with event and source boundaries | proposed | not established | eligible communication/memory capability | retained communication sources and events plus derived continuity views | implementation-dependent |
 | Maintain an owner access path | compatible with owner-interface and recovery principles | proposed | not established | eligible PIOS-native interface or governed client path | durable path definition and verification evidence; transient session state | implementation-dependent |
+| Maintain an authorized device-local content cache | directly aligned | proposed | not established | eligible PIOS-native device-support capability | non-canonical cached copies and cache metadata | owner device or declared local substrate |
+| Maintain selected content for offline access | directly aligned | proposed | not established | eligible PIOS-native device-support capability | deliberately retained non-canonical copies plus offline-policy state | owner device or declared local substrate |
+| Manage a personal reading queue | compatible | proposed | not established | eligible application/experience capability | durable queue state referencing retained source content | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
