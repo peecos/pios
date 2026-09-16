@@ -294,3 +294,18 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | L-M08 | Multi-agent orchestration | fails as one generic Capability MLE | composed workflow/profile | Planning, assignment, role binding, execution, monitoring, communication, handoff, result preservation and escalation have separate actors and outcomes. |
 | L-M09 | Execution handoff | fails independently at current evidence depth | shared transition and existing-capability reuse | Durable source/target/status/provenance fields support transitions among work and background-operation contracts, but no additional universal outcome is established. |
 | L-M10 | Circle application | fails as one generic capability | audience projection and composed realization | Circle combines channel, thread, message, attention, agent, work-reference and navigation capabilities through one replaceable harness. |
+
+## Phase 2 conversation-history-and-personal-interfaces tranche F1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| N-M01 | Maintain personal conversation history | passes | separate CRD | Conversation continuity has independent admission, ordering, provenance, correction/hiding, source-awareness and lifecycle outcomes across many interactions and views. |
+| N-M02 | Maintain an owner access path | passes | separate CRD | A route to owner control has independently meaningful identity, role, assurance, supported operations, priority, health, verification and retirement state. |
+| N-M03 | One physical chat history per owner | fails as a universal requirement | implementation profile | One logical continuity outcome is supported, but current PIOS can preserve it through retained sources and events without requiring one table or stream. |
+| N-M04 | Collaboration message + personal conversation history | both pass | keep separate | One message can be recorded independently, while history governs continuity, membership, ordering and provenance across many interactions and sources. |
+| N-M05 | Personal conversation history + canonical event log | both pass with distinct scopes | keep separate | Conversation history is a communication-domain continuity record; the event log is the complete cross-domain canonical occurrence spine. |
+| N-M06 | Imported-history integration | fails as one generic capability | reuse composition | It combines retention, import sessions, source promotion, history membership, retrieval allocation, summaries, pattern detection and proposal governance. |
+| N-M07 | Persistent personal memory | fails as one generic Capability MLE | architecture composition | It names the cumulative outcome of sources, events, notes, conversations, knowledge, relationships, decisions, retrieval and derived representations. |
+| N-M08 | Ally Panel, PIOS Panel, Home Panel and app navigation | fail as generic capabilities | audience projections and realization patterns | They arrange access to independently meaningful capabilities but do not own additional domain outcomes. |
+| N-M09 | Execution Tracking Surface | passes through existing capabilities | audience projection | Operational-run inspection, work-object state, background-operation state, artifacts and results already provide the underlying outcomes. |
+| N-M10 | Owner access path + domain authorization | both pass | keep separate | Registering or reaching an interface does not grant permission for every action exposed through it. |

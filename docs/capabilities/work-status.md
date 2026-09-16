@@ -95,6 +95,10 @@
 - Four additional draft Capability MLEs registered, bringing the inventory to 101.
 - Channel, thread, message, work object, attention item, and execution workspace remain distinct. Circle is classified as a replaceable composed harness rather than one indivisible capability.
 - Static review supports bounded channel-like filters and an owner-to-assistant message flow. It does not establish the richer linked-thread lifecycle, multi-agent attribution, execution-workspace model, passing tests, deployment, or production behavior.
+- Tranche F1 statement and boundary pass completed for personal conversation history and owner access paths.
+- Two additional draft Capability MLEs registered, bringing the inventory to 103.
+- Persistent personal memory remains a cross-capability architecture outcome. Ally/PIOS/Home panels, app navigation and execution tracking remain audience projections over existing capabilities.
+- Static review supports a bounded owner-linked conversation history, filter-linked views, session markers, recent-context assembly and read-only inspection. Complete provenance, imported-history governance, access-path lifecycle, passing tests, deployment, and production behavior remain unconfirmed.
 
 ## Publication state
 
@@ -107,4 +111,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing chat/memory continuity and personal-interface concepts while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing cross-device/offline continuity and remaining discovery or reading-surface concepts while implementation traces are expanded where they materially change realization status.

@@ -105,5 +105,7 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain a work-linked discussion thread | directly aligned | proposed | not established | eligible Circle/collaboration capability | durable thread, root references, participants and resolution state | implementation-dependent |
 | Record an attributed collaboration message | directly aligned | proposed | not established | eligible communication capability | durable communication envelope, identity, trust and reference state | implementation-dependent |
 | Manage a task-scoped execution workspace | directly aligned | proposed | not established | eligible execution/runtime capability | temporary or operational state plus output-disposition evidence | implementation-dependent |
+| Maintain personal conversation history | directly aligned with event and source boundaries | proposed | not established | eligible communication/memory capability | retained communication sources and events plus derived continuity views | implementation-dependent |
+| Maintain an owner access path | compatible with owner-interface and recovery principles | proposed | not established | eligible PIOS-native interface or governed client path | durable path definition and verification evidence; transient session state | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
