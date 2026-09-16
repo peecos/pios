@@ -38,5 +38,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AF` | Role outward intent | requirements and partial static implementation trace | intent control assessed; access enforcement and publication are not established |
 | `RAS-01-AG` | Role-scoped outward representation | requirements assessment | assessed; relevant implementation reachability not confirmed |
 | `RAS-01-AH` | observed-pattern detection and lifecycle evaluation | requirements and declared/disabled structure assessment | assessed; no reachable active job, passing tests, deployment, or production behavior confirmed |
+| `RAS-01-AI` | outcome goals, directional objectives, and success targets | requirements and static implementation trace | bounded create/read/update paths and declared relationships assessed; target-achievement evaluation not confirmed; no tested/deployed claim |
+| `RAS-01-AJ` | measurement definitions and metric observations | requirements, declared structure, and partial static implementation trace | definition management assessed; observation structure found; reachable observation writer, tests, deployment, and production behavior not confirmed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

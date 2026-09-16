@@ -205,3 +205,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | E-M06 | Detect + lifecycle-evaluate a pattern | both pass | keep separate | Initial creation and later recurring reassessment have different starting states, timing, and results. |
 | E-M07 | Patterns inspector | fails as generic capability | audience projection | It presents pattern, evidence, status, and proposal history without owning their source lifecycles. |
 | E-M08 | Pattern refresh action declaration | fails as realization proof | declared/disabled realization metadata | A declared disabled action is not evidence of a reachable recurring job or available capability. |
+
+## Phase 2 direction-and-success tranche E2
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| F-M01 | Maintain an outcome goal | passes | separate CRD | A durable desired outcome has its own owner, lifecycle, horizon, relationships, and review context independently from current execution. |
+| F-M02 | Maintain a directional objective | passes | separate CRD | Current actionable direction can be created, activated, retired, and used to source planning without becoming the plan itself. |
+| F-M03 | Maintain a success target | passes | separate CRD | An observable success condition has an independent lifecycle and can exist without a measurement observation or achievement decision. |
+| F-M04 | Maintain a measurement definition | passes | separate CRD | Unit, value semantics, tracking method, and comparability form a reusable definition independently from recorded values. |
+| F-M05 | Record a metric observation | passes | separate CRD | One time-scoped value has its own actor, validation, source, provenance, correction, and acceptance result. |
+| F-M06 | Goal + objective | both pass | keep separate | Long-horizon desired outcome and current action-oriented direction can change independently and may be linked without being merged. |
+| F-M07 | Target + measurement definition | both pass | keep separate | Success can be described before deciding how it will be measured, and a measurement can serve monitoring without being a target. |
+| F-M08 | Measurement definition + metric observation | both pass | keep separate | A stable definition may receive many observations, while definition changes require independent comparability handling. |
+| F-M09 | Target + target-achievement evaluation | target passes; evaluation deferred | keep separate | Defining success and deciding whether evidence satisfies it have different inputs, authority, and outcomes; the latter contract is not yet complete. |
+| F-M10 | Goals/Profile/Planning screens | fail as generic capabilities | audience projections | Multiple screens can present the same canonical direction and success objects without becoming independent realizations. |
+| F-M11 | Goal → objective → target → plan chain | fails as mandatory combined capability | conceptual composition | The sequence helps explain flow, but sources explicitly do not enforce every link and each constituent MLE remains independently meaningful. |

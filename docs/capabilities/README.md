@@ -12,8 +12,9 @@ Start with:
 - [Source and publication policy](source-context/source-and-publication-context.md)
 - [Capture, onboarding, and experience context](source-context/capture-onboarding-and-experience-context.md)
 - [Patterns and learning context](source-context/patterns-and-learning-context.md)
+- [Direction and success context](source-context/direction-and-success-context.md)
 - [Restricted corpus disposition](evidence/restricted-corpus-disposition.md)
 - [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 
-The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; source/import governance; operational inspection; portability and recovery; cutover, decommissioning, erasure, connector reauthorization; governed capture with pending-work reconciliation; onboarding and first entry; personal-AI identity/preferences; Role, Mode, active-context, and outward-representation governance; and observed-pattern detection and lifecycle evaluation.
+The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; source/import governance; operational inspection; portability and recovery; cutover, decommissioning, erasure, connector reauthorization; governed capture with pending-work reconciliation; onboarding and first entry; personal-AI identity/preferences; Role, Mode, active-context, and outward-representation governance; observed-pattern detection and lifecycle evaluation; and direction and success objects spanning goals, objectives, targets, measurement definitions, and metric observations.

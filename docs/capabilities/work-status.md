@@ -71,6 +71,10 @@
 - Tranche E1 statement and boundary pass completed for observed-pattern detection and lifecycle evaluation.
 - Two additional draft Capability MLEs registered, bringing the inventory to seventy-six.
 - Static review found declared structures and disabled/planned pattern surfaces but did not establish a reachable active detection or refresh job.
+- Tranche E2 statement and boundary pass completed for outcome goals, directional objectives, success targets, measurement definitions, and metric observations.
+- Five additional draft Capability MLEs registered, bringing the inventory to eighty-one.
+- The earlier goal/objective/target boundary question is resolved: all three pass independently, and the commonly shown hierarchy remains conceptual rather than mandatory.
+- Static review supports bounded goal, objective, target, and metric-definition persistence and finds a declared metric-observation structure. It does not establish target-achievement evaluation, a reachable metric-observation writer, passing tests, deployment, or production behavior.
 
 ## Publication state
 
@@ -83,4 +87,4 @@
 
 ## Next action
 
-Continue with the direction-and-success tranche covering goals, targets, metrics, and their relationship to plans, projects, tasks, and profile knowledge while historical-corpus classification continues.
+Continue with the next bounded historical-corpus gap tranche, prioritizing review/learning-loop concepts and remaining relationship or sharing capabilities while implementation traces are expanded where they materially change realization status.

@@ -80,5 +80,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Prepare a Role-scoped outward representation | directly aligned with exposure separation | proposed | not established | eligible knowledge/sharing-preparation capability | separate outward object or bundle with provenance | implementation-dependent |
 | Detect an observed pattern | directly aligned | proposed | not established | eligible interpretation/knowledge capability | derived non-authoritative pattern and evidence links | implementation-dependent |
 | Evaluate an observed pattern lifecycle | directly aligned | proposed | not established | eligible interpretation/knowledge-maintenance capability | derived status, strength, eligibility, and snapshots | implementation-dependent |
+| Maintain an outcome goal | directly aligned | proposed | not established | eligible Cotton/Knowledge direction capability | canonical goal definition and lifecycle state | implementation-dependent |
+| Maintain a directional objective | compatible | proposed | not established | eligible Cotton/planning capability | canonical objective definition and lifecycle state | implementation-dependent |
+| Maintain a success target | directly aligned | proposed | not established | eligible Cotton/Knowledge success capability | canonical target condition and lifecycle state | implementation-dependent |
+| Maintain a measurement definition | directly aligned | proposed | not established | eligible Knowledge/measurement capability | versioned metric semantics and method | implementation-dependent |
+| Record a metric observation | directly aligned | proposed | not established | eligible event/Knowledge evidence capability | time-scoped observation with source and provenance | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
