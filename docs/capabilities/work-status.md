@@ -75,6 +75,10 @@
 - Five additional draft Capability MLEs registered, bringing the inventory to eighty-one.
 - The earlier goal/objective/target boundary question is resolved: all three pass independently, and the commonly shown hierarchy remains conceptual rather than mandatory.
 - Static review supports bounded goal, objective, target, and metric-definition persistence and finds a declared metric-observation structure. It does not establish target-achievement evaluation, a reachable metric-observation writer, passing tests, deployment, or production behavior.
+- Tranche E3 statement and boundary pass completed for controlled sharing, public publication, outward access, discoverability, and usage rights.
+- Five additional draft Capability MLEs registered, bringing the inventory to eighty-six.
+- Visibility, access control, discovery, and rights remain independent axes; controlled sharing and public presence also remain distinct outcomes.
+- A bounded restricted-source search did not identify the named public-asset or exposure-model realization. No implementation, test, deployment, or production availability is claimed.
 
 ## Publication state
 
@@ -87,4 +91,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing review/learning-loop concepts and remaining relationship or sharing capabilities while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing review and learning-loop concepts while implementation traces are expanded where they materially change realization status.

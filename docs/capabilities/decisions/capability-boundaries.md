@@ -221,3 +221,18 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | F-M09 | Target + target-achievement evaluation | target passes; evaluation deferred | keep separate | Defining success and deciding whether evidence satisfies it have different inputs, authority, and outcomes; the latter contract is not yet complete. |
 | F-M10 | Goals/Profile/Planning screens | fail as generic capabilities | audience projections | Multiple screens can present the same canonical direction and success objects without becoming independent realizations. |
 | F-M11 | Goal → objective → target → plan chain | fails as mandatory combined capability | conceptual composition | The sequence helps explain flow, but sources explicitly do not enforce every link and each constituent MLE remains independently meaningful. |
+
+## Phase 2 outward-exposure tranche E3
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| G-M01 | Share a governed outward representation | passes | separate CRD | A bounded audience grant has its own authority, scope, access state, expiry, revocation, and audit outcome without making content public. |
+| G-M02 | Publish a governed outward representation | passes | separate CRD | Public reachability is an externally visible transition with revision, locator, authority, withdrawal, and evidence independent from preparation or sharing. |
+| G-M03 | Govern outward access | passes | separate CRD | Access conditions and individual allow/deny decisions can change independently from public reachability, discovery, and permitted reuse. |
+| G-M04 | Govern outward discoverability | passes | separate CRD | Hidden, index-eligible, and promoted states produce an independent findability outcome without changing who may open or reuse content. |
+| G-M05 | Govern outward usage rights | passes | separate CRD | Human and machine use conditions remain meaningful after access and can change without altering reachability or discovery. |
+| G-M06 | Controlled sharing + public publication | both pass | keep separate | Sharing is audience-bounded and non-public; publication establishes public reachability and may carry durable public-presence framing. |
+| G-M07 | Visibility + access + discovery + rights | all meaningful; do not merge | keep separate axes | Current and historical sources explicitly require independent reasoning and state for each axis. |
+| G-M08 | Prepare + share/publish | both pass | keep separate | A representation can be safely prepared and reviewed without any audience gaining access; exposure is a later authorized transition. |
+| G-M09 | Unpublish or revoke | fails as additional generic capability here | lifecycle transition | Withdrawal is an essential terminal transition of the corresponding publication or sharing capability, while cross-system erasure remains separate. |
+| G-M10 | Public username, path, folder, domain, sitemap and SEO/GEO | fail as one generic capability | realization patterns and later candidates | They implement public presence, addressing, organization, discovery, and delivery but do not form one minimal reusable outcome. |

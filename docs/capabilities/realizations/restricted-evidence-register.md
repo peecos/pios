@@ -40,5 +40,6 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AH` | observed-pattern detection and lifecycle evaluation | requirements and declared/disabled structure assessment | assessed; no reachable active job, passing tests, deployment, or production behavior confirmed |
 | `RAS-01-AI` | outcome goals, directional objectives, and success targets | requirements and static implementation trace | bounded create/read/update paths and declared relationships assessed; target-achievement evaluation not confirmed; no tested/deployed claim |
 | `RAS-01-AJ` | measurement definitions and metric observations | requirements, declared structure, and partial static implementation trace | definition management assessed; observation structure found; reachable observation writer, tests, deployment, and production behavior not confirmed |
+| `RAS-01-AK` | outward sharing, publication, access, discovery, and usage rights | bounded negative static search | searched public-asset and exposure-model identifiers were not found; no implementation, test, deployment, or production claim |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

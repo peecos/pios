@@ -85,5 +85,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain a success target | directly aligned | proposed | not established | eligible Cotton/Knowledge success capability | canonical target condition and lifecycle state | implementation-dependent |
 | Maintain a measurement definition | directly aligned | proposed | not established | eligible Knowledge/measurement capability | versioned metric semantics and method | implementation-dependent |
 | Record a metric observation | directly aligned | proposed | not established | eligible event/Knowledge evidence capability | time-scoped observation with source and provenance | implementation-dependent |
+| Share a governed outward representation | directly aligned | proposed | not established | eligible Circle/sharing capability | share state, audience scope, access and audit evidence | implementation-dependent |
+| Publish a governed outward representation | directly aligned | proposed | not established | eligible outward/publication capability | public revision, locator, policy state and provenance | implementation-dependent |
+| Govern outward access | directly aligned | proposed | not established | eligible authorization/enforcement capability | access policy, grants, denials and audit evidence | implementation-dependent |
+| Govern outward discoverability | directly aligned | proposed | not established | eligible outward-discovery capability | discoverability metadata and propagation evidence | implementation-dependent |
+| Govern outward usage rights | directly aligned | proposed | not established | eligible governance/rights capability | versioned human and machine use conditions | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
