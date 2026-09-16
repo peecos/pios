@@ -67,5 +67,11 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Reauthorize a destination connector | directly aligned | proposed | not established | eligible source/connectivity capability | destination credential reference, consent, scope, and status | implementation-dependent |
 | Submit a governed content capture | directly aligned | proposed | not established | eligible inbound/capture capability | pending submission, source context, and intake receipt | implementation-dependent |
 | Reconcile a pending capture | directly aligned | proposed | not established | eligible inbound/device-continuity capability | pending payload, acceptance evidence, and reconciliation disposition | implementation-dependent |
+| Manage a guided onboarding journey | compatible | proposed | not established | eligible owner-experience/orchestration capability | durable journey and step state | implementation-dependent |
+| Maintain a personal AI identity | directly aligned | proposed | not established | eligible agent-definition/owner-governance capability | versioned system definition and presentation assets | implementation-dependent |
+| Configure personal AI interaction preferences | directly aligned | proposed | not established | eligible agent-definition/owner-governance capability | versioned owner preference state | implementation-dependent |
+| Verify an onboarding contact channel | compatible subject to assurance profile | proposed | not established | eligible onboarding/account-lifecycle capability where offered | verification evidence and bounded status | implementation-dependent |
+| Prepare an initial owner environment | compatible | proposed | not established | eligible onboarding/context capability | preparation package, proposed/confirmed configuration, and report | implementation-dependent |
+| Authorize first entry | compatible | proposed | not established | eligible owner-interface/account-lifecycle capability where offered | protected credential reference and entry event | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

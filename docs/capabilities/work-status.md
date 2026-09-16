@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, and D1a drafted
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2, D1a, and D1b1 drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue tranche D1 with onboarding, owner roles, first-run preparation, first entry, and experience context.
+- Continue tranche D1 with owner Role and Mode definitions, active context, outward-role intent, and remaining experience context.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -56,6 +56,10 @@
 - Two additional draft Capability MLEs registered, bringing the inventory to sixty-three.
 - A browser extension remains an application-specific realization and audience surface rather than a generic capability; capture-time action intent and processing instructions retain their separate governance boundaries.
 - Restricted capture and onboarding requirements have been substantively assessed, bringing restricted document coverage to 18 of 26; capture code reachability and all tested/deployed behavior remain unconfirmed.
+- Tranche D1b1 statement and boundary pass completed for guided onboarding, personal-AI identity, interaction preferences, contact-channel verification, initial-environment preparation, and first-entry authorization.
+- Six additional draft Capability MLEs registered, bringing the inventory to sixty-nine.
+- Restricted documentation coverage is now 20 of 26 after substantive welcome/orientation and interface-standard assessment.
+- Static code review found a bounded post-auth first-use orientation and selected AI-profile controls, but did not confirm the documented end-to-end onboarding journey, reply verification, prepared environment, or first-entry invitation. No app execution, tests, deployment, or production behavior are claimed.
 
 ## Publication state
 
@@ -68,4 +72,4 @@
 
 ## Next action
 
-Continue D1b by testing onboarding journey, identity and verification, adaptive personalization, first-run preparation, and first entry as independent candidate outcomes before drafting.
+Continue D1b2 by testing owner Role and Mode definitions, active context, outward-role intent, and remaining experience surfaces as independent candidate outcomes.

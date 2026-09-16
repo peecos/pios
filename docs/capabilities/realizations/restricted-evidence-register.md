@@ -29,6 +29,8 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-W` | bundle restore | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-X` | destination connector reauthorization | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-Y` | governed capture submission and pending reconciliation | requirements assessment | assessed; implementation reachability pending; no tested/deployed claim |
-| `RAS-01-Z` | onboarding and first-entry experience | requirements preparation | substantively assessed for the next boundary pass; no capability or realization claim yet |
+| `RAS-01-Z` | onboarding journey, environment preparation, and first entry | requirements and partial static implementation trace | assessed; documented end-to-end journey not confirmed; no tested/deployed claim |
+| `RAS-01-AA` | personal AI identity and interaction preferences | requirements and partial static implementation trace | assessed; some interface state is not shown to be durably governed; no tested/deployed claim |
+| `RAS-01-AB` | first-use orientation | static implementation trace | bounded explanatory surface identified; not evidence of the broader onboarding journey or production availability |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

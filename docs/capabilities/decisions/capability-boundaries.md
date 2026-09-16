@@ -159,3 +159,20 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | D-M04 | Capture + action-intent labeling | both pass | keep separate | Content can be captured without a handling label, and a label can be applied after capture. |
 | D-M05 | Capture + processing instruction | both pass | keep separate | Intake does not itself authorize or perform the requested processing action. |
 | D-M06 | Submit + reconcile pending capture | both pass | keep separate | Submission may complete before durable acceptance, and reconciliation may resume after device or network interruption. |
+
+## Phase 2 capture-and-experience tranche D1b1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| D-M07 | Manage a guided onboarding journey | passes | separate CRD | The journey has durable stage, progress, pause/resume, response, override, and terminal outcomes independent from any one setup result. |
+| D-M08 | Maintain a personal AI identity | passes | separate CRD | Owner-authored presentation identity has its own versioned lifecycle and remains distinct from owner profile, memory, runtime role, and authority. |
+| D-M09 | Configure personal AI interaction preferences | passes | separate CRD | Communication and collaboration preferences can change without changing identity, truth, or execution permission. |
+| D-M10 | Verify an onboarding contact channel | passes with security qualification | separate CRD | Channel-control evidence has an independent assurance result but must not be treated as full identity proof or general authorization. |
+| D-M11 | Prepare an initial owner environment | passes | separate CRD | Mapping owner input and explicit defaults into a reviewable first configuration has an independent readiness outcome. |
+| D-M12 | Authorize first entry | passes | separate CRD | A bounded invitation credential has its own issue, expiry, replacement, validation, and consumption lifecycle. |
+| D-M13 | Adaptive onboarding depth | fails independently | owned policy of guided onboarding | It changes which questions and defaults the journey uses but does not produce a separate durable owner outcome. |
+| D-M14 | First-use orientation carousel | fails as generic capability | Communication MLE and realization pattern | A skippable/replayable explanatory surface communicates product concepts but does not establish onboarding identity, readiness, or authority. |
+| D-M15 | Preserve onboarding dialogue as first conversation | fails independently | composition | Retention, conversation continuity, and first-entry presentation already own the durable outcomes. |
+| D-M16 | Download onboarding data | fails independently in this tranche | specialization of portability | Onboarding scope specializes portable bundle composition rather than defining a second export capability. |
+| D-M17 | Personal AI identity + interaction preferences | both pass | keep separate | Presentation identity can remain stable while communication behavior changes, and either may be revised independently. |
+| D-M18 | Journey + environment preparation + first-entry authorization | all pass | keep separate | Progress coordination, configuration readiness, and access authorization have different actors, evidence, failure modes, and outcomes. |

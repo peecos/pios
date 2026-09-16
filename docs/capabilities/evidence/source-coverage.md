@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | Current PIOS | master and companion set identified | pilot-relevant architecture read; whole-system context reviewed | not applicable | pilot alignment complete |
 | PIOS Global | selected commit and corpus identified | three pilot documents read | not applicable | pilot complete; remainder Phase 2 |
-| Restricted application source `RAS-01` | complete document and file inventory retained privately | 18 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, C1, C2, and D1 code traces pending | public details withheld; 8 documents remain unassessed |
+| Restricted application source `RAS-01` | complete document and file inventory retained privately | 20 of 26 documents have at least bounded substantive assessment | bounded storage, retrieval, onboarding/orientation, authentication, and selected identity/preference paths traced privately; other tranche code traces remain pending | public details withheld; 6 documents remain unassessed |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
 ## Phase 2 tranche coverage
@@ -21,5 +21,6 @@
 | C2b1 — export, package validation, restore, parity, backup | `export-portability.md` read | Portability §§21.1–21.3 and companion portability/compatibility specifications read | export/portability requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; five CRDs drafted; code-traced realization evidence pending |
 | C2b2 — cutover, rollback, decommissioning, erasure, connector reauthorization | portability and transition material reviewed | Portability §§21.1 and 21.6 plus companion portability/compatibility specifications read | connector reauthorization requirement assessed; implementation evidence unavailable | statement and boundary pass complete; six CRDs drafted; operational evidence pending |
 | D1a — governed capture and pending reconciliation | `chrome-extension.md` read | Product Model/Core app capture responsibility, device-cache treatment, and Inbound Flow read | capture-interface and onboarding requirements assessed; capture code reachability not confirmed | statement and boundary pass complete; two CRDs drafted; onboarding drafting and realization evidence pending |
+| D1b1 — onboarding journey, personal AI identity/preferences, initial environment, first entry | `onboarding.md`, `area-onboarding.md`, `ally.md`, and applicable experience pages read | agent definition, owner authority, metadata flexibility, context lifecycle, and interface boundaries read | onboarding, welcome, and interface requirements assessed; actual orientation, authentication, caller/state, and selected AI-profile paths traced privately | statement and boundary pass complete; six CRDs drafted; documented end-to-end onboarding realization not confirmed |
 
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.
