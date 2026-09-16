@@ -52,5 +52,6 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AT` | owner access paths and personal interface roles | requirements assessment | interface requirements were assessed, but no complete access-path registry, assurance lifecycle, fallback verification, tests, deployment, or production behavior was confirmed |
 | `RAS-01-AU` | personal reading queue | requirements and partial static implementation trace | retained article listing, read-state update, local saved state, presentation and AI-topic requests were identified; admission, completion, durability and topic-membership gaps remain; no tested/deployed claim |
 | `RAS-01-AV` | authorized device cache and selected offline content | no relevant realization confirmed | assessed application evidence did not establish the current PIOS device-cache or offline-retention contracts; availability remains unknown |
+| `RAS-01-AW` | operation resource-cost estimation, reservation, and reconciliation | requirements and bounded negative assessment | retrieval token-budget requirements were identified, but no generic cost-estimate, reservation, spend-accounting or resource-reconciliation realization was confirmed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

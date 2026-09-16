@@ -103,6 +103,10 @@
 - Three additional draft Capability MLEs registered, bringing the inventory to 106.
 - Recent cache, selected offline content and pending work remain separate. Reader, feed, archive, typography, topic views and PDF export are projections or compositions over reusable capabilities.
 - Static review supports a bounded Reader path but exposes material differences from the historical design: admission is not confirmed through the declared reading-intent label, read completion is inferred from another state, saved state is browser-local, and durable topic membership is not established. No complete device-cache or offline realization was confirmed.
+- Tranche F3 statement and boundary pass completed for operation resource-cost estimation, resource-budget reservation, and resource-usage reconciliation.
+- Three additional draft Capability MLEs registered, bringing the inventory to 109.
+- Cost approval, standing preferences, usage measurement and partial completion reuse existing proposal, policy, rule, metric and execution capabilities; credits remain a shared unit rather than a capability.
+- Restricted evidence contains retrieval token-budget requirements but no confirmed generic estimate, reservation, spend-accounting or reconciliation realization. No tests, deployment, production behavior, billing or commercial capability is claimed.
 
 ## Publication state
 
@@ -115,4 +119,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing cost/resource governance and remaining source-discovery or knowledge-environment concepts while implementation traces are expanded where they materially change realization status.
+Continue with the next bounded historical-corpus gap tranche, prioritizing source discovery, knowledge-environment maintenance, and remaining corpus disposition while implementation traces are expanded where they materially change realization status.

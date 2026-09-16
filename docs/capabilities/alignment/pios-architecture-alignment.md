@@ -110,5 +110,8 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain an authorized device-local content cache | directly aligned | proposed | not established | eligible PIOS-native device-support capability | non-canonical cached copies and cache metadata | owner device or declared local substrate |
 | Maintain selected content for offline access | directly aligned | proposed | not established | eligible PIOS-native device-support capability | deliberately retained non-canonical copies plus offline-policy state | owner device or declared local substrate |
 | Manage a personal reading queue | compatible | proposed | not established | eligible application/experience capability | durable queue state referencing retained source content | implementation-dependent |
+| Estimate operation resource cost | directly aligned with cost-aware governance | proposed | not established | eligible planning/governance capability | versioned estimate and assumptions | implementation-dependent |
+| Reserve an operation resource budget | compatible | proposed | not established | eligible execution-governance capability | expiring internal reservation state | implementation-dependent |
+| Reconcile operation resource usage | directly aligned with measured-cost governance | proposed | not established | eligible operations/governance capability | usage observations, variance and final/interim accounting state | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

@@ -325,3 +325,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | Q-M09 | AI-organized reading topics | passes through existing capabilities | reuse contextual classification and assisted labels | Topic generation organizes queue items but does not require a new reading-specific classification capability. |
 | Q-M10 | Generate or save a reading PDF | passes through existing capabilities | reuse derivation and retention | The output is a derived representation of retained content followed by ordinary governed retention. |
 | Q-M11 | Reader layout and settings | fail as generic capabilities | audience and realization patterns | Typography, colors, scrolling, feed layout and app navigation affect presentation without owning the reading-state outcome. |
+
+## Phase 2 cost-and-resource-governance tranche F3
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| R-M01 | Estimate operation resource cost | passes | separate CRD | A forecast has its own request, assumptions, method, scope, uncertainty, validity and success/failure outcome before execution. |
+| R-M02 | Approve cost-governed work | passes through existing governance capabilities | reuse composition | The approval is a governed proposal or action decision evaluated through explicit owner intent, standing rules and execution policy. |
+| R-M03 | Reserve an operation resource budget | passes | separate CRD | An expiring hold has independent operation binding, amount, availability, adjustment, release and denial states before actual use is known. |
+| R-M04 | Record actual resource consumption | passes through an existing capability | reuse metric observation | One attributable measured value already fits the metric-observation contract; cost semantics are supplied by its measurement definition. |
+| R-M05 | Reconcile operation resource usage | passes | separate CRD | Comparing actual use with estimate, reservation, budget and completed scope produces an independent final/interim accounting outcome. |
+| R-M06 | Partial completion | passes through existing work/run capabilities | reuse lifecycle state | The domain operation or background run owns what completed and what remains; resource reconciliation records why and what allowance remains. |
+| R-M07 | Cost-aware standing preference | passes through existing capabilities | reuse standing rule and execution policy | Thresholds, automatic allowance and depth limits are scoped authority/policy rather than a parallel cost-specific rule system. |
+| R-M08 | Most-relevant-first processing | fails as a standalone capability at this evidence depth | execution-scope/ordering profile | It selects the order and bounded subset for another processing capability and has no independent domain outcome. |
+| R-M09 | Cost and Credit Governance | fails as one generic Capability MLE | source context and composition | The umbrella joins three passing capabilities with approval, policy, observation, execution and commercial concerns that remain independently meaningful. |
+| R-M10 | Credits | fails as a capability | shared unit/profile | Credits are an internal resource comparison unit unless a separate commercial profile defines monetary meaning. |
+| R-M11 | Billing, payment, invoices, taxes and refunds | excluded from this tranche | separate commercial domain | The admitted source explicitly frames cost governance as product control rather than a billing system. |
