@@ -236,3 +236,15 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | G-M08 | Prepare + share/publish | both pass | keep separate | A representation can be safely prepared and reviewed without any audience gaining access; exposure is a later authorized transition. |
 | G-M09 | Unpublish or revoke | fails as additional generic capability here | lifecycle transition | Withdrawal is an essential terminal transition of the corresponding publication or sharing capability, while cross-system erasure remains separate. |
 | G-M10 | Public username, path, folder, domain, sitemap and SEO/GEO | fail as one generic capability | realization patterns and later candidates | They implement public presence, addressing, organization, discovery, and delivery but do not form one minimal reusable outcome. |
+
+## Phase 2 reviews-and-reflection tranche E4
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| H-M01 | Conduct a structured review | passes | separate CRD | A bounded review has its own scope, questions, inputs, decisions, unresolved items, carry-forward disposition, and closure state. |
+| H-M02 | Record a reflective assessment | passes | separate CRD | Interpretation with judgment, uncertainty, residue, and recommendations can be preserved independently from a formal review or neutral summary. |
+| H-M03 | Structured review + reflection | both pass | keep separate | A review may be primarily factual or decisional, and a reflection may occur outside a scheduled review; either can exist without the other. |
+| H-M04 | Daily, weekly, monthly, yearly, and event-triggered review | passes as one generic capability | use profiles, not separate CRDs | Cadence and question sets vary while the review interaction contract remains the same. |
+| H-M05 | Review note or review screen | fails as generic capability | output/audience projection | A note or screen can present a review but does not own its evidence, decisions, and follow-up lifecycle. |
+| H-M06 | Carry forward unresolved work | passes through existing capabilities | reuse composition | A review references existing tasks, Work Starters, attention items, goals, or projects rather than creating a second work identity. |
+| H-M07 | Apply review recommendations | passes through existing governed capabilities | reuse composition | Recommendations may trigger proposals or updates to goals, targets, projects, tasks, knowledge, or policy only through their own authority paths. |

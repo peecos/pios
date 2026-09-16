@@ -90,5 +90,7 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Govern outward access | directly aligned | proposed | not established | eligible authorization/enforcement capability | access policy, grants, denials and audit evidence | implementation-dependent |
 | Govern outward discoverability | directly aligned | proposed | not established | eligible outward-discovery capability | discoverability metadata and propagation evidence | implementation-dependent |
 | Govern outward usage rights | directly aligned | proposed | not established | eligible governance/rights capability | versioned human and machine use conditions | implementation-dependent |
+| Conduct a structured review | directly aligned | proposed | not established | eligible Cotton/Knowledge review capability | review scope, evidence, decisions, updates and carry-forward state | implementation-dependent |
+| Record a reflective assessment | directly aligned | proposed | not established | eligible Knowledge interpretation capability | versioned interpretation with evidence, uncertainty and recommendations | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.
