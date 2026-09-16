@@ -13,4 +13,4 @@ Start with:
 - [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 
-The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; plus source registration, bounded imports, staged promotion, ingestion gates, event-registry governance, and operational inspection.
+The initial pilot covers governed content retention and derivation, context allocation, retrieval context assembly, conversation consolidation, proposals, and standing rules. Phase 2 now includes knowledge/context; action and execution; event and History; source/import governance; operational inspection; and portable export, validation, restore, parity, and recovery capabilities.

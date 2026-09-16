@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 16, 2026
-**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, and C2a drafted
+**Current phase:** Phase 2 corpus expansion; Phase 1 passed; tranches A, B, C1, C2a, and C2b1 drafted
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue tranche C2b with export bundles, integrity verification, restore/import compatibility, recovery, parity, and source decommissioning.
+- Continue tranche C2b2 with governed cutover, rollback, source decommissioning, deletion/tombstoning, and connector reauthorization.
 - Continue restricted evidence assessment without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
@@ -30,7 +30,7 @@
 - Restricted source assessment remains separately recorded; no private excerpts or implementation details entered the public branch.
 - Tranche A2 statement and boundary pass completed for deliberate notes, owner-authored profile knowledge, evidence-backed profile assertions, and dispute resolution.
 - Four additional draft Capability MLEs registered, bringing the inventory to eighteen.
-- Restricted application documentation coverage is now 12 of 26 documents at bounded substantive depth.
+- Restricted application documentation coverage is now 16 of 26 documents at bounded substantive depth.
 - The A2 implementation trace is pending because required blobs were unavailable from the existing partial source checkout and on-demand retrieval failed; no substitute source was used.
 - Tranche B1 statement and boundary pass completed for action intent, governed invocation, background operations, and execution policy.
 - Four additional draft Capability MLEs registered, bringing the inventory to twenty-two.
@@ -46,6 +46,9 @@
 - Tranche C2a statement and boundary pass completed for source registration, import sessions, source promotion, three separate ingestion gates, event-type governance, and operational-run inspection.
 - Eight additional draft Capability MLEs registered, bringing the inventory to fifty.
 - Restricted System application requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Tranche C2b1 statement and boundary pass completed for portable bundle composition, package validation, Core-state restore, destination parity, and recoverable backups.
+- Five additional draft Capability MLEs registered, bringing the inventory to fifty-five.
+- Restricted export/portability requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
 
 ## Publication state
 
@@ -58,4 +61,4 @@
 
 ## Next action
 
-Continue C2b by testing export creation, integrity verification, restore execution, destination parity, recovery, and source decommissioning independently.
+Continue C2b2 by testing cutover, rollback, source decommissioning, deletion/tombstoning, and connector reauthorization independently.

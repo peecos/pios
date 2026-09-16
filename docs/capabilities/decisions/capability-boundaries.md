@@ -119,3 +119,17 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | C-M22 | Technical screen + checklist + owner approval | all pass | keep separate | Each gate has a distinct actor, evidence standard, result, and expressly limited authority. |
 | C-M23 | Event registry + event recording | both pass | keep separate | Registry governance defines allowed event semantics; recording appends one conforming occurrence. |
 | C-M24 | System app | fails | audience projection | It groups independent inspection, governance, run, import, export, and health capabilities. |
+
+## Phase 2 operations-and-portability tranche C2b1
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| C-M25 | Compose a portable Core bundle | passes | separate CRD | Bundle creation has its own scope, identity, manifest, contents, exclusions, and completion result. |
+| C-M26 | Validate a portability package | passes | separate CRD | Validation can accept, reject, or quarantine an existing package without creating or importing it. |
+| C-M27 | Restore Core state from a bundle | passes | separate CRD | Import/hydration changes destination state and produces an operationalization report independently from validation. |
+| C-M28 | Validate restored Core parity | passes | separate CRD | Destination evidence can pass or fail after restore and is not established by successful byte import alone. |
+| C-M29 | Maintain a recoverable Core backup | passes | separate CRD | Backup creation, custody, retention, and restore testing form a recurring recovery outcome independent from owner portability exports. |
+| C-M30 | Bundle composition + validation | both pass | keep separate | A package can be created but invalid, or an externally supplied package can be validated without being created locally. |
+| C-M31 | Package validation + restore | both pass | keep separate | Technical validity does not authorize or perform destination state changes. |
+| C-M32 | Restore + parity validation | both pass | keep separate | Restored bytes may exist while required protections, provenance links, retrieval, or service behavior remain unproven. |
+| C-M33 | Export bundle + backup | both pass | keep separate | Portability export serves owner transfer/takeover; backup serves protected recovery and may use different retention and custody. |

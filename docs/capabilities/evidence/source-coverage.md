@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | Current PIOS | master and companion set identified | pilot-relevant architecture read; whole-system context reviewed | not applicable | pilot alignment complete |
 | PIOS Global | selected commit and corpus identified | three pilot documents read | not applicable | pilot complete; remainder Phase 2 |
-| Restricted application source `RAS-01` | complete document and file inventory retained privately | 15 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, C1, and C2a code traces pending | public details withheld; 11 documents remain unassessed |
+| Restricted application source `RAS-01` | complete document and file inventory retained privately | 16 of 26 documents have at least bounded substantive assessment | bounded storage and retrieval paths traced privately; A2, B2, C1, and C2 code traces pending | public details withheld; 10 documents remain unassessed |
 | CRD method | required normative set identified | required files read | validator behavior understood | active |
 
 ## Phase 2 tranche coverage
@@ -18,5 +18,6 @@
 | B2b — Work Starters, contextual ordering, workflows, and results | `results-app.md` and related execution material read | Functional Flow §§13.3–13.10 and Agent Architecture §17.2 read | results and execution requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; six CRDs drafted; code-traced realization evidence pending |
 | C1 — events, Updates, completed work, and History | `updates-pillar.md`, `unified-timeline.md`, `timeline-insights.md`, and `hierarchical-summary.md` read | Event Model §8, Functional Flow §13.2, Knowledge and retrieval relationships read | Updates requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; six CRDs drafted; code-traced realization evidence pending |
 | C2a — sources, imports, ingestion gates, event registry, operational inspection | `sources-model.md`, `import-model.md`, `area-imports.md`, and `system-app.md` read | Inbound Flow §7, Event Model §8.4, Portability §§21.5 and 21.8 read | System application requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; eight CRDs drafted; code-traced realization evidence pending |
+| C2b1 — export, package validation, restore, parity, backup | `export-portability.md` read | Portability §§21.1–21.3 and companion portability/compatibility specifications read | export/portability requirements assessed; relevant source blobs unavailable from the pinned partial checkout | statement and boundary pass complete; five CRDs drafted; code-traced realization evidence pending |
 
 Coverage means substantive assessment, not merely finding a path. Static code evidence does not establish tests, deployment, or production behavior.

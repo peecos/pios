@@ -54,5 +54,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Authorize an ingestion batch | directly aligned | proposed | not established | eligible owner-governance capability | bounded approval/denial record | implementation-dependent |
 | Govern an event-type registry | directly aligned | proposed | not established | eligible event-governance capability | versioned event-type definitions | implementation-dependent |
 | Inspect an operational run record | directly aligned | proposed | not established | eligible operations/inspection capability | read projection over run evidence | implementation-dependent |
+| Compose a portable Core bundle | directly aligned | proposed | not established | eligible portability capability | scoped export state, manifests, and integrity records | implementation-dependent |
+| Validate a portability package | directly aligned | proposed | not established | eligible portability/verification capability | validation report without canonical-state mutation | implementation-dependent |
+| Restore Core state from a bundle | directly aligned | proposed | not established | eligible recovery/import capability | destination canonical state plus operationalization report | implementation-dependent |
+| Validate restored Core parity | directly aligned | proposed | not established | eligible compatibility/verification capability | parity evidence by state and behavior dimension | implementation-dependent |
+| Maintain a recoverable Core backup | directly aligned | proposed | not established | eligible recovery capability | protected backup sets and restore-test evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

@@ -25,5 +25,7 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-S` | owner attention items and update lifecycle | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-T` | source registration, import sessions, and source-promotion status | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-U` | operational run and import inspection | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-V` | export-bundle composition and package validation | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-W` | bundle restore | requirements assessment | assessed; implementation reachability pending |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.
