@@ -10,6 +10,7 @@ Start with:
 - [Work status](work-status.md)
 - [Capability inventory](capability-inventory.md)
 - [Source and publication policy](source-context/source-and-publication-context.md)
+- [Import, operations, and portability context](source-context/import-operations-and-portability-context.md)
 - [Capture, onboarding, and experience context](source-context/capture-onboarding-and-experience-context.md)
 - [Patterns and learning context](source-context/patterns-and-learning-context.md)
 - [Direction and success context](source-context/direction-and-success-context.md)
@@ -26,6 +27,7 @@ Start with:
 - [Canonical artifact-promotion context](source-context/canonical-artifact-promotion-context.md)
 - [Restricted corpus disposition](evidence/restricted-corpus-disposition.md)
 - [Historical PIOS Global corpus disposition](evidence/historical-corpus-disposition.md)
+- [Library consistency review](evidence/library-consistency-review.md)
 - [Shared elements and reuse](shared-elements-and-reuse.md)
 - [Website publication plan](website-publication.md)
 

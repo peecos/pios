@@ -19,7 +19,7 @@ This reference preserves cross-cutting context for the D1 tranches. It does not 
 - Onboarding is a journey and experience context that may compose several independently meaningful capabilities. It must not be drafted as one capability until identity, verification, personalization, preparation, and first-entry outcomes have each passed or failed the MLE test.
 - Roles used to tailor onboarding or interfaces do not automatically establish access authority, identity truth, or Core-contract membership.
 - A personal AI's presentation identity, interaction preferences, runtime roles, memory, and execution authority are separate concerns.
-- Contact-channel verification proves only the declared assurance result; it is not automatically proof of person identity, account recovery authority, or Core permission.
+- Contact-channel verification reuses the generic contact-point-control capability with a journey binding. It proves only the declared assurance result and is not automatically proof of person identity, account recovery authority, or Core permission.
 - Initial environment preparation keeps explicit answers, defaults, inferred values, and omissions distinguishable and revisable.
 - A first-use orientation is a Communication MLE and experience realization. Showing or completing it does not prove that identity creation, environment preparation, or first-entry authorization occurred.
 - Role definitions, Mode definitions, active-context snapshots, and durable object classifications are separate states with separate lifecycles.
@@ -33,4 +33,4 @@ Current and historical architecture sources support the D1 reusable definitions.
 
 ## Sequencing context
 
-D1a covers governed capture submission and pending-capture reconciliation. D1b1 covers guided journey state, personal-AI identity and interaction preferences, contact verification, initial-environment preparation, and first-entry authorization. D1b2 covers owner Role and Mode definitions, active context, outward-role intent, outward representation preparation, and remaining interface concepts.
+D1a covers governed capture submission and pending-capture reconciliation. D1b1 covers guided journey state, personal-AI identity and interaction preferences, an onboarding profile of contact-point verification, initial-environment preparation, and first-entry authorization. D1b2 covers owner Role and Mode definitions, active context, outward-role intent, outward representation preparation, and remaining interface concepts.

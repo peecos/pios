@@ -119,6 +119,9 @@
 - One additional draft Capability MLE registered, bringing the inventory to 116.
 - All 90 Markdown files at the selected historical revision now have an explicit public-safe disposition. Architecture summaries, area indexes, application/session state, dedicated-machine descriptions, UI/terminology standards, market material, roadmaps, logs, and inconsistency records were classified without inflating them into capabilities.
 - Agent capability/performance tracking was resolved as a composition of agent definitions, activity events, measurements, reviews, and policy at the current evidence depth. No named restricted artifact-promotion realization was identified.
+- Phase 4 structural and duplicate-boundary review started. Inventory IDs, CRD files, names, architecture-alignment rows, required CRD fields, source-context links, provenance IDs, decision IDs, unresolved IDs, realization IDs, and local Markdown links were checked.
+- Consolidated the onboarding-specific contact-channel verification draft into the reusable contact-point-control CRD. Onboarding remains a profile of that capability, reducing the deduplicated inventory from 116 to 115.
+- Added the missing library-index link to the import/operations/portability source context. No restricted identifiers or local paths were found in public capability files.
 
 ## Publication state
 
@@ -131,4 +134,4 @@
 
 ## Next action
 
-Continue the Phase 4 cross-library consistency review, including terminology, cross-cutting-rule applicability, duplicate boundaries, inventory/alignment parity, source/provenance completeness, links, and publication safety.
+Complete Phase 4 semantic and publication-readiness review, resolve any remaining cross-capability overlaps, and prepare the coherent initial documentation milestone for independent review before website work.
