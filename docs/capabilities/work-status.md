@@ -129,7 +129,8 @@
 
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
-- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open and awaiting review.
+- Current milestone head: `918af11`.
+- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open; independent review is requested from `valtos-ally` and no review has been submitted yet.
 - Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
 - Website route: proposed `/pios/capabilities`; not yet created.
 - Live publication: not started.
