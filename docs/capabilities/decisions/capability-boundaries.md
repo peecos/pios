@@ -125,14 +125,17 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | ID | Candidate | Individual MLE result | Decision | Reason |
 |---|---|---|---|---|
 | C-M25 | Compose a portable Core bundle | passes | separate CRD | Bundle creation has its own scope, identity, manifest, contents, exclusions, and completion result. |
+| C-M25A | Compose a source-derived PIOS portability package | passes | separate CRD | An owner or migration actor can assemble non-Core source material into a validation-ready package without claiming that it is existing Core state. |
 | C-M26 | Validate a portability package | passes | separate CRD | Validation can accept, reject, or quarantine an existing package without creating or importing it. |
 | C-M27 | Restore Core state from a bundle | passes | separate CRD | Import/hydration changes destination state and produces an operationalization report independently from validation. |
 | C-M28 | Validate restored Core parity | passes | separate CRD | Destination evidence can pass or fail after restore and is not established by successful byte import alone. |
-| C-M29 | Maintain a recoverable Core backup | passes | separate CRD | Backup creation, custody, retention, and restore testing form a recurring recovery outcome independent from owner portability exports. |
+| C-M29 | Maintain a recoverable Core backup | passes | separate CRD | Backup creation, custody, retention, rotation, and integrity status form a recurring protection outcome independent from owner portability exports and restore execution. |
 | C-M30 | Bundle composition + validation | both pass | keep separate | A package can be created but invalid, or an externally supplied package can be validated without being created locally. |
 | C-M31 | Package validation + restore | both pass | keep separate | Technical validity does not authorize or perform destination state changes. |
 | C-M32 | Restore + parity validation | both pass | keep separate | Restored bytes may exist while required protections, provenance links, retrieval, or service behavior remain unproven. |
 | C-M33 | Export bundle + backup | both pass | keep separate | Portability export serves owner transfer/takeover; backup serves protected recovery and may use different retention and custody. |
+| C-M33A | Core-export composition + source-composed package creation | both pass | keep separate | One serializes existing Core state; the other prepares owner-controlled source material whose canonical Core status does not yet exist. |
+| C-M33B | Backup maintenance + restore/parity testing | all pass | keep separate | A backup can be created and integrity-checked without restoring it; restore changes destination state, and parity separately evaluates the restored result. |
 
 ## Phase 2 operations-and-portability tranche C2b2
 
@@ -226,16 +229,19 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 
 | ID | Candidate | Individual MLE result | Decision | Reason |
 |---|---|---|---|---|
-| G-M01 | Share a governed outward representation | passes | separate CRD | A bounded audience grant has its own authority, scope, access state, expiry, revocation, and audit outcome without making content public. |
+| G-M01 | Share a governed outward representation | passes | separate CRD | Delivering or activating a representation for a bounded audience has its own share reference and lifecycle without creating access policy or making content public. |
 | G-M02 | Publish a governed outward representation | passes | separate CRD | Public reachability is an externally visible transition with revision, locator, authority, withdrawal, and evidence independent from preparation or sharing. |
-| G-M03 | Govern outward access | passes | separate CRD | Access conditions and individual allow/deny decisions can change independently from public reachability, discovery, and permitted reuse. |
+| G-M03 | Maintain outward access policy | passes | separate CRD | Access conditions and audience grants can be created, revised, suspended, expired, revoked, or superseded without evaluating a particular request. |
+| G-M03A | Evaluate an outward access request | passes | separate CRD | One requester can receive an attributable allow, deny, challenge, or indeterminate decision under an unchanged policy. |
 | G-M04 | Govern outward discoverability | passes | separate CRD | Hidden, index-eligible, and promoted states produce an independent findability outcome without changing who may open or reuse content. |
 | G-M05 | Govern outward usage rights | passes | separate CRD | Human and machine use conditions remain meaningful after access and can change without altering reachability or discovery. |
 | G-M06 | Controlled sharing + public publication | both pass | keep separate | Sharing is audience-bounded and non-public; publication establishes public reachability and may carry durable public-presence framing. |
-| G-M07 | Visibility + access + discovery + rights | all meaningful; do not merge | keep separate axes | Current and historical sources explicitly require independent reasoning and state for each axis. |
+| G-M07 | Visibility + access policy + access evaluation + discovery + rights | all meaningful; do not merge | keep separate concerns | Current and historical sources support independent state or outcomes for each concern. |
 | G-M08 | Prepare + share/publish | both pass | keep separate | A representation can be safely prepared and reviewed without any audience gaining access; exposure is a later authorized transition. |
 | G-M09 | Unpublish or revoke | fails as additional generic capability here | lifecycle transition | Withdrawal is an essential terminal transition of the corresponding publication or sharing capability, while cross-system erasure remains separate. |
 | G-M10 | Public username, path, folder, domain, sitemap and SEO/GEO | fail as one generic capability | realization patterns and later candidates | They implement public presence, addressing, organization, discovery, and delivery but do not form one minimal reusable outcome. |
+| G-M11 | Access-policy maintenance + access-request evaluation | both pass | keep separate | Policy changes are durable governance transitions; request evaluation applies the current policy to one request without changing it. |
+| G-M12 | Controlled sharing + access policy + request evaluation | all pass | keep separate | A share can be activated under an existing policy, a policy can exist before any share request, and each access request can be decided independently. |
 
 ## Phase 2 reviews-and-reflection tranche E4
 
@@ -314,11 +320,11 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 
 | ID | Candidate | Individual MLE result | Decision | Reason |
 |---|---|---|---|---|
-| Q-M01 | Maintain an authorized device-local content cache | passes | separate CRD | Cache eligibility, version validation, freshness, reuse, refresh, eviction and failure create an independent non-canonical availability outcome. |
-| Q-M02 | Maintain selected content for offline access | passes | separate CRD | Owner selection, offline authorization window, retained version, expiry, revocation, reconnection and removal remain meaningful without opportunistic caching. |
+| Q-M01 | Maintain an authorized device-local content cache | passes | separate CRD | Creating, reusing, inspecting, refreshing, or removing a permitted non-canonical local copy creates an independent availability outcome; detailed freshness and eviction profiles remain unresolved. |
+| Q-M02 | Maintain selected content for offline access | passes | separate CRD | Deliberately retained local availability remains meaningful without opportunistic caching; detailed authorization, expiry, revocation, and reconnection profiles remain unresolved. |
 | Q-M03 | Manage a personal reading queue | passes | separate CRD | Source-linked admission and unread, read, saved, archived or removed state create a coherent owner outcome independent of source storage and rendering. |
-| Q-M04 | Recent cache + selected offline content | both pass | keep separate | A cache may be automatically evicted under freshness policy, while selected offline content is deliberately retained under a separate authorization and retention window. |
-| Q-M05 | Device-local content + pending capture/edit | both pass through separate capabilities | keep separate | Accepted copies can be re-fetched from Core; pending work may be the only copy and uses reconciliation rather than cache eviction. |
+| Q-M04 | Recent cache + selected offline content | both pass | keep separate | One outcome supports automatic local-copy lifecycle management; the other records deliberate owner selection for disconnected availability. |
+| Q-M05 | Device-local content + pending capture/edit | both pass through separate capabilities | keep separate | Accepted local copies and unconfirmed submitted work have different authority and disposition states; pending work requires explicit reconciliation rather than cache cleanup. |
 | Q-M06 | Shared App Group or local database | fails as a capability | implementation mechanism and trust boundary | Shared storage supports cache or offline realization but cannot itself express per-app authorization or canonical truth. |
 | Q-M07 | Reader application | fails as one generic capability | audience projection and composed realization | It combines queue state, source retrieval, presentation preferences, classification, summary display, derivation and export actions. |
 | Q-M08 | Save-for-later and mark-read controls | fail independently at this evidence depth | interaction transitions inside reading-queue management | The source establishes lifecycle state changes within one reading purpose, not portable standalone capabilities with broader consumers. |

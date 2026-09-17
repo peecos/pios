@@ -17,6 +17,7 @@ This reference preserves cross-cutting context for the C2 tranches. It does not 
 - Technical screening, checklist readiness, and owner authorization are separate gates with deliberately limited authority.
 - Operational inspection is read-first and projects canonical records and logs rather than computing truth in the interface.
 - Portability requires more than downloading loose files: identity, provenance, event structure, system definitions, manifests, checksums, rebuild instructions, and compatibility evidence must remain coherent.
+- A Full or Scoped Core Export Bundle serializes existing Core state. A source-composed PIOS Portability Package assembles owner-controlled source material before or outside an existing Core and must not be represented as prior Core state.
 - Backup, restore, export, destination hydration, parity validation, and source decommissioning are different outcomes and must not be collapsed.
 
 ## Evidence maturity
@@ -25,4 +26,4 @@ Historical and current architecture sources support reusable capability definiti
 
 ## Sequencing context
 
-C2a covers source registration, import sessions, source promotion, ingestion gates, event-type governance, and operational-run inspection. C2b covers export creation, package validation, restore, parity, backup, cutover, rollback, source decommissioning, erasure, and destination connector reauthorization.
+C2a covers source registration, import sessions, source promotion, ingestion gates, event-type governance, and operational-run inspection. C2b covers Core export creation, source-composed package creation, package validation, restore, parity, backup, cutover, rollback, source decommissioning, erasure, and destination connector reauthorization.

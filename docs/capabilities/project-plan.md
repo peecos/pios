@@ -41,7 +41,7 @@ For each bounded tranche:
 - **Restricted application evidence:** requirements and implementation evidence assessed under owner authorization. Its identifying and substantive details remain outside public files unless separately cleared.
 - **CRD method at `8f24ab01b2bf30409b364df5fd6b77b7bf89c29d`:** normative documentation method.
 
-The current PIOS working tree includes an owner-approved twelve-file clarification set over committed baseline `d6c4ccbb55db98b63b8ad8d0e7bca57bb4a427dc`. Its bytes were verified against the preserved manifest on September 15, 2026. Those pre-existing changes are alignment input but are not automatically part of capability-library commits.
+The public framework baseline for this milestone is committed revision `d6c4ccbb55db98b63b8ad8d0e7bca57bb4a427dc`. A separately verified owner-approved clarification working set was assessed for future alignment, but unpublished bytes are not public evidence for this contribution. Public capability claims must resolve to the committed baseline, another publishable source, or an explicit public project decision.
 
 ## Delivery phases
 

@@ -55,10 +55,11 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Govern an event-type registry | directly aligned | proposed | not established | eligible event-governance capability | versioned event-type definitions | implementation-dependent |
 | Inspect an operational run record | directly aligned | proposed | not established | eligible operations/inspection capability | read projection over run evidence | implementation-dependent |
 | Compose a portable Core bundle | directly aligned | proposed | not established | eligible portability capability | scoped export state, manifests, and integrity records | implementation-dependent |
+| Compose a source-derived PIOS portability package | directly aligned | proposed | not established | eligible portability/import-preparation capability | source material, mappings, manifests, and integrity records; not prior Core state | implementation-dependent |
 | Validate a portability package | directly aligned | proposed | not established | eligible portability/verification capability | validation report without canonical-state mutation | implementation-dependent |
 | Restore Core state from a bundle | directly aligned | proposed | not established | eligible recovery/import capability | destination canonical state plus operationalization report | implementation-dependent |
 | Validate restored Core parity | directly aligned | proposed | not established | eligible compatibility/verification capability | parity evidence by state and behavior dimension | implementation-dependent |
-| Maintain a recoverable Core backup | directly aligned | proposed | not established | eligible recovery capability | protected backup sets and restore-test evidence | implementation-dependent |
+| Maintain a recoverable Core backup | directly aligned | proposed | not established | eligible recovery capability | protected backup sets and backup-integrity evidence | implementation-dependent |
 | Govern a Core cutover | directly aligned | proposed | not established | eligible transition/governance capability | canonical-side and cutover evidence | implementation-dependent |
 | Roll back a Core cutover | directly aligned | proposed | not established | eligible transition/recovery capability | rollback state and reconciliation evidence | implementation-dependent |
 | Decommission a source Core | directly aligned | proposed | not established | eligible operations/governance capability | retirement, revocation, and retained-evidence state | implementation-dependent |
@@ -84,9 +85,10 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain a success target | directly aligned | proposed | not established | eligible Cotton/Knowledge success capability | canonical target condition and lifecycle state | implementation-dependent |
 | Maintain a measurement definition | directly aligned | proposed | not established | eligible Knowledge/measurement capability | versioned metric semantics and method | implementation-dependent |
 | Record a metric observation | directly aligned | proposed | not established | eligible event/Knowledge evidence capability | time-scoped observation with source and provenance | implementation-dependent |
-| Share a governed outward representation | directly aligned | proposed | not established | eligible Circle/sharing capability | share state, audience scope, access and audit evidence | implementation-dependent |
+| Share a governed outward representation | directly aligned | proposed | not established | eligible Circle/sharing capability | share instance, audience scope, delivery reference, and audit evidence | implementation-dependent |
 | Publish a governed outward representation | directly aligned | proposed | not established | eligible outward/publication capability | public revision, locator, policy state and provenance | implementation-dependent |
-| Govern outward access | directly aligned | proposed | not established | eligible authorization/enforcement capability | access policy, grants, denials and audit evidence | implementation-dependent |
+| Maintain outward access policy | directly aligned | proposed | not established | eligible authorization/governance capability | versioned access policy and audience-grant state | implementation-dependent |
+| Evaluate an outward access request | directly aligned | proposed | not established | eligible authorization/enforcement capability | attributable request decision and audit evidence | implementation-dependent |
 | Govern outward discoverability | directly aligned | proposed | not established | eligible outward-discovery capability | discoverability metadata and propagation evidence | implementation-dependent |
 | Govern outward usage rights | directly aligned | proposed | not established | eligible governance/rights capability | versioned human and machine use conditions | implementation-dependent |
 | Conduct a structured review | directly aligned | proposed | not established | eligible Cotton/Knowledge review capability | review scope, evidence, decisions, updates and carry-forward state | implementation-dependent |

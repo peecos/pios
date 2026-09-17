@@ -4,7 +4,7 @@
 
 | Source | Revision | Role | Limits |
 |---|---|---|---|
-| Current PIOS framework | committed baseline `d6c4ccbb55db98b63b8ad8d0e7bca57bb4a427dc` plus verified owner-approved clarification working set | Current architecture alignment | Does not prove capability adoption, implementation, deployment, or availability. |
+| Current PIOS framework | committed baseline `d6c4ccbb55db98b63b8ad8d0e7bca57bb4a427dc` | Current architecture alignment and public provenance | Does not prove capability adoption, implementation, deployment, or availability. Unpublished working-tree changes are not evidence for this milestone. |
 | [PIOS Global](https://github.com/peecos/pios-global/tree/4f1498ce5c390555abfad877d8284736f94d200b) | `4f1498ce5c390555abfad877d8284736f94d200b` | Historical design evidence | Does not govern current PIOS architecture or prove implementation. |
 | Restricted application evidence `RAS-01` | exact binding retained privately | Requirements and static implementation assessment | Identity, excerpts, links, code details, and source revision are not public evidence. No tested or deployed behavior is inferred. |
 | CRD methodology | `8f24ab01b2bf30409b364df5fd6b77b7bf89c29d` | Documentation model and validation rules | Does not supply PIOS product facts. |

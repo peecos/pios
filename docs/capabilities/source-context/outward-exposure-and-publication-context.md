@@ -14,9 +14,10 @@ This reference preserves cross-cutting context for controlled sharing, public pu
 
 | Concern | Question | Independent outcome |
 |---|---|---|
-| Controlled sharing | Which bounded audience receives access? | active, expired, revoked, or rejected share |
+| Controlled sharing | Which bounded audience receives this representation through a share? | active, expired, withdrawn, rejected, or failed share |
 | Public publication | Is the representation publicly reachable? | published, revised, unpublished, archived, or rejected revision |
-| Access | What must a requester satisfy to open it? | active access policy or allow/deny decision |
+| Access policy | What conditions and grants govern opening it? | active, suspended, expired, revoked, rejected, or superseded policy/grant state |
+| Access evaluation | May this requester open it now? | attributable allow, deny, challenge, or indeterminate decision |
 | Discoverability | Can it be found beyond a direct locator or grant? | hidden, index-eligible, promoted, or withdrawn state |
 | Usage rights | What may humans and machines do after access? | current rights declaration with effective scope |
 
@@ -24,7 +25,7 @@ This reference preserves cross-cutting context for controlled sharing, public pu
 
 - Private canonical truth and outward representations remain separate objects or explicitly separated views. Exposure of the outward representation must not expose the source by implication.
 - Preparing an outward representation, sharing it with a bounded audience, and publishing it publicly are independent transitions.
-- Visibility, discoverability, access control, and usage rights are separate axes. No single public/private flag can represent all four.
+- Visibility, discoverability, access policy, request-time access evaluation, and usage rights are separate concerns. No single public/private flag can represent them.
 - Controlled sharing and public presence are distinct: one is audience-bounded utility, while the other establishes public reachability and may carry durable identity framing.
 - Publicly reachable content may remain unlisted. Accessible content may still restrict reuse, redistribution, indexing, agent use, or model training.
 - Publication is an external action and follows applicable owner approval, standing authority, sensitivity, provenance, and audit constraints.

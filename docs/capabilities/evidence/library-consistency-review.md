@@ -1,7 +1,7 @@
 # Capability Library consistency review
 
 **Review date:** September 17, 2026
-**Review state:** self-review complete; independent review pending
+**Review state:** initial independent review requested changes; corrective revision validated locally and pending independent re-review
 
 This review checks the CRD library as one system rather than validating only the latest tranche. It does not establish implementation, deployment, compatibility-level adoption, or website publication.
 
@@ -9,11 +9,11 @@ This review checks the CRD library as one system rather than validating only the
 
 | Check | Result | Notes |
 |---|---|---|
-| CRD file and inventory parity | pass | 115 CRD files and 115 inventory rows after duplicate consolidation |
-| Inventory and architecture-alignment name parity | pass | every inventory capability has one alignment row and no extra alignment row remains |
+| CRD file and inventory parity | pass | 117 CRD files and 117 inventory rows after duplicate consolidation and two review-required additions |
+| Inventory and architecture-alignment name parity | pass | every inventory capability has one alignment row, including source-composed package composition and request-time access evaluation |
 | Required CRD sections and interaction fields | pass | every CRD contains Identity, Core meaning, Interaction Contract MLEs, Rules/defaults, Unknowns, provenance, and the required interaction fields |
 | Ledger identifier uniqueness | pass | statement, boundary-decision, unresolved-question, and restricted-evidence identifiers are unique |
-| Local Markdown links | pass | all relative links under `docs/capabilities/` resolve |
+| Local Markdown links | pass | all relative links resolve, and framework anchors resolve against the committed baseline rather than unpublished working-tree content |
 | Historical corpus disposition | pass | all 90 Markdown files at the selected historical revision appear exactly once in the disposition ledger |
 | Restricted document disposition | pass | all 26 admitted restricted documents retain a bounded public-safe disposition; detailed evidence remains outside the public repository |
 | Publication-safety token scan | pass | no restricted repository name, revision, local absolute path, or restricted evidence filename appears in public capability files |
@@ -27,7 +27,7 @@ The review compares capability purpose, meaningful outcome, actor, transition, a
 | Related candidates | Disposition |
 |---|---|
 | Onboarding contact-channel verification / contact-point control verification | consolidated into `verify-contact-point-control`; onboarding is a profile because journey binding does not change the verification outcome |
-| Controlled sharing / public publication / outward access / discoverability / usage rights | remain separate; each axis can change independently and has an explicit boundary decision |
+| Controlled sharing / public publication / access-policy maintenance / request-time access evaluation / discoverability / usage rights | remain separate; each transition or policy axis can change independently and has an explicit boundary decision |
 | Workflow package / installed workflow / workflow run / routine / routine run | remain separate definitions, installations, and executions with independent state and outcomes |
 | Goal / objective / target / measurement definition / metric observation | remain separate direction, success-condition, measurement-semantics, and evidence objects |
 | Meaning / reflection / Learning / profile assertion / standing rule | remain separate interpretation, review, lesson, factual-claim, and authority lifecycles |
@@ -47,15 +47,34 @@ The review compares capability purpose, meaningful outcome, actor, transition, a
 
 ## Findings and corrections
 
+### Self-review corrections
+
 1. The final historical gap pass identified canonical artifact promotion as a missing Capability MLE; it was added with separate boundaries from Result preservation and imported-source promotion.
 2. The onboarding-specific verification CRD duplicated the generic contact-point-control outcome; it was removed and the onboarding relationship was retained as a profile and decision record.
 3. The library README omitted one existing source-context document; the import/operations/portability context link was added.
-4. No other high-similarity pair reviewed in this pass required consolidation. The strongest overlaps have explicit symmetric boundary decisions.
-5. The final restricted-code catch-up replaced stale source-unavailable placeholders. It confirmed only partial operational inspection and export composition, while preserving the absence of implemented import, package-validation, restore, parity, backup, cutover, decommissioning, erasure, and connector-reauthorization paths.
+4. The final restricted-code catch-up replaced stale source-unavailable placeholders. It confirmed only partial operational inspection and export composition, while preserving the absence of implemented import, package-validation, restore, parity, backup, cutover, decommissioning, erasure, and connector-reauthorization paths.
+
+### Initial independent-review findings
+
+The independent reviewer returned `REQUEST CHANGES` on September 17, 2026.
+
+1. The proposed head was not self-contained: capability provenance referenced anchors available only in an uncommitted framework clarification working set.
+2. The library omitted source-composed PIOS Portability Package creation as a Capability MLE distinct from Full or Scoped Core Export Bundle creation.
+3. Controlled sharing overlapped outward access, while outward access combined durable policy maintenance with request-time evaluation.
+4. Recoverable backup maintenance absorbed restore and parity-test behavior that already had independent Capability MLEs.
+5. The provenance ledger used semantic classes outside the pinned CRD method and strengthened some hedged source guidance into binding rules.
+
+### Corrective revision
+
+1. Public provenance now binds only to the committed PIOS baseline; unpublished clarification text is explicitly excluded from evidence for this milestone.
+2. `compose-source-portability-package` documents source-derived package creation without claiming prior Core state.
+3. `govern-outward-access` now documents access-policy maintenance, `evaluate-outward-access-request` documents per-request enforcement, and governed sharing is limited to share delivery or activation.
+4. Backup maintenance is limited to backup creation, custody, retention, rotation, and integrity; restore and parity remain separate capabilities.
+5. Provenance classes were normalized to the pinned semantic vocabulary, source hedge strength was restored, and unsupported detailed cache/offline semantics were moved to draft profiles or unresolved questions.
 
 ## Remaining limitations before publication
 
 - Restricted implementation coverage is incomplete for many capabilities; absence of a confirmed realization is preserved rather than inferred as absence of all implementation.
-- The unresolved-question register contains 103 active entries through `U105`; profile and interoperability decisions remain intentionally open.
-- Independent review and repository merge clearance are still pending.
+- The unresolved-question register contains 104 active entries through `U106`; profile and interoperability decisions remain intentionally open.
+- Independent re-review and repository merge clearance are still pending.
 - Website implementation, route creation, rendering verification, deployment, and live publication have not started.
