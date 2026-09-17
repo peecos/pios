@@ -1,6 +1,6 @@
 # Capability Library website publication plan
 
-**Status:** planned; no route or live page exists yet
+**Status:** documentation review cleared; website contribution not yet created and no live route exists
 
 ## Verified site mechanism
 
@@ -23,7 +23,7 @@ The website source therefore requires its own reviewed contribution. A commit to
 
 ## Publication sequence
 
-1. Obtain review clearance for the initial PIOS capability-library milestone.
+1. Obtain review clearance for the initial PIOS capability-library milestone. Completed for PIOS commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783`.
 2. Synchronize a clean website branch with current `origin/main` without including unrelated local changes.
 3. Add the capability route and static content projection using the site's existing React/Vite conventions.
 4. Run lint, tests, build, internal-link checks, and a local rendering check.

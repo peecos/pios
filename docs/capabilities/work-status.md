@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 4 final independent-review remediation; corrected milestone re-review pending
+**Current phase:** Phase 4 documentation milestone independently approved; website contribution beginning
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,8 +19,8 @@
 
 ## In progress
 
-- Complete and validate the corrective package from the initial independent review.
-- Hold website implementation until the initial documentation milestone has review clearance.
+- Record independent review clearance in the PIOS contribution.
+- Begin the separate `peecos-web` capability-library projection through the existing site workflow.
 
 ## Phase 2 progress
 
@@ -128,17 +128,18 @@
 - Corrective drafting added source-composed package composition and request-time access evaluation as separate Capability MLEs, narrowed sharing and backup boundaries, restricted public provenance to committed sources, normalized provenance classes, and revised unsupported cache/offline detail into explicit draft profiles or unresolved questions.
 - The independent re-review cleared those original findings and retained `REQUEST CHANGES` only for two source-fidelity issues: completed-work and daily-History recommendations were still stated too strongly, and access evaluation included unsupported `challenge` and `indeterminate` outcomes.
 - The final corrective pass restored both History statements to recommended defaults and limited the sourced access-decision result to attributable allow or deny.
+- Final independent re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` returned `APPROVE` with no blocking or major findings.
 
 ## Publication state
 
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
 - Current milestone revision: the latest head of PR #1; GitHub is the authoritative revision record.
-- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open. A separate independent review returned `REQUEST CHANGES`; the corrective revision is being validated before re-review.
+- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open. The separate CRD-method review is approved; native repository review/merge state remains pending.
 - Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
 - Website route: proposed `/pios/capabilities`; not yet created.
 - Live publication: not started.
 
 ## Next action
 
-Validate and push the corrective documentation revision, then obtain an independent re-review before website work.
+Create and verify the corresponding `peecos-web` capability index/detail contribution against the independently approved PIOS revision.

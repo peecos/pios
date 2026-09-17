@@ -1,7 +1,7 @@
 # Capability Library consistency review
 
 **Review date:** September 17, 2026
-**Review state:** second independent pass requested two targeted provenance corrections; final re-review pending
+**Review state:** independent review approved
 
 This review checks the CRD library as one system rather than validating only the latest tranche. It does not establish implementation, deployment, compatibility-level adoption, or website publication.
 
@@ -81,9 +81,13 @@ The re-review cleared the initial blockers and all structural separation finding
 
 The final corrective pass moved the completed-work bundle and structured-input preference into recommended defaults and limited the sourced access-decision taxonomy to `allow` or `deny`. Any intermediate challenge profile remains unresolved rather than asserted.
 
+### Final independent-review decision
+
+The final re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` found no blocking or major issues and returned `APPROVE`. It reconfirmed exact-head source and anchor integrity, 117/117/117 projection parity, required CRD structure, capability decomposition, semantic-class and hedge fidelity, public/private safety, architecture distinctions, evidence-level separation, and duplicate-boundary handling.
+
 ## Remaining limitations before publication
 
 - Restricted implementation coverage is incomplete for many capabilities; absence of a confirmed realization is preserved rather than inferred as absence of all implementation.
 - The unresolved-question register contains 104 active entries through `U106`; profile and interoperability decisions remain intentionally open.
-- Independent re-review and repository merge clearance are still pending.
+- Repository review/merge clearance is still pending; the separate methodology review is complete.
 - Website implementation, route creation, rendering verification, deployment, and live publication have not started.
