@@ -116,5 +116,8 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Discover a candidate information source | directly aligned | proposed | not established | eligible PIOS-native source-discovery capability | candidate-only discovery records | implementation-dependent |
 | Maintain owner implementation documentation | compatible | proposed | not established | eligible owner-knowledge/system-documentation capability | durable human-readable documentation and revision state | implementation-dependent |
 | Assess knowledge-layer integrity | directly aligned | proposed | not established | eligible Knowledge maintenance capability | assessment scope, findings, evidence, severity and follow-up references | implementation-dependent |
+| Maintain a personal Meaning record | directly aligned | proposed | not established | eligible PIOS-native Knowledge capability | evidence-linked revisable Knowledge object | implementation-dependent; normally with Core knowledge processing |
+| Maintain evidence-linked Learning | directly aligned | proposed | not established | eligible PIOS-native Knowledge capability | evidence-linked revisable Knowledge object | implementation-dependent; normally with Core knowledge processing |
+| Govern a derived-representation lifecycle | directly aligned | proposed | not established | eligible PIOS-native processing/governance capability | Derived-zone projection and registry state | implementation-dependent; normally with Core processing and retrieval |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

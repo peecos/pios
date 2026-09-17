@@ -358,3 +358,23 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | S-M10 | Repair knowledge-integrity findings | fails as one generic capability | reuse domain capabilities | Repairs may require note revision, proposal decision, concept lifecycle, access governance, link correction or index rebuild, each with separate authority. |
 | S-M11 | Dataview queries and lint scripts | fail as capabilities | realization tools | Query snippets and scripts support assessment but lack independent owner-domain purpose outside the assessment contract. |
 | S-M12 | Knowledge Environment | fails as one generic Capability MLE | architecture composition and source context | It bundles implementation documentation, personal knowledge, storage, synchronization, agent definitions, setup, access and publication concerns. |
+
+## Phase 2 cognitive-memory-and-derived-representations tranche F5
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| T-M01 | Maintain a personal Meaning record | passes | separate CRD | Subject-specific significance has its own evidence, context, confidence, confirmation, revision, rejection and supersession outcomes. |
+| T-M02 | Maintain evidence-linked Learning | passes | separate CRD | A durable lesson has an independently useful lifecycle and may be recalled without executing an adaptation. |
+| T-M03 | Meaning + reflective assessment | both pass | keep separate | Meaning answers why one bounded subject matters; reflection assesses a wider evidence set with open loops, residue, uncertainty and recommendations. |
+| T-M04 | Meaning + profile assertion | both pass | keep separate | Significance does not establish a factual profile claim, and a profile claim need not explain why it matters. |
+| T-M05 | Meaning + Learning | both pass | keep separate | Interpretation and durable lesson can be revised, rejected and recalled independently; either can exist without silently producing the other. |
+| T-M06 | Learning + standing rule | both pass | keep separate | A lesson may inform future reasoning, while a standing rule is explicit reusable authority with separate scope and decision evidence. |
+| T-M07 | Learning + reusable routine or workflow | both pass | keep separate | Knowledge about what may help later is not an executable repeated structure or installed process. |
+| T-M08 | Adapt behavior from Learning | passes through existing capabilities | reuse proposal, rule, preference, workflow, agent-definition, and execution governance | Adaptation changes another governed object and requires that object's authority and rollback semantics. |
+| T-M09 | Govern a derived-representation lifecycle | passes | separate CRD | Registry identity, replacement, rebuild, revocation, deletion and retrieval exclusion remain meaningful after a derivative is produced. |
+| T-M10 | Produce derivative + govern retained representation | both pass | keep separate | Transformation can finish before lifecycle registration, and lifecycle changes can occur repeatedly without re-running the transformation. |
+| T-M11 | Source-local graph snapshot | fails as a generic standalone capability | derived-representation profile | It specializes representation identity and evidence preservation while reusing derivation and registry lifecycle outcomes. |
+| T-M12 | Embedding, OCR, summary, text chunk, or retrieval index | fail as generic standalone capabilities | representation types and processing profiles | Their technologies and output shapes vary while source-linked production and lifecycle contracts remain reusable. |
+| T-M13 | Resolve proposed graph matches globally | excluded from this tranche | separate concept/entity-resolution capability | Confirming global identity changes the knowledge graph and requires a distinct evidence and authority contract. |
+| T-M14 | Compile retrieval context from representations | passes through existing capability | reuse governed retrieval-context assembly | Registry eligibility does not select or disclose context for a particular caller and purpose. |
+| T-M15 | Meaning service or application | fails as a generic capability | audience projection | It presents and queries Meaning records without becoming a new authority, data zone, or permission source. |

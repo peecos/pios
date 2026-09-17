@@ -111,6 +111,10 @@
 - Three additional draft Capability MLEs registered, bringing the inventory to 112.
 - Discovery remains candidate-only and separate from review, permission, registration, backfill, and recurring collection. Knowledge repair remains separate from integrity assessment.
 - Knowledge Environment is classified as an architecture composition; vault layouts, sync tools, aliases and Dataview queries remain realization patterns. No complete restricted realization of the three new capabilities was identified.
+- Tranche F5 statement and boundary pass completed for personal Meaning, evidence-linked Learning, and derived-representation lifecycle governance.
+- Three additional draft Capability MLEs registered, bringing the inventory to 115.
+- Meaning, Learning, reflection, profile assertions, standing rules and behavior adaptation retain separate evidence and authority lifecycles. Representation production remains separate from retained registry and replacement/deletion governance.
+- Static review found an early note-embedding schema and type shape that a later migration removed, with no reachable writer or representation-registry lifecycle confirmed. No Cognitive Memory Meaning/Learning object realization, passing tests, deployment, or production behavior was identified.
 
 ## Publication state
 
@@ -123,4 +127,4 @@
 
 ## Next action
 
-Continue with remaining historical-corpus disposition and the next substantive gaps, prioritizing cognitive Meaning/Learning and derived-representation lifecycle while preparing for Phase 4 consistency review.
+Continue remaining historical-corpus disposition and begin the Phase 4 cross-library consistency review, including terminology, cross-cutting rules, duplicate boundaries, source coverage, links, and publication safety.
