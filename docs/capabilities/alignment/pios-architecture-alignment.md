@@ -42,7 +42,7 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Preserve an execution result | directly aligned | proposed | not established | eligible execution/History capability | retained result and provenance links | implementation-dependent |
 | Record a canonical event | directly aligned | proposed | event spine is Core architecture; CRD adoption not established | PIOS/Core event capability | canonical append-oriented event state | implementation-dependent |
 | Manage an owner attention item | directly aligned | proposed | not established | eligible update/attention capability | durable attention projection and response state | implementation-dependent |
-| Publish a completed-work record | directly aligned | proposed | not established | eligible event/update/History capability | canonical event plus linked derived and retained artifacts | implementation-dependent |
+| Publish a completed-work record | directly aligned | proposed | not established | eligible event/update/History capability | durable completion record with linked evidence and any produced projections | implementation-dependent |
 | Compile daily owner History | directly aligned | proposed | not established | eligible History/knowledge capability | curated daily summary with provenance | implementation-dependent |
 | Aggregate an owner History period | directly aligned | proposed | not established | eligible History/knowledge capability | derived closed-period summary | implementation-dependent |
 | Navigate time-indexed owner History | directly aligned | proposed | not established | eligible History/retrieval capability | derived retrieval path over canonical and retained records | implementation-dependent |

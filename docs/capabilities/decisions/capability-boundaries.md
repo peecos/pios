@@ -92,7 +92,7 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 |---|---|---|---|---|
 | C-M01 | Record a canonical event | passes | separate CRD | One occurrence can be durably and idempotently appended independently of any owner-facing projection. |
 | C-M02 | Manage an owner attention item | passes | separate CRD | Attention state, response, pin/read/dismiss lifecycle, and source linkage are independently meaningful. |
-| C-M03 | Publish a completed-work record | passes | separate CRD | Meaningful completion creates a coherent event/update/detail/manifest/evidence outcome beyond generic attention management. |
+| C-M03 | Publish a completed-work record | passes | separate CRD | Meaningful completion creates a durable evidence-linked record beyond generic attention management; the full event/update/detail/manifest projection set remains a recommended default. |
 | C-M04 | Compile daily owner History | passes | separate CRD | Daily compilation uniquely selects and narrates structured and fallback evidence for an owner-defined day. |
 | C-M05 | Aggregate an owner History period | passes | separate CRD | Higher-level composition has different inputs, abstraction, closure, and gap semantics from daily compilation. |
 | C-M06 | Navigate time-indexed owner History | passes | separate CRD | Traversal and retrieval produce relevant historical context without creating or changing source records. |

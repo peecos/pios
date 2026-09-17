@@ -83,7 +83,7 @@ The final corrective pass moved the completed-work bundle and structured-input p
 
 ### Final independent-review decision
 
-The final re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` found no blocking or major issues and returned `APPROVE`. It reconfirmed exact-head source and anchor integrity, 117/117/117 projection parity, required CRD structure, capability decomposition, semantic-class and hedge fidelity, public/private safety, architecture distinctions, evidence-level separation, and duplicate-boundary handling.
+The final re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` found no blocking or major issues and returned `APPROVE`. It reconfirmed exact-head source and anchor integrity, 117/117/117 projection parity, required CRD structure, capability decomposition, semantic-class and hedge fidelity, public/private safety, architecture distinctions, evidence-level separation, and duplicate-boundary handling. A subsequent consistency edit applies the same approved hedge treatment to the inventory, alignment, and boundary-log projections; that exact head requires a narrow confirmation before publication.
 
 ## Remaining limitations before publication
 

@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 4 documentation milestone independently approved; website contribution beginning
+**Current phase:** Phase 4 documentation milestone approved; narrow projection-consistency confirmation and website contribution in progress
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -129,6 +129,7 @@
 - The independent re-review cleared those original findings and retained `REQUEST CHANGES` only for two source-fidelity issues: completed-work and daily-History recommendations were still stated too strongly, and access evaluation included unsupported `challenge` and `indeterminate` outcomes.
 - The final corrective pass restored both History statements to recommended defaults and limited the sourced access-decision result to attributable allow or deny.
 - Final independent re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` returned `APPROVE` with no blocking or major findings.
+- A post-review consistency pass found the completed-work recommendation still phrased as a mandatory full projection set in the inventory, alignment, and boundary log; those projections were narrowed to match the approved CRD and require a final narrow confirmation.
 
 ## Publication state
 
