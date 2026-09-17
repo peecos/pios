@@ -1,7 +1,7 @@
 # Capability Library consistency review
 
 **Review date:** September 17, 2026
-**Review state:** self-review in progress; independent review pending
+**Review state:** self-review complete; independent review pending
 
 This review checks the CRD library as one system rather than validating only the latest tranche. It does not establish implementation, deployment, compatibility-level adoption, or website publication.
 
@@ -18,6 +18,7 @@ This review checks the CRD library as one system rather than validating only the
 | Restricted document disposition | pass | all 26 admitted restricted documents retain a bounded public-safe disposition; detailed evidence remains outside the public repository |
 | Publication-safety token scan | pass | no restricted repository name, revision, local absolute path, or restricted evidence filename appears in public capability files |
 | Repository tests | pass | all 10 available documentation tests pass |
+| Restricted realization catch-up | pass | every admitted tranche has a bounded implementation disposition; unknown, absent, planned, static, tested, deployed, and production states remain distinct |
 
 ## Duplicate and overlap review
 
@@ -50,6 +51,7 @@ The review compares capability purpose, meaningful outcome, actor, transition, a
 2. The onboarding-specific verification CRD duplicated the generic contact-point-control outcome; it was removed and the onboarding relationship was retained as a profile and decision record.
 3. The library README omitted one existing source-context document; the import/operations/portability context link was added.
 4. No other high-similarity pair reviewed in this pass required consolidation. The strongest overlaps have explicit symmetric boundary decisions.
+5. The final restricted-code catch-up replaced stale source-unavailable placeholders. It confirmed only partial operational inspection and export composition, while preserving the absence of implemented import, package-validation, restore, parity, backup, cutover, decommissioning, erasure, and connector-reauthorization paths.
 
 ## Remaining limitations before publication
 

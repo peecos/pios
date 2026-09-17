@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 2 realization coverage and Phase 4 consistency review; historical and restricted document corpora fully dispositioned
+**Current phase:** Phase 4 independent review preparation; source corpora and bounded static realization coverage complete
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -19,7 +19,7 @@
 
 ## In progress
 
-- Continue the remaining restricted implementation-evidence catch-up for source/import/portability and operational inspection paths without copying private material into this repository.
+- Obtain independent review of the coherent initial documentation milestone.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
 ## Phase 2 progress
@@ -44,13 +44,13 @@
 - Static Updates follow-up found creation, read, pin, dismiss and response paths plus reminder-generated updates. Daily and higher-period summary producers also exist, but they do not establish the complete current PIOS event-spine, completed-work publication, History-manifest or source-provenance contracts.
 - Tranche C2a statement and boundary pass completed for source registration, import sessions, source promotion, three separate ingestion gates, event-type governance, and operational-run inspection.
 - Eight additional draft Capability MLEs registered, bringing the inventory to fifty.
-- Restricted System application requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Static follow-up found no implemented source-registration/import-session surface: import status is explicitly a future placeholder. A read-only run-log panel projects retrieval and storage-job rows, but not the complete authority, output, retry, evidence, or import-run contract.
 - Tranche C2b1 statement and boundary pass completed for portable bundle composition, package validation, Core-state restore, destination parity, and recoverable backups.
 - Five additional draft Capability MLEs registered, bringing the inventory to fifty-five.
-- Restricted export/portability requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Static follow-up found an authenticated client-side export path that composes selected JSON-LD, JSONL, Markdown, file-manifest and checksum content. It does not establish a complete or independently validated migration bundle: inaccessible tables and files can be skipped, binary collection is bounded, and no validation or restore path was identified.
 - Tranche C2b2 statement and boundary pass completed for governed cutover, rollback, source decommissioning, erasure request/execution, and destination connector reauthorization.
 - Six additional draft Capability MLEs registered, bringing the inventory to sixty-one.
-- The events, operations, and portability tranche is complete at requirements level; operational realization evidence remains pending.
+- No restricted realization was identified for restore, destination parity, recoverable backup, cutover, rollback, source decommissioning, governed erasure, or destination connector reauthorization. The events, operations, and portability tranche is complete at requirements and bounded static-evidence level; no tested, deployed, or production behavior is claimed.
 - Tranche D1a statement and boundary pass completed for governed content capture and pending-capture reconciliation.
 - Two additional draft Capability MLEs registered, bringing the inventory to sixty-three.
 - A browser extension remains an application-specific realization and audience surface rather than a generic capability; capture-time action intent and processing instructions retain their separate governance boundaries.
@@ -122,6 +122,8 @@
 - Consolidated the onboarding-specific contact-channel verification draft into the reusable contact-point-control CRD. Onboarding remains a profile of that capability, reducing the deduplicated inventory from 116 to 115.
 - Added the missing library-index link to the import/operations/portability source context. No restricted identifiers or local paths were found in public capability files.
 - Revisited the oldest realization-evidence gaps through authenticated reads of pinned source blobs. Updated profile, action-label, execution, workflow, Updates, History-summary and capture dispositions; no app execution, tests, deployment, or production service calls were performed.
+- Completed the remaining source/import/operations/portability static catch-up. Preserved the difference between a client-side export archive, independent package validation, restore, parity, backup, and cutover rather than treating the export UI as migration proof.
+- Completed Phase 4 self-review: inventory/CRD/alignment parity, required CRD structure, source-context links, historical disposition coverage, identifier uniqueness, local links, publication-safety tokens, and repository documentation tests pass.
 
 ## Publication state
 
@@ -134,4 +136,4 @@
 
 ## Next action
 
-Complete the remaining source/import/portability and operational-inspection static evidence catch-up, then finalize the Phase 4 publication-readiness package for independent review before website work.
+Obtain independent review of the initial documentation milestone before website work.
