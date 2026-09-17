@@ -378,3 +378,20 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | T-M13 | Resolve proposed graph matches globally | excluded from this tranche | separate concept/entity-resolution capability | Confirming global identity changes the knowledge graph and requires a distinct evidence and authority contract. |
 | T-M14 | Compile retrieval context from representations | passes through existing capability | reuse governed retrieval-context assembly | Registry eligibility does not select or disclose context for a particular caller and purpose. |
 | T-M15 | Meaning service or application | fails as a generic capability | audience projection | It presents and queries Meaning records without becoming a new authority, data zone, or permission source. |
+
+## Phase 2 historical-corpus closure tranche F6
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| V-M01 | Promote a working artifact to canonical state | passes | separate CRD | Acceptance into durable authoritative state has independent review, approval, target, conflict, provenance, verification, and failure outcomes. |
+| V-M02 | Artifact promotion + execution-result preservation | both pass | keep separate | A Result records a meaningful execution outcome, while promotion governs any accepted temporary artifact entering its canonical lifecycle; not every instance of either requires the other. |
+| V-M03 | Artifact promotion + imported-source promotion | both pass | keep separate | Artifact promotion crosses a temporary-to-canonical boundary; source promotion controls staged participation in mapping, enrichment, retrieval, and History. |
+| V-M04 | Canonical home | fails as a capability | architecture relationship/shared term | It names where authority resides; promotion, revision, retrieval, synchronization and deletion perform the interactions. |
+| V-M05 | Shared Workspace | fails as one generic Capability MLE | architecture composition | It combines interfaces, shared information, conversation, attribution, visibility, retention, promotion, and owner authority. |
+| V-M06 | Dedicated Agent Computer | fails as a capability | deployment profile | A machine may host runtimes, services and workspaces, but physical placement does not define the reusable outcomes. |
+| V-M07 | Track agent capabilities and performance | passes through existing capabilities at current evidence depth | reuse agent definition, canonical events, metric definitions/observations, structured review, and policy | The source supplies desired measurements but not an additional universal lifecycle beyond those existing contracts. |
+| V-M08 | Application/session state | fails as one generic Capability MLE | implementation state and multiple profiles | Identity, provider selection, onboarding, attention, navigation, filters and presentation preferences have different purposes and authorities. |
+| V-M09 | Market surface and entry-page families | fail as owner-system capabilities | product/publication strategy | They describe how capabilities are communicated and discovered commercially, not a PIOS operating outcome. |
+| V-M10 | Area indexes, repository index, source log, roadmap and inconsistency register | fail as capabilities | project/navigation/provenance records | They organize or explain the historical source set rather than define owner-domain interactions. |
+| V-M11 | UI design standards and UI/backend terminology | fail as generic capabilities | implementation and presentation profiles | Layout, styling, component rules, and vocabulary mappings constrain realizations without owning an independent outcome. |
+| V-M12 | Note-capability linking | fails as a generic capability | implementation composition pattern | A shared database identity and attachment pattern realizes several existing capabilities without creating a new domain outcome. |

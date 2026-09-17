@@ -119,5 +119,6 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Maintain a personal Meaning record | directly aligned | proposed | not established | eligible PIOS-native Knowledge capability | evidence-linked revisable Knowledge object | implementation-dependent; normally with Core knowledge processing |
 | Maintain evidence-linked Learning | directly aligned | proposed | not established | eligible PIOS-native Knowledge capability | evidence-linked revisable Knowledge object | implementation-dependent; normally with Core knowledge processing |
 | Govern a derived-representation lifecycle | directly aligned | proposed | not established | eligible PIOS-native processing/governance capability | Derived-zone projection and registry state | implementation-dependent; normally with Core processing and retrieval |
+| Promote a working artifact to canonical state | compatible with current authority and state boundaries | proposed | not established | eligible PIOS-native governance/knowledge capability | canonical object/version plus promotion evidence | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 2 corpus expansion and Phase 3 drafting; restricted document corpus fully dispositioned
+**Current phase:** Phase 2 realization coverage and Phase 4 consistency review; historical and restricted document corpora fully dispositioned
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -115,6 +115,10 @@
 - Three additional draft Capability MLEs registered, bringing the inventory to 115.
 - Meaning, Learning, reflection, profile assertions, standing rules and behavior adaptation retain separate evidence and authority lifecycles. Representation production remains separate from retained registry and replacement/deletion governance.
 - Static review found an early note-embedding schema and type shape that a later migration removed, with no reachable writer or representation-registry lifecycle confirmed. No Cognitive Memory Meaning/Learning object realization, passing tests, deployment, or production behavior was identified.
+- Tranche F6 closed the selected historical Markdown corpus and added canonical artifact promotion as the one remaining Capability MLE from the final gap pass.
+- One additional draft Capability MLE registered, bringing the inventory to 116.
+- All 90 Markdown files at the selected historical revision now have an explicit public-safe disposition. Architecture summaries, area indexes, application/session state, dedicated-machine descriptions, UI/terminology standards, market material, roadmaps, logs, and inconsistency records were classified without inflating them into capabilities.
+- Agent capability/performance tracking was resolved as a composition of agent definitions, activity events, measurements, reviews, and policy at the current evidence depth. No named restricted artifact-promotion realization was identified.
 
 ## Publication state
 
@@ -127,4 +131,4 @@
 
 ## Next action
 
-Continue remaining historical-corpus disposition and begin the Phase 4 cross-library consistency review, including terminology, cross-cutting rules, duplicate boundaries, source coverage, links, and publication safety.
+Continue the Phase 4 cross-library consistency review, including terminology, cross-cutting-rule applicability, duplicate boundaries, inventory/alignment parity, source/provenance completeness, links, and publication safety.
