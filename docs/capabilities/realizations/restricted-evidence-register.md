@@ -14,21 +14,21 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-H` | govern and apply AI-assisted labels | requirements assessment | assessed; implementation reachability not publicly claimed |
 | `RAS-01-I` | apply contextual classification | requirements assessment | assessed; implementation reachability not publicly claimed |
 | `RAS-01-J` | maintain deliberate knowledge notes | requirements and realization-pattern assessment | assessed; code reachability not yet claimed |
-| `RAS-01-K` | maintain owner-authored profile knowledge | requirements assessment | assessed; implementation reachability unknown |
-| `RAS-01-L` | maintain and resolve evidence-backed profile assertions | requirements assessment | assessed; implementation reachability unknown |
-| `RAS-01-M` | apply action-intent labels | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-N` | invoke governed actions and run background operations | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-O` | configure execution policy | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-P` | plans, plan activation, projects, routines, and routine runs | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-Q` | tasks, task collections, and reminders | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-R` | workflow packages, installed workflows, workflow runs, and results | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-S` | owner attention items and update lifecycle | requirements assessment | assessed; implementation reachability pending |
+| `RAS-01-K` | maintain owner-authored profile knowledge | requirements and partial static implementation trace | basic owner profile fields and updates were identified; the richer versioned owner-authored knowledge model was not confirmed |
+| `RAS-01-L` | maintain and resolve evidence-backed profile assertions | requirements and planned/negative static assessment | profile-item and evidence surfaces are described as planned; no reachable assertion persistence, confirmation, dispute, or resolution lifecycle was confirmed |
+| `RAS-01-M` | apply action-intent labels | requirements and partial static implementation trace | owner-scoped action-label vocabulary CRUD and assignment to notes or captured storage items were identified; downstream handling execution was not confirmed |
+| `RAS-01-N` | invoke governed actions and run background operations | requirements and workflow-specific static implementation trace | one authenticated workflow execution path records steps and outputs; a generic action registry and durable background-operation lifecycle were not confirmed |
+| `RAS-01-O` | configure execution policy | requirements and placeholder/negative static assessment | the actions/skills surface is read-only and behavior controls are local presentation state; no durable generic execution-policy lifecycle was confirmed |
+| `RAS-01-P` | plans, plan activation, projects, routines, and routine runs | requirements and partial static implementation trace | objective, plan, activation, project and routine persistence paths were identified; no separate routine-run lifecycle was found |
+| `RAS-01-Q` | tasks, task collections, and reminders | requirements and static implementation trace | owner-scoped task, task-list and reminder CRUD plus due-reminder processing and recurrence updates were identified; no tested/deployed claim |
+| `RAS-01-R` | workflow packages, installed workflows, workflow runs, and results | requirements and static implementation trace | package catalog, installation, trigger, run, step and output records plus a manual server-run path were identified; scheduler and production state remain unconfirmed |
+| `RAS-01-S` | owner attention items and update lifecycle | requirements and static implementation trace | update creation, read, pin, dismiss, response and reminder-produced update paths were identified; current PIOS completed-work and History contracts were not confirmed |
 | `RAS-01-T` | source registration, import sessions, and source-promotion status | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-U` | operational run and import inspection | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-V` | export-bundle composition and package validation | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-W` | bundle restore | requirements assessment | assessed; implementation reachability pending |
 | `RAS-01-X` | destination connector reauthorization | requirements assessment | assessed; implementation reachability pending |
-| `RAS-01-Y` | governed capture submission and pending reconciliation | requirements assessment | assessed; implementation reachability pending; no tested/deployed claim |
+| `RAS-01-Y` | governed capture submission and pending reconciliation | requirements and partial static implementation trace | authenticated browser capture creates linked storage/note records, applies action labels and may create an instruction update; pending-capture reconciliation was not identified |
 | `RAS-01-Z` | onboarding journey, environment preparation, and first entry | requirements and partial static implementation trace | assessed; documented end-to-end journey not confirmed; no tested/deployed claim |
 | `RAS-01-AA` | personal AI identity and interaction preferences | requirements and partial static implementation trace | assessed; some interface state is not shown to be durably governed; no tested/deployed claim |
 | `RAS-01-AB` | first-use orientation | static implementation trace | bounded explanatory surface identified; not evidence of the broader onboarding journey or production availability |
@@ -58,5 +58,6 @@ This public register records only disclosure-safe status. Detailed source identi
 | `RAS-01-AZ` | personal Meaning and evidence-linked Learning | requirements and bounded negative static assessment | generic meaning language and a learning-labelled operating context were identified, but no Cognitive Memory object, lifecycle, confirmation, recall, test, deployment, or production realization was confirmed |
 | `RAS-01-BA` | derived-representation lifecycle | requirements and retired-schema static assessment | an early note-embedding shape was identified and later removed; no retained writer, registry lifecycle, replacement/revocation path, test, deployment, or production realization was confirmed |
 | `RAS-01-BB` | working-artifact promotion to canonical state | bounded negative static search | no named canonical-home, promotion-boundary, workspace-promotion, working-copy, or promoted-artifact realization was identified; no test, deployment, or production claim |
+| `RAS-01-BC` | daily and higher-period History compilation | partial static summary-producer trace | daily and scheduled weekly/monthly/yearly summary producers were identified; canonical event-spine linkage, complete source provenance, curated History manifests, tests, deployment, and production behavior were not confirmed |
 
 These entries are not public realization confirmations and must not be used to claim compatibility or availability.

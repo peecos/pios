@@ -19,8 +19,7 @@
 
 ## In progress
 
-- Continue historical-corpus classification and the next bounded capability-gap tranche.
-- Continue restricted evidence assessment without copying private material into this repository.
+- Continue the remaining restricted implementation-evidence catch-up for source/import/portability and operational inspection paths without copying private material into this repository.
 - Hold website implementation until the initial documentation milestone has review clearance.
 
 ## Phase 2 progress
@@ -31,18 +30,18 @@
 - Tranche A2 statement and boundary pass completed for deliberate notes, owner-authored profile knowledge, evidence-backed profile assertions, and dispute resolution.
 - Four additional draft Capability MLEs registered, bringing the inventory to eighteen.
 - Restricted application documentation coverage is now 16 of 26 documents at bounded substantive depth.
-- The A2 implementation trace is pending because required blobs were unavailable from the existing partial source checkout and on-demand retrieval failed; no substitute source was used.
+- A2 static follow-up found a basic owner-profile update path and planned profile-assertion surfaces, but not the richer owner-authored knowledge, evidence, confirmation, dispute, or resolution contracts.
 - Tranche B1 statement and boundary pass completed for action intent, governed invocation, background operations, and execution policy.
 - Four additional draft Capability MLEs registered, bringing the inventory to twenty-two.
 - Tranche B2a statement and boundary pass completed for plans, activation, projects, routines and routine runs, tasks, task collections, and reminders.
 - Eight additional draft Capability MLEs registered, bringing the inventory to thirty.
-- Restricted requirements evidence is assessed for B2a; source-code reachability remains pending because the relevant blobs are unavailable from the pinned partial checkout.
+- B2a static follow-up found objective, plan, plan-activation, project, routine, task, task-list and reminder paths. No separate routine-run lifecycle was identified.
 - Tranche B2b statement and boundary pass completed for Work Starters, contextual work ordering, workflow packages, installed workflows, workflow runs, and results.
 - Six additional draft Capability MLEs registered, bringing the inventory to thirty-six.
-- The actions-and-execution tranche is complete at requirements level; its restricted implementation trace remains pending and is not represented as tested or deployed behavior.
+- The actions-and-execution tranche now has bounded static evidence for action-label vocabulary/assignment, plans, projects, routines, tasks, reminders, workflow installation/runs and workflow outputs. Generic action-registry, background-operation, execution-policy, Work Starter and contextual-ordering realizations remain unconfirmed.
 - Tranche C1 statement and boundary pass completed for canonical events, owner attention, completed-work publication, daily History, higher-period aggregation, and time-indexed navigation.
 - Six additional draft Capability MLEs registered, bringing the inventory to forty-two.
-- Restricted Updates requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
+- Static Updates follow-up found creation, read, pin, dismiss and response paths plus reminder-generated updates. Daily and higher-period summary producers also exist, but they do not establish the complete current PIOS event-spine, completed-work publication, History-manifest or source-provenance contracts.
 - Tranche C2a statement and boundary pass completed for source registration, import sessions, source promotion, three separate ingestion gates, event-type governance, and operational-run inspection.
 - Eight additional draft Capability MLEs registered, bringing the inventory to fifty.
 - Restricted System application requirements are assessed; source-code reachability remains pending and no tested/deployed behavior is claimed.
@@ -55,7 +54,7 @@
 - Tranche D1a statement and boundary pass completed for governed content capture and pending-capture reconciliation.
 - Two additional draft Capability MLEs registered, bringing the inventory to sixty-three.
 - A browser extension remains an application-specific realization and audience surface rather than a generic capability; capture-time action intent and processing instructions retain their separate governance boundaries.
-- Restricted capture and onboarding requirements have been substantively assessed, bringing restricted document coverage to 18 of 26; capture code reachability and all tested/deployed behavior remain unconfirmed.
+- Restricted capture and onboarding requirements have been substantively assessed, bringing restricted document coverage to 18 of 26. Static review found an authenticated browser-capture path that creates linked storage and note records, attaches action labels and may create an instruction update; pending-capture reconciliation and all tested/deployed behavior remain unconfirmed.
 - Tranche D1b1 statement and boundary pass completed for guided onboarding, personal-AI identity, interaction preferences, contact-channel verification, initial-environment preparation, and first-entry authorization.
 - Six additional draft Capability MLEs registered, bringing the inventory to sixty-nine.
 - Restricted documentation coverage is now 20 of 26 after substantive welcome/orientation and interface-standard assessment.
@@ -122,6 +121,7 @@
 - Phase 4 structural and duplicate-boundary review started. Inventory IDs, CRD files, names, architecture-alignment rows, required CRD fields, source-context links, provenance IDs, decision IDs, unresolved IDs, realization IDs, and local Markdown links were checked.
 - Consolidated the onboarding-specific contact-channel verification draft into the reusable contact-point-control CRD. Onboarding remains a profile of that capability, reducing the deduplicated inventory from 116 to 115.
 - Added the missing library-index link to the import/operations/portability source context. No restricted identifiers or local paths were found in public capability files.
+- Revisited the oldest realization-evidence gaps through authenticated reads of pinned source blobs. Updated profile, action-label, execution, workflow, Updates, History-summary and capture dispositions; no app execution, tests, deployment, or production service calls were performed.
 
 ## Publication state
 
@@ -134,4 +134,4 @@
 
 ## Next action
 
-Complete Phase 4 semantic and publication-readiness review, resolve any remaining cross-capability overlaps, and prepare the coherent initial documentation milestone for independent review before website work.
+Complete the remaining source/import/portability and operational-inspection static evidence catch-up, then finalize the Phase 4 publication-readiness package for independent review before website work.
