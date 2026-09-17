@@ -1,6 +1,6 @@
 # PIOS Capability Library work status
 
-**Updated:** September 16, 2026
+**Updated:** September 17, 2026
 **Current phase:** Phase 2 corpus expansion and Phase 3 drafting; restricted document corpus fully dispositioned
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
@@ -107,6 +107,10 @@
 - Three additional draft Capability MLEs registered, bringing the inventory to 109.
 - Cost approval, standing preferences, usage measurement and partial completion reuse existing proposal, policy, rule, metric and execution capabilities; credits remain a shared unit rather than a capability.
 - Restricted evidence contains retrieval token-budget requirements but no confirmed generic estimate, reservation, spend-accounting or reconciliation realization. No tests, deployment, production behavior, billing or commercial capability is claimed.
+- Tranche F4 statement and boundary pass completed for candidate source discovery, owner implementation documentation, and knowledge-layer integrity assessment.
+- Three additional draft Capability MLEs registered, bringing the inventory to 112.
+- Discovery remains candidate-only and separate from review, permission, registration, backfill, and recurring collection. Knowledge repair remains separate from integrity assessment.
+- Knowledge Environment is classified as an architecture composition; vault layouts, sync tools, aliases and Dataview queries remain realization patterns. No complete restricted realization of the three new capabilities was identified.
 
 ## Publication state
 
@@ -119,4 +123,4 @@
 
 ## Next action
 
-Continue with the next bounded historical-corpus gap tranche, prioritizing source discovery, knowledge-environment maintenance, and remaining corpus disposition while implementation traces are expanded where they materially change realization status.
+Continue with remaining historical-corpus disposition and the next substantive gaps, prioritizing cognitive Meaning/Learning and derived-representation lifecycle while preparing for Phase 4 consistency review.

@@ -113,5 +113,8 @@ Architecture alignment, adoption, realization evidence, and availability are ind
 | Estimate operation resource cost | directly aligned with cost-aware governance | proposed | not established | eligible planning/governance capability | versioned estimate and assumptions | implementation-dependent |
 | Reserve an operation resource budget | compatible | proposed | not established | eligible execution-governance capability | expiring internal reservation state | implementation-dependent |
 | Reconcile operation resource usage | directly aligned with measured-cost governance | proposed | not established | eligible operations/governance capability | usage observations, variance and final/interim accounting state | implementation-dependent |
+| Discover a candidate information source | directly aligned | proposed | not established | eligible PIOS-native source-discovery capability | candidate-only discovery records | implementation-dependent |
+| Maintain owner implementation documentation | compatible | proposed | not established | eligible owner-knowledge/system-documentation capability | durable human-readable documentation and revision state | implementation-dependent |
+| Assess knowledge-layer integrity | directly aligned | proposed | not established | eligible Knowledge maintenance capability | assessment scope, findings, evidence, severity and follow-up references | implementation-dependent |
 
 No row claims compatibility-level adoption, implementation, deployment, or availability.

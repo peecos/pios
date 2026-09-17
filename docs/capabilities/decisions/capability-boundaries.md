@@ -341,3 +341,20 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | R-M09 | Cost and Credit Governance | fails as one generic Capability MLE | source context and composition | The umbrella joins three passing capabilities with approval, policy, observation, execution and commercial concerns that remain independently meaningful. |
 | R-M10 | Credits | fails as a capability | shared unit/profile | Credits are an internal resource comparison unit unless a separate commercial profile defines monetary meaning. |
 | R-M11 | Billing, payment, invoices, taxes and refunds | excluded from this tranche | separate commercial domain | The admitted source explicitly frames cost governance as product control rather than a billing system. |
+
+## Phase 2 source-discovery-and-owner-knowledge tranche F4
+
+| ID | Candidate | Individual MLE result | Decision | Reason |
+|---|---|---|---|---|
+| S-M01 | Discover a candidate information source | passes | separate CRD | Candidate discovery has its own submitted subject, inspection boundary, findings, confidence, evidence and no-candidate/blocked/failed outcomes before registration. |
+| S-M02 | Review a source candidate | passes through existing capabilities | reuse structured review | Suitability, evidence and unresolved risk can be assessed through the generic structured-review contract. |
+| S-M03 | Decide source permission | passes through existing capabilities | reuse governed proposal/authorization | Owner or policy disposition is independently governed and must not be embedded into discovery. |
+| S-M04 | Register, backfill, and collect incrementally | each passes or reuses existing source/import capabilities | keep separate | Registration, bounded historical intake and recurring collection have different authority, state and failure outcomes. |
+| S-M05 | Maintain owner implementation documentation | passes | separate CRD | The owner can create, revise, supersede or archive a human-readable account of their actual system without modifying the framework or runtime configuration. |
+| S-M06 | Synchronize a Knowledge Environment | fails as currently evidenced | unresolved implementation capability/profile | Historical sync technologies are examples, while source-of-truth, conflict, authority and durability relationships remain unresolved. |
+| S-M07 | Maintain agent behavior files through aliases | fails as a separate capability | realization pattern and agent-definition reuse | Aliases expose system-required files; the governed agent definition/instructions retain their own lifecycle. |
+| S-M08 | Promote implementation insight to reference documentation | fails as a PIOS owner-system capability at current scope | project contribution workflow | It is a framework-authoring/publication process rather than an operating capability of the owner's PIOS instance. |
+| S-M09 | Assess knowledge-layer integrity | passes | separate CRD | A bounded read/evaluate operation has independent scope, rules, findings, severity, evidence, coverage and completion/failure outcomes. |
+| S-M10 | Repair knowledge-integrity findings | fails as one generic capability | reuse domain capabilities | Repairs may require note revision, proposal decision, concept lifecycle, access governance, link correction or index rebuild, each with separate authority. |
+| S-M11 | Dataview queries and lint scripts | fail as capabilities | realization tools | Query snippets and scripts support assessment but lack independent owner-domain purpose outside the assessment contract. |
+| S-M12 | Knowledge Environment | fails as one generic Capability MLE | architecture composition and source context | It bundles implementation documentation, personal knowledge, storage, synchronization, agent definitions, setup, access and publication concerns. |
