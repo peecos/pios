@@ -232,7 +232,7 @@ The symmetric MLE test requires `establish-standing-rule` and `apply-standing-ru
 | G-M01 | Share a governed outward representation | passes | separate CRD | Delivering or activating a representation for a bounded audience has its own share reference and lifecycle without creating access policy or making content public. |
 | G-M02 | Publish a governed outward representation | passes | separate CRD | Public reachability is an externally visible transition with revision, locator, authority, withdrawal, and evidence independent from preparation or sharing. |
 | G-M03 | Maintain outward access policy | passes | separate CRD | Access conditions and audience grants can be created, revised, suspended, expired, revoked, or superseded without evaluating a particular request. |
-| G-M03A | Evaluate an outward access request | passes | separate CRD | One requester can receive an attributable allow, deny, challenge, or indeterminate decision under an unchanged policy. |
+| G-M03A | Evaluate an outward access request | passes | separate CRD | One requester can receive an attributable allow or deny decision under an unchanged policy. |
 | G-M04 | Govern outward discoverability | passes | separate CRD | Hidden, index-eligible, and promoted states produce an independent findability outcome without changing who may open or reuse content. |
 | G-M05 | Govern outward usage rights | passes | separate CRD | Human and machine use conditions remain meaningful after access and can change without altering reachability or discovery. |
 | G-M06 | Controlled sharing + public publication | both pass | keep separate | Sharing is audience-bounded and non-public; publication establishes public reachability and may carry durable public-presence framing. |

@@ -27,8 +27,8 @@
 ## Rules and defaults
 ### Rules / invariants
 - Daily History is curated and must not claim that omitted event-log material did not occur.
-- Raw traces must not compete as equal narrative inputs when structured completion records already cover the work.
 ### Recommended defaults
+- Prefer structured completion records over raw traces when they already cover the work; use raw traces to fill genuine gaps.
 - Include a concise summary, bottom line, meaningful work, decisions, open threads, and source statement when evidence supports them.
 
 ## Unknown / unresolved
@@ -37,4 +37,4 @@
 ## Statement provenance
 | Statement | Semantic class | Evidence status | Source / note |
 |---|---|---|---|
-| Daily History is compiled from structured updates and selected evidence, with raw traces used for gap filling. | rule/invariant | sourced | [C04](../evidence/statement-provenance.md). |
+| Daily History preferably uses structured updates and selected evidence, with raw traces used for gap filling. | recommended default | sourced | [C04](../evidence/statement-provenance.md). |

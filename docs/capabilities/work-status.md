@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 4 independent-review remediation; corrected milestone re-review pending
+**Current phase:** Phase 4 final independent-review remediation; corrected milestone re-review pending
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -126,6 +126,8 @@
 - Completed Phase 4 self-review: inventory/CRD/alignment parity, required CRD structure, source-context links, historical disposition coverage, identifier uniqueness, local links, publication-safety tokens, and repository documentation tests pass.
 - The first independent review returned `REQUEST CHANGES`: the proposed head was not self-contained against its committed PIOS baseline; source-composed portability was missing; outward sharing, access-policy maintenance, and request evaluation overlapped; backup absorbed restore testing; and several provenance semantic classes or source hedges were incorrect.
 - Corrective drafting added source-composed package composition and request-time access evaluation as separate Capability MLEs, narrowed sharing and backup boundaries, restricted public provenance to committed sources, normalized provenance classes, and revised unsupported cache/offline detail into explicit draft profiles or unresolved questions.
+- The independent re-review cleared those original findings and retained `REQUEST CHANGES` only for two source-fidelity issues: completed-work and daily-History recommendations were still stated too strongly, and access evaluation included unsupported `challenge` and `indeterminate` outcomes.
+- The final corrective pass restored both History statements to recommended defaults and limited the sourced access-decision result to attributable allow or deny.
 
 ## Publication state
 

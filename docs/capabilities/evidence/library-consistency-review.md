@@ -1,7 +1,7 @@
 # Capability Library consistency review
 
 **Review date:** September 17, 2026
-**Review state:** initial independent review requested changes; corrective revision validated locally and pending independent re-review
+**Review state:** second independent pass requested two targeted provenance corrections; final re-review pending
 
 This review checks the CRD library as one system rather than validating only the latest tranche. It does not establish implementation, deployment, compatibility-level adoption, or website publication.
 
@@ -71,6 +71,15 @@ The independent reviewer returned `REQUEST CHANGES` on September 17, 2026.
 3. `govern-outward-access` now documents access-policy maintenance, `evaluate-outward-access-request` documents per-request enforcement, and governed sharing is limited to share delivery or activation.
 4. Backup maintenance is limited to backup creation, custody, retention, rotation, and integrity; restore and parity remain separate capabilities.
 5. Provenance classes were normalized to the pinned semantic vocabulary, source hedge strength was restored, and unsupported detailed cache/offline semantics were moved to draft profiles or unresolved questions.
+
+### Independent re-review findings
+
+The re-review cleared the initial blockers and all structural separation findings, but retained `REQUEST CHANGES` for two source-fidelity defects:
+
+1. The completed-work and daily-History CRDs still promoted source wording classified as `recommended default` into binding CRD invariants.
+2. The access-request evaluator introduced `challenge` and `indeterminate` outcomes not established by its cited public evidence.
+
+The final corrective pass moved the completed-work bundle and structured-input preference into recommended defaults and limited the sourced access-decision taxonomy to `allow` or `deny`. Any intermediate challenge profile remains unresolved rather than asserted.
 
 ## Remaining limitations before publication
 

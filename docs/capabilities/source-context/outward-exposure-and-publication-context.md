@@ -17,7 +17,7 @@ This reference preserves cross-cutting context for controlled sharing, public pu
 | Controlled sharing | Which bounded audience receives this representation through a share? | active, expired, withdrawn, rejected, or failed share |
 | Public publication | Is the representation publicly reachable? | published, revised, unpublished, archived, or rejected revision |
 | Access policy | What conditions and grants govern opening it? | active, suspended, expired, revoked, rejected, or superseded policy/grant state |
-| Access evaluation | May this requester open it now? | attributable allow, deny, challenge, or indeterminate decision |
+| Access evaluation | May this requester open it now? | attributable allow or deny decision |
 | Discoverability | Can it be found beyond a direct locator or grant? | hidden, index-eligible, promoted, or withdrawn state |
 | Usage rights | What may humans and machines do after access? | current rights declaration with effective scope |
 

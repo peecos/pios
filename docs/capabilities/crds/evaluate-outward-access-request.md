@@ -8,7 +8,7 @@
 
 ## Core meaning
 - **Capability purpose:** Enforce outward access conditions at request time without changing the access policy, discoverability, or usage rights.
-- **Meaningful outcome:** One access request receives an attributable allow, deny, challenge, or indeterminate decision with the evaluated policy and reasons recorded.
+- **Meaningful outcome:** One access request receives an attributable allow or deny decision with the evaluated policy and reasons recorded.
 - **Boundaries — includes:** requester or audience identity, representation reference, current policy version, credential or grant evidence, expiry, contextual conditions, fail-closed evaluation, decision reason, and audit evidence.
 - **Boundaries — excludes:** creating or revising access policy, activating a share, publishing content, changing discoverability, granting usage rights, and mutating the private source.
 - **Terms and concepts:** An `access decision` applies a current policy to one request; it is not the policy itself and does not determine permitted reuse after access.
@@ -20,9 +20,9 @@
 - **Current state:** The representation, requester identity or audience evidence, current access-policy version, grant or credential state, expiry, and applicable context can be determined.
 - **Policies / invariants:** Evaluation uses the current applicable policy; missing, expired, revoked, mismatched, or ambiguous authority fails closed; the decision does not broaden usage rights or discovery state; reasons and policy version remain attributable.
 - **Transition:** Evaluate the request against the applicable policy and record its disposition without changing that policy.
-- **Result:** An allow, deny, challenge, or indeterminate access decision with reasons and evidence references.
-- **Events / effects:** An allow may permit delivery; denial or challenge may create audit or owner-attention evidence.
-- **Unknowns:** Universal identity-assurance levels, challenge mechanisms, and distributed enforcement-latency guarantees are not established.
+- **Result:** An allow or deny access decision with reasons and evidence references.
+- **Events / effects:** An allow may permit delivery; denial may create audit or owner-attention evidence.
+- **Unknowns:** Universal identity-assurance levels, any intermediate challenge profile, and distributed enforcement-latency guarantees are not established.
 
 ## Rules and defaults
 ### Rules / invariants
