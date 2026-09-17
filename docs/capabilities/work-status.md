@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 4 independent review preparation; source corpora and bounded static realization coverage complete
+**Current phase:** Phase 4 independent review pending; source corpora and bounded static realization coverage complete
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -129,7 +129,7 @@
 
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
-- Current milestone head: `918af11`.
+- Current milestone revision: the latest head of PR #1; GitHub is the authoritative revision record.
 - Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open; independent review is requested from `valtos-ally` and no review has been submitted yet.
 - Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
 - Website route: proposed `/pios/capabilities`; not yet created.
