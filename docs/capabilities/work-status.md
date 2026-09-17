@@ -1,7 +1,7 @@
 # PIOS Capability Library work status
 
 **Updated:** September 17, 2026
-**Current phase:** Phase 4 documentation milestone approved; narrow projection-consistency confirmation and website contribution in progress
+**Current phase:** Phase 4 documentation milestone approved; website contribution in progress
 **Branch:** `docs/capability-library-pilot`
 **Live-site impact:** none
 
@@ -130,13 +130,14 @@
 - The final corrective pass restored both History statements to recommended defaults and limited the sourced access-decision result to attributable allow or deny.
 - Final independent re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` returned `APPROVE` with no blocking or major findings.
 - A post-review consistency pass found the completed-work recommendation still phrased as a mandatory full projection set in the inventory, alignment, and boundary log; those projections were narrowed to match the approved CRD and require a final narrow confirmation.
+- Narrow independent review of commit `8fe83c6693b5fe4f38e10403fd9d48f84a497294` returned `APPROVE`; 117/117/117 projection parity remained intact.
 
 ## Publication state
 
 - GitHub branch: `docs/capability-library-pilot`, pushed.
 - Initial documentation commit: `7409865`.
 - Current milestone revision: the latest head of PR #1; GitHub is the authoritative revision record.
-- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open. The separate CRD-method review is approved; native repository review/merge state remains pending.
+- Pull request/review: [PR #1](https://github.com/peecos/pios/pull/1) is open. The separate CRD-method review and narrow projection follow-up are approved; native repository review/merge state remains pending.
 - Website mechanism: verified at inspected source revision `08fd000`; publication plan recorded.
 - Website route: proposed `/pios/capabilities`; not yet created.
 - Live publication: not started.

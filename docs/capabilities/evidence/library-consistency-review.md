@@ -1,7 +1,7 @@
 # Capability Library consistency review
 
 **Review date:** September 17, 2026
-**Review state:** independent review approved
+**Review state:** independent review approved, including post-review projection consistency
 
 This review checks the CRD library as one system rather than validating only the latest tranche. It does not establish implementation, deployment, compatibility-level adoption, or website publication.
 
@@ -83,7 +83,7 @@ The final corrective pass moved the completed-work bundle and structured-input p
 
 ### Final independent-review decision
 
-The final re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` found no blocking or major issues and returned `APPROVE`. It reconfirmed exact-head source and anchor integrity, 117/117/117 projection parity, required CRD structure, capability decomposition, semantic-class and hedge fidelity, public/private safety, architecture distinctions, evidence-level separation, and duplicate-boundary handling. A subsequent consistency edit applies the same approved hedge treatment to the inventory, alignment, and boundary-log projections; that exact head requires a narrow confirmation before publication.
+The final re-review of commit `fda4a68c65dfb72f08e8ea459809b4a35eb14783` found no blocking or major issues and returned `APPROVE`. It reconfirmed exact-head source and anchor integrity, 117/117/117 projection parity, required CRD structure, capability decomposition, semantic-class and hedge fidelity, public/private safety, architecture distinctions, evidence-level separation, and duplicate-boundary handling. A subsequent consistency edit applied the same approved hedge treatment to the inventory, alignment, and boundary-log projections. Narrow review of commit `8fe83c6693b5fe4f38e10403fd9d48f84a497294` also returned `APPROVE` and reconfirmed 117/117/117 parity.
 
 ## Remaining limitations before publication
 
