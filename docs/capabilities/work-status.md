@@ -1,5 +1,13 @@
 # PIOS Capability Library work status
 
+## October 8, 2026 continuation notice
+
+The [mobile interoperability candidate record](decisions/mobile-interoperability-candidates-2026-10-08.md)
+adds three candidates for bounded disposition, not three CRDs. Existing
+inventory entries and retained evidence are unchanged. The checkpoint below
+records the earlier extraction/publication work, not the publication state of
+this new clarification. Read the current project-plan addition before continuing.
+
 **Updated:** September 17, 2026
 **Current phase:** Phase 4 documentation milestone approved; website contribution in progress
 **Branch:** `docs/capability-library-pilot`

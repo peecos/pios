@@ -42,8 +42,12 @@ A compatible deployment must preserve these boundaries:
 - Derived indexes, embeddings, search stores, graph projections, caches, and
   provider-native pointer tables are rebuildable unless explicitly included as
   optional derived export content.
-- Clients use the Core API and discovered capabilities, never direct S3,
-  DynamoDB, Blob Storage, Cloud Storage, local storage, or provider queues.
+- Clients access canonical Core through the Core API and discovered
+  capabilities, directly or through a declared governed adapter, never through
+  direct S3, DynamoDB, Blob Storage, Cloud Storage, internal Core filesystem,
+  database, or provider-queue access. Authorized device caches and shared
+  App Group projections are client implementation details, not replacements
+  for the Core contract.
 
 Rebuildability is a state and recovery property, not a reason to externalize
 PIOS retrieval. An executor and index serving a declared Core search capability
@@ -51,12 +55,23 @@ are part of that implementation even if replaceable or physically remote. An
 independent application's private index is a consumer-side implementation,
 not a replacement for the claimed Core capability.
 
-Corebox is a PIOS-native hub/gateway and a Core client, not a typical
-independent application. Its backend may be packaged inside the Solo VM while
+The **Core app (previously known as Corebox)** is a PIOS-native owner interface
+and a Core client, not a typical independent application. Its backend normally
+belongs inside the Solo VM while
 its device interface runs elsewhere. Neither its presence nor its absence
 establishes Core compatibility, and its receiver state is not automatically
 canonical Core state. Independent consumers such as notes applications or
-LifeStory should retain useful operation without PIOS.
+LifeStory Indie should retain useful operation without PIOS. The separate new
+LifeStory is a Core-dependent companion; that dependency does not automatically
+make it a member of the narrower Core contract or establish compatibility.
+
+The Core app's capture, retrieval, statistics, governance, and shared-cache
+responsibilities are interface/profile targets, not additions to Core
+Compatibility Levels 1–5 or claims about current builds. Direct, brokered, and
+hybrid client paths must preserve equivalent declared behavior and authority;
+not every client needs its own network transport. A cached item, pending
+upload, or File Provider entry is not proof of canonical acceptance. The name
+change alone does not migrate identifiers, application state, or owner data.
 
 Examples:
 

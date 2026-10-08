@@ -26,11 +26,39 @@ from the same publisher does not become part of PIOS merely through branding.
 The [hosting and boundary principles](hosting-core-boundaries-and-portability-principles-v0.1.md)
 separate Core membership, PIOS system membership, and deployment location.
 
-Corebox is a PIOS-native, PIOS-dependent hub/gateway client, not the typical
-independent consumer example. A notes application, LifeStory, or a
+The **Core app (previously known as Corebox)** is a PIOS-native, PIOS-dependent
+owner interface for capture, access, system visibility, governance, and
+device-local support, not the typical independent consumer example. A notes
+application, recording application, or a
 general-purpose assistant should remain usefully independent while integrating
 with PIOS. These are product-role distinctions, not release-readiness or
 endorsement claims.
+
+A participant may declare direct, brokered, or hybrid integration. Use of the
+Core app's authorized shared App Group cache does not make an independent app
+PIOS-native, grant access, or establish compatibility by itself. State the
+supported handoff, cache/offline, and synchronization behavior and its evidence;
+neither a mandatory Core app relay nor a direct network client in every app is
+an ecosystem-wide requirement.
+
+A publisher may nevertheless declare a stricter profile for a named suite.
+The **PIOS First-Party Mobile Apps by Prifina** profile routes Notes and Voice
+Notes PIOS exchange through Core while
+preserving their local standalone operation and optional app-owned iCloud or
+custom-endpoint synchronization. The existing LifeStory product continues as
+**LifeStory Indie**; a separate new **LifeStory** is Core-dependent and
+receives authorized device information through Core. This same-team App Group
+choice does not apply to third-party applications or alter their direct,
+brokered or hybrid options. The selected Notes profile also permits its own
+bounded direct command/acknowledgement reconciliation path with Core fallback;
+Core mediation is not an exclusive network-client rule. Device-source records,
+app working records and local projections have separate lifecycle contracts.
+See the [October 8 alignment notice](pios-mobile-contract-alignment-2026-10-08.md).
+
+A Core-dependent companion is not an independently useful consumer. Declare
+its product role explicitly without assuming dependency makes it part of Core
+or a PIOS-native service. Peecos participation does not absorb a project's
+runtime or private product behavior into PIOS.
 
 ## 3. Compatibility bridges
 

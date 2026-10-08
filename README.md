@@ -50,10 +50,30 @@ together in its VM as far as practical. Independent applications and assistants
 that use PIOS normally run outside it; native device interfaces and declared
 external resources have explicit deployment roles.
 
-[Corebox](index.html#corebox-and-independent-applications) is a PIOS-native,
-PIOS-dependent owner hub/gateway, still a client of Core. Notes applications
-and LifeStory instead should remain independently useful while integrating
-with PIOS. Native membership, VM placement, canonical-state authority, and
+[Core app (previously known as Corebox)](index.html#core-app-and-independent-applications)
+is the PIOS-native owner interface for capture, access, system visibility, and
+governance. Its display name is **Core**; it remains a client of the narrower
+Core contract. A key iPhone role is shared App Group caching for authorized
+apps: reuse recently accessed files, retain selected offline content, and
+handle unreliable connections without repeatedly downloading the same bytes.
+Pending submissions are protected separately from disposable cache. Shared
+storage does not grant access or create another canonical Core.
+
+Independent applications may remain useful without PIOS while integrating
+through direct, brokered, or hybrid paths; a running Core app is not a
+framework-wide mandatory relay. A named same-publisher app set may
+choose a stricter Core-mediated profile when its apps share an Apple App Group.
+The **PIOS First-Party Mobile Apps by Prifina** profile keeps Notes and Voice
+Notes independently usable, preserves the
+existing LifeStory product as **LifeStory Indie**, and defines a new
+**LifeStory** as Core-dependent. In that profile Core remains the integration
+and governance hub; Notes may additionally use its own bounded direct
+reconciliation identity with a brokered fallback. Core owns the new LifeStory's
+PIOS connection and device-source collection; third-party integration
+choices are unchanged. See the
+[device-cache and local-substrate profile](docs/integration-interoperability-and-governance-v0.1.md#19-same-publisher-and-local-substrate-profiles).
+These are framework targets, not shipped-feature claims or an identifier/data
+migration. Native membership, VM placement, canonical-state authority, and
 compatibility claims are not interchangeable.
 
 Prifina intends to make that hosted option available soon. Until Prifina
@@ -71,6 +91,14 @@ current Core compatibility or deployment claims:
 - [Cognitive Memory, Source Discovery, and Derived Representations v0.1](docs/cognitive-memory-source-discovery-and-derived-representations-v0.1.md)
 - [PIOS Portability Package v0.1](docs/pios-portability-package-v0.1.md)
 - [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
+
+Named deployment-neutral product profile:
+
+- [Current mobile contract alignment and implementer reading checkpoint](docs/pios-mobile-contract-alignment-2026-10-08.md)
+
+- [PIOS First-Party Mobile Apps by Prifina](docs/pios-first-party-mobile-apps-by-prifina.md)
+- [Current mobile app inventory (September 27, 2026)](docs/pios-first-party-mobile-current-inventory-2026-09-27.md)
+- [Local mobile handoff contract v0.1](docs/pios-first-party-mobile-local-handoff-v0.1.md)
 
 They are design contracts, not authorization for app networking, personal-data
 intake, generic API credentials, collection, migration, or hosted accounts.
@@ -92,6 +120,15 @@ data migration, connector sync, or production use by itself.
 
 The older `peecos/pios-global` repository belongs to the pre-PIOS-2.0
 documentation era and should be treated as archived historical material.
+
+## Local Documentation Checks
+
+Run the naming, device-cache boundary, HTML, and local-link regression checks
+without network access or a deployed Core:
+
+```sh
+python3 -B -m unittest discover -s tests -v
+```
 
 ## Open by Design
 

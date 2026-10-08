@@ -21,7 +21,7 @@ The organization maintains one framework and its surrounding assets:
 | **Core Self** | A person's own running instance and private source of truth |
 | **Core Managed / Core Self-Hosted** | The two deployment profiles: managed service, or a portable VM/server package |
 | **PIOS Solo** | A complete single-owner PIOS operating environment, normally packaging Core and selected native services together in its VM |
-| **Corebox** | The PIOS-native owner hub/gateway application for Solo or hosted PIOS; part of PIOS but a client of Core |
+| **Core app** (previously Corebox) | The PIOS-native owner interface for capture, access, system visibility, governance, and device-local support; display name Core, still a client of the Core contract |
 
 ## Origin
 
@@ -35,11 +35,31 @@ The older `peecos/pios-global` repository belongs to the pre-PIOS-2.0 documentat
 - **Cotton** is the personal fiber: the soft, human material of a life — words, meanings, habits, relationships — organized into a usable structure. Cotton defines how personal information is named, grouped, interpreted, and made understandable to both the owner and their agents.
 - **Core Self** names the instance because its owner is the person: it is the person's own private source of truth.
 
-Corebox is PIOS-dependent by product purpose, unlike independently useful notes
-applications, LifeStory, or general-purpose assistants. Its device interface
-runs on owner devices; its PIOS-specific backend can live inside Solo without
-making its receiver state canonical Core. Core itself remains operable without
-the particular Corebox implementation. See [Corebox and independent applications](index.html#corebox-and-independent-applications).
+The **Core app (previously known as Corebox)** is PIOS-dependent by product
+purpose, unlike independently useful applications or general-purpose
+assistants. The name reflects a broader owner interface than
+an inbox: capture, retrieval, information and storage statistics, governance,
+and device-local support. On iPhone, this includes shared App Group caching
+for permitted recent and offline content used by participating applications.
+Use **Core app** in technical prose to distinguish its display name, **Core**,
+from the logical Core contract and a Core Self instance.
+
+Its device interface and local cache run on owner devices; its PIOS-specific
+backend normally belongs inside Solo without making receiver state canonical.
+Core itself remains operable without this particular app implementation.
+The documentation rename preserves legacy Corebox identifiers and historical
+evidence; it is not an app release or data migration. See
+[Core app and independent applications](index.html#core-app-and-independent-applications).
+
+PIOS does not require one integration route for every application. Direct,
+brokered and hybrid paths remain available. A same-publisher suite may select
+a narrower local profile when its applications share a platform trust domain.
+The **PIOS First-Party Mobile Apps by Prifina** profile keeps Notes and Voice
+Notes independently usable, renames the
+continuing existing LifeStory product **LifeStory Indie**, and makes a new
+**LifeStory** dependent on Core for device-source access and PIOS connectivity.
+This named first-party app profile is not a restriction on third-party PIOS
+applications.
 
 ## Sibling framework: EIOS
 

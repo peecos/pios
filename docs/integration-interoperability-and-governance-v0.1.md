@@ -43,9 +43,12 @@ outside PIOS or outside its Solo VM.
 | Runtime Policy | The current contextual rule evaluation applied when an operation is attempted. |
 
 An independent **application** is not a PIOS **App View**. App Views are Core
-surfaces; independent applications such as notes or LifeStory should remain
-useful without PIOS while integrating through Core interfaces. **Corebox** is
-a different case: a PIOS-native, PIOS-dependent owner hub/gateway, still a Core
+surfaces; independent applications may remain useful without PIOS while
+integrating through Core interfaces. A publisher may also define a named
+Core-dependent companion when that dependency is explicit. The **Core app
+(previously known as Corebox)** is a different case: a PIOS-native,
+PIOS-dependent owner interface for capture, access, system visibility,
+governance, and device-local support, still a Core
 client rather than canonical Core state or a required Core runtime. Its device
 UI runs on owner devices; its PIOS-specific backend normally belongs inside
 the Solo VM. Native status and independent deployment are not synonyms.
@@ -133,11 +136,14 @@ declared → reviewed → agreement accepted → grants issued → active
                                             ↘ suspended → revoked → archived
 ```
 
-Revocation immediately stops new access. It triggers the agreed cache deletion
-or expiry process, preserves required audit evidence, and never silently
-deletes Core-owned originals, events, or knowledge created through the
-integration. Deletion of Core content follows PIOS retention and governance
-rules, not an application's departure.
+Revocation immediately stops new server-side access and access at connected
+enforcement points. Device caches also follow the agreed offline authorization,
+expiry, and revocation behavior in section 19; a disconnected copy cannot be
+treated as if it received an immediate server-side policy update. Revocation
+triggers the agreed cache deletion or expiry process, preserves required audit
+evidence, and never silently deletes Core-owned originals, events, or knowledge
+created through the integration. Deletion of Core content follows PIOS retention
+and governance rules, not an application's departure.
 
 ## 7. Protocol adapters
 
@@ -150,6 +156,21 @@ MCP is neither the canonical Core API nor proof that an AI host has lifecycle
 hooks, background execution, automatic checkpointing, or broad write rights.
 Any adapter exposes only the tools and scopes supported by current grants and
 capability discovery.
+
+Three consumer paths are legitimate when explicitly declared:
+
+| Path | Appropriate role | Contract |
+| --- | --- | --- |
+| Direct | An app, agent, or service calls a governed PIOS interface | Its own identity, discovered capabilities, grants, and Core references |
+| Brokered | The Core app or another authorized adapter receives a handoff or exposes a file projection | Preserve originating actor/provenance, recipient, requested operation, and the applicable grant; never lend the app unrestricted owner credentials |
+| Hybrid | Device-local capture or cache combined with direct authorized retrieval | Equivalent identity, version, authority, retry, and conflict semantics across both paths |
+
+A compatible Core still supplies its required versioned API. Consumers are not
+required to route every operation through a running Core app process, nor is
+every consuming app required to implement its own direct network client.
+Compatibility declarations identify actual supported integration capabilities;
+ordinary file access through an OS projection does not itself establish
+structured PIOS API compatibility.
 
 ## 8. Integration capability declarations
 
@@ -185,9 +206,11 @@ An automated checkpoint enters through the inbox/update path. It does not
 become canonical knowledge, personal meaning, a standing rule, or a behavioral
 change without the appropriate existing PIOS proposal and approval path.
 
-## 10. Synthetic example: Corebox boundary
+<a id="10-synthetic-example-corebox-boundary"></a>
 
-Corebox is used here to show that even a PIOS-native hub/gateway needs an
+## 10. Synthetic example: Core app boundary
+
+The Core app is used here to show that even a PIOS-native owner interface needs an
 explicit grant. It is not an example of an independently useful non-PIOS app.
 Colocating its receiver with Core does not grant authority or make its receiver
 database canonical; it must still use the governed Core interface.
@@ -346,12 +369,203 @@ still has a distinct identity, manifest version, grants, technical scopes,
 audit attribution, and independently revocable access. Direct access to a
 shared database is not the interoperability contract.
 
+### 19.1 Core app device support and shared cache
+
+The **Core app**, whose display name is **Core** and previous name is
+**Corebox**, supplies PIOS-native device support as well as its owner-facing
+interface. Shared caching is a key role on iPhone for participating applications
+in the same App Group: keep permitted recently loaded files and projections
+locally, support chosen offline content, and remain useful during flaky
+connections. Reopening valid cached content should not require downloading the
+same bytes again. Refresh or fetch missing/changed versions when connectivity,
+freshness requirements, and policy permit; do not implicitly replicate the
+owner's entire Core onto every device.
+
+The selected device profile declares which support components, extensions, or
+shared libraries perform this work. It must not depend on the foreground Core
+app process being continuously available. An independent app using this support
+retains its independent product purpose and a declared standalone/fallback path.
+The Solo package remains responsible for its promised server-side native
+retrieval, indexing, and processing; a device cache does not replace them.
+
+### 19.2 State, freshness, and retention
+
+| Device state | Meaning | Required treatment |
+| --- | --- | --- |
+| Recent-content cache | A local copy of accepted Core content or an authorized projection | Reuse within the freshness policy; ordinary eviction affects only the local copy |
+| Selected offline content | Accepted content retained deliberately for offline use | Respect the declared offline-retention policy; report unavailable or expired content instead of promising a complete local Core |
+| Pending capture or edit | Local work not yet accepted by Core, possibly the only copy | Preserve durably until acceptance/reconciliation or an explicit discard decision; never treat it as disposable cache |
+
+Cached entries bind the Core and owner identity, stable logical reference,
+revision and integrity information, source/provenance, fetched/validated time,
+and permitted sharing/retention boundary. UI and API responses distinguish
+cached/stale, pending, accepted, and unavailable state. Offline availability
+does not imply freshness, successful Core acceptance, or a current online check.
+
+Reconnection revalidates authority and reconciles versions using declared
+idempotency and conflict rules; it does not silently overwrite canonical
+records. A Core/account switch must not expose another owner's cache or send
+pending work to a different Core. Clearing a cache does not delete Core
+Originals, Events, or Knowledge. Selected offline content and pending writes
+have separate retention rules from opportunistic recent-content eviction.
+
+### 19.3 Shared-container authority and offline limits
+
+An App Group is a shared trust boundary, not a per-app authorization system.
+Any member entitled to read a shared plaintext container can access those bytes;
+logical grant checks alone cannot create per-app confidentiality there. Put
+only content authorized for every such member into shared plaintext. Data with
+different access boundaries belongs in isolated storage or behind an actually
+enforced mediated interface. Do not share owner-wide credentials merely to
+enable cache reuse.
+
+The profile names the approved shared data set, participating apps, operation
+rights, cache lifetime, offline authorization window, and revocation behavior.
+Offline access is limited to previously authorized cached content and the
+declared offline operations; absent, expired, or ambiguous authority fails
+closed. Do not describe a disconnected device as having performed a fresh
+server policy check. Stop new server access immediately on revocation; apply
+the declared local expiry/removal and reconciliation when the device learns
+of the change. Immediate remote erasure of already disclosed bytes on an
+offline device cannot be promised. If the authorized set of shared-container
+readers changes, the retention/isolation design must address the raw shared
+copy, not merely change an API grant while leaving the bytes accessible.
+
+### 19.4 Platform mechanisms and evidence
+
+Apple App Groups support sharing among apps from the same development team and
+between an app and its extensions. They are not a universal third-party
+interoperability mechanism. On iPhone, use supported extensions, App Groups,
+OS-managed file transfers, and background opportunities; do not assume an
+always-running cross-app router. A File Provider can expose a selected file
+projection to other apps, but it does not expose the whole structured Core
+contract. macOS may use separately declared resident helpers without making
+that topology a requirement for mobile or for other Core clients.
+
+Platform references: Apple's [Configuring app groups](https://developer.apple.com/documentation/xcode/configuring-app-groups),
+[Choosing Background Strategies for Your App](https://developer.apple.com/documentation/backgroundtasks/choosing-background-strategies-for-your-app),
+and [File Provider](https://developer.apple.com/documentation/fileprovider).
+These explain platform mechanisms, not PIOS authorization.
+
+An implementation claims only the cache, handoff, offline, and synchronization
+capabilities it has demonstrated. Before activating a shared-cache profile,
+show repeated-open reuse, permitted offline reads, reconnect/version handling,
+safe eviction without losing pending work, Core/account separation, and the
+declared denied-access/expiry behavior. Broader SDK or device-node work is not
+a prerequisite to a bounded, useful implementation.
+
+### 19.5 Local Core is a separate claim
+
 Reserve **Local Core** for a local deployment that implements a declared Core
 compatibility contract and has explicitly named canonical authority. A local
 cache, projection, inbox staging store, or app-group database is not a second
 Core and must not create an ambiguous canonical writer. Any later offline sync
 profile must define canonical-side, conflict, idempotency, correction,
 revocation, deletion, and cutover behavior before writable operation.
+
+### 19.6 PIOS First-Party Mobile Apps by Prifina
+
+The **PIOS First-Party Mobile Apps by Prifina** profile uses a specific same-team
+iPhone implementation choice under the general integration model, not a
+PIOS-wide requirement. It applies only to applications deliberately admitted
+to the shared exchange App Group:
+
+This app profile is deployment-neutral. Core may connect it to a compatible
+single-owner, hosted, multitenant, self-hosted or other PIOS implementation.
+The mobile contract does not change according to the deployment profile.
+
+- **Notes by Prifina** and **Voice Notes by Prifina** remain independently
+  useful local-first products. They may separately offer app-owned iCloud or
+  owner-configured custom-endpoint synchronization, but they use Core-mediated
+  local handoff for PIOS exchange and do not require a Prifina-operated
+  application backend.
+- The existing LifeStory application continues as **LifeStory Indie**, keeping
+  its existing application identity, installed-user continuity, local data and
+  independent device-source behavior. Migration from it is explicit,
+  versioned, owner-triggered and non-destructive.
+- A separate new **LifeStory** is a Core-dependent companion with a new
+  application identity. Core owns its PIOS connection and activated device
+  source permissions; LifeStory receives authorized source records or
+  projections and returns edits or outputs through the local mediated
+  contract.
+
+Core is the default PIOS integration and governance hub for this named profile.
+Notes may additionally use its own bounded reconciliation identity to fetch
+applicable canonical Note commands and return acknowledgements, while retaining
+Core's brokered path. This hybrid exception does not confer general capture,
+collection or owner-wide authority, and does not activate another app or source.
+The implementation records its actual deployment and granted scopes separately.
+The local flow
+must use durable queues, stable identities, provenance, acknowledgement and
+retry states and must not depend on Core remaining in the foreground. Every
+application retains a distinct integration identity, grant and audit
+attribution even when bytes use one App Group container. No unrestricted Core
+credential is shared.
+
+Third-party applications and other publishers are unaffected. They continue
+to select declared direct, brokered or hybrid paths according to their own
+capabilities and platform boundaries.
+
+### 19.7 Device-source and working state
+
+The three cache/offline/pending classes in section 19.2 are not an exhaustive
+classification of device information. A selected device-support profile also
+distinguishes:
+
+| State | Authority and lifecycle |
+| --- | --- |
+| Device-source record | Source-specific locally retained observation or snapshot; not canonical Core merely through collection, and not pending upload until selected for submission |
+| App-owned working record | The independent application's own durable record and revision history; shared transport does not authorize direct edits to its private store |
+| Normalized device evidence or local projection | Rebuildable adapter output bound to source identity/version and processing profile; not the unchanged source or proof of canonical acceptance |
+
+Source and working records may be the only retained copy. Cache eviction must
+not dispose of them. Their explicit retention, deletion, export and recovery
+policies remain separate from cache policy. A backup of accepted Core state
+does not prove recovery of device-only sources or pending work.
+
+Device permission, owner selection of collection scope, local use, server
+transfer and downstream processing are separate authority decisions. Record
+source/installation scope, stable identity, source version, observation and
+collection times, activation boundary, adapter version, integrity and coverage
+limits. An accessible metadata snapshot is not the original photo or the full
+underlying device database. Retain the selected source representation before
+deriving from it; declare omissions rather than expanding collection silently.
+
+Core app collection and immediate device preprocessing remain device-side PIOS
+functions where the selected profile needs them. Native server ingestion,
+cross-source Knowledge compilation, History and retrieval remain server-side
+PIOS functions. Both sides are part of PIOS; neither placement makes an output
+canonical. Avoid using “PIOS-side” to mean only the server.
+
+### 19.8 Bidirectional working-copy reconciliation
+
+A profile supporting canonical changes back into an application must declare
+the canonical side, participating app/device identity, stable object mapping,
+source and canonical revisions, command identity, conflict behavior and recovery.
+Local save, handoff validation, local semantic application, canonical Core
+acceptance, application of a canonical revision and acknowledgement delivery
+are separate evidence boundaries. Report only the boundary actually proven.
+
+The application applies an authorized command through its own write contract;
+Core must not mutate its private database. Bind the command to the intended
+owner/Core, source object, expected source revision and canonical revision.
+Duplicate delivery is idempotent. A divergent local edit remains preserved as
+a conflict or follows an explicitly declared merge policy; it is not silently
+overwritten. A resolution records the selected content and resulting revision.
+
+Keep command, local result and acknowledgement-delivery evidence sufficient to
+recover after interruption. A transport acknowledgement is not proof of semantic
+application; an unavailable client is not a successful client. Notify/wake hints
+do not replace durable reconciliation. Direct and brokered paths must converge
+on the same identities, conflict rules and terminal results. Define cursors,
+freshness and partial-coverage behavior without imposing one universal polling
+interval, cache quota, background-runtime guarantee or merge algorithm.
+
+Existing acknowledgement wire names, including `local_accepted` and `applied`,
+must be interpreted by schema, direction, operation and authority boundary.
+Do not rename them or silently give an older receipt stronger meaning.
+Capability discovery and implementation evidence describe supported behavior;
+these profile requirements do not themselves establish a compatibility level.
 
 ## 20. Context compilation and model execution
 

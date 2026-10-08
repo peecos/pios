@@ -37,7 +37,8 @@ Neither a Full Core Export Bundle nor a source-composed package is by itself a
 runnable PIOS VM. A data-empty golden image or equivalent install composition
 supplies the operating services; the bundle supplies governed owner state;
 the Provisioning Manifest binds the destination and authorization gates.
-Corebox device clients and independent applications reconnect separately.
+Core app device clients (previously known as Corebox) and independent
+applications reconnect separately.
 
 ## 3. Package requirements
 
@@ -69,6 +70,17 @@ may live in Core's Derived zone and be rebuilt inside the Solo VM. Omitting its
 payload from an export does not permit omitting the instructions and supported
 execution needed to reconstruct a promised capability.
 
+Device-local recent-file caches and selected offline copies are distinct from
+pending captures or edits not yet accepted by Core. Accepted content can be
+re-fetched under destination authority; unaccepted device work is not included
+in a Core export merely because the Core app or an App Group holds it. A
+cutover or device reset must account for that pending work explicitly through
+reconciliation, preservation, or an authorized discard decision. Do not treat
+the only copy of pending work as rebuildable cache, or copy live device
+credentials into a portability package. Shared-cache reconstruction must bind
+the destination Core/owner and current grants, not reuse another account's
+cached access implicitly.
+
 ## 5. Import and operationalization
 
 Import validates container structure, schema/version, checksums, encryption
@@ -95,7 +107,7 @@ For complete PIOS recovery, the report also distinguishes installed,
 reconstructed, authorized, operational, and unavailable native services.
 Validate the selected processing, retrieval, and PIOS-specific gateway behavior,
 including any explicitly remote executors, rather than equating exact-byte
-restore with recovery of the whole operating system. Corebox receiver state,
+restore with recovery of the whole operating system. Core app receiver state,
 unregistered storage, and independent application caches do not become canonical
 Core records merely because a service is part of PIOS or shares its VM.
 

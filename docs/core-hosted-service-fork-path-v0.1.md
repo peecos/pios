@@ -103,10 +103,16 @@ and reconstruction path. Shared hosted execution does not imply that a Solo VM
 should externalize its native services: Solo normally packages them together
 with Core as far as practical.
 
-Corebox is a PIOS-native hub/gateway client of either Solo or hosted PIOS.
-Independent applications such as notes or LifeStory have a separate product
+The **Core app (previously known as Corebox)** is a PIOS-native owner interface
+for either Solo or hosted PIOS. Its device caching, offline support, and
+statistics views remain bound to the selected owner/Core and granted scope;
+an App Group must not become a cross-tenant cache or shared authority domain.
+Independent applications such as notes or LifeStory Indie have a separate product
 purpose and should remain useful without PIOS. These product roles do not
 change with the hosting model, and neither grants broader access to a tenant.
+
+The separate new LifeStory is a Core-dependent companion; that dependency does
+not automatically establish membership of the narrower Core contract.
 
 Tenant provisioning, billing, fleet administration, support, abuse prevention,
 and service-health operations belong to the operator control plane. They may be

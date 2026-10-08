@@ -11,6 +11,17 @@ The library is adjacent to the PIOS master. A CRD can be aligned with PIOS witho
 
 ## Contribution boundary
 
+### Current bounded addition — October 8, 2026
+
+Read the [mobile interoperability candidate record](decisions/mobile-interoperability-candidates-2026-10-08.md)
+and [framework alignment notice](../pios-mobile-contract-alignment-2026-10-08.md)
+before the next mobile capability extraction. Disposition the three candidates
+against existing CRDs; do not duplicate cache, offline, derivation or History
+entries. This is additional candidate work under the existing method, not a new
+roadmap stage, public realization claim or revision of historical evidence.
+Pin the new source basis before final extraction/publication. Continue directly
+in this repository; no separate library workspace or copy is required.
+
 - Canonical library sources live under `docs/capabilities/` in this repository.
 - The corresponding human-facing index and detail pages are published through the existing `peecos/peecos-web` workflow after review.
 - PIOS Solo implementation and roadmap work remain independent.

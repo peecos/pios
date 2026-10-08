@@ -2,7 +2,7 @@
 
 Status: draft normative architecture companion for PIOS 2.0. This document
 defines deployment-independent Core and PIOS system boundaries, placement, and
-portability principles. Clarified September 11, 2026. It does not authorize
+portability principles. Clarified September 13, 2026. It does not authorize
 deployment, migration, hosted-service operation, app
 networking, credentials, or personal-data processing.
 
@@ -97,8 +97,8 @@ following categories.
 | Core capability executor | A replaceable runtime that performs a Core capability. It may run locally, in shared infrastructure, or through an external processor. | Its durable inputs, authority, outputs, provenance, and failure semantics remain Core-scoped. |
 | Core interface or adapter | A bounded API, protocol, connector, client adapter, or transport over Core behavior. | It does not become a second source of truth or expose provider internals as the Core contract. |
 | PIOS-native supporting service | Implements the PIOS operating environment beyond the narrower declared Core contract, such as a PIOS-specific gateway or system inspection service. | Part of the selected PIOS distribution; preserve its portable definitions, dependencies, and reconstruction path without making all of its runtime state canonical. |
-| PIOS-native interface | An owner interface whose product purpose is to operate PIOS, such as Corebox. | Part of PIOS but a client of Core; replaceable through defined interfaces and not a prerequisite for headless Core operation. |
-| Independent application, agent, or service | Has a useful purpose apart from PIOS and integrates with Core for that purpose, such as a notes application or LifeStory. | Remains independently useful; connects through defined interfaces without becoming part of PIOS merely through integration. |
+| PIOS-native interface | An owner interface whose product purpose is to operate PIOS, such as the Core app (previously Corebox). | Part of PIOS but a client of Core; replaceable through defined interfaces and not a prerequisite for headless Core operation. |
+| Independent application, agent, or service | Has a useful purpose apart from PIOS and integrates with Core for that purpose, such as a notes application or LifeStory Indie. | Remains independently useful; connects through defined interfaces without becoming part of PIOS merely through integration. |
 | Operator control plane | Provisioning, billing, fleet administration, support, abuse controls, service health, and deployment operations. | Required to operate a service at scale, but not automatically part of PIOS or an owner's portable Core. |
 | External execution resource | A model, transcription engine, specialist API, or other replaceable processor. | It may execute approved work but does not define canonical Core meaning by itself. |
 
@@ -265,19 +265,43 @@ the owner can replace it without redefining their Core.
 
 ## 9. Supporting Services and Applications
 
-### 9.1 Corebox: a PIOS-native hub and gateway
+<a id="91-corebox-a-pios-native-hub-and-gateway"></a>
 
-Corebox's product purpose is to act as the owner's hub/gateway application for
-PIOS, whether Solo or hosted. It is PIOS-dependent by purpose, not a typical
-independently useful application that happens to integrate with PIOS.
-Local-first capture, offline staging, and disconnected operation support that
-purpose; they do not change its classification.
+### 9.1 Core app: a PIOS-native owner interface
 
-Corebox is part of PIOS while remaining a client outside the narrower Core
+The **Core app (previously known as Corebox)** is the owner's PIOS-native
+interface for capture, access, system visibility, and governance in Solo or
+hosted PIOS. Its display name is **Core**; the qualified name **Core app**
+distinguishes the application from the Core contract and the owner's Core Self.
+It is PIOS-dependent by purpose, not a typical independently useful application
+that happens to integrate with PIOS.
+
+The Core app is part of PIOS while remaining a client outside the narrower Core
 contract. Its device binaries and device state stay on owner devices. Its
 PIOS-specific backend or receiver normally belongs inside the Solo VM, through
 a bounded Core interface. Core must remain operable without the particular
-Corebox UI or implementation; another authorized interface may replace it.
+Core app UI or implementation; another authorized interface may replace it.
+
+Device-local support is an explicit role, especially on iPhone: the Core app
+and its support components provide shared App Group caching for authorized
+participating apps, recent-file reuse, selected offline availability, and
+durable pending submissions during intermittent connectivity. This avoids
+repeated server downloads without moving the server-side native indexing and
+retrieval capability out of Solo. Device cache is not a second canonical Core;
+pending captures or edits may be the only copy and are not disposable cache.
+
+Statistics and status views distinguish canonical content, search coverage,
+receiver-owned state, device storage, pending work, and the scope and freshness
+of recovery evidence. These views consume governed PIOS interfaces rather than
+requiring provider administration or direct canonical-database access.
+
+App Group sharing does not grant PIOS access or enforce per-app authorization
+within shared plaintext. A declared local profile must define the shared trust
+boundary, safe retention/eviction, offline permissions, reconciliation, and
+revocation limits. Direct, brokered, and hybrid consumer paths remain valid;
+neither a running Core app relay nor a direct network client in every app is
+universally required. See [Integration Interoperability and Governance,
+section 19](integration-interoperability-and-governance-v0.1.md#19-same-publisher-and-local-substrate-profiles).
 
 PIOS membership and VM colocation do not make receiver databases, device
 caches, or synchronized folders canonical Core state. A receiver retaining
@@ -285,14 +309,22 @@ unregistered originals still requires a governed canonicalization path; moving
 it to another VM is not a substitute for that correction. A PIOS-only gateway
 is not a placement exception simply because it is outside Core proper.
 
+This defines the app's intended role, not the shipped feature set of a
+particular build. Renaming the interface does not change Core compatibility,
+canonical authority, legacy identifiers, or migration authorization.
+
 ### 9.2 Independently useful applications and agents
 
-A notes application, LifeStory, or a general-purpose assistant has a useful
+A notes application, LifeStory Indie, or a general-purpose assistant has a useful
 purpose without PIOS. Such products should retain meaningful independent
 operation while offering deeper integration with Solo or hosted PIOS. Their
 application-specific workflows and private processing normally run outside the
 Solo VM and use defined Core interfaces, not provider storage, internal
 databases, or operator-only access.
+
+The separate new LifeStory is a Core-dependent companion, not the independent
+LifeStory Indie product. Dependency does not automatically make it a member of
+the narrower Core contract; use the named first-party profile for its role.
 
 PIOS-native notification, projection, connector, or processing services are
 not automatically in this class. Classify each by whether it implements PIOS

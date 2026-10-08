@@ -6,6 +6,8 @@ Capability documents version independently. Inclusion in this repository does no
 
 Start with:
 
+- [October 8 mobile interoperability candidates and existing-coverage mapping](decisions/mobile-interoperability-candidates-2026-10-08.md) — candidate assessment only; no new inventory entries
+
 - [Project plan](project-plan.md)
 - [Work status](work-status.md)
 - [Capability inventory](capability-inventory.md)

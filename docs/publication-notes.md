@@ -20,6 +20,46 @@ without upgrading implementation, compatibility, or migration-readiness claims.
 Editing these source documents does not itself publish the website or authorize
 deployment or migration.
 
+The September 13, 2026 update names the **Core app (previously known as
+Corebox)** as the PIOS-native owner interface, with **Core** as its display
+name. The master and companion documents define capture, access, system
+statistics, governance, and device-local support. Shared App Group caching on
+iPhone is an explicit role for authorized recent/offline content, including
+intermittent connectivity and avoiding repeated downloads. Pending submissions
+are protected separately from disposable cache; shared-container access,
+offline authority, expiry, and revocation limits remain explicit.
+
+This is a framework documentation update, not evidence that the new app
+features are shipped. It preserves the narrower Core contract, independent
+consumer roles, Solo server-side placement, and existing compatibility levels.
+Legacy Corebox anchors and identifiers remain for continuity. No bundle ID,
+App Group, protocol/schema field, endpoint, storage path, installed app, owner
+data, or historical evidence is renamed by this update. The website render,
+app implementation, and owner-specific plans require their own scoped updates;
+source editing alone does not publish them.
+
+The September 27, 2026 clarification records the **PIOS First-Party Mobile
+Apps by Prifina** profile without narrowing the open PIOS integration model.
+The profile is deployment-neutral and may connect through Core to any compatible
+PIOS implementation. Notes and Voice Notes remain independently usable and
+may use app-owned iCloud or custom endpoints, while their PIOS exchange is
+mediated locally by Core. The existing LifeStory product continues as
+**LifeStory Indie**; a new **LifeStory** is defined as Core-dependent, with
+Core owning activated device-source collection and PIOS connectivity.
+Third-party applications retain direct, brokered and hybrid choices. This
+documentation change does not create app identities, alter entitlements, move
+data or authorize a release.
+
+The [October 8, 2026 mobile contract alignment](pios-mobile-contract-alignment-2026-10-08.md)
+distinguishes device-source and application working records from caches and
+separates local handoff, canonical acceptance, reverse application and
+acknowledgement delivery. The first-party profile now permits Notes' bounded
+direct reconciliation alongside Core mediation; the September 27 description
+above records the earlier profile, not an exclusive-routing rule for current
+work. Three possible library additions remain candidate assessments, not
+accepted CRDs. These local source changes do not by themselves establish a
+GitHub publication, website update, running-agent acknowledgement or deployment.
+
 The public documentation is licensed under CC BY 4.0 with attribution to
 Valto Loikkanen / peecos. Project names and logos are handled separately in
 `TRADEMARKS.md`.

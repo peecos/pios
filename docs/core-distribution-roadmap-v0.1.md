@@ -104,8 +104,13 @@ coverage, dependency inventory, and supported-provider evidence.
 The complete composition is a target, not a claim about today's Starter image.
 It does not require every optional PIOS capability. A general Agent/Services VM
 normally hosts independent consumers, not unrecorded PIOS runtime dependencies.
-Corebox device clients remain outside the VM while belonging to PIOS; their
-native backend may be inside without becoming canonical Core state.
+Core app device clients (previously known as Corebox) remain outside the VM
+while belonging to PIOS; their native backend normally belongs inside without
+becoming canonical Core state. The app's broader owner views and shared
+device-cache profile are implementation targets, not completed distribution
+evidence. Recent/offline caching on iPhone does not replace the Solo package's
+server-side retrieval or create another Core. These interface improvements do
+not add a new distribution stage or change existing compatibility exits.
 
 ## Goal D: Provider Coverage Without Lock-In
 
