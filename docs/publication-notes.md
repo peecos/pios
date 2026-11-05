@@ -60,6 +60,21 @@ work. Three possible library additions remain candidate assessments, not
 accepted CRDs. These local source changes do not by themselves establish a
 GitHub publication, website update, running-agent acknowledgement or deployment.
 
+The November 5, 2026 source clarification distinguishes owner-adopted agent
+definitions and operating policies from repository-owned instructions, reusable
+software and official framework authority. The master's section 21.10 links the
+[Operating Document Authority and Recovery profile](operating-document-authority-and-recovery-v0.1.md)
+for full-document revisions, explicit adoption, conflict handling and protected
+offline bootstrap. Portability and integration companions add application
+recovery evidence boundaries and uncertain-acceptance/service-progress examples.
+
+These are framework semantics and a draft selectable profile, not evidence of a
+documentation cutover, remote execution handoff, application recovery, live
+timeout correction or new mandatory Core capability. Existing evidence retains
+its original scope; implementation roadmaps and authorization remain separate.
+No accepted CRDs or compatibility levels change. Local edits do not themselves
+publish GitHub or the website or notify already-running agents.
+
 The public documentation is licensed under CC BY 4.0 with attribution to
 Valto Loikkanen / peecos. Project names and logos are handled separately in
 `TRADEMARKS.md`.

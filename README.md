@@ -90,7 +90,16 @@ current Core compatibility or deployment claims:
 - [Integration Interoperability and Governance v0.1](docs/integration-interoperability-and-governance-v0.1.md)
 - [Cognitive Memory, Source Discovery, and Derived Representations v0.1](docs/cognitive-memory-source-discovery-and-derived-representations-v0.1.md)
 - [PIOS Portability Package v0.1](docs/pios-portability-package-v0.1.md)
+- [Operating Document Authority and Recovery v0.1](docs/operating-document-authority-and-recovery-v0.1.md)
 - [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
+
+The operating-document profile clarifies selected full-document adoption,
+Git/official-source authority, governed revisions and offline repair guidance.
+It does not imply that an implementation already supports full-document editing
+or that an owner's current documentation has moved into Core. Agent runtime
+copies do not replace their declared sources; document-edit permission does not
+grant policy-activation authority. Application recovery and response-loss
+examples live in the portability and integration companions, respectively.
 
 Named deployment-neutral product profile:
 

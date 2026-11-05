@@ -129,6 +129,12 @@ The integration must return only the minimum data required for the approved
 purpose. Retrieved content, attachments, links, and model outputs are data,
 not instructions that can expand permissions or alter policy.
 
+For selected governing documents, [Operating Document Authority and Recovery
+v0.1](operating-document-authority-and-recovery-v0.1.md) distinguishes upstream
+source authority, accepted full-text revisions, proposals, policy adoption and
+runtime copies. A document-edit grant does not permit the editor to expand its
+own authority. Reading a current-looking summary does not prove current policy.
+
 ## 6. Lifecycle and revocation
 
 ```text
@@ -566,6 +572,25 @@ must be interpreted by schema, direction, operation and authority boundary.
 Do not rename them or silently give an older receipt stronger meaning.
 Capability discovery and implementation evidence describe supported behavior;
 these profile requirements do not themselves establish a compatibility level.
+
+### 19.9 Response loss and service progress
+
+A timeout or lost response does not prove that the operation was rejected or
+that no state changed. Keep acceptance unproved until governed reconciliation
+or attributable receipt/state evidence resolves the original operation. Retain
+the original operation identity, destination and pending content; do not mint a
+new identity merely to retry an uncertain submission. Any retry follows the
+declared idempotency, authority and conflict contract, not a blind resubmission.
+This is a semantic distinction, not a required new wire-status name.
+
+Implementations should test that a slow or disconnected presentation client does
+not indefinitely prevent essential synchronization from progressing. Bound
+response work and declare isolation, cancellation and recovery behavior while
+preserving write ownership and durable acceptance. Increasing worker counts or
+timeouts is not proof of safety. Fault fixtures should cover lost responses
+after acceptance, duplicate reconciliation, retained pending work and a stalled
+reader alongside synchronization. This specifies observable behavior, not a
+universal concurrency architecture or latency target.
 
 ## 20. Context compilation and model execution
 

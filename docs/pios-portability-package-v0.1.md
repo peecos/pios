@@ -162,6 +162,33 @@ A recovery package uses the same validation and import boundary while placing
 additional emphasis on completeness, encryption, independent storage, key
 separation, periodic creation, and tested restore behavior.
 
+### 9.1 Application recovery evidence
+
+Where a selected PIOS profile includes device applications, report these
+recovery dimensions separately; no single backup label proves all of them:
+
+| Dimension | Evidence boundary |
+| --- | --- |
+| Application package | Identify the retained or reproducibly obtainable complete package and its required resources/extensions. A version label or lone executable does not establish package equivalence. |
+| Private application state | Declare included stores, source revisions, exclusions and demonstrated restore behavior. |
+| Shared-container and pending state | Account separately for shared queues, receipts, device-only records and unaccepted work; a private-state backup or Core export does not prove their recovery. |
+| Credentials and installation | Verify the applicable signing, installation, trust and credential-recovery path separately. Do not assume non-exportable keys are backed up or place secrets in a portability package. |
+| Functional recovery | Demonstrate the selected user workflow and safe preservation/reconciliation of accepted and pending state, including the declared fallback when a replacement cannot launch. |
+
+An exact prior-application rollback and an accepted alternative recovery
+baseline are different claims. A profile may select either under the owner's
+authority, stating retained coverage, losses, prerequisites and evidence. A
+change from an already required exact rollback needs explicit approval; it does
+not waive state preservation or prove the alternative works. This does not
+require exact old binaries for every PIOS deployment, prescribe debugger-based
+export, or authorize installation or a device operation.
+
+Selected operating-document recovery also follows
+[Operating Document Authority and Recovery v0.1](operating-document-authority-and-recovery-v0.1.md):
+restore full content, provenance, revision/Event history and required definitions,
+retain pending changes, and provide approved bootstrap guidance independently
+of the unavailable service. Restoration does not silently reactivate old grants.
+
 ## 10. Security, third-party information, and uncertainty
 
 Portability packages may be an owner's most sensitive aggregate artifact. The

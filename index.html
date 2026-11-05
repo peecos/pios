@@ -5020,10 +5020,13 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
           </table>
           <p>Rejections are not failures. They teach the system what not to repeat. Confirmations can reduce future burden, but only inside the scope the owner approved.</p>
 
-          <h3>21.10 Governance of Agent Definitions</h3>
-          <p>Agent definitions, skills, roles, and operational files are part of Core. Runtime copies are not the primary truth. The Coordinator Agent manages the sync from Core to places where agents actually run.</p>
+          <h3 id="agent-definition-governance">21.10 Governance of Agent Definitions</h3>
+          <p>Core retains the owner's adopted agent definitions, roles, permissions, skill references, and operating policies with their provenance and adoption history. Reusable skills, software, repository instructions, and official framework documents may remain authoritative in their declared upstream repositories; Core binds the selected versions and owner-specific configuration rather than creating competing editable masters. Governing an agent does not require taking ownership of every source file it uses. Runtime copies are not the primary truth; an authorized coordinator manages their synchronization from the declared sources within the owner's grants.</p>
 
           <p>This makes the system self-describing: Core knows what agents exist, what roles they play, which skills they use, where they run, and which copies are current.</p>
+
+          <p><strong>Current operating documents are more than archived copies or summaries.</strong> Where an owner selects Core as their working home, preserve full content, stable identity, accepted revision, provenance, conflict-safe edits, Events, and reconstructable history. Declared editing authority changes only through an explicit, verified adoption; repository and official framework sources can remain external authorities. Acceptance of an agent report does not make it owner direction, and permission to edit a policy's text does not grant permission to activate that policy or expand authority.</p>
+          <p>A protected offline bootstrap may retain last-verified operating guidance and approved repair instructions when the normal service is unavailable. Cached integrity is not current authority: declare freshness and offline-use limits, hold actions requiring unverified current policy, and reconcile pending proposals on reconnection. See <a href="docs/operating-document-authority-and-recovery-v0.1.md">Operating Document Authority and Recovery v0.1</a> for the selectable full-document profile, bounded cutover, external-source bindings, and evidence requirements. This draft profile is not a claim of implemented support, authority cutover, or a new mandatory Core capability.</p>
 
           <h3>21.11 Code, Runtime, and Knowledge Location Split</h3>
           <p>Core should separate durable information from runnable software and machine-local runtime state. This keeps the personal information architecture portable while allowing implementations to use normal software engineering practices.</p>
@@ -5090,6 +5093,11 @@ originals/documents/business-plan/version-003/business-plan.md</code></pre>
                 <td><a href="docs/pios-portability-package-v0.1.md">PIOS Portability Package v0.1</a></td>
                 <td>Owner- or agent-composed packages for reconstruction before a running Core exists.</td>
                 <td>A source-composed package is not evidence of existing Core state and cannot silently become a Full Core Export Bundle.</td>
+              </tr>
+              <tr>
+                <td><a href="docs/operating-document-authority-and-recovery-v0.1.md">Operating Document Authority and Recovery v0.1</a></td>
+                <td>Full-document authority, external-source bindings, governed revision and adoption, and offline operating guidance.</td>
+                <td>Selected document adoption does not transfer every repository's authority, activate grants, or prove runtime recovery; cached guidance is not a fresh policy check.</td>
               </tr>
               <tr>
                 <td><a href="docs/ecosystem-participation-and-project-catalog-v0.1.md">Ecosystem Participation and Project Catalog v0.1</a></td>
