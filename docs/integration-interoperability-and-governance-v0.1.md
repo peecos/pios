@@ -615,3 +615,146 @@ readback, data-minimization evidence, hostile-content fixtures, Context Receipt
 fixtures, provider-result lifecycle fixtures, profile-discovery tests, and
 proof that a manifest or retrieved instruction cannot bypass runtime
 enforcement.
+
+<a id="controlled-disclosure-profile"></a>
+
+## 22. Optional controlled-disclosure profile
+
+Status: optional contract elaboration for PIOS 2.0, not a new mandatory Core
+obligation or a claim of implemented enforcement. The requirements in this
+section apply only to an implementation profile that explicitly selects it.
+Selection does not issue grants or activate recipients. Existing normative
+invariants remain unchanged; sections 4, 14, 18–20 and the master's privacy and
+context-compilation rules supply the authority model.
+
+This profile reuses Integration Definitions, Personal Terms, Agreement Records,
+Authorization Grants, technical scopes, runtime policy and Context Receipts.
+It introduces no permission namespace, protocol, required endpoint, wire field,
+Core Compatibility Level, API version or export-format change. Its declarations
+may be represented through the existing manifest and event/audit mechanisms.
+
+### 22.1 Separate decisions across the information lifecycle
+
+Each selected flow declares its source scope, purpose, actors, processors,
+audience, transformations, retention, enforcement points and offline limits.
+An existing grant may cover several decisions when its exact scope permits
+them; separate decisions do not require a new grant for every step. Reusing a
+grant still requires current evaluation, including its manifest binding.
+
+| Decision | Required question within the selected profile |
+| --- | --- |
+| Access | May this actor retrieve these source revisions or candidate metadata? |
+| Use and process | May the named processor receive and use those inputs for this purpose under the stated processing terms? |
+| Derive | May this transformation create the proposed result, including cross-source inferences? |
+| Disclose | May this representation and its accompanying metadata reach this recipient through this surface? |
+| Retain | May each recipient or service keep inputs, outputs, logs or copies, for how long and under which deletion rules? |
+| View later | May the current viewer obtain the retained representation now, under current policy or an explicitly bounded offline authorization? |
+
+Permission to read or use content is not permission to disclose, retain or
+publish it. Permission to disclose once does not establish perpetual viewing
+rights. An integration's access to two sources does not itself authorize their
+combination or delivery to a shared audience. Canonical acceptance of a result
+does not establish its truth or enlarge its audience.
+
+### 22.2 Authorization before processor disclosure
+
+Evaluate authority before every relevant transfer or action, including local
+processing across a logical trust boundary. Filter source records and candidate
+metadata before ranking, classification, extraction, summarization or embedding.
+Candidate labels, project names, descriptions, examples, relationship links and
+candidate-set membership can reveal protected information even without source
+bodies. A processor authorized for one document is not thereby authorized for
+the complete taxonomy, candidate list or another application's context.
+
+Bind the evaluation to the actual input revisions, purpose, processor/runtime,
+model/provider where applicable, processing boundary and terms. Protect request
+logs, traces and intermediate results under their own permitted retention and
+audience. A final answer filter cannot undo an unauthorized input disclosure.
+Instructions in source content, a model's request for more context or a high
+classification score cannot authorize an additional transfer.
+
+For example, a classifier permitted to read a synthetic public brief must not
+receive a private project name merely because that name is a candidate label.
+Use an authorized candidate set, an authorized reduced representation, another
+already permitted processing path, or abstain. Record omissions without leaking
+withheld names through an error, receipt or preview.
+
+### 22.3 Combined outputs and presentation metadata
+
+A result binds its contributing source revisions and applicable policy
+dependencies. Evaluate all contributing constraints for the intended purpose,
+recipient and representation: audience, processing, onward use, retention,
+deletion, sensitivity and required approval. Select only an outcome satisfying
+all applicable constraints; if they conflict or remain unresolved, withhold the
+affected output or produce a separately authorized narrower result. Do not
+silently choose the least restrictive source policy.
+
+Summarization, aggregation, paraphrase or inferred anonymity does not
+automatically declassify information. An authorized release or transformation
+rule may permit a particular reduced representation; record that rule and the
+result's remaining restrictions. A model's assurance of anonymity is not such
+a rule. Excluding a source from the visible citations does not remove its
+influence or policy obligations from a derived result.
+
+Apply the same analysis to titles, filenames, thumbnails, previews, snippets,
+search listings, notifications, link descriptions and existence indicators.
+Generating a safe body while exposing a restricted title is still disclosure.
+Receipts and provenance links also have an audience; use scoped references or
+bounded explanations where revealing their details is not authorized.
+
+Role and Mode inference, Circle membership and model confidence supply context
+for evaluating existing policy; they are not grants or model-issued authority.
+They do not authorize canonical promotion, external action or wider disclosure.
+
+### 22.4 Controlled references and disclosed copies
+
+A controlled reference resolves through an enforcement point that checks the
+current viewer, requested representation and applicable current policy before
+returning content. Possessing or forwarding the reference alone grants no
+access. The selected implementation declares authentication, expiry, denial,
+cache and offline behavior and where the checks actually occur. Reference
+titles and previews require their own disclosure check before resolution.
+
+A materialized copy delivered to another recipient is a disclosure at delivery,
+even if it originated from a controlled reference. A downloaded document,
+message, notification body, screenshot or remembered observation cannot be
+promised recall merely by revoking its source reference. Stop future governed
+access and apply the supported deletion/expiry obligations; state where remote
+copies, offline devices or third-party behavior are outside enforcement.
+Section 19's shared-plaintext and offline limits continue to apply.
+
+Policy metadata describes obligations; it does not itself enforce third-party
+behavior or guarantee absolute isolation. A Context Receipt or equivalent
+event/audit pair records the actual recipient, representation, grant, source
+versions, transformations, retention and external-copy boundary under section
+18. It is evidence of the governed disclosure, not proof of subsequent compliance.
+
+### 22.5 Revalidation, reuse and fallback
+
+Revalidate at execution and disclosure, before reuse for another request or
+audience, and on later governed access. Recheck relevant source/policy revisions,
+grant expiry or revocation, manifest changes, purpose, recipient and retention.
+Queued work cannot rely solely on an earlier scheduling decision. Where fresh
+checks are unavailable, only the explicitly granted offline window and
+operations remain usable; otherwise refuse or report unavailable.
+
+Reuse of a retained processing result requires matching source revisions,
+transformation parameters, language and processor/profile version as applicable,
+plus currently permitted use and audience. It is different from authorization
+to reprocess source data. Historical retention, current disclosure and factual
+validity are separate: revocation can restrict a retained result without making
+its claim false or erasing canonical Events. Corrections and deletions follow
+existing governed lifecycle rules.
+
+A model/provider fallback or retry must not widen input scope, recipients,
+retention, training, region, permitted output or write-back authority. Compare
+the actual fallback against current grants and terms before transfer; cost,
+latency or failure does not waive them. If no authorized alternative exists,
+withhold, narrow within existing authority, or seek the required new decision.
+Record the actual path and denied boundary without exposing protected context.
+
+Evidence for a selected implementation includes denied candidate-metadata
+transfer, incompatible combined-source restrictions, a restricted preview,
+grant revocation between queuing and execution, later-view denial, bounded
+offline behavior, processing-result reuse and rejection of an unauthorized
+fallback. These are validation targets, not completed runtime proofs.

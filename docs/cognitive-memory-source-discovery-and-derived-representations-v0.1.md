@@ -248,3 +248,188 @@ Meaning, Learning, source-local graph snapshots, source discovery, and
 representation-registry lifecycle before declaring interoperable schemas. Add
 deterministic and model-assisted context fixtures, Role/Mode expiry cases, and
 Context Receipt linkage before claiming those profiles interoperable.
+
+<a id="assertion-and-lineage-profile"></a>
+
+## 13. Optional assertion and lineage profile
+
+Sections 13–15 are optional contract elaborations of the master's
+[Knowledge Layer](../index.html#knowledge), [patterns](../index.html#patterns),
+and [retrieval](../index.html#retrieval). Requirements in each section apply
+only to implementations explicitly selecting that profile. They add no
+mandatory Core capability, API/export field, or compatibility level. Capture
+can proceed under existing rules without selecting any of these profiles.
+Records reuse Originals, Events, Knowledge, Derived, and System; there is no
+sixth zone, required graph database, or universal recomputation engine.
+
+Canonical acceptance establishes the retained record and its provenance. A
+canonical record of a claim is not proof that the claim is true. Consistent
+with master §§14.2–14.3, an assertion profile must keep independent dimensions:
+
+| Dimension | What the record distinguishes |
+| --- | --- |
+| Origin | Source statement, observation, owner statement, or model/rule inference; originating actor and source revision. |
+| Evidential support | Supporting and contradicting references, coverage, uncertainty, and assessment basis. |
+| Acceptance | Proposed, confirmed, rejected, or revised interpretation, with decision authority; distinct from acceptance of the containing record. |
+| Temporal validity | Period asserted to apply, observation time, evaluation time, and review/expiry conditions. |
+| Access | Current permitted purpose, operation, recipient, and enforcement boundary under existing grants. |
+
+These are descriptive dimensions, not new universal enums. Confirmation does
+not erase contradictory evidence; expired access does not negate a statement;
+an accurate historical claim need not describe the present. Assertions retain
+stable identities, subject and source-version references, and revision links.
+Source-local claims and ambiguous entity matches remain distinguishable from
+accepted cross-source interpretations.
+
+A selected lineage profile must distinguish dependency kinds, recording the
+dependent result, referenced revision/profile, relationship, and evaluation:
+
+| Dependency | Meaning and change consequence |
+| --- | --- |
+| Evidential | A source or assertion supports or challenges another claim; correction or new evidence can require review. |
+| Computational | A result was produced from particular inputs, parameters, and processor versions; changes can require recomputation for current use. |
+| Policy | Use depends on a grant, terms, purpose, recipient, or retention condition; changes require authorization revalidation. |
+
+Maintenance outcomes are independently recorded, with reason and time:
+
+- `stale`: the result has not been reevaluated against relevant changes or its
+  freshness window; it is not automatically false.
+- `disputed`: evidence or an authorized review challenges the assertion;
+  disagreement is retained pending resolution.
+- `inaccessible`: the requested access is denied or the required evidence is
+  unavailable; distinguish policy denial from retrieval failure.
+- `superseded`: a later identified revision replaces this result for a stated
+  scope; the earlier result remains historical under its retention rules.
+
+These outcomes can coexist. A corrected source may leave a summary stale and
+its interpretation disputed, while a revoked grant makes both inaccessible to
+a caller. Revocation alone supplies no evidence that either claim was false.
+
+Maintenance may flag affected dependants or propose recomputation. Execution
+must revalidate current authority for inputs, processing, recipients, and
+write-back through the existing [integration grants](integration-interoperability-and-governance-v0.1.md#4-enforceable-authorization).
+A dependency edge or earlier successful run grants no permission to recompute.
+Record a new result with lineage and a corrective or superseding Event where
+canonical state changes, preserving the append-oriented Event history. Retain
+historical results subject to retention/deletion rules; never present a
+recomputation as the original historical output. Unsupported or blocked work
+stays explicitly unresolved, without requiring re-ingestion of retained sources.
+
+<a id="semantic-assessment-and-cluster-profile"></a>
+
+## 14. Optional semantic assessment and cluster profile
+
+A selected semantic-assessment profile must declare typed questions, such as
+topic relevance, project association, Role/Mode relevance, or relationship
+classification. Different question types need distinct score interpretations.
+The profile declares whether an output is a transient routing/classification
+signal, retained evidence, a Derived projection, or a proposed Knowledge object.
+Transient signals need not become durable records or retain every intermediate
+score. Existing required audit and provenance for consequential processing,
+disclosure, canonical changes and applied decisions still apply; transient
+treatment is not permission to omit that evidence.
+
+Retained assessments declare their state treatment, retention and authorization
+basis. Their records include:
+
+- assessment identity/type, source references and revisions, evidence spans
+  where available, and the requested context/purpose;
+- candidate-set identity/version and the authorized subset actually considered,
+  including versions of labels/descriptions and coverage limitations;
+- processor/model/rule profile and version, parameters, input/output language,
+  processing time, and applicable context or validity window;
+- proposed matches, score meaning and scale, threshold/decision rule,
+  uncertainty, and an explicit abstention or insufficient-evidence result;
+- provenance, applicable grant/recipient boundary, review/expiry conditions,
+  and revision or supersession relationship.
+
+Candidate metadata is input data: project names, Role labels, descriptions,
+examples, and candidate relationships can disclose sensitive information.
+Authorize and minimize both source content and candidate metadata before model
+or processor disclosure, using existing integration §§4, 14, 18, and 20.
+Receipt/trace evidence identifies the evaluated candidate versions and scope
+without copying excluded metadata into routine logs. Restricted candidates
+mean limited coverage, not proof that no other relevant candidate exists.
+
+A score may express similarity, relative ranking, or a declared calibrated
+estimate; it is not inherently a probability of truth. State which meaning
+applies and avoid comparison across incompatible types/profiles. High
+confidence supplies neither correctness, access rights, nor authority to act.
+Abstain when the declared evidence or decision conditions are unmet rather
+than forcing the highest-scoring candidate into an accepted fact.
+
+Multiple labels, Roles, and Modes may apply concurrently within stated scopes.
+They remain context claims under section 11, never grants. Classification,
+extraction, entity resolution, and canonical promotion are separate operations:
+extracting a named participant does not identify a global person; classifying
+a passage does not adopt a Cotton term or confirm Meaning. Preserve section 7's
+source-local snapshot and proposed matches through any later resolution.
+Classification within existing request-scoped or standing authority needs no
+fresh owner confirmation merely because a model produced it. Retaining a result,
+promoting Meaning/Learning, or changing behavior follows its applicable existing
+authority path; a processing grant does not automatically authorize all three.
+Meaning/Learning objects retain section 2.3's proposal/adoption controls.
+Changes to retrieval ranking or other behavior likewise require the applicable
+existing authority, not a new approval for every signal already within scope.
+
+An implementation selecting cluster support within this profile must retain
+cluster identity, versioned membership with source revisions, generating
+profile/parameters, context, evidence, and proposed/accepted status. Clusters
+may be unnamed, overlap, or have uncertain membership; a generated title is a
+label proposal, not an entity identity. Membership changes create a revision.
+
+Splits and merges record predecessor/successor references and the membership
+transition. State explicitly whether an existing identity continues and why;
+new branches or merged objects receive distinct identities unless a governed
+continuity decision identifies the continuing object. Labels alone cannot
+transfer identity, acceptance, permissions, or all predecessor claims. Retain
+ancestry and earlier membership under the applicable retention rules.
+
+Consolidation groups or summarizes existing material; concept induction
+proposes a useful abstraction; rule induction proposes a generalization or
+behavioral rule. These are separate operations. Promotion follows master
+§14.8 and existing owner/standing-rule authority; no cluster size, recurrence,
+or model score automatically adopts a concept, Learning, or operating rule.
+Existing Base Week, routine, and pattern semantics remain unchanged. A selected
+assessment may record seasonal or annual context in its validity window;
+that does not create a schedule or convert observed recurrence into intention.
+
+<a id="processing-result-reuse"></a>
+
+## 15. Optional processing-result reuse profile
+
+A selected reuse profile extends sections 4 and 8's derived records and the
+[provider-result lifecycle](integration-interoperability-and-governance-v0.1.md#17-provider-result-lifecycle).
+It must bind each retained result to source identity/revision, operation,
+processor/model/rule version, parameters, input/output language, output type,
+creation time, provenance, and freshness conditions. Record permitted purpose,
+audience/recipient boundary, sensitivity, retention, and authorization basis.
+Where assessments or clusters are inputs, include their relevant versions.
+
+Reuse returns an existing result after checking input/version suitability,
+freshness, and current permission for the requester, purpose, and audience.
+An earlier processing grant or common application publisher does not authorize
+every later reader. Multi-source results retain applicable source restrictions;
+summarization does not by itself declassify their content. Record outward
+disclosure through the existing Context Receipt or equivalent event/audit pair.
+
+Reprocessing executes a processor again and needs current processing authority,
+even for unchanged source bytes. A changed source revision, processor profile,
+parameters, or language is a different processing request, not an identical
+cached result. It produces a separately identified result with lineage; the
+same inputs do not guarantee identical model output. Redaction or translation
+for a different audience is also processing, not permission-free reuse.
+
+Changing the audience requires a fresh disclosure decision even when bytes
+remain unchanged. Denied reuse does not authorize fetching sources again or
+switching models/providers. Missing, stale, or incompatible results remain
+explicit until an authorized reuse, refresh, or recomputation is available.
+This contract mandates no shared engine, storage product, or model provider.
+
+Before claiming support for these selected profiles, validate source correction
+without history loss, independent dispute/access states, denied recomputation,
+candidate-metadata exclusion before disclosure, abstention and multi-label
+results, split/merge continuity, and reuse across revision/language/audience
+changes. Concrete score calibration, supported languages, retention enforcement,
+and reproducibility remain implementation validation questions; this draft
+establishes neither working support nor interoperable schemas.

@@ -91,7 +91,18 @@ current Core compatibility or deployment claims:
 - [Cognitive Memory, Source Discovery, and Derived Representations v0.1](docs/cognitive-memory-source-discovery-and-derived-representations-v0.1.md)
 - [PIOS Portability Package v0.1](docs/pios-portability-package-v0.1.md)
 - [Operating Document Authority and Recovery v0.1](docs/operating-document-authority-and-recovery-v0.1.md)
+- [Proposed Apple-Local and Mixed-Device Profile v0.1](docs/apple-local-and-mixed-device-profile-v0.1.md)
 - [Ecosystem Participation and Project Catalog v0.1](docs/ecosystem-participation-and-project-catalog-v0.1.md)
+
+The [November 5 enrichment alignment notice](docs/pios-2.0-enrichment-alignment-2026-11-05.md)
+connects the PIOS 2.0 clarifications and selectable draft profiles for assertions,
+dependency maintenance, semantic assessment, evolving clusters, processing-result
+reuse and controlled disclosure. Capability-led adoption supports useful local
+and mixed-device configurations without turning optional features into mandatory
+Core obligations. These additions do not change compatibility levels, API/export
+versions, existing implementation authority or accepted CRD adoption. The Apple
+profile is a proposed composition, not a new deployed backend or a claim that
+every platform mechanism is verified.
 
 The operating-document profile clarifies selected full-document adoption,
 Git/official-source authority, governed revisions and offline repair guidance.

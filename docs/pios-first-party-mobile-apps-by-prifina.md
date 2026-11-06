@@ -8,6 +8,16 @@ and the implementation's current authorized roadmap.
 
 Canonical scope: deployment-neutral PIOS first-party mobile application architecture.
 
+The [November 5 PIOS 2.0 enrichment notice](pios-2.0-enrichment-alignment-2026-11-05.md)
+clarifies capability-led adoption and links a
+[proposed Apple-local and mixed-device profile](apple-local-and-mixed-device-profile-v0.1.md).
+That proposal does not replace this selected suite profile, app-owned iCloud or
+custom-endpoint synchronization, Notes' bounded bidirectional reconciliation,
+or the LifeStory Indie/LifeStory distinction. Shared cloud storage, new
+connectors and processing capabilities require separate implementation
+selection. Useful device-side PIOS without a remote connection is not a change
+to the Core app's PIOS-dependent purpose or proof of a complete Local Core.
+
 Status: owner-selected deployment-neutral architecture; the first bounded
 bidirectional Notes-to-PIOS workflow is operational. Voice Notes, Browser,
 Voice Agent, device-source forwarding, historical migration and the new

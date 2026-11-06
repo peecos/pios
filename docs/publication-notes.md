@@ -75,6 +75,22 @@ its original scope; implementation roadmaps and authorization remain separate.
 No accepted CRDs or compatibility levels change. Local edits do not themselves
 publish GitHub or the website or notify already-running agents.
 
+The [November 5 PIOS 2.0 enrichment package](pios-2.0-enrichment-alignment-2026-11-05.md)
+clarifies claims versus accepted interpretations, dependency-aware knowledge
+maintenance, optional semantic assessment and cluster identity, reusable
+processing results, and controlled disclosure. It also explains capability-led
+adoption and links a [proposed Apple-local and mixed-device profile](apple-local-and-mixed-device-profile-v0.1.md).
+Existing principles remain in the master; detailed additional requirements
+apply only to explicitly selected draft profiles. PIOS remains 2.0, with no
+new mandatory Core capability, API/export version or compatibility level.
+
+The [candidate coverage record](capabilities/decisions/information-lifecycle-and-device-profile-candidates-2026-11-05.md)
+does not add accepted CRDs or change existing evidence. No new provider, shared
+cloud backend, model, connector or device-source activation is selected. Source
+review, GitHub publication, website projection, verified live publication and
+implementer acknowledgement remain separately reported outcomes; these notes
+are not evidence that any of those steps has occurred.
+
 The public documentation is licensed under CC BY 4.0 with attribution to
 Valto Loikkanen / peecos. Project names and logos are handled separately in
 `TRADEMARKS.md`.

@@ -181,6 +181,26 @@ the deployment and supported contract; it does not include an owner identifier.
 An authenticated owner-specific capability response may include owner context
 when the deployment's access boundary explicitly permits it.
 
+### 4.1 Owner-Facing Availability
+
+An owner interface may supplement capability discovery with an availability
+view. Distinguish implemented, installed, enabled, authorized, reachable and
+healthy; these are independent observations, not a compulsory sequence. Include
+the applicable device/deployment, evidence time, prerequisites, processing
+location, disclosure and offline limitations. Unknown or stale observations
+must not be presented as current availability. Public views must not disclose
+private owner configuration or permissions.
+
+This is a presentation profile over existing declarations and authorized
+observations, not a new mandatory endpoint, schema field or compatibility level.
+It does not change the required connectivity contract above. Unsupported
+optional details may be omitted or shown as unknown; absence must not imply
+permission, successful installation or health. A capability listing never grants
+authority, and usefulness on one device does not establish full Core conformance.
+The [Apple-local and mixed-device profile](apple-local-and-mixed-device-profile-v0.1.md)
+illustrates selectable compositions without changing `core_version`,
+`api_versions` or `export_format_version`.
+
 ## 5. Portable Canonical Package
 
 A full Core Export Bundle is a normal product capability, not an emergency-only

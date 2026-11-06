@@ -212,6 +212,15 @@ declared contract require matching conformance evidence. A complete single-VM
 PIOS package is an intended architecture, not an exception to a Core-only-VM
 rule.
 
+The [proposed Apple-local and mixed-device profile](apple-local-and-mixed-device-profile-v0.1.md)
+describes a selectable device-oriented composition, not a replacement for this
+Solo default. Device-side PIOS can provide selected useful capabilities without
+a remote connection. A complete Local Core claim still requires its declared
+Core contract, canonical authority and recovery evidence. Cloud replication,
+device ownership or a shared application container does not establish that
+claim. Hosted and self-hosted choices do not inherently rank capability quality;
+implementations identify what they actually provide.
+
 ### 7.2 Provider-Managed Single-Owner Deployment
 
 A provider-native deployment may operate one owner's Core in a dedicated or
