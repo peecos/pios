@@ -72,6 +72,8 @@ The relationship is governed by four rules:
 3. **No backwards compatibility.** Neither framework constrains the other; inherited terms may be redefined on either side without coordination.
 4. **Divergence is documented.** EIOS records inherited terms and their divergences in its own naming and terminology mapping.
 
+On **2026-11-21**, EIOS added a fifth rule on its own side: EIOS may adopt principles PIOS learns after the fork, as dated, attributed adaptations recorded in its specification (EIOS v1.4). This creates no tracking obligation, shared text, or compatibility requirement for PIOS.
+
 EIOS's names extend PIOS metaphors into entity scale: Core became **Keel** (the structural spine of a vessel), Cotton became **Weave** (personal fiber, woven into entity fabric).
 
 ## Canonical source and document policy
